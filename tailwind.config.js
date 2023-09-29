@@ -71,6 +71,7 @@ export default {
     fontSize: {
       md: '1.6rem',
       xl: '2rem',
+      '2xl': '2.4rem',
       '3xl': '3.2rem',
       '5xl': '6.4rem'
     },
