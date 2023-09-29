@@ -37,7 +37,8 @@ export default {
       },
       'features-bg': 'rgba(143, 85, 234, 0.05)',
       warning: 'rgba(251, 188, 9, 0.10)',
-      green: 'rgba(83, 180, 131, 0.10)'
+      green: 'rgba(83, 180, 131, 0.10)',
+      transparent: 'transparent'
     },
     spacing: {
       0: '0',
@@ -68,7 +69,11 @@ export default {
     },
     backgroundImage: {
       'line-bg':
-        'linear-gradient(90deg, rgba(143, 85, 234, 0.00) 0%, #8F55EA 51.56%, rgba(143, 85, 234, 0.00) 100%)'
+        'linear-gradient(90deg, rgba(143, 85, 234, 0.00) 0%, #8F55EA 51.56%, rgba(143, 85, 234, 0.00) 100%)',
+      'line-pattern': "url('/images/line-pattern.png')",
+      'dark-bg':
+        'linear-gradient(0deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.62) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat, #E1E2E6',
+      hero: "url('/images/hero-bg.png')"
     },
     borderRadius: {
       lg: '0.8rem',
