@@ -33,6 +33,11 @@
     line-height: 140%;
     font-size: 1.6rem;
   }
+  p {
+    line-height: 180%;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
 }
 
 html {
