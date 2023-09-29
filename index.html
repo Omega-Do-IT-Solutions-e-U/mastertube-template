@@ -385,7 +385,209 @@
         </div>
       </section>
       <!-- How To Access Features -->
+
+      <!-- FAQ -->
+      <section class="text-center max-w-[111.8rem] mx-auto mb-22">
+        <h3>Frequently Asked Questions!</h3>
+        <div class="flex flex-col gap-y-6">
+          <!-- Accordian NO.1 -->
+          <div
+            x-data="{open1: false}"
+            class="bg-neutral-bg3 cursor-pointer w-full rounded-lg shadow-tertiary py-4 px-8"
+            @click="open1 = !open1"
+          >
+            <!-- Header -->
+            <div class="flex justify-between items-center">
+              <span class="text-md font-semibold text-neutral-text1"
+                >What is MasterTube Title Generator AI?
+              </span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="transition-transform duration-300"
+                  :class="open1 ? 'rotate-180': '' "
+                >
+                  <path
+                    d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
+                    fill="#8F55EA"
+                    stroke="#8F55EA"
+                  />
+                </svg>
+              </span>
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <p
+              x-show="open1"
+              x-transition
+              class="text-md text-neutral-text3 text-start font-normal py-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
+            </p>
+            <!-- Content -->
+          </div>
+          <!-- Accordian NO.1 -->
+
+          <!-- Accordian NO.2 -->
+          <div
+            x-data="{open2: true}"
+            class="bg-neutral-bg3 cursor-pointer w-full rounded-lg shadow-tertiary py-4 px-8"
+            @click="open2 = !open2"
+          >
+            <!-- Header -->
+            <div class="flex justify-between items-center">
+              <span class="text-md font-semibold text-neutral-text1"
+                >How does MasterTube's Title Generator AI work?
+              </span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="transition-transform duration-300"
+                  :class="open2 ? 'rotate-180': '' "
+                >
+                  <path
+                    d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
+                    fill="#8F55EA"
+                    stroke="#8F55EA"
+                  />
+                </svg>
+              </span>
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <p
+              x-show="open2"
+              x-transition
+              class="text-md text-neutral-text3 text-start font-normal py-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
+            </p>
+            <!-- Content -->
+          </div>
+          <!-- Accordian NO.2 -->
+
+          <!-- Accordian NO.3 -->
+          <div
+            x-data="{open3: false}"
+            class="bg-neutral-bg3 cursor-pointer w-full rounded-lg shadow-tertiary py-4 px-8"
+            @click="open3 = !open3"
+          >
+            <!-- Header -->
+            <div class="flex justify-between items-center">
+              <span class="text-md font-semibold text-neutral-text1"
+                >How can TubeBuddy's Title Generator AI benefit my YouTube
+                channel?
+              </span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="transition-transform duration-300"
+                  :class="open3 ? 'rotate-180': '' "
+                >
+                  <path
+                    d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
+                    fill="#8F55EA"
+                    stroke="#8F55EA"
+                  />
+                </svg>
+              </span>
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <p
+              x-show="open3"
+              x-transition
+              class="text-md text-neutral-text3 text-start font-normal py-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
+            </p>
+            <!-- Content -->
+          </div>
+          <!-- Accordian NO.3 -->
+
+          <!-- Accordian NO.4 -->
+          <div
+            x-data="{open4: false}"
+            class="bg-neutral-bg3 cursor-pointer w-full rounded-lg shadow-tertiary py-4 px-8"
+            @click="open4 = !open4"
+          >
+            <!-- Header -->
+            <div class="flex justify-between items-center">
+              <span class="text-md font-semibold text-neutral-text1"
+                >Can I customize the title suggestions provided by TubeBuddy's
+                Title Generator AI?
+              </span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="transition-transform duration-300"
+                  :class="open4 ? 'rotate-180': '' "
+                >
+                  <path
+                    d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
+                    fill="#8F55EA"
+                    stroke="#8F55EA"
+                  />
+                </svg>
+              </span>
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <p
+              x-show="open4"
+              x-transition
+              class="text-md text-neutral-text3 text-start font-normal py-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
+            </p>
+            <!-- Content -->
+          </div>
+          <!-- Accordian NO.4 -->
+        </div>
+      </section>
+      <!-- FAQ -->
     </main>
+
+    <script
+      src="//unpkg.com/alpinejs"
+      defer
+    ></script>
     <!-- <script type="module" src="/main.js"></script> -->
   </body>
 </html>
