@@ -63,7 +63,8 @@ export default {
       20: '8rem',
       21: '8.4rem',
       22: '8.8rem',
-      23: '9.2rem'
+      23: '9.2rem',
+      24: '9.6rem'
     },
     backgroundImage: {
       'line-bg':
