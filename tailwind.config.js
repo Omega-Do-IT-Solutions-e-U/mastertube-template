@@ -57,11 +57,26 @@ export default {
       17: '6.8rem',
       18: '7.2rem',
       19: '7.6rem',
-      20: '8rem'
+      20: '8rem',
+      21: '8.4rem',
+      22: '8.8rem'
+    },
+    backgroundImage: {
+      'line-bg':
+        'linear-gradient(90deg, rgba(143, 85, 234, 0.00) 0%, #8F55EA 51.56%, rgba(143, 85, 234, 0.00) 100%)'
+    },
+    borderRadius: {
+      lg: '0.8rem'
     },
     fontSize: {
+      md: '1.6rem',
       xl: '2rem',
+      '3xl': '3.2rem',
       '5xl': '6.4rem'
+    },
+    boxShadow: {
+      primary:
+        '0px 0px 0px 0px rgba(143, 85, 234, 0.08), 0px 7px 15px 0px rgba(143, 85, 234, 0.08), 0px 28px 28px 0px rgba(143, 85, 234, 0.07), 0px 63px 38px 0px rgba(143, 85, 234, 0.04), 0px 113px 45px 0px rgba(143, 85, 234, 0.01), 0px 176px 49px 0px rgba(143, 85, 234, 0.00)'
     },
     extend: {}
   },
