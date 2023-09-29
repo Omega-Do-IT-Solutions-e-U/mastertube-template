@@ -35,7 +35,9 @@ export default {
         bg2: '#F7F8FA',
         bg3: '#FFFFFF'
       },
-      'features-bg': 'rgba(143, 85, 234, 0.05)'
+      'features-bg': 'rgba(143, 85, 234, 0.05)',
+      warning: 'rgba(251, 188, 9, 0.10)',
+      green: 'rgba(83, 180, 131, 0.10)'
     },
     spacing: {
       0: '0',
@@ -60,7 +62,8 @@ export default {
       19: '7.6rem',
       20: '8rem',
       21: '8.4rem',
-      22: '8.8rem'
+      22: '8.8rem',
+      23: '9.2rem'
     },
     backgroundImage: {
       'line-bg':
@@ -68,9 +71,11 @@ export default {
     },
     borderRadius: {
       lg: '0.8rem',
+      '2xl': '1.6rem',
       '4xl': '2.4rem'
     },
     fontSize: {
+      base: '1.4rem',
       md: '1.6rem',
       xl: '2rem',
       '2xl': '2.4rem',
@@ -81,6 +86,8 @@ export default {
       primary:
         '0px 0px 0px 0px rgba(143, 85, 234, 0.08), 0px 7px 15px 0px rgba(143, 85, 234, 0.08), 0px 28px 28px 0px rgba(143, 85, 234, 0.07), 0px 63px 38px 0px rgba(143, 85, 234, 0.04), 0px 113px 45px 0px rgba(143, 85, 234, 0.01), 0px 176px 49px 0px rgba(143, 85, 234, 0.00)',
       secondary:
+        '0px 0px 0px 0px rgba(0, 0, 0, 0.01), 0px 7px 15px 0px rgba(0, 0, 0, 0.01), 0px 28px 28px 0px rgba(0, 0, 0, 0.01), 0px 63px 38px 0px rgba(0, 0, 0, 0.01), 0px 113px 45px 0px rgba(0, 0, 0, 0.00), 0px 176px 49px 0px rgba(0, 0, 0, 0.00)',
+      tertiary:
         '0px 0px 0px 0px rgba(0, 0, 0, 0.01), 0px 7px 15px 0px rgba(0, 0, 0, 0.01), 0px 28px 28px 0px rgba(0, 0, 0, 0.01), 0px 63px 38px 0px rgba(0, 0, 0, 0.01), 0px 113px 45px 0px rgba(0, 0, 0, 0.00), 0px 176px 49px 0px rgba(0, 0, 0, 0.00)'
     },
     extend: {}
