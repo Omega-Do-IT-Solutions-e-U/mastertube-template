@@ -36,6 +36,32 @@ export default {
         bg3: '#FFFFFF'
       }
     },
+    spacing: {
+      0: '0',
+      1: '0.4rem',
+      2: '0.8rem',
+      3: '1.2rem',
+      4: '1.6rem',
+      5: '2rem',
+      6: '2.4rem',
+      7: '2.8rem',
+      8: '3.2rem',
+      9: '3.8rem',
+      10: '4.2rem',
+      11: '4.6rem',
+      12: '5rem',
+      13: '5.4rem',
+      14: '5.8rem',
+      15: '6.2rem',
+      16: '6.6rem',
+      17: '7rem',
+      18: '7.4rem',
+      19: '7.8rem',
+      20: '8.2rem'
+    },
+    fontSize: {
+      xl: '2rem'
+    },
     extend: {}
   },
   plugins: []
