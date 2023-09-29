@@ -19,11 +19,13 @@
   </head>
   <body>
     <main
-      class="max-w-[144rem] mx-auto"
+      class=""
       id="app"
     >
       <!-- Header -->
-      <header class="py-8 flex justify-around items-center">
+      <header
+        class="py-8 flex justify-around items-center max-w-[144rem] mx-auto"
+      >
         <img
           src="/images/logo.png"
           alt="Mastertube Logo"
@@ -67,133 +69,252 @@
       </header>
       <!-- Header -->
 
-      <div class="max-w-[111.8rem] mx-auto">
-        <!-- Hero -->
-        <section class="pt-10 h-[42rem] relative">
-          <h1 class="font-bold text-center text-5xl">Title Generator</h1>
-          <div
-            class="flex justify-center items-center py-[1.4rem] px-8 bg-white/20 rounded-lg"
-          >
-            <span class="text-xl">The #1 YouTube title tool</span>
-          </div>
-          <div class="absolute top-[6rem] w-[7.2rem] h-[7.2rem]">
-            <img
-              src="/images/spotify.png"
-              alt="spotify logo"
-            />
-          </div>
-          <div
-            class="absolute top-[25.4rem] left-[50rem] w-[7.2rem] h-[7.2rem]"
-          >
-            <img
-              src="/images/google.png"
-              alt="google logo"
-            />
-          </div>
-          <div class="absolute top-[25.4rem] right-[50rem] w-[8rem] h-[8rem]">
-            <img
-              src="/images/adobe.png"
-              alt="adobe logo"
-            />
-          </div>
-          <div class="absolute top-[6rem] right-0 w-[7.2rem] h-[7.2rem]">
-            <img
-              src="/images/amazon.png"
-              alt="amazon logo"
-            />
-          </div>
-        </section>
-        <!-- Hero -->
-
-        <!-- Extension Section -->
-        <section class="flex justify-between items-center">
-          <div class="flex flex-1">
-            <img
-              src="/images/media-player-small.png"
-              alt=""
-              class="self-start"
-            />
-            <img
-              src="/images/media-player-big.png"
-              alt=""
-            />
-            <img
-              src="/images/media-player-small.png"
-              alt=""
-              class="self-end rotate-[-21.296deg]"
-            />
-          </div>
-          <div class="flex-1">
-            <h2 class="text-neutral-text1 text-3xl font-bold mb-2">
-              Brainstorm with AI to create titles
-            </h2>
-            <p class="text-xl text-neutral-text3 mb-8">
-              AI is not taking over the world anytime soon (hopefully) but it
-              can help optimize your videos. Title Generator
-            </p>
-            <button
-              class="p-4 gap-x-2 rounded-lg bg-primary-1 shadow-primary text-white text-md font-semibold flex items-center"
-            >
-              <span>
-                <img src="/icons/download.svg" />
-              </span>
-              <span> Install Extension </span>
-            </button>
-          </div>
-        </section>
-        <!-- Extension Section -->
-
-        <!-- Line -->
+      <!-- Hero -->
+      <section class="pt-10 h-[42rem] relative max-w-[111.8rem] mx-auto">
+        <h1 class="font-bold text-center text-5xl">Title Generator</h1>
         <div
-          class="w-[122.4rem] h-[2px] opacity-[0.4] bg-line-bg mt-[6.4rem] mb-22"
-        ></div>
-        <!-- Line -->
+          class="flex justify-center items-center py-[1.4rem] px-8 bg-white/20 rounded-lg"
+        >
+          <span class="text-xl">The #1 YouTube title tool</span>
+        </div>
+        <div class="absolute top-[6rem] w-[7.2rem] h-[7.2rem]">
+          <img
+            src="/images/spotify.png"
+            alt="spotify logo"
+          />
+        </div>
+        <div class="absolute top-[25.4rem] left-[50rem] w-[7.2rem] h-[7.2rem]">
+          <img
+            src="/images/google.png"
+            alt="google logo"
+          />
+        </div>
+        <div class="absolute top-[25.4rem] right-[50rem] w-[8rem] h-[8rem]">
+          <img
+            src="/images/adobe.png"
+            alt="adobe logo"
+          />
+        </div>
+        <div class="absolute top-[6rem] right-0 w-[7.2rem] h-[7.2rem]">
+          <img
+            src="/images/amazon.png"
+            alt="amazon logo"
+          />
+        </div>
+      </section>
+      <!-- Hero -->
 
-        <!-- More Features -->
-        <section class="text-center mb-22">
-          <h2 class="text-3xl font-bold text-neutral-text1 mb-14">
-            More Features
+      <!-- Extension Section -->
+      <section
+        class="flex justify-between items-center max-w-[111.8rem] mx-auto"
+      >
+        <div class="flex flex-1">
+          <img
+            src="/images/media-player-small.png"
+            alt=""
+            class="self-start"
+          />
+          <img
+            src="/images/media-player-big.png"
+            alt=""
+          />
+          <img
+            src="/images/media-player-small.png"
+            alt=""
+            class="self-end rotate-[-21.296deg]"
+          />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-neutral-text1 text-3xl font-bold mb-2">
+            Brainstorm with AI to create titles
           </h2>
-          <div
-            class="justify-between flex items-center [&_div]:flex [&_div]:flex-col [&_div]:items-center [&_div]:flex-1 [&_img]:mb-8"
+          <p class="text-xl text-neutral-text3 mb-8">
+            AI is not taking over the world anytime soon (hopefully) but it can
+            help optimize your videos. Title Generator
+          </p>
+          <button
+            class="p-4 gap-x-2 rounded-lg bg-primary-1 shadow-primary text-white text-md font-semibold flex items-center"
           >
-            <div>
-              <img
-                src="/images/clock.png"
-                alt="clock"
-              />
-              <h4 class="mb-2">Create catchy headlines</h4>
-              <p class="text-xl font-normal text-neutral-text3">
-                AI is not taking over the world anytime <br />
-                soon (hopefully) but it can.
-              </p>
-            </div>
-            <div>
-              <img
-                src="/images/note.png"
-                alt="note"
-              />
-              <h4 class="mb-2">Great titles with ai</h4>
-              <p class="text-xl font-normal text-neutral-text3">
-                As a creator one of the more <br />
-                frustrating things.
-              </p>
-            </div>
-            <div>
-              <img
-                src="/images/file-manager.png"
-                alt="file manager"
-              />
-              <h4 class="mb-2">best topics</h4>
-              <p class="text-xl font-normal text-neutral-text3">
-                Ever had a brain fart? Yah, we get <br />
-                them all the time. With our Title .
-              </p>
-            </div>
+            <span>
+              <img src="/icons/download.svg" />
+            </span>
+            <span> Install Extension </span>
+          </button>
+        </div>
+      </section>
+      <!-- Extension Section -->
+
+      <!-- Line -->
+      <div
+        class="w-[122.4rem] h-[2px] opacity-[0.4] bg-line-bg mt-[6.4rem] mb-22"
+      ></div>
+      <!-- Line -->
+
+      <!-- More Features -->
+      <section class="text-center mb-22 max-w-[111.8rem] mx-auto">
+        <h2 class="text-3xl font-bold text-neutral-text1 mb-14">
+          More Features
+        </h2>
+        <div
+          class="justify-between flex items-center [&_div]:flex [&_div]:flex-col [&_div]:items-center [&_div]:flex-1 [&_img]:mb-8"
+        >
+          <div>
+            <img
+              src="/images/clock.png"
+              alt="clock"
+            />
+            <h4 class="mb-2">Create catchy headlines</h4>
+            <p class="text-xl font-normal text-neutral-text3">
+              AI is not taking over the world anytime <br />
+              soon (hopefully) but it can.
+            </p>
           </div>
-        </section>
-        <!-- More Features -->
-      </div>
+          <div>
+            <img
+              src="/images/note.png"
+              alt="note"
+            />
+            <h4 class="mb-2">Great titles with ai</h4>
+            <p class="text-xl font-normal text-neutral-text3">
+              As a creator one of the more <br />
+              frustrating things.
+            </p>
+          </div>
+          <div>
+            <img
+              src="/images/file-manager.png"
+              alt="file manager"
+            />
+            <h4 class="mb-2">best topics</h4>
+            <p class="text-xl font-normal text-neutral-text3">
+              Ever had a brain fart? Yah, we get <br />
+              them all the time. With our Title .
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- More Features -->
+
+      <!-- Feature Spotlight -->
+      <section class="text-center bg-features-bg mb-22">
+        <h3 class="pt-12 mb-14">Feature Spotlight</h3>
+        <div class="pb-15">IMG</div>
+      </section>
+      <!-- Feature Spotlight -->
+
+      <!-- Access -->
+      <section class="max-w-[111.8rem] mx-auto mb-22">
+        <h3 class="text-center mb-14">How to access features</h3>
+        <div class="flex gap-x-14 mb-10">
+          <div
+            class="flex gap-x-14 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain"
+          >
+            <div class="flex flex-col gap-y-2">
+              <h5 class="flex items-center gap-x-2">
+                <span>
+                  <img
+                    src="/icons/video.svg"
+                    alt=""
+                  />
+                </span>
+                <span> Step 1 </span>
+              </h5>
+              <p class="text-xl text-neutral-text3 max-w-sm">
+                select your content <br />
+                from the YouTube <br />
+                Studio dashboard.
+              </p>
+            </div>
+            <img
+              src="/images/step-1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex gap-x-14 w-full flex-1 justify-between rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain"
+          >
+            <div class="flex flex-col gap-y-2">
+              <h5 class="flex items-center gap-x-2">
+                <span>
+                  <img
+                    src="/icons/video.svg"
+                    alt=""
+                  />
+                </span>
+                <span> Step 2 </span>
+              </h5>
+              <p class="text-xl text-neutral-text3">
+                click on the video you <br />
+                would like to write a title <br />
+                for.
+              </p>
+            </div>
+            <img
+              src="/images/step-2.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex gap-x-14">
+          <div
+            class="flex gap-x-14 w-full flex-1 justify-between items-center rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain"
+          >
+            <div class="flex flex-col gap-y-2">
+              <h5 class="flex items-center gap-x-2">
+                <span>
+                  <img
+                    src="/icons/video.svg"
+                    alt=""
+                  />
+                </span>
+                <span> Step 3 </span>
+              </h5>
+              <p class="text-xl text-neutral-text3">
+                write an example title or prompt and then select generate ideas
+                to see different suggestions!
+              </p>
+            </div>
+            <img
+              src="/images/step-3.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex gap-x-14 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain"
+          >
+            <div class="flex flex-col gap-y-2">
+              <h5 class="flex items-center gap-x-2">
+                <span>
+                  <img
+                    src="/icons/video.svg"
+                    alt=""
+                  />
+                </span>
+                <span> Step 4 </span>
+              </h5>
+              <p class="text-xl text-neutral-text3 max-w-sm">
+                select Title Generator <br />
+                from the TubeBuddy pullout menu.
+              </p>
+            </div>
+            <img
+              src="/images/step-4.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Access -->
+
+      <!-- Line -->
+      <div
+        class="w-[122.4rem] h-[2px] opacity-[0.4] bg-line-bg mt-[6.4rem] mb-22"
+      ></div>
+      <!-- Line -->
+
+      <!-- How To Access Features -->
+      <section></section>
+      <!-- How To Access Features -->
     </main>
     <!-- <script type="module" src="/main.js"></script> -->
   </body>

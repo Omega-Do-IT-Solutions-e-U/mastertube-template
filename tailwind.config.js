@@ -34,7 +34,8 @@ export default {
         bg1: '#E1E2E6',
         bg2: '#F7F8FA',
         bg3: '#FFFFFF'
-      }
+      },
+      'features-bg': 'rgba(143, 85, 234, 0.05)'
     },
     spacing: {
       0: '0',
@@ -66,7 +67,8 @@ export default {
         'linear-gradient(90deg, rgba(143, 85, 234, 0.00) 0%, #8F55EA 51.56%, rgba(143, 85, 234, 0.00) 100%)'
     },
     borderRadius: {
-      lg: '0.8rem'
+      lg: '0.8rem',
+      '4xl': '2.4rem'
     },
     fontSize: {
       md: '1.6rem',
@@ -77,7 +79,9 @@ export default {
     },
     boxShadow: {
       primary:
-        '0px 0px 0px 0px rgba(143, 85, 234, 0.08), 0px 7px 15px 0px rgba(143, 85, 234, 0.08), 0px 28px 28px 0px rgba(143, 85, 234, 0.07), 0px 63px 38px 0px rgba(143, 85, 234, 0.04), 0px 113px 45px 0px rgba(143, 85, 234, 0.01), 0px 176px 49px 0px rgba(143, 85, 234, 0.00)'
+        '0px 0px 0px 0px rgba(143, 85, 234, 0.08), 0px 7px 15px 0px rgba(143, 85, 234, 0.08), 0px 28px 28px 0px rgba(143, 85, 234, 0.07), 0px 63px 38px 0px rgba(143, 85, 234, 0.04), 0px 113px 45px 0px rgba(143, 85, 234, 0.01), 0px 176px 49px 0px rgba(143, 85, 234, 0.00)',
+      secondary:
+        '0px 0px 0px 0px rgba(0, 0, 0, 0.01), 0px 7px 15px 0px rgba(0, 0, 0, 0.01), 0px 28px 28px 0px rgba(0, 0, 0, 0.01), 0px 63px 38px 0px rgba(0, 0, 0, 0.01), 0px 113px 45px 0px rgba(0, 0, 0, 0.00), 0px 176px 49px 0px rgba(0, 0, 0, 0.00)'
     },
     extend: {}
   },
