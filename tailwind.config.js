@@ -81,7 +81,7 @@ export default {
       '4xl': '2.4rem'
     },
     fontFamily: {
-      sans: ['ClashDisplay', 'sans-serif']
+      sans: ['ClashDisplay', 'Iransans', 'san-serif']
     },
     fontSize: {
       base: '1.4rem',
