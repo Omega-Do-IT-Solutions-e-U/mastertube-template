@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --nav-height: 7.2rem;
+  }
   h1 {
     font-weight: 700;
     line-height: 140%;

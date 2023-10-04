@@ -24,13 +24,17 @@
     >
       <!-- Header -->
       <header
-        class="py-8 px-4 lg:px-0 flex justify-between lg:justify-around bg-white items-center max-w-[144rem] mx-auto"
+        x-data="{headerOpen: false}"
+        class="h-navHeight lg:h-auto px-4 lg:py-[1.8rem] lg:px-27 flex justify-between lg:justify-around bg-white items-center max-w-[144rem] mx-auto gap-x-10"
       >
         <img
           src="/images/logo.png"
           alt="Mastertube Logo"
         />
-        <button class="lg:hidden">
+        <button
+          @click="headerOpen = !headerOpen"
+          class="lg:hidden"
+        >
           <span class="sr-only">hamburger menu</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,6 +42,7 @@
             height="24"
             viewBox="0 0 24 24"
             fill="none"
+            x-show="headerOpen === false"
           >
             <path
               d="M3 7H21"
@@ -58,10 +63,30 @@
               stroke-linecap="round"
             />
           </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            x-show="headerOpen === true"
+          >
+            <path
+              d="M18 6L6 18M6 6L18 18"
+              stroke="#0C0C0C"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </button>
-        <nav class="hidden lg:block">
+        <nav
+          :class="headerOpen ? 'block fixed bottom-0 left-0 right-0 top-navHeight bg-white z-20 lg:static overflow-y-auto lg:overflow-hidden' : 'hidden'"
+          class="lg:block"
+        >
           <ul
-            class="flex [&_li]:py-[1.4rem] [&_li]:px-7 [&_a]:text-neutral-text3 text-xl [&_li]:text-center"
+            :class="headerOpen ? 'flex flex-col [&_li]:w-full [&_li]:text-start lg:flex-row lg:w-auto [&_a]:text-neutral-text1 [&_a]:font-semibold [&_a]:justify-between px-4 gap-y-2 py-8 lg:px-0 lg:py-0 border-y border-y-neutral-text3/20 lg:border-none [&_a]:lg:text-neutral-text3 [&_a]:lg:font-normal' : ''"
+            class="flex [&_li]:py-[1.4rem] gap-x-[3rem] [&_a]:text-neutral-text3 text-md [&_li]:text-center [&_li]:whitespace-nowrap"
           >
             <li>
               <a href="/">Home</a>
@@ -72,25 +97,92 @@
                 href="/"
               >
                 <span class="">Pricing</span>
-                <img
-                  src="/icons/chevron.svg"
-                  alt="chevron icon"
-                  class="mt-1"
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <path
+                    d="M20.0244 8.94995L13.5044 15.47C12.7344 16.24 11.4744 16.24 10.7044 15.47L4.18445 8.94995"
+                    stroke="#98A1B3"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </a>
             </li>
             <li>
-              <a href="/">Extension</a>
+              <a
+                class="flex items-center gap-x-2"
+                href="/"
+              >
+                <span class="">Extension</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <path
+                    d="M20.0244 8.94995L13.5044 15.47C12.7344 16.24 11.4744 16.24 10.7044 15.47L4.18445 8.94995"
+                    stroke="#98A1B3"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="/">About Us</a>
+              <a href="/">About us</a>
+            </li>
+            <li>
+              <a href="/">Blog</a>
             </li>
           </ul>
+          <ul
+            :class="headerOpen ? 'grid grid-cols-2 [&_li]:text-neutral-text2 text-md font-semibold leading-[180%] lg:hidden px-6 py-8' : 'hidden'"
+          >
+            <div class="flex flex-col gap-y-3">
+              <li>Features</li>
+              <li>Pricing</li>
+              <li>Blog</li>
+              <li>Legal</li>
+            </div>
+            <div class="flex flex-col gap-y-3">
+              <li>Support</li>
+              <li>Contact</li>
+              <li>Sitemap</li>
+              <li>Mastertube</li>
+            </div>
+          </ul>
+          <div class="flex flex-col px-6 gap-y-[0.6rem] lg:hidden">
+            <button
+              class="text-md w-full whitespace-nowrap px-[1.8rem] font-semibold py-[1rem] bg-primary-1 rounded-lg text-white"
+            >
+              Try For Free
+            </button>
+            <button
+              class="px-[1.8rem] bg-neutral-bg2 text-primary-1 w-full whitespace-nowrap py-[1rem] text-md font-semibold leading-[180%]"
+            >
+              Sign In
+            </button>
+          </div>
         </nav>
-        <div class="hidden lg:block">
-          <button class="text-xl px-7 py-[1.4rem]">Sign In</button>
+        <div class="hidden lg:flex">
           <button
-            class="text-xl px-7 py-[1.4rem] bg-primary-1 rounded-lg text-white"
+            class="px-[1.8rem] whitespace-nowrap py-[1rem] text-md font-semibold leading-[180%]"
+          >
+            Sign In
+          </button>
+          <button
+            class="text-md whitespace-nowrap px-[1.8rem] font-semibold py-[1rem] bg-primary-1 rounded-lg text-white"
           >
             Try For Free
           </button>

@@ -65,7 +65,11 @@ export default {
       21: '8.4rem',
       22: '8.8rem',
       23: '9.2rem',
-      24: '9.6rem'
+      24: '9.6rem',
+      25: '10rem',
+      26: '10.4rem',
+      27: '10.8rem',
+      navHeight: 'var(--nav-height)'
     },
     backgroundImage: {
       'line-bg':
