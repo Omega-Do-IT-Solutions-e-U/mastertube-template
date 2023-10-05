@@ -120,6 +120,7 @@
               <!-- Dropdown Mobile -->
               <div
                 x-show="pricingOpen === true"
+                x-cloak
                 x-transition
                 :class="pricingOpen ? '' : ''"
                 class="lg:hidden flex flex-col items-start p-3 gap-5 w-1/2 pt-5"
@@ -494,6 +495,7 @@
               <!-- Dropdown Mobile -->
               <div
                 x-show="extensionOpen === true"
+                x-cloak
                 x-transition
                 class="lg:hidden"
               >
@@ -924,13 +926,13 @@
           <ul
             :class="pricingOpen ? 'grid grid-cols-2 [&_li]:text-neutral-text2 text-md font-semibold leading-[180%] lg:hidden px-6 py-8' : 'hidden'"
           >
-            <div class="flex flex-col gap-y-3">
+            <div class="flex flex-col gap-y-3 lg:hidden">
               <li>Features</li>
               <li>Pricing</li>
               <li>Blog</li>
               <li>Legal</li>
             </div>
-            <div class="flex flex-col gap-y-3">
+            <div class="flex flex-col gap-y-3 lg:hidden">
               <li>Support</li>
               <li>Contact</li>
               <li>Sitemap</li>
@@ -1408,7 +1410,9 @@
       <!-- Calculator -->
 
       <!-- Why Trusting Us? -->
-      <section class="hidden lg:block max-w-[120rem] mx-auto">
+      <section
+        class="hidden lg:block max-w-[120rem] mx-auto mb-[5rem] px-10 lg:mb-[15.4rem]"
+      >
         <div class="flex gap-x-6 items-center justify-center">
           <div>
             <img
@@ -1497,6 +1501,88 @@
         </div>
       </section>
       <!-- Why Trusting Us? -->
+
+      <!-- Consulting With Us -->
+      <section
+        class="max-w-[130rem] rounded-lg min-h-[45.4rem] mx-auto mb-[5rem] lg:mb-[15.4rem] bg-[url('/images/cashout/consult-bg.png')] px-10"
+      >
+        <div
+          class="flex gap-x-16 flex-col justify-center items-center lg:flex-row"
+        >
+          <div
+            class="flex flex-col items-center justify-center w-full flex-1 max-w-2xl lg:max-w-5xl"
+          >
+            <h2
+              class="text-xl text-neutral-text1-cash text-center w-full mb-5 lg:text-start font-bold lg:text-3xl"
+            >
+              Consulteeing With Us
+            </h2>
+            <form class="w-full px-4 flex flex-col gap-y-4">
+              <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-6">
+                <!-- Input 1 -->
+                <div class="relative w-full">
+                  <input
+                    type="text"
+                    id="channel-name"
+                    class="block h-11 text-md px-2 pb-2 pt-4 w-full text-neutral-text1 bg-transparent rounded-lg border border-[#D1D1D1] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                    placeholder=" "
+                  />
+                  <label
+                    for="channel-name"
+                    class="absolute text-base text-[#323232] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-[#323232] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
+                    >Channel's Name</label
+                  >
+                </div>
+                <!-- Input 1 -->
+
+                <!-- Input 2 -->
+                <div class="relative w-full">
+                  <input
+                    type="text"
+                    id="phone-number"
+                    class="block h-11 text-md px-2 pb-2 pt-4 w-full text-neutral-text1 bg-transparent rounded-lg border border-[#D1D1D1] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                    placeholder=" "
+                  />
+                  <label
+                    for="phone-number"
+                    class="absolute text-base text-[#323232] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-[#323232] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
+                    >Phone Number</label
+                  >
+                </div>
+                <!-- Input 2 -->
+              </div>
+
+              <!-- Input 3 -->
+              <div class="relative w-full bg-white">
+                <textarea
+                  type="text"
+                  id="Description"
+                  class="block text-md min-h-[18rem] px-2 pb-2 pt-4 w-full text-neutral-text1 bg-transparent rounded-lg border border-[#D1D1D1] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                  placeholder=" "
+                ></textarea>
+                <label
+                  for="Description"
+                  class="absolute text-base text-[#323232] duration-300 transform -translate-y-4 scale-75 top-0 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-[#323232] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-5 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
+                  >Description</label
+                >
+              </div>
+              <!-- Input 3-->
+              <button
+                class="rounded-lg p-3 bg-[#9747FF] text-white text-md w-full lg:w-[27rem] hover:bg-[#8d36ff] transition-colors duration-300"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="hidden lg:block">
+            <img
+              src="/images/cashout/chat.png"
+              alt="Chat Icon"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Consulting With Us -->
 
       <!-- FAQ -->
       <section class="text-center max-w-[111.8rem] mx-auto mb-22">
