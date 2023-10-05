@@ -151,3 +151,29 @@ html {
   font-display: swap;
   font-style: normal;
 }
+
+.range-input {
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-transition: 0.2s;
+}
+
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: #9747ff;
+  cursor: pointer;
+  box-shadow: 0px 5px 8px -2px rgba(151, 71, 255, 0.34);
+}
+
+.range-input::-moz-range-thumb {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: #9747ff;
+  cursor: pointer;
+  box-shadow: 0px 5px 8px -2px rgba(151, 71, 255, 0.34);
+}
