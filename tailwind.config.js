@@ -31,6 +31,8 @@ export default {
         text1: '#17181A',
         text2: '#666E80',
         text3: '#98A1B3',
+
+        'text1-cash': '#3D3E4A',
         bg1: '#E1E2E6',
         bg2: '#F7F8FA',
         bg3: '#FFFFFF'
@@ -38,7 +40,8 @@ export default {
       'features-bg': 'rgba(143, 85, 234, 0.05)',
       warning: 'rgba(251, 188, 9, 0.10)',
       green: 'rgba(83, 180, 131, 0.10)',
-      transparent: 'transparent'
+      transparent: 'transparent',
+      'try-for-free-gray': 'rgba(26, 26, 26, 0.81)'
     },
     spacing: {
       0: '0',
