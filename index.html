@@ -1407,6 +1407,97 @@
       </section>
       <!-- Calculator -->
 
+      <!-- Why Trusting Us? -->
+      <section class="hidden lg:block max-w-[120rem] mx-auto">
+        <div class="flex gap-x-6 items-center justify-center">
+          <div>
+            <img
+              src="/images/cashout/compass.png"
+              alt="Compass"
+            />
+          </div>
+          <div
+            x-data="{content: 'consult'}"
+            class="flex flex-col items-start"
+          >
+            <h2
+              class="text-neutral-text1-cash text-3xl font-bold leading-[140%] mb-6"
+            >
+              Why Trusting In Us?
+            </h2>
+            <div
+              class="flex gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]"
+            >
+              <span
+                @click="content = 'consult'"
+                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
+                :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                >Youtube Consulting</span
+              >
+              <span
+                @click="content = 'educational'"
+                :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Educational Courses</span
+              >
+              <span
+                @click="content = 'pro'"
+                :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Pro Dasboard</span
+              >
+              <span
+                @click="content = 'ai'"
+                :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >AI Services</span
+              >
+            </div>
+            <p
+              x-cloak
+              x-show="content === 'consult'"
+              class="max-w-5xl pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+            <p
+              x-cloak
+              x-show="content === 'educational'"
+              class="max-w-5xl pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+            <p
+              x-cloak
+              x-show="content === 'pro'"
+              class="max-w-5xl pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+            <p
+              x-cloak
+              x-show="content === 'ai'"
+              class="max-w-5xl pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Why Trusting Us? -->
+
       <!-- Footer -->
       <footer class="w-full">
         <div class="max-w-3xl lg:max-w-[111.8rem] mx-auto pt-22 px-4 lg:px-0">
