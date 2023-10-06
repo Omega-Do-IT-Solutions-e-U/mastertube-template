@@ -41,7 +41,8 @@ export default {
       warning: 'rgba(251, 188, 9, 0.10)',
       green: 'rgba(83, 180, 131, 0.10)',
       transparent: 'transparent',
-      'try-for-free-gray': 'rgba(26, 26, 26, 0.81)'
+      'try-for-free-gray': 'rgba(26, 26, 26, 0.81)',
+      'course-card-border': 'rgba(214, 214, 214, 0.56)'
     },
     spacing: {
       0: '0',
@@ -97,6 +98,7 @@ export default {
       xl: '2rem',
       '2xl': '2.4rem',
       '3xl': '3.2rem',
+      '4xl': '3.5rem',
       '5xl': '6.4rem'
     },
     boxShadow: {
