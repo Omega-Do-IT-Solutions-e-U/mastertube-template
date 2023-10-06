@@ -42,7 +42,8 @@ export default {
       green: 'rgba(83, 180, 131, 0.10)',
       transparent: 'transparent',
       'try-for-free-gray': 'rgba(26, 26, 26, 0.81)',
-      'course-card-border': 'rgba(214, 214, 214, 0.56)'
+      'course-card-border': 'rgba(214, 214, 214, 0.56)',
+      'articles-section-bg': 'rgba(143, 85, 234, 0.05)'
     },
     spacing: {
       0: '0',
@@ -82,7 +83,8 @@ export default {
       'dark-bg':
         'linear-gradient(0deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.62) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat, #E1E2E6',
       hero: "url('/images/hero-bg.png')",
-      'cashout-card-icon': 'linear-gradient(180deg, #A562FD 0%, #984DFA 100%)'
+      'cashout-card-icon': 'linear-gradient(180deg, #A562FD 0%, #984DFA 100%)',
+      'dark-cover': 'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)'
     },
     borderRadius: {
       lg: '0.8rem',
