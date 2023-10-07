@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html
-  dir="rtl"
   lang="en"
+  dir="rtl"
 >
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/vite.svg"
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
     />
     <link
       rel="stylesheet"
       href="style.css"
     />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Vite App</title>
+    <title>Cashout</title>
   </head>
   <body>
-    <main
-      class="overflow-hidden"
-      id="app"
-    >
+    <main class="overflow-hidden">
       <!-- Header -->
       <header
         x-data="{pricingOpen: false}"
@@ -970,497 +962,884 @@
 
       <!-- Hero -->
       <section
-        class="pt-10 h-[24.3rem] lg:h-[42rem] relative max-w-[111.8rem] mx-auto mb-10 lg:mb-22"
+        class="bg-[url('/images/cashout/mobile-bg.png')] sm:bg-[url('/images/cashout/desktop-bg.png')] bg-cover bg-center bg-no-repeat mb-15 lg:mb-[11.6rem]"
       >
         <div
-          class="bg-secondary-2 absolute -top-[10%] lg:top-0 right-1/2 -z-50 w-full lg:w-[47rem] h-[10rem] lg:h-[30rem] blur-[4rem] lg:blur-[10rem] rounded-[47rem]"
-        ></div>
-        <div
-          class="bg-primary-1 absolute -top-[10%] lg:top-0 left-1/2 -z-50 w-full lg:w-[47rem] h-[10rem] lg:h-[30rem] blur-[4rem] lg:blur-[10rem] rounded-[47rem]"
-        ></div>
-        <h1 class="font-bold text-center text-3xl lg:text-5xl mb-2">
-          ایجاد کننده عنوان
-        </h1>
-        <div
-          class="flex justify-center items-center py-2 px-4 lg:py-[1.4rem] lg:px-8 bg-white/20 rounded-lg w-fit mx-auto text-neutral-text3 lg:text-white mb-6 lg:mb-0 backdrop-blur-[4rem] lg:backdrop-blur-0 border border-white lg:border-none"
+          class="flex flex-col lg:flex-row justify-center items-center gap-x-[11.7rem] lg:max-w-[100rem] mx-auto"
         >
-          <span class="text-md lg:text-xl">بهترین ابزار عنوان یوتیوب</span>
-        </div>
-        <div class="flex lg:block w-full justify-center items-center gap-x-6">
-          <div
-            class="lg:absolute lg:top-[6rem] left-0 lg:w-[14rem] lg:h-[14rem] flex justify-center items-center lg:border lg:border-white lg:rounded-[5rem] lg:backdrop-blur-[3.2rem] w-[3.2rem] h-auto"
-          >
-            <img
-              src="/images/spotify.png"
-              alt="spotify logo"
-            />
-          </div>
-          <div class="hidden lg:block absolute top-[14rem] left-[15rem]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="171"
-              height="138"
-              viewBox="0 0 171 138"
-              fill="none"
+          <div class="flex flex-col gap-y-3 px-4">
+            <h1
+              class="text-center lg:text-start pt-13 text-neutral-text1-cash text-3xl font-bold"
             >
-              <path
-                d="M169.5 1.5C155.167 19.6667 73.9 95.5 25.5 95.5C-35 95.5 19.4999 -65 156 136.5"
-                stroke="white"
-                stroke-width="2"
-                stroke-dasharray="8 8"
-              />
-            </svg>
-          </div>
-          <div
-            class="lg:absolute lg:top-[30rem] lg:left-[32rem] lg:w-[14rem] lg:h-[14rem] flex justify-center items-center lg:border border-white lg:rounded-[5rem] backdrop-blur-[3.2rem] w-[3.2rem] h-auto"
-          >
-            <img
-              src="/images/google.png"
-              alt="google logo"
-            />
-          </div>
-          <span class="hidden lg:block top-[27rem] absolute left-[46rem]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="191"
-              height="24"
-              viewBox="0 0 191 24"
-              fill="none"
+              Cashing Out Your Income
+            </h1>
+            <p
+              class="text-center lg:text-start text-neutral-text2 text-[1.7rem] leading-[180%]"
             >
-              <path
-                d="M1 18.5003C36 -2.57044 141 -7 189.5 23.0002"
-                stroke="white"
-                stroke-width="2"
-                stroke-dasharray="8 8"
-              />
-            </svg>
-          </span>
-          <div
-            class="lg:absolute lg:top-[30rem] lg:right-[33rem] lg:w-[14rem] lg:h-[14rem] flex justify-center items-center lg:border lg:border-white lg:rounded-[5rem] backdrop-blur-[3.2rem] w-[3.2rem] h-auto"
-          >
-            <img
-              src="/images/adobe.png"
-              alt="adobe logo"
-            />
+              Embarking on an Enchanting Journey: Weaving Stories,
+              <br class="lg:hidden" />
+              Creating Memories, and Spreading Joy, One Chapter at a
+              <br class="lg:hidden" />
+              Time
+            </p>
+            <div class="flex flex-col gap-y-3 mb-10 lg:flex-row gap-x-7">
+              <button
+                class="w-full lg:w-auto bg-try-for-free-gray py-2 px-5 rounded-lg text-md font-semibold leading-[180%] text-white"
+              >
+                Try For Free
+              </button>
+              <button
+                class="w-full lg:w-auto text-base text-neutral-text2 font-semibold"
+              >
+                Read More
+              </button>
+            </div>
           </div>
-          <span class="hidden lg:block top-[19rem] right-[15rem] absolute">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="162"
-              height="105"
-              viewBox="0 0 162 105"
-              fill="none"
-            >
-              <path
-                d="M1 104C62.5 82 84.4145 21.4572 60.5 9.5C21.5 -9.99991 13.464 103.717 161 1"
-                stroke="white"
-                stroke-width="2"
-                stroke-dasharray="8 8"
-              />
-            </svg>
-          </span>
-          <div
-            class="lg:absolute lg:top-[6rem] lg:right-0 lg:w-[14rem] lg:h-[14rem] flex justify-center items-center lg:border lg:border-white rounded-[5rem] backdrop-blur-[3.2rem] w-[3.2rem] h-auto"
-          >
+          <div class="flex justify-center items-center pb-10 w-full">
             <img
-              src="/images/amazon.png"
-              alt="amazon logo"
+              src="/images/media-player-small.png"
+              alt="Media player"
+              class="self-start w-[5rem] hidden lg:block lg:w-auto mt-[12rem] -mr-14"
+            />
+            <img
+              src="/images/media-player-big.png"
+              alt="Media player"
+              class="w-[29.4rem] h-[29.4rem] lg:w-[47.2rem] object-cover lg:h-[47.2rem]"
+            />
+            <img
+              src="/images/media-player-small.png"
+              alt="Media player"
+              class="self-end rotate-[-21.296deg] hidden lg:block w-[5rem] lg:w-auto"
             />
           </div>
         </div>
       </section>
       <!-- Hero -->
 
-      <!-- Extension Section -->
+      <!-- Terms Of -->
       <section
-        class="flex flex-col-reverse text-center lg:text-start lg:flex-row-reverse justify-between items-center lg:max-w-[111.8rem] max-w-3xl mx-auto px-4"
+        class="px-9 relative lg:max-w-[120rem] mx-auto mb-[5rem] lg:mb-[15.4rem]"
       >
-        <div class="flex flex-1 justify-end">
-          <img
-            src="/images/media-player-small.png"
-            alt=""
-            class="self-start w-[5rem] lg:w-auto"
-          />
-          <img
-            src="/images/media-player-big.png"
-            alt=""
-            class="w-[21.2rem] lg:w-[28.8rem]"
-          />
-          <img
-            src="/images/media-player-small.png"
-            alt=""
-            class="self-end rotate-[-21.296deg] w-[5rem] lg:w-auto"
-          />
-        </div>
-        <div class="flex-1">
-          <h2
-            class="text-neutral-text1 text-2xl lg:text-3xl font-bold mb-4 lg:mb-2"
-          >
-            طوفان ذهنی با <br class="lg:hidden" />هوش مصنوعی برای ایجاد عناوین
-          </h2>
-          <p class="text-md lg:text-xl text-neutral-text3 mb-8 text-start">
-            هوش مصنوعی به زودی جهان را در دست نمی گیرد (امیدوارم) اما می تواند
-            کمک به بهینه سازی فیلم های خود را. عنوان ژنراتور
-          </p>
-          <div class="w-full flex">
-            <button
-              class="p-4 gap-x-2 rounded-lg bg-primary-1 shadow-primary text-white text-md font-semibold flex items-center w-full lg:w-auto justify-center mb-14 lg:mb-0"
-            >
-              <span>
-                <img src="/icons/download.svg" />
-              </span>
-              <span> نصب اکستنشن </span>
-            </button>
-          </div>
-        </div>
-      </section>
-      <!-- Extension Section -->
-
-      <!-- Line -->
-      <div
-        class="w-[34.3rem] lg:w-[122.4rem] h-[2px] opacity-[0.4] bg-line-bg mt-[6.4rem] mb-22 mx-auto"
-      ></div>
-      <!-- Line -->
-
-      <!-- More Features -->
-      <section class="text-center mb-22 max-w-[111.8rem] mx-auto px-4 lg:px-0">
-        <h2 class="text-3xl font-bold text-neutral-text1 mb-4 lg:mb-14">
-          دیگر امکانات
-        </h2>
-        <p
-          class="text-neutral-text3 lg:hidden text-base font-normal leading-[180%] mb-14 lg:mb-0"
-        >
-          بهترین ویژگی های این افزونه
-        </p>
         <div
-          class="justify-between flex flex-col gap-y-[3.8rem] lg:gap-0 lg:flex-row-reverse items-center [&_div]:flex [&_div]:flex-col [&_div]:items-center [&_div]:flex-1 [&_img]:mb-8 max-w-3xl mx-auto lg:max-w-none"
+          class="absolute bottom-[25rem] -left-[15rem] lg:-bottom-[12rem] lg:-left-[12rem]"
         >
-          <div>
-            <img
-              src="/images/clock.png"
-              alt="clock"
-              class="mb-8 lg:mb-0"
-            />
-            <h4 class="mb-2">ایجاد سرفصل های جذاب</h4>
-            <p class="text-xl font-normal text-neutral-text3">
-              AI در هر زمان جهان را نمی گیرد <br class="hidden lg:block" />به
-              زودی اما می تواند.
-            </p>
+          <img
+            src="/images/cashout/termsof-gradient.png"
+            alt=""
+            class="w-[40rem] h-[40rem]"
+          />
+        </div>
+        <div class="flex flex-col lg:flex-row-reverse lg:gap-x-22">
+          <div
+            class="flex flex-col gap-y-19 lg:gap-y-6 lg:flex-1 max-w-[63rem] mx-auto"
+          >
+            <h2 class="text-center">Terms Of Cashing Out</h2>
+            <!-- Card 1 -->
+            <div
+              class="pt-8 relative pb-5 px-2 flex flex-col gap-y-2 items-center rounded-lg border border-neutral-bg1 bg-white shadow-cashout-card-shadow"
+            >
+              <div
+                class="flex justify-center absolute bg-white -top-[5rem] lg:-left-[5rem] lg:top-[20%] z-50 items-center p-5 rounded-[50%] border border-neutral-bg1 shadow-cashout-card-shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="37"
+                  height="37"
+                  viewBox="0 0 37 37"
+                  fill="none"
+                >
+                  <path
+                    d="M32.9312 16.802C33.52 16.802 33.9881 16.3339 33.9881 15.7451V14.341C33.9881 8.15081 32.1008 6.26355 25.9106 6.26355H11.8694C5.67925 6.26355 3.79199 8.15081 3.79199 14.341V15.0506C3.79199 15.6394 4.26003 16.1075 4.84886 16.1075C6.20768 16.1075 7.30984 17.2096 7.30984 18.5685C7.30984 19.9273 6.20768 21.0143 4.84886 21.0143C4.26003 21.0143 3.79199 21.4824 3.79199 22.0712V22.7808C3.79199 28.971 5.67925 30.8583 11.8694 30.8583H25.9106C32.1008 30.8583 33.9881 28.971 33.9881 22.7808C33.9881 22.192 33.52 21.7239 32.9312 21.7239C31.5724 21.7239 30.4702 20.6218 30.4702 19.263C30.4702 17.9041 31.5724 16.802 32.9312 16.802ZM14.3606 13.8428C15.191 13.8428 15.8704 14.5222 15.8704 15.3526C15.8704 16.183 15.2061 16.8624 14.3606 16.8624C13.5302 16.8624 12.8508 16.183 12.8508 15.3526C12.8508 14.5222 13.5151 13.8428 14.3606 13.8428ZM23.4194 24.4114C22.574 24.4114 21.8945 23.732 21.8945 22.9016C21.8945 22.0712 22.574 21.3918 23.4043 21.3918C24.2347 21.3918 24.9141 22.0712 24.9141 22.9016C24.9141 23.732 24.2649 24.4114 23.4194 24.4114ZM24.7783 14.7486L14.6173 24.9096C14.3908 25.1361 14.104 25.2418 13.8171 25.2418C13.5302 25.2418 13.2434 25.1361 13.0169 24.9096C12.5791 24.4718 12.5791 23.7471 13.0169 23.3092L23.1779 13.1483C23.6157 12.7104 24.3404 12.7104 24.7783 13.1483C25.2161 13.5861 25.2161 14.3108 24.7783 14.7486Z"
+                    fill="url(#paint0_linear_127_3191)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_127_3191"
+                      x1="18.89"
+                      y1="6.26355"
+                      x2="18.89"
+                      y2="30.8583"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#AA69FF" />
+                      <stop
+                        offset="1"
+                        stop-color="#9A4CFF"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="text-center lg:text-start">
+                <span
+                  class="text-base lg:text-start font-semibold text-neutral-text1-cash"
+                  >Meeting Monetization Requirements</span
+                >
+                <p
+                  class="text-[#5E5F62] text-base lg:text-start text-center lg:max-w-lg"
+                >
+                  To start earning income from YouTube, your channel must meet
+                  certain criteria.
+                </p>
+              </div>
+            </div>
+            <!-- Card 1 -->
+
+            <!-- Card 2 -->
+            <div
+              class="pt-8 relative pb-5 px-2 flex flex-col gap-y-2 items-center rounded-lg border border-neutral-bg1 bg-white shadow-cashout-card-shadow"
+            >
+              <div
+                class="flex justify-center absolute bg-cashout-card-icon -top-[5rem] lg:-left-[5rem] lg:top-[20%] z-50 items-center p-5 rounded-[50%] border border-neutral-bg1 shadow-cashout-card-shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="37"
+                  height="37"
+                  viewBox="0 0 37 37"
+                  fill="none"
+                >
+                  <path
+                    d="M33.8674 25.336C33.3692 29.3521 30.0778 32.6435 26.0617 33.1417C23.6309 33.4437 21.3662 32.7794 19.5998 31.4809C18.5882 30.7411 18.8298 29.1709 20.0376 28.8086C24.5821 27.4347 28.1604 23.8413 29.5494 19.2968C29.9117 18.1041 31.4819 17.8625 32.2217 18.859C33.5051 20.6405 34.1694 22.9052 33.8674 25.336Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M15.8553 3.06628C9.19709 3.06628 3.79199 8.47138 3.79199 15.1296C3.79199 21.7879 9.19709 27.1929 15.8553 27.1929C22.5136 27.1929 27.9187 21.7879 27.9187 15.1296C27.9036 8.47138 22.5136 3.06628 15.8553 3.06628ZM14.4361 13.4386L18.0747 14.7069C19.3883 15.1749 20.0224 16.0959 20.0224 17.5151C20.0224 19.1457 18.724 20.4894 17.1387 20.4894H17.0028V20.5649C17.0028 21.1839 16.4894 21.6973 15.8704 21.6973C15.2514 21.6973 14.7381 21.1839 14.7381 20.5649V20.4743C13.0622 20.3988 11.7185 18.9947 11.7185 17.2433C11.7185 16.6243 12.2318 16.111 12.8508 16.111C13.4698 16.111 13.9832 16.6243 13.9832 17.2433C13.9832 17.7869 14.3757 18.2247 14.8589 18.2247H17.1236C17.4708 18.2247 17.7426 17.9077 17.7426 17.5151C17.7426 16.9867 17.652 16.9565 17.3047 16.8357L13.6661 15.5675C12.3677 15.1145 11.7185 14.1935 11.7185 12.7592C11.7185 11.1286 13.0169 9.78491 14.6022 9.78491H14.7381V9.72452C14.7381 9.1055 15.2514 8.59217 15.8704 8.59217C16.4894 8.59217 17.0028 9.1055 17.0028 9.72452V9.81511C18.6787 9.8906 20.0224 11.2947 20.0224 13.0461C20.0224 13.6651 19.5091 14.1784 18.89 14.1784C18.271 14.1784 17.7577 13.6651 17.7577 13.0461C17.7577 12.5026 17.3651 12.0647 16.882 12.0647H14.6173C14.27 12.0647 13.9983 12.3818 13.9983 12.7743C13.9832 13.2877 14.0738 13.3179 14.4361 13.4386Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="text-center lg:text-start">
+                <span
+                  class="text-base lg:text-start font-semibold text-neutral-text1-cash"
+                  >Coordinating with MasterTube</span
+                >
+                <p
+                  class="text-[#5E5F62] text-base lg:text-start text-center lg:max-w-lg"
+                >
+                  In this step, MasterTube's experts will work with you.
+                </p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+
+            <!-- Card 3 -->
+            <div
+              class="pt-8 relative pb-5 px-2 flex flex-col gap-y-2 items-center rounded-lg border border-neutral-bg1 bg-white shadow-cashout-card-shadow"
+            >
+              <div
+                class="flex justify-center absolute bg-white -top-[5rem] lg:-left-[5rem] lg:top-[20%] z-50 items-center p-5 rounded-[50%] border border-neutral-bg1 shadow-cashout-card-shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="37"
+                  height="38"
+                  viewBox="0 0 37 38"
+                  fill="none"
+                >
+                  <path
+                    d="M18.7993 4.15146L15.1607 12.6215H11.5221C10.9182 12.6215 10.3293 12.6668 9.75562 12.7875L11.2654 9.16401L11.3258 9.02813L11.4164 8.78656C11.4617 8.68087 11.4919 8.59029 11.5372 8.5148C13.2886 4.45342 15.2513 3.18519 18.7993 4.15146Z"
+                    fill="url(#paint0_linear_127_1621)"
+                  />
+                  <path
+                    d="M29.0511 13.029L29.021 13.0139C28.1151 12.7572 27.1941 12.6213 26.258 12.6213H16.8066L20.2037 4.72507L20.249 4.61938C20.4604 4.69487 20.6868 4.80056 20.9133 4.87605L24.25 6.28017C26.107 7.05017 27.4055 7.85037 28.2057 8.81664C28.3415 8.99782 28.4623 9.16389 28.5831 9.36017C28.719 9.57154 28.8247 9.78291 28.8851 10.0094C28.9455 10.1453 28.9908 10.2661 29.021 10.4019C29.2474 11.1719 29.2625 12.0476 29.0511 13.029Z"
+                    fill="url(#paint1_linear_127_1621)"
+                  />
+                  <path
+                    d="M19.6753 27.478H20.0527C20.5057 27.478 20.8831 27.0704 20.8831 26.5721C20.8831 25.938 20.702 25.8474 20.3094 25.6964L19.6753 25.47V27.478Z"
+                    fill="url(#paint2_linear_127_1621)"
+                  />
+                  <path
+                    d="M28.3867 15.1882C27.7072 14.9919 26.9976 14.8862 26.2578 14.8862H11.5221C10.4955 14.8862 9.5292 15.0825 8.62332 15.4751C5.99626 16.6074 4.1543 19.2194 4.1543 22.2541V25.1982C4.1543 25.5605 4.18449 25.9078 4.22979 26.2702C4.56194 31.0713 7.12861 33.638 11.9298 33.9551C12.277 34.0003 12.6243 34.0305 13.0017 34.0305H24.7782C30.3645 34.0305 33.3086 31.3733 33.5955 26.089C33.6106 25.8021 33.6257 25.5002 33.6257 25.1982V22.2541C33.6257 18.9174 31.4063 16.1092 28.3867 15.1882ZM20.8225 24.2168C21.517 24.4584 22.4531 24.9717 22.4531 26.5721C22.4531 27.946 21.3812 29.0482 20.0525 29.0482H19.6751V29.3803C19.6751 29.8182 19.3278 30.1654 18.89 30.1654C18.4521 30.1654 18.1049 29.8182 18.1049 29.3803V29.0482H17.969C16.5196 29.0482 15.3268 27.8252 15.3268 26.3154C15.3268 25.8776 15.6741 25.5303 16.1119 25.5303C16.5498 25.5303 16.897 25.8776 16.897 26.3154C16.897 26.9496 17.3802 27.478 17.969 27.478H18.1049V24.9264L16.9574 24.5188C16.2629 24.2772 15.3268 23.7639 15.3268 22.1635C15.3268 20.7896 16.3988 19.6874 17.7274 19.6874H18.1049V19.3552C18.1049 18.9174 18.4521 18.5702 18.89 18.5702C19.3278 18.5702 19.6751 18.9174 19.6751 19.3552V19.6874H19.811C21.2604 19.6874 22.4531 20.9103 22.4531 22.4202C22.4531 22.858 22.1059 23.2052 21.668 23.2052C21.2302 23.2052 20.8829 22.858 20.8829 22.4202C20.8829 21.786 20.3998 21.2576 19.811 21.2576H19.6751V23.8092L20.8225 24.2168Z"
+                    fill="url(#paint3_linear_127_1621)"
+                  />
+                  <path
+                    d="M16.897 22.1633C16.897 22.7974 17.0781 22.888 17.4707 23.039L18.1048 23.2655V21.2574H17.7274C17.2593 21.2574 16.897 21.6651 16.897 22.1633Z"
+                    fill="url(#paint4_linear_127_1621)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_127_1621"
+                      x1="14.2775"
+                      y1="3.84351"
+                      x2="14.2775"
+                      y2="12.7875"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#AA69FF" />
+                      <stop
+                        offset="1"
+                        stop-color="#9A4CFF"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_127_1621"
+                      x1="23.0037"
+                      y1="4.61938"
+                      x2="23.0037"
+                      y2="13.029"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#AA69FF" />
+                      <stop
+                        offset="1"
+                        stop-color="#9A4CFF"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint2_linear_127_1621"
+                      x1="20.2792"
+                      y1="25.47"
+                      x2="20.2792"
+                      y2="27.478"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#AA69FF" />
+                      <stop
+                        offset="1"
+                        stop-color="#9A4CFF"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint3_linear_127_1621"
+                      x1="18.89"
+                      y1="14.8862"
+                      x2="18.89"
+                      y2="34.0305"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#AA69FF" />
+                      <stop
+                        offset="1"
+                        stop-color="#9A4CFF"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint4_linear_127_1621"
+                      x1="17.5009"
+                      y1="21.2574"
+                      x2="17.5009"
+                      y2="23.2655"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#AA69FF" />
+                      <stop
+                        offset="1"
+                        stop-color="#9A4CFF"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="text-center lg:text-start">
+                <span
+                  class="text-base lg:text-start font-semibold text-neutral-text1-cash"
+                  >Earning Income</span
+                >
+                <p
+                  class="text-[#5E5F62] text-base lg:text-start text-center lg:max-w-lg"
+                >
+                  We guarantee a fast and hassle-free income transfer to your
+                  account.
+                </p>
+              </div>
+            </div>
+            <!-- Card 3 -->
           </div>
-          <div>
+          <div
+            class="lg:flex-1 w-[32rem] h-[32rem] lg:w-full lg:h-auto mx-auto mt-14 lg:mt-0"
+          >
             <img
               src="/images/note.png"
-              alt="note"
-              class="w-[24rem]"
+              alt="Note"
+              class="w-full h-full object-cover"
             />
-            <h4 class="mb-2">بهترین عناوین با AI</h4>
-            <p class="text-xl font-normal text-neutral-text3">
-              به عنوان یک خالق یکی از بیشتر <br class="hidden lg:block" />چیزهای
-              ناامید کننده
-            </p>
           </div>
+        </div>
+      </section>
+      <!-- Terms Of -->
+
+      <!-- Calculator -->
+      <section
+        class="lg:max-w-[130rem] mx-auto relative lg:px-10 mb-[5rem] lg:mb-[15.4rem]"
+      >
+        <div class="absolute -z-30 bottom-4 -right-23">
+          <img
+            src="/images/cashout/back-gradient.png"
+            alt="Effect"
+          />
+        </div>
+        <div
+          class="bg-white border border-neutral-bg1 shadow-cashout-card-shadow flex flex-col lg:flex-row gap-x-17 pt-10 lg:py-0 lg:rounded-lg overflow-hidden"
+        >
+          <div
+            class="px-17 pr-17 lg:w-[70%] text-center text-neutral-text1-cash text-xl font-bold leading-[140%] pb-14 lg:py-14 flex justify-center flex-col"
+          >
+            <span
+              class="mb-12 block text-xl lg:text-4xl text-center lg:text-start"
+              >Youtube Money Calculator</span
+            >
+            <!-- Range Input 1 -->
+            <div class="flex flex-col gap-y-2 mb-7">
+              <div class="flex justify-between items-center">
+                <div class="gap-x-2 flex items-center">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M22.5762 10.0639C20.169 6.28123 16.6469 4.10333 12.9372 4.10333C11.0823 4.10333 9.27955 4.6452 7.6331 5.656C5.98665 6.67721 4.50693 8.16735 3.29814 10.0639C2.25609 11.6999 2.25609 14.3572 3.29814 15.9932C5.70529 19.7863 9.22744 21.9538 12.9372 21.9538C14.792 21.9538 16.5948 21.4119 18.2412 20.4011C19.8877 19.3799 21.3674 17.8897 22.5762 15.9932C23.6182 14.3676 23.6182 11.6999 22.5762 10.0639ZM12.9372 17.2437C10.603 17.2437 8.72726 15.3575 8.72726 13.0338C8.72726 10.71 10.603 8.82385 12.9372 8.82385C15.2714 8.82385 17.1471 10.71 17.1471 13.0338C17.1471 15.3575 15.2714 17.2437 12.9372 17.2437Z"
+                        fill="#D8B9FF"
+                      />
+                      <path
+                        d="M12.9371 10.0535C11.3011 10.0535 9.96729 11.3874 9.96729 13.0338C9.96729 14.6698 11.3011 16.0037 12.9371 16.0037C14.5732 16.0037 15.9174 14.6698 15.9174 13.0338C15.9174 11.3978 14.5732 10.0535 12.9371 10.0535Z"
+                        fill="#D8B9FF"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="text-neutral-text2 text-md font-medium leading-[140%]"
+                    >Daily Views:</span
+                  >
+                </div>
+                <div
+                  class="text-neutral-text2 text-2xl font-semibold leading-[140%]"
+                >
+                  77,302
+                </div>
+              </div>
+              <input
+                type="range"
+                class="range-input w-full h-[6px] rounded-lg bg-[#B378FF]"
+              />
+            </div>
+            <!-- Range Input 1 -->
+
+            <!-- Range Input 2 -->
+            <div class="flex flex-col gap-y-2">
+              <div class="flex justify-between items-center">
+                <div class="gap-x-2 flex items-center">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.3575 23.0229H2.51641C2.08916 23.0229 1.73486 22.6686 1.73486 22.2414C1.73486 21.8141 2.08916 21.4598 2.51641 21.4598H23.3575C23.7848 21.4598 24.1391 21.8141 24.1391 22.2414C24.1391 22.6686 23.7848 23.0229 23.3575 23.0229Z"
+                        fill="#D8B9FF"
+                      />
+                      <path
+                        d="M10.5928 4.26594V23.023H15.282V4.26594C15.282 3.11967 14.8131 2.18182 13.4063 2.18182H12.4685C11.0617 2.18182 10.5928 3.11967 10.5928 4.26594Z"
+                        fill="#D8B9FF"
+                      />
+                      <path
+                        d="M3.55859 10.5183V23.023H7.72682V10.5183C7.72682 9.37205 7.31 8.4342 6.05953 8.4342H5.22588C3.97542 8.4342 3.55859 9.37205 3.55859 10.5183Z"
+                        fill="#D8B9FF"
+                      />
+                      <path
+                        d="M18.1475 15.7285V23.0229H22.3157V15.7285C22.3157 14.5823 21.8989 13.6444 20.6484 13.6444H19.8148C18.5643 13.6444 18.1475 14.5823 18.1475 15.7285Z"
+                        fill="#D8B9FF"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="text-neutral-text2 text-md font-medium leading-[140%]"
+                    >CRM Rate:</span
+                  >
+                </div>
+                <div
+                  class="text-neutral-text2 text-2xl font-semibold leading-[140%]"
+                >
+                  0.03
+                </div>
+              </div>
+              <input
+                type="range"
+                class="range-input w-full h-[6px] rounded-lg bg-[#B378FF]"
+              />
+            </div>
+            <!-- Range Input 2 -->
+          </div>
+          <div
+            class="lg:w-[30%] bg-no-repeat py-10 flex flex-col gap-y-6 justify-center items-center bg-cover bg-[url('/images/cashout/calculator-bg.png')]"
+          >
+            <div class="text-center flex flex-col">
+              <span
+                class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
+                >Estimated Daily Earning</span
+              >
+              <span class="text-[4rem] font-semibold leading-[140%] text-white"
+                >$503.23</span
+              >
+            </div>
+            <div class="text-center flex flex-col">
+              <span
+                class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
+                >Estimated monthly Earning</span
+              >
+              <span class="text-[4rem] font-semibold leading-[140%] text-white"
+                >$6,503.23
+              </span>
+            </div>
+            <div class="text-center flex flex-col">
+              <span
+                class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
+                >Estimated Yearly Earning</span
+              >
+              <span class="text-[4rem] font-semibold leading-[140%] text-white"
+                >$ 12,503.23
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Calculator -->
+
+      <!-- Why Trusting Us? -->
+      <section
+        class="hidden lg:block max-w-[120rem] mx-auto mb-[5rem] px-10 lg:mb-[15.4rem]"
+      >
+        <div class="flex gap-x-14 items-center justify-center">
           <div>
             <img
-              src="/images/file-manager.png"
-              alt="file manager"
+              src="/images/cashout/compass.png"
+              alt="Compass"
             />
-            <h4 class="mb-2">بهترین موضوعات</h4>
-            <p class="text-xl font-normal text-neutral-text3">
-              تا حالا مغزت خسته شده؟ بله، ما می گیریم
-              <br class="hidden lg:block" />آن را تمام وقت. با عنوان ما
+          </div>
+          <div
+            x-data="{content: 'consult'}"
+            class="flex flex-col items-start"
+          >
+            <h2
+              class="text-neutral-text1-cash text-3xl font-bold leading-[140%] mb-6"
+            >
+              Why Trusting In Us?
+            </h2>
+            <div
+              class="flex gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]"
+            >
+              <span
+                @click="content = 'consult'"
+                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
+                :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                >Youtube Consulting</span
+              >
+              <span
+                @click="content = 'educational'"
+                :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Educational Courses</span
+              >
+              <span
+                @click="content = 'pro'"
+                :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Pro Dasboard</span
+              >
+              <span
+                @click="content = 'ai'"
+                :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >AI Services</span
+              >
+            </div>
+            <p
+              x-cloak
+              x-show="content === 'consult'"
+              class="max-w-5xl pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+            <p
+              x-cloak
+              x-show="content === 'educational'"
+              class="max-w-5xl pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+            <p
+              x-cloak
+              x-show="content === 'pro'"
+              class="max-w-5xl pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+            <p
+              x-cloak
+              x-show="content === 'ai'"
+              class="max-w-5xl pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
             </p>
           </div>
         </div>
       </section>
-      <!-- More Features -->
+      <!-- Why Trusting Us? -->
 
-      <!-- Feature Spotlight -->
+      <!-- Consulting With Us -->
       <section
-        class="text-center bg-features-bg mb-22 bg-line-pattern bg-no-repeat bg-right-top"
+        class="max-w-[130rem] rounded-lg min-h-[45.4rem] mx-auto mb-[5rem] lg:mb-[15.4rem] bg-[url('/images/cashout/consult-bg.png')] px-10"
       >
-        <h3 class="pt-12 mb-14">ویژگی نورافکن</h3>
-        <div class="pb-15 max-w-[111.8rem] mx-auto relative px-4 lg:px-0">
-          <img
-            src="/images/people.png"
-            alt="people"
-            class="h-[40rem] w-full object-cover brightness-[0.5] rounded-2xl"
-          />
-          <img
-            src="/images/logo-purple.png"
-            alt="MasterTube logo"
-            class="w-[30rem] absolute bottom-1/2 right-1/2 translate-x-1/2"
-          />
-          <div
-            class="absolute bottom-1/2 right-1/2 -translate-y-[70%] translate-x-1/2"
-          >
-            <span
-              class="absolute translate-x-1/2 -translate-y-[30%] w-[5.6rem] h-[5.6rem] bg-white rounded-[50%] -z-20 ring-8 ring-white ring-opacity-[0.2]"
-            >
-            </span>
-            <span
-              class="absolute translate-x-1/2 -translate-y-[37%] w-22 h-22 rounded-[50%] -z-20 ring-8 bg-white opacity-[0.1]"
-            >
-            </span>
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                class=""
-              >
-                <path
-                  d="M11.97 2C6.44997 2 1.96997 6.48 1.96997 12C1.96997 17.52 6.44997 22 11.97 22C17.49 22 21.97 17.52 21.97 12C21.97 6.48 17.5 2 11.97 2ZM14.97 14.23L12.07 15.9C11.71 16.11 11.31 16.21 10.92 16.21C10.52 16.21 10.13 16.11 9.76997 15.9C9.04997 15.48 8.61997 14.74 8.61997 13.9V10.55C8.61997 9.72 9.04997 8.97 9.76997 8.55C10.49 8.13 11.35 8.13 12.08 8.55L14.98 10.22C15.7 10.64 16.13 11.38 16.13 12.22C16.13 13.06 15.7 13.81 14.97 14.23Z"
-                  fill="#8F55EA"
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-      </section>
-      <!-- Feature Spotlight -->
-
-      <!-- Access -->
-      <section class="max-w-[111.8rem] mx-auto mb-22 px-4 lg:px-0">
-        <h3 class="text-center mb-14">نحوه دسترسی به ویژگی ها</h3>
         <div
-          class="flex flex-col gap-y-8 lg:gap-y-0 lg:flex-row gap-x-14 mb-10 max-w-3xl mx-auto lg:max-w-none"
+          class="flex gap-x-16 flex-col justify-center items-center lg:flex-row"
         >
           <div
-            class="flex flex-col-reverse lg:flex-row gap-x-14 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain"
+            class="flex flex-col items-center justify-center w-full flex-1 max-w-2xl lg:max-w-5xl"
           >
-            <div class="flex flex-col gap-y-2 text-center lg:text-start">
-              <h5
-                class="flex flex-row-reverse items-center gap-x-2 justify-center lg:justify-end"
-              >
-                <div>
-                  <img
-                    src="/icons/video.svg"
-                    alt=""
+            <h2
+              class="text-xl text-neutral-text1-cash text-center w-full mb-5 lg:text-start font-bold lg:text-3xl"
+            >
+              Consulteeing With Us
+            </h2>
+            <form class="w-full px-4 flex flex-col gap-y-4">
+              <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-6">
+                <!-- Input 1 -->
+                <div class="relative w-full">
+                  <input
+                    type="text"
+                    id="channel-name"
+                    class="block h-11 text-md px-2 pb-2 pt-4 w-full text-neutral-text1 bg-transparent rounded-lg border border-[#D1D1D1] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                    placeholder=" "
                   />
+                  <label
+                    for="channel-name"
+                    class="absolute text-base text-[#323232] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-[#323232] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
+                    >Channel's Name</label
+                  >
                 </div>
-                <span> مرحله ۱ </span>
-              </h5>
-              <p class="text-xl text-neutral-text3 lg:max-w-sm pb-8 lg:pb-0">
-                محتوای خود را از داشبورد YouTube Studio انتخاب کنید.
-              </p>
-            </div>
-            <div class="mb-8 lg:mb-0 flex justify-center items-center">
-              <picture>
-                <source
-                  srcset="/images/step-1.png"
-                  media="(min-width: 1024px)"
-                />
-                <img
-                  src="/images/step-1-mobile.png"
-                  alt="Step 1"
-                />
-              </picture>
-            </div>
-          </div>
-          <div
-            class="flex flex-col-reverse lg:flex-row gap-x-14 w-full flex-1 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain justify-between"
-          >
-            <div class="flex flex-col gap-y-2 text-center lg:text-start">
-              <h5
-                class="flex flex-row-reverse items-center gap-x-2 justify-center lg:justify-end"
-              >
-                <span>
-                  <img
-                    src="/icons/video.svg"
-                    alt=""
+                <!-- Input 1 -->
+
+                <!-- Input 2 -->
+                <div class="relative w-full">
+                  <input
+                    type="text"
+                    id="phone-number"
+                    class="block h-11 text-md px-2 pb-2 pt-4 w-full text-neutral-text1 bg-transparent rounded-lg border border-[#D1D1D1] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                    placeholder=" "
                   />
-                </span>
-                <span> مرحله ۲ </span>
-              </h5>
-              <p class="text-xl text-neutral-text3 lg:max-w-sm pb-8 lg:pb-0">
-                روی ویدیویی که دوست دارید برایش عنوان بنویسید کلیک کنید
-              </p>
-            </div>
-            <div class="mb-8 lg:mb-0 flex justify-center items-center">
-              <picture>
-                <source
-                  srcset="/images/step-2.png"
-                  media="(min-width: 1024px)"
-                />
-                <img
-                  src="/images/step-2-mobile.png"
-                  alt="Step 2"
-                />
-              </picture>
-            </div>
+                  <label
+                    for="phone-number"
+                    class="absolute text-base text-[#323232] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-[#323232] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
+                    >Phone Number</label
+                  >
+                </div>
+                <!-- Input 2 -->
+              </div>
+
+              <!-- Input 3 -->
+              <div class="relative w-full bg-white">
+                <textarea
+                  type="text"
+                  id="Description"
+                  class="block text-md min-h-[18rem] px-2 pb-2 pt-4 w-full text-neutral-text1 bg-transparent rounded-lg border border-[#D1D1D1] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                  placeholder=" "
+                ></textarea>
+                <label
+                  for="Description"
+                  class="absolute text-base text-[#323232] duration-300 transform -translate-y-4 scale-75 top-0 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-[#323232] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-5 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
+                  >Description</label
+                >
+              </div>
+              <!-- Input 3-->
+              <button
+                class="rounded-lg p-3 bg-[#9747FF] text-white text-md w-full lg:w-[27rem] hover:bg-[#8d36ff] transition-colors duration-300"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="hidden lg:block">
+            <img
+              src="/images/cashout/chat.png"
+              alt="Chat Icon"
+            />
           </div>
         </div>
-        <div
-          class="flex flex-col gap-y-8 lg:gap-y-0 lg:flex-row gap-x-14 mb-10"
+      </section>
+      <!-- Consulting With Us -->
+
+      <!-- Our Course -->
+      <section class="max-w-[130rem] mx-auto mb-22 px-7">
+        <h2
+          class="text-4xl mb-5 font-bold leading-[140%] text-center text-neutral-text1-cash"
         >
+          Our Course
+        </h2>
+        <div
+          class="flex gap-x-6 lg:gap-x-9 overflow-x-scroll lg:overflow-visible scrollbar-hide"
+        >
+          <!-- Card 1 -->
           <div
-            class="flex flex-col-reverse lg:flex-row gap-x-14 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain"
+            class="min-w-[28.5rem] border bg-white border-course-card-border flex flex-col rounded-lg overflow-hidden"
           >
-            <div class="flex flex-col gap-y-2 text-center lg:text-start">
-              <h5
-                class="flex flex-row-reverse items-center gap-x-2 justify-center lg:justify-end"
-              >
-                <span>
-                  <img
-                    src="/icons/video.svg"
-                    alt=""
-                  />
-                </span>
-                <span> مرحله ۳ </span>
-              </h5>
-              <p class="text-xl text-neutral-text3 lg:max-w-sm pb-8 lg:pb-0">
-                نوشتن عنوان مثال و یا اعلان و سپس انتخاب کنید تولید ایده برای
-                دیدن پیشنهادات مختلف!
+            <img
+              src="/images/cashout/card-1-image.png"
+              alt="card image"
+              class="object-cover w-full mb-5"
+            />
+            <div class="flex px-4 gap-x-2 mb-6">
+              <div class="rounded-[50%] w-9 h-9">
+                <img
+                  src="/images/cashout/card-1-avatar.png"
+                  alt="Avatar"
+                  class="w-full h-full"
+                />
+              </div>
+              <div>
+                <span class="text-base font-semibold leading-[180%] block"
+                  >Sarah Johnson</span
+                >
+                <span class="text-neutral-text3">Pediatric</span>
+              </div>
+            </div>
+            <div class="px-4 pb-6">
+              <h4 class="mb-2 text-base font-semibold leading-[110%]">
+                Content Creation Mastery
+              </h4>
+              <p class="text-base text-neutral-text2 leading-[142%]">
+                Details of the great team of Mastertube that will surprise you
               </p>
             </div>
-            <div class="mb-8 lg:mb-0 flex justify-center items-center">
-              <picture>
-                <source
-                  srcset="/images/step-3.png"
-                  media="(min-width: 1024px)"
-                />
-                <img
-                  src="/images/step-3-mobile.png"
-                  alt="Step 3"
-                />
-              </picture>
-            </div>
           </div>
+          <!-- Card 1 -->
+
+          <!-- Card 2 -->
           <div
-            class="flex gap-x-14 flex-col-reverse lg:flex-row rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain"
+            class="min-w-[28.5rem] border bg-white border-course-card-border flex flex-col rounded-lg overflow-hidden"
           >
-            <div class="flex flex-col gap-y-2 text-center lg:text-start">
-              <h5
-                class="flex flex-row-reverse items-center gap-x-2 justify-center lg:justify-end"
-              >
-                <span>
-                  <img
-                    src="/icons/video.svg"
-                    alt=""
-                  />
-                </span>
-                <span> مرحله ۴ </span>
-              </h5>
-              <p class="text-xl text-neutral-text3 lg:max-w-sm pb-8 lg:pb-0">
-                انتخاب عنوان ایجاد کننده از منوی Pullout TubeBuddy.
+            <img
+              src="/images/cashout/card-2-image.png"
+              alt="card image"
+              class="object-cover w-full mb-5"
+            />
+            <div class="flex px-4 gap-x-2 mb-6">
+              <div class="rounded-[50%] w-9 h-9">
+                <img
+                  src="/images/cashout/card-2-avatar.png"
+                  alt="Avatar"
+                  class="w-full h-full"
+                />
+              </div>
+              <div>
+                <span class="text-base font-semibold leading-[180%] block"
+                  >Sarah Johnson</span
+                >
+                <span class="text-neutral-text3">Pediatric</span>
+              </div>
+            </div>
+            <div class="px-4 pb-6">
+              <h4 class="mb-2 text-base font-semibold leading-[110%]">
+                Content Creation Mastery
+              </h4>
+              <p class="text-base text-neutral-text2 leading-[142%]">
+                Details of the great team of Mastertube that will surprise you
               </p>
             </div>
-            <div class="mb-8 lg:mb-0 flex justify-center items-center">
-              <picture>
-                <source
-                  srcset="/images/step-4.png"
-                  media="(min-width: 1024px)"
-                />
+          </div>
+          <!-- Card 2 -->
+
+          <!-- Card 3 -->
+          <div
+            class="min-w-[28.5rem] border bg-white border-course-card-border flex flex-col rounded-lg overflow-hidden"
+          >
+            <img
+              src="/images/cashout/card-3-image.png"
+              alt="card 1 image"
+              class="object-cover w-full mb-5"
+            />
+            <div class="flex px-4 gap-x-2 mb-6">
+              <div class="rounded-[50%] w-9 h-9">
                 <img
-                  src="/images/step-4-mobile.png"
-                  alt="Step 4"
+                  src="/images/cashout/card-3-avatar.png"
+                  alt="Avatar"
+                  class="w-full h-full"
                 />
-              </picture>
+              </div>
+              <div>
+                <span class="text-base font-semibold leading-[180%] block"
+                  >Sarah Johnson</span
+                >
+                <span class="text-neutral-text3">Pediatric</span>
+              </div>
+            </div>
+            <div class="px-4 pb-6">
+              <h4 class="mb-2 text-base font-semibold leading-[110%]">
+                Content Creation Mastery
+              </h4>
+              <p class="text-base text-neutral-text2 leading-[142%]">
+                Details of the great team of Mastertube that will surprise you
+              </p>
             </div>
           </div>
+          <!-- Card 3 -->
+
+          <!-- Card 4 -->
+          <div
+            class="min-w-[28.5rem] border bg-white border-course-card-border flex flex-col rounded-lg overflow-hidden"
+          >
+            <img
+              src="/images/cashout/card-4-image.png"
+              alt="card 1 image"
+              class="object-cover w-full mb-5"
+            />
+            <div class="flex px-4 gap-x-2 mb-6">
+              <div class="rounded-[50%] w-9 h-9">
+                <img
+                  src="/images/cashout/card-4-avatar.png"
+                  alt="Avatar"
+                  class="w-full h-full"
+                />
+              </div>
+              <div>
+                <span class="text-base font-semibold leading-[180%] block"
+                  >Sarah Johnson</span
+                >
+                <span class="text-neutral-text3">Pediatric</span>
+              </div>
+            </div>
+            <div class="px-4 pb-6">
+              <h4 class="mb-2 text-base font-semibold leading-[110%]">
+                Content Creation Mastery
+              </h4>
+              <p class="text-base text-neutral-text2 leading-[142%]">
+                Details of the great team of Mastertube that will surprise you
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
         </div>
       </section>
-      <!-- Access -->
+      <!-- Our Course -->
 
-      <!-- Line -->
-      <div
-        class="w-[34.3rem] lg:w-[122.4rem] h-[2px] opacity-[0.4] bg-line-bg mt-[6.4rem] mb-22 mx-auto"
-      ></div>
-      <!-- Line -->
+      <!-- Articles -->
+      <section
+        class="mb-22 bg-articles-section-bg bg-line-pattern bg-bottom bg-no-repeat pb-14"
+      >
+        <div class="max-w-[130rem] mx-auto px-7 pt-10">
+          <h2
+            class="text-2xl lg:text-4xl font-bold leading-[140%] text-center mb-6 text-neutral-text1-cash"
+          >
+            Youtube Related Articles
+          </h2>
+          <div
+            class="flex lg:justify-center gap-x-6 lg:gap-x-9 overflow-x-scroll lg:overflow-visible scrollbar-hide"
+          >
+            <!-- Card 1 -->
+            <div
+              class="min-w-[30.8rem] min-h-[38.7rem] flex flex-col rounded-lg overflow-hidden bg-[url('/images/cashout/article-1.png')] bg-no-repeat bg-cover"
+            >
+              <div
+                class="text-white h-full flex flex-col items-end justify-end"
+              >
+                <div class="bg-dark-cover bg-opacity-[85] px-4 pb-6">
+                  <h4 class="mb-2 text-base font-bold leading-[140%]">
+                    Comprehensive Guide for Content Creators
+                  </h4>
+                  <p class="text-base leading-[142%]">
+                    Details of the great team of Mastertube that will surprise
+                    you
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 1 -->
 
-      <!-- How To Access Features -->
-      <section class="text-center max-w-[111.8rem] mx-auto mb-22 px-4 lg:px-0">
-        <h3 class="mb-14">نحوه دسترسی به ویژگی ها</h3>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          <div
-            class="flex flex-col justify-center items-center py-8 px-23 bg-neutral-bg3 shadow-tertiary rounded-2xl"
-          >
-            <h4 class="mb-2">رایگان</h4>
+            <!-- Card 2 -->
             <div
-              class="flex mb-8 items-center py-2 px-4 h-8 rounded-lg bg-warning"
+              class="min-w-[30.8rem] min-h-[38.7rem] flex flex-col rounded-lg overflow-hidden bg-[url('/images/cashout/article-2.png')] bg-no-repeat bg-cover"
             >
-              <span
-                class="text-notification-alert font-semibold text-base whitespace-nowrap"
-                >*دسترسی محدود</span
+              <div
+                class="text-white h-full flex flex-col items-end justify-end"
               >
+                <div class="bg-dark-cover bg-opacity-[85] px-4 pb-6">
+                  <h4 class="mb-2 text-base font-bold leading-[140%]">
+                    Comprehensive Guide for Content Creators
+                  </h4>
+                  <p class="text-base leading-[142%]">
+                    Details of the great team of Mastertube that will surprise
+                    you
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="w-[2.4rem] lg:w-[4.8rem] h-full">
-              <img
-                src="/icons/toggle.svg"
-                alt="toggle"
-                class="w-full h-full"
-              />
-            </div>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center py-8 px-23 bg-neutral-bg3 shadow-tertiary rounded-2xl"
-          >
-            <h4 class="mb-2">پرو</h4>
+            <!-- Card 2 -->
+
+            <!-- Card 3 -->
             <div
-              class="flex mb-8 items-center py-2 px-4 h-8 rounded-lg bg-warning"
+              class="min-w-[30.8rem] min-h-[38.7rem] flex flex-col rounded-lg overflow-hidden bg-[url('/images/cashout/article-3.png')] bg-no-repeat bg-cover"
             >
-              <span
-                class="text-notification-alert font-semibold text-base whitespace-nowrap"
-                >*دسترسی محدود</span
+              <div
+                class="text-white h-full flex flex-col items-end justify-end"
               >
+                <div class="bg-dark-cover bg-opacity-[85] px-4 pb-6">
+                  <h4 class="mb-2 text-base font-bold leading-[140%]">
+                    Comprehensive Guide for Content Creators
+                  </h4>
+                  <p class="text-base leading-[142%]">
+                    Details of the great team of Mastertube that will surprise
+                    you
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="w-[2.4rem] lg:w-[4.8rem] h-full">
-              <img
-                src="/icons/toggle.svg"
-                alt="toggle"
-                class="w-full h-full"
-              />
-            </div>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center py-8 px-23 bg-neutral-bg3 shadow-tertiary rounded-2xl"
-          >
-            <h4 class="mb-2 whitespace-nowrap">ستاره ها</h4>
+            <!-- Card 3 -->
+
+            <!-- Card 4 -->
             <div
-              class="flex mb-8 items-center py-2 px-4 h-8 rounded-lg bg-green"
+              class="min-w-[30.8rem] min-h-[38.7rem] flex flex-col rounded-lg overflow-hidden bg-[url('/images/cashout/article-4.png')] bg-no-repeat bg-cover"
             >
-              <span
-                class="text-notification-success font-semibold text-base whitespace-nowrap"
-                >*بی نهایت</span
+              <div
+                class="text-white h-full flex flex-col items-end justify-end"
               >
+                <div class="bg-dark-cover bg-opacity-[85] px-4 pb-6">
+                  <h4 class="mb-2 text-base font-bold leading-[140%]">
+                    Comprehensive Guide for Content Creators
+                  </h4>
+                  <p class="text-base leading-[142%]">
+                    Details of the great team of Mastertube that will surprise
+                    you
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="w-[2.4rem] lg:w-[4.8rem] h-full">
-              <img
-                src="/icons/toggle.svg"
-                alt="toggle"
-                class="w-full h-full"
-              />
-            </div>
+            <!-- Card 4 -->
           </div>
-          <div
-            class="flex flex-col justify-center items-center py-8 px-23 bg-neutral-bg3 shadow-tertiary rounded-2xl"
-          >
-            <h4 class="mb-2">افسانه</h4>
-            <div
-              class="flex mb-8 items-center py-2 px-4 h-8 rounded-lg bg-green"
-            >
-              <span
-                class="text-notification-success font-semibold text-base whitespace-nowrap"
-                >*بی نهایت</span
-              >
-            </div>
-            <div class="w-[2.4rem] lg:w-[4.8rem] h-full">
-              <img
-                src="/icons/toggle.svg"
-                alt="toggle"
-                class="w-full h-full"
-              />
-            </div>
+
+          <!-- Dots -->
+          <div class="flex gap-x-1 w-full justify-center mt-14 lg:hidden">
+            <div class="w-2 h-2 rounded-[5px] bg-[#9747FF]"></div>
+            <div class="w-2 h-2 rounded-[5px] bg-[#D2BBF7]"></div>
+            <div class="w-2 h-2 rounded-[5px] bg-[#D2BBF7]"></div>
+            <div class="w-2 h-2 rounded-[5px] bg-[#D2BBF7]"></div>
           </div>
+          <!-- Dots -->
         </div>
       </section>
-      <!-- How To Access Features -->
+
+      <!-- Articles -->
 
       <!-- FAQ -->
       <section class="text-center max-w-[111.8rem] mx-auto mb-22">
-        <h3 class="mb-14">سوالات متداول!</h3>
+        <h3 class="mb-14">Frequently Asked Questions!</h3>
         <div class="flex flex-col gap-y-6">
           <!-- Accordian NO.1 -->
           <div
@@ -1473,7 +1852,7 @@
               class="flex justify-between items-center cursor-pointer"
             >
               <span class="text-md font-semibold text-neutral-text1 text-start"
-                >ایجاد کننده عنوان MasterTube AI چیست؟
+                >What is MasterTube Title Generator AI?
               </span>
               <span
                 ><svg
@@ -1498,15 +1877,15 @@
             <!-- Content -->
             <p
               x-show="open1"
+              x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2"
             >
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
-              ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
-              و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای
-              زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و
-              متخصصان را می طلبد
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
             </p>
             <!-- Content -->
           </div>
@@ -1523,7 +1902,7 @@
               class="flex justify-between items-center cursor-pointer"
             >
               <span class="text-md font-semibold text-neutral-text1 text-start"
-                >هوش مصنوعی ایجاد کننده عنوان MasterTube چگونه کار می کند؟
+                >How does MasterTube's Title Generator AI work?
               </span>
               <span
                 ><svg
@@ -1548,15 +1927,15 @@
             <!-- Content -->
             <p
               x-show="open2"
+              x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2"
             >
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
-              ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
-              و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای
-              زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و
-              متخصصان را می طلبد
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
             </p>
             <!-- Content -->
           </div>
@@ -1573,8 +1952,8 @@
               class="flex justify-between items-center cursor-pointer"
             >
               <span class="text-md font-semibold text-neutral-text1 text-start"
-                >چگونه می تواند ایجاد کننده عنوان TubeBuddy AI به نفع YouTube من
-                باشد کانال؟
+                >How can TubeBuddy's Title Generator AI benefit my YouTube
+                channel?
               </span>
               <span
                 ><svg
@@ -1599,15 +1978,15 @@
             <!-- Content -->
             <p
               x-show="open3"
+              x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2"
             >
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
-              ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
-              و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای
-              زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و
-              متخصصان را می طلبد
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
             </p>
             <!-- Content -->
           </div>
@@ -1624,8 +2003,8 @@
               class="flex justify-between items-center cursor-pointer"
             >
               <span class="text-md font-semibold text-neutral-text1 text-start"
-                >ایا می توانم پیشنهادات عنوان ارائه شده توسط TubeBuddy را سفارشی
-                کنم عنوان ژنراتور AI؟
+                >Can I customize the title suggestions provided by TubeBuddy's
+                Title Generator AI?
               </span>
               <span
                 ><svg
@@ -1650,15 +2029,15 @@
             <!-- Content -->
             <p
               x-show="open4"
+              x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2"
             >
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
-              ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
-              و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای
-              زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و
-              متخصصان را می طلبد
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
             </p>
             <!-- Content -->
           </div>
@@ -1666,434 +2045,6 @@
         </div>
       </section>
       <!-- FAQ -->
-
-      <!-- Other Features -->
-
-      <section class="max-w-[111.8rem] mx-auto mb-22">
-        <h3 class="text-neutral-text1 mb-2 text-center">دیگر امکانات</h3>
-        <p class="text-xl font-normal mb-14 text-center">
-          نگاهی به این ویژگی های مرتبط
-        </p>
-        <div
-          class="grid grid-cols-1 lg:grid-cols-3 gap-x-9 px-4 lg:px-0 gap-y-8 max-w-3xl lg:max-w-none mx-auto"
-        >
-          <!-- Card 1 -->
-          <div
-            class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary"
-          >
-            <div class="flex items-center gap-x-4 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M21.5918 15.9654L21.5918 15.9654L21.5955 15.9698C22.1618 16.6512 22.5 17.5384 22.5 18.5002C22.5 19.2448 22.2872 19.956 21.9218 20.5621L21.9213 20.563C21.7076 20.9191 21.4419 21.2372 21.1346 21.5006L21.1346 21.5006L21.1284 21.506C20.4267 22.1278 19.5137 22.5002 18.5 22.5002C17.55 22.5002 16.6723 22.1632 15.9896 21.5957L15.8507 21.4802H15.8416C15.5448 21.22 15.2885 20.9126 15.0787 20.563L15.0782 20.5621C14.7128 19.956 14.5 19.2448 14.5 18.5002C14.5 17.2361 15.0777 16.1098 15.9996 15.3829L15.9996 15.3829L16.0036 15.3797C16.6878 14.8287 17.558 14.5002 18.5 14.5002C19.7546 14.5002 20.8637 15.0686 21.5918 15.9654ZM15.8564 19.3838L16.21 19.0302L15.8564 19.3838L16.9664 20.4938C17.2152 20.7425 17.5345 20.8602 17.85 20.8602C18.1516 20.8602 18.4642 20.7456 18.6998 20.527C18.6999 20.5269 18.7001 20.5268 18.7002 20.5266L21.0976 18.3091C21.6146 17.8397 21.6435 17.0504 21.1655 16.5391C20.7003 16.0406 19.9048 16.0035 19.3998 16.4739C19.3995 16.4741 19.3991 16.4744 19.3988 16.4747L17.8835 17.8766L17.6236 17.6167C17.1383 17.1314 16.3417 17.1314 15.8564 17.6167C15.3712 18.102 15.3712 18.8985 15.8564 19.3838Z"
-                  fill="#8F55EA"
-                  stroke="#8F55EA"
-                />
-                <path
-                  d="M14.23 2.50024V5.86024H9.77002V2.50024H14.23Z"
-                  fill="#8F55EA"
-                  stroke="#8F55EA"
-                />
-                <path
-                  d="M4.35248 3.49614C5.09744 2.94103 6.07316 2.59661 7.26926 2.51999C7.2695 2.52041 7.2697 2.52081 7.26987 2.52119C7.26991 2.52129 7.26995 2.52138 7.26998 2.52146V5.86021H2.76998C2.76984 5.86021 2.76972 5.86021 2.7696 5.86021C2.76952 5.86011 2.76943 5.85999 2.76935 5.85987C2.76826 5.85838 2.76754 5.85664 2.76726 5.85504C2.76713 5.8543 2.76704 5.85338 2.76712 5.85213C2.76719 5.85093 2.76744 5.84868 2.76849 5.84521L2.7685 5.84522L2.76949 5.84188C3.06646 4.83674 3.60753 4.05124 4.35248 3.49614Z"
-                  fill="#8F55EA"
-                  stroke="#8F55EA"
-                />
-                <path
-                  d="M16.7301 2.51118C16.7303 2.5108 16.7305 2.5104 16.7307 2.50998C17.9268 2.5866 18.9025 2.93102 19.6475 3.48613C20.3924 4.04123 20.9335 4.82673 21.2305 5.83187L21.2305 5.83188L21.2315 5.8352C21.2325 5.83867 21.2328 5.84092 21.2328 5.84212C21.2329 5.84337 21.2328 5.8443 21.2327 5.84503C21.2324 5.84663 21.2317 5.84837 21.2306 5.84986C21.2305 5.84998 21.2304 5.8501 21.2304 5.8502C21.2302 5.8502 21.2301 5.8502 21.23 5.8502H16.73V2.51145C16.73 2.51137 16.7301 2.51128 16.7301 2.51118Z"
-                  fill="#8F55EA"
-                  stroke="#8F55EA"
-                />
-                <path
-                  d="M21.5 8.36023V12.731C20.5913 12.2575 19.5561 12.0002 18.5 12.0002C16.7562 12.0002 15.0571 12.7139 13.8425 13.9606C12.6494 15.1758 12 16.792 12 18.5002C12 19.4145 12.3528 20.5308 12.7653 21.4283C12.7723 21.4435 12.7728 21.4667 12.76 21.4884C12.756 21.4953 12.7524 21.4988 12.7506 21.5002C12.7504 21.5002 12.7502 21.5002 12.75 21.5002H7.81C4.87614 21.5002 2.5 19.1241 2.5 16.1902V8.36023H21.5Z"
-                  fill="#8F55EA"
-                  stroke="#8F55EA"
-                />
-              </svg>
-              <h5>شورت های پیشنهادی</h5>
-            </div>
-            <p class="text-neutral-text3 text-start mb-8">
-              هوش مصنوعی پیشرفته ما جذاب ترین بخش های فیلم های شما را شناسایی می
-              کند برای شورت یوتیوب.
-            </p>
-            <span
-              class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
-              >در بر میگیرد:</span
-            >
-            <div class="flex flex-col gap-y-4 mb-10">
-              <div class="items-center flex gap-x-4">
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                  >بهترین لحظات محتوای خود را پیدا کنید.</span
-                >
-              </div>
-              <div class="items-center flex gap-x-4">
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                  >یاد بگیرید مخاطبان شما چه چیزی را دوست دارند ببینند.</span
-                >
-              </div>
-              <div class="items-center flex gap-x-4">
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                  >موجود در تمام برنامه ها</span
-                >
-              </div>
-            </div>
-            <button
-              class="w-full mt-auto py-3 px-6 justify-center items-center flex rounded-lg border-2 border-neutral-text2 bg-primary-1 hover:bg-white hover:text-primary-1 hover:border-2 hover:border-primary-1 text-md font-semibold leading-[180%] text-neutral-bg2 transition-colors duration-300"
-            >
-              کاوش ویژگی
-            </button>
-          </div>
-          <!-- Card 1 -->
-
-          <!-- Card 2 -->
-          <div
-            class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary"
-          >
-            <div class="flex items-center gap-x-4 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M21.67 6.95027C21.03 4.78027 19.22 2.97027 17.05 2.33027C15.4 1.85027 14.26 1.89027 13.47 2.48027C12.52 3.19027 12.41 4.47027 12.41 5.38027V7.87027C12.41 10.3303 13.53 11.5803 15.73 11.5803H18.6C19.5 11.5803 20.79 11.4703 21.5 10.5203C22.11 9.74027 22.16 8.60027 21.67 6.95027Z"
-                  fill="#8F55EA"
-                />
-                <path
-                  d="M18.91 13.3603C18.65 13.0603 18.27 12.8903 17.88 12.8903H14.3C12.54 12.8903 11.11 11.4603 11.11 9.70027V6.12027C11.11 5.73027 10.94 5.35027 10.64 5.09027C10.35 4.83027 9.95002 4.71027 9.57002 4.76027C7.22002 5.06027 5.06002 6.35027 3.65002 8.29027C2.23002 10.2403 1.71002 12.6203 2.16002 15.0003C2.81002 18.4403 5.56002 21.1903 9.01002 21.8403C9.56002 21.9503 10.11 22.0003 10.66 22.0003C12.47 22.0003 14.22 21.4403 15.71 20.3503C17.65 18.9403 18.94 16.7803 19.24 14.4303C19.29 14.0403 19.17 13.6503 18.91 13.3603Z"
-                  fill="#8F55EA"
-                />
-              </svg>
-              <h5>انالایزر تامبنیل</h5>
-            </div>
-            <p class="text-neutral-text3 text-start mb-8">
-              دسترسی به تجزیه و تحلیل پیشرفته که به شما نشان می دهد چگونه افراد
-              بیشتری را به روی ویدیوهای خود کلیک کنید.
-            </p>
-            <span
-              class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
-              >در بر میگیرد:</span
-            >
-            <div class="flex flex-col gap-y-4 mb-10">
-              <div class="items-center flex gap-x-4">
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                  >هوش مصنوعی ما انچه را که اودنک شما می بیند به شما نشان می
-                  دهد</span
-                >
-              </div>
-              <div class="items-center flex gap-x-4">
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                  >مقایسه و بهبود ریز عکسها</span
-                >
-              </div>
-              <div class="items-center flex gap-x-4">
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                  >موجود در تمام برنامه ها</span
-                >
-              </div>
-            </div>
-            <button
-              class="w-full mt-auto py-3 px-6 justify-center items-center flex rounded-lg border-2 border-neutral-text2 bg-primary-1 hover:bg-white hover:text-primary-1 hover:border-2 hover:border-primary-1 text-md font-semibold leading-[180%] text-neutral-bg2 transition-colors duration-300"
-            >
-              کاوش ویژگی
-            </button>
-          </div>
-          <!-- Card 2 -->
-
-          <!-- Card 3 -->
-          <div
-            class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary"
-          >
-            <div class="flex items-center gap-x-4 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M20.97 1.00024H18.03C16.76 1.00024 16 1.76024 16 3.03024V5.97024C16 7.24024 16.76 8.00024 18.03 8.00024H20.97C22.24 8.00024 23 7.24024 23 5.97024V3.03024C23 1.76024 22.24 1.00024 20.97 1.00024ZM19.01 6.57024C18.98 6.60024 18.91 6.64024 18.86 6.64024L17.82 6.79024C17.79 6.80024 17.75 6.80024 17.72 6.80024C17.57 6.80024 17.44 6.75024 17.35 6.65024C17.23 6.53024 17.18 6.36024 17.21 6.18024L17.36 5.14024C17.37 5.09024 17.4 5.02024 17.43 4.99024L19.13 3.29024C19.16 3.36024 19.19 3.44024 19.22 3.52024C19.26 3.60024 19.3 3.67024 19.34 3.74024C19.37 3.80024 19.41 3.86024 19.45 3.90024C19.49 3.96024 19.53 4.02024 19.56 4.05024C19.58 4.08024 19.59 4.09024 19.6 4.10024C19.69 4.21024 19.79 4.31024 19.88 4.38024C19.9 4.40024 19.92 4.42024 19.93 4.42024C19.98 4.46024 20.04 4.51024 20.08 4.54024C20.14 4.58024 20.19 4.62024 20.25 4.65024C20.32 4.69024 20.4 4.73024 20.48 4.77024C20.56 4.81024 20.64 4.84024 20.71 4.86024L19.01 6.57024ZM21.4 4.18024L21.08 4.50024C21.06 4.53024 21.03 4.54024 21 4.54024C20.99 4.54024 20.98 4.54024 20.97 4.54024C20.25 4.33024 19.68 3.76024 19.47 3.04024C19.46 3.00024 19.47 2.96024 19.5 2.93024L19.83 2.60024C20.37 2.06024 20.88 2.07024 21.41 2.60024C21.68 2.87024 21.81 3.13024 21.81 3.39024C21.8 3.65024 21.67 3.91024 21.4 4.18024Z"
-                  fill="#8F55EA"
-                />
-                <path
-                  d="M9 10.3802C10.3144 10.3802 11.38 9.31468 11.38 8.00024C11.38 6.6858 10.3144 5.62024 9 5.62024C7.68556 5.62024 6.62 6.6858 6.62 8.00024C6.62 9.31468 7.68556 10.3802 9 10.3802Z"
-                  fill="#8F55EA"
-                />
-                <path
-                  d="M20.97 8.00024H20.5V12.6102L20.37 12.5002C19.59 11.8302 18.33 11.8302 17.55 12.5002L13.39 16.0702C12.61 16.7402 11.35 16.7402 10.57 16.0702L10.23 15.7902C9.52 15.1702 8.39 15.1102 7.59 15.6502L3.85 18.1602C3.63 17.6002 3.5 16.9502 3.5 16.1902V7.81024C3.5 4.99024 4.99 3.50024 7.81 3.50024H16V3.03024C16 2.63024 16.07 2.29024 16.23 2.00024H7.81C4.17 2.00024 2 4.17024 2 7.81024V16.1902C2 17.2802 2.19 18.2302 2.56 19.0302C3.42 20.9302 5.26 22.0002 7.81 22.0002H16.19C19.83 22.0002 22 19.8302 22 16.1902V7.77024C21.71 7.93024 21.37 8.00024 20.97 8.00024Z"
-                  fill="#8F55EA"
-                />
-              </svg>
-              <h5>استودیو سئو</h5>
-            </div>
-            <p class="text-neutral-text3 text-start mb-8">
-              ایجاد تصاویر کوچک حرفه ای با استفاده از قطعات از ویدیو خود را همه
-              در یک جا.
-            </p>
-            <span
-              class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
-              >در بر میگیرد:</span
-            >
-            <div class="flex flex-col gap-y-4 mb-10">
-              <div class="items-center flex gap-x-4">
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                  >همه ریز عکسها را در یک مکان ویرایش و ایجاد کنید.</span
-                >
-              </div>
-              <div class="items-center flex gap-x-4">
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                  >به سرعت ریز عکسها را که برنده کلیک کنید.</span
-                >
-              </div>
-              <div class="items-center flex gap-x-4">
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                      stroke="#8F55EA"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                  >موجود در تمام برنامه ها</span
-                >
-              </div>
-            </div>
-            <button
-              class="w-full mt-auto py-3 px-6 justify-center items-center flex rounded-lg border-2 border-neutral-text2 bg-primary-1 hover:bg-white hover:text-primary-1 hover:border-2 hover:border-primary-1 text-md font-semibold leading-[180%] text-neutral-bg2 transition-colors duration-300"
-            >
-              کاوش ویژگی
-            </button>
-          </div>
-          <!-- Card 3 -->
-        </div>
-      </section>
-      <!-- Other Features -->
 
       <!-- Footer -->
       <footer class="w-full bg-neutral-bg2">
@@ -2455,11 +2406,9 @@
       </footer>
       <!-- Footer -->
     </main>
-
     <script
       src="//unpkg.com/alpinejs"
       defer
     ></script>
-    <!-- <script type="module" src="/main.js"></script> -->
   </body>
 </html>
