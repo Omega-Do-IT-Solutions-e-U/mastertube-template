@@ -1,23 +1,36 @@
-## Installation
+## MasterTube Wordpress Template(html)
 
-- Open Terminal
+### Step 1: Install Node.js
 
-1. Install Dependencies
+To run project, you'll need to install Node.js. If Node.js is not already installed on your system, you can download and install a version from the official Node.js website at [nodejs.org](https://nodejs.org).
 
-```bash
-   npm install
-```
-
-2. Run Development Server
-
-```bash
-   npm run dev
+To check if Node.js was installed successfully, you can run the following commands in your terminal or command line:
 
 ```
+node -v
+npm -v
+```
 
-3. Build all files in **dist** folder
+### Step 2: Install Dependencies
 
-```bash
-   npm run build
+In the project directory, use the following command in your terminal or command line to install the required dependencies:
 
 ```
+npm install
+```
+
+This command will install all the dependencies listed in the `package.json` file.
+
+### Step 4: Run the Project
+
+After installing the dependencies, you can run the project using the following command:
+
+```
+npm run dev
+```
+
+This command will run the project in development mode and provide you with a development server. Your browser will automatically open, displaying the project at `http://localhost:5174`.
+
+### Congratulations!
+
+You've successfully installed and are developing your project.
