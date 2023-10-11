@@ -12,7 +12,9 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         'services-fa': resolve(__dirname, 'services-fa.html'),
         'blog-en': resolve(__dirname, 'blog-en.html'),
-        'blog-fa': resolve(__dirname, 'blog-fa.html')
+        'blog-fa': resolve(__dirname, 'blog-fa.html'),
+        'single-blog-en': resolve(__dirname, 'single-blog-en.html'),
+        'single-blog-fa': resolve(__dirname, 'single-blog-fa.html')
       }
     }
   },
