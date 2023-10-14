@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html
+  lang="en"
+  dir="rtl"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -17,6 +20,7 @@
       <!-- Header -->
       <header
         x-data="{pricingOpen: false}"
+        x-effect="document.documentElement.classList.toggle('overflow-hidden', pricingOpen)"
         class="h-navHeight w-full z-50 lg:h-auto px-4 lg:py-[1.8rem] lg:px-27 flex justify-between lg:justify-around bg-white items-center max-w-[144rem] mx-auto gap-x-10"
         :class="pricingOpen ? 'fixed top-0 lg:static' : ''"
       >
@@ -75,7 +79,7 @@
           </svg>
         </button>
         <nav
-          :class="pricingOpen ? '!block overflow-x-hidden fixed bottom-0 left-0 right-0 h-[calc(100vh_-_var(--nav-height))] lg:h-auto bg-white z-50 lg:static overflow-y-auto lg:overflow-hidden' : 'hidden'"
+          :class="pricingOpen ? '!block overflow-x-hidden fixed bottom-0 left-0 right-0 top-navHeight h-[calc(100dvh_-_var(--nav-height))] lg:h-auto bg-white z-50 lg:static overflow-y-auto lg:overflow-hidden' : 'hidden'"
           class="hidden lg:block"
         >
           <ul
@@ -966,20 +970,20 @@
       <!-- Header -->
 
       <!-- Blog Title -->
-      <section class="p-[5.5rem] max-w-[120rem] mx-auto bg-[url('/icons/back.svg')] bg-cover bg-center bg-no-repeat">
-        <div
-          class="flex flex-col lg:flex-row justify-center items-center"
-        >
+      <section
+        class="p-[5.5rem] max-w-[120rem] mx-auto bg-[url('/icons/back.svg')] bg-cover bg-center bg-no-repeat"
+      >
+        <div class="flex flex-col lg:flex-row justify-center items-center">
           <div class="flex flex-col items-center">
-            <div class="text-[14px] px-4 py-1 rounded-[24px] bg-[#F4EEFD] text-[#8F55EA]">master Posts</div>
-            <h1
-              class="text-[44px] font-bold mt-4 text-center"
+            <div
+              class="text-[14px] px-4 py-1 rounded-[24px] bg-[#F4EEFD] text-[#8F55EA]"
             >
+              master Posts
+            </div>
+            <h1 class="text-[44px] font-bold mt-4 text-center">
               YouTube Blogs
             </h1>
-            <p
-              class="text-[20px] text-[#8F55EA] text-center"
-            >
+            <p class="text-[20px] text-[#8F55EA] text-center">
               The latest posts related to YouTube and content creators
             </p>
           </div>
@@ -991,18 +995,31 @@
       <section
         class="hidden lg:block relative px-9 relative lg:max-w-[120rem] mx-auto mb-[5rem] lg:mb-[88px]"
       >
-        <div
-          class="grid grid-cols-2 gap-y-[56px] gap-x-[48px] justify-between"
-        >
-          <div class="cursor-pointer absolute flex items-center justify-center right-0 z-10 top-[40%] w-[56px] h-[56px] rounded-[50%] bg-[#eaeaea]">
-            <img src="/icons/arrow-circle-right.svg" alt="arrow-circle-right">
+        <div class="grid grid-cols-2 gap-y-[56px] gap-x-[48px] justify-between">
+          <div
+            class="cursor-pointer absolute flex items-center justify-center right-0 z-10 top-[40%] w-[56px] h-[56px] rounded-[50%] bg-[#eaeaea]"
+          >
+            <img
+              src="/icons/arrow-circle-right.svg"
+              alt="arrow-circle-right"
+            />
           </div>
           <div class="rounded-[16px] p-6 pb-8 shadow-fifth w-full">
-            <div class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden">
-              <img src="/images/blog/item.jpeg" alt="blog image">
-              <div class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]">
+            <div
+              class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden"
+            >
+              <img
+                src="/images/blog/item.jpeg"
+                alt="blog image"
+              />
+              <div
+                class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]"
+              >
                 <div class="flex items-center gap-4">
-                  <img src="/images/blog/Avatar.png" alt="avatar">
+                  <img
+                    src="/images/blog/Avatar.png"
+                    alt="avatar"
+                  />
                   <div class="flex flex-col">
                     <h3 class="text-[14px] text-white font-[600]">Mojavad</h3>
                     <p class="text-[14px] text-white">Writer</p>
@@ -1016,19 +1033,38 @@
             </div>
             <div class="flex flex-col gap-3 py-8">
               <h1 class="text-[24px] font-[700]">How to Go Viral?</h1>
-              <p class="text-[#667085] text-[16px] leading-[28.8px]">YouTube short videos are one of the most popular video formats on this platform. If you want to create an engaging YouTube ...</p>
+              <p class="text-[#667085] text-[16px] leading-[28.8px]">
+                YouTube short videos are one of the most popular video formats
+                on this platform. If you want to create an engaging YouTube ...
+              </p>
             </div>
-            <button class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center">
+            <button
+              class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center"
+            >
               Read Post
-              <img src="/icons/arrow-right.svg" alt="arrow-right" class="rotate-180">
+              <img
+                src="/icons/arrow-right.svg"
+                alt="arrow-right"
+                class="rotate-180"
+              />
             </button>
           </div>
           <div class="rounded-[16px] p-6 pb-8 shadow-fifth w-full">
-            <div class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden">
-              <img src="/images/blog/item.jpeg" alt="blog image">
-              <div class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]">
+            <div
+              class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden"
+            >
+              <img
+                src="/images/blog/item.jpeg"
+                alt="blog image"
+              />
+              <div
+                class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]"
+              >
                 <div class="flex items-center gap-4">
-                  <img src="/images/blog/Avatar.png" alt="avatar">
+                  <img
+                    src="/images/blog/Avatar.png"
+                    alt="avatar"
+                  />
                   <div class="flex flex-col">
                     <h3 class="text-[14px] text-white font-[600]">Mojavad</h3>
                     <p class="text-[14px] text-white">Writer</p>
@@ -1042,15 +1078,29 @@
             </div>
             <div class="flex flex-col gap-3 py-8">
               <h1 class="text-[24px] font-[700]">How to Go Viral?</h1>
-              <p class="text-[#667085] text-[16px] leading-[28.8px]">YouTube short videos are one of the most popular video formats on this platform. If you want to create an engaging YouTube ...</p>
+              <p class="text-[#667085] text-[16px] leading-[28.8px]">
+                YouTube short videos are one of the most popular video formats
+                on this platform. If you want to create an engaging YouTube ...
+              </p>
             </div>
-            <button class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center">
+            <button
+              class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center"
+            >
               Read Post
-              <img src="/icons/arrow-right.svg" alt="arrow-right" class="rotate-180">
+              <img
+                src="/icons/arrow-right.svg"
+                alt="arrow-right"
+                class="rotate-180"
+              />
             </button>
           </div>
-          <div class="cursor-pointer absolute flex items-center justify-center left-0 z-10 top-[40%] w-[56px] h-[56px] rounded-[50%] bg-[#eaeaea]">
-            <img src="/icons/arrow-circle-left.svg" alt="arrow-circle-left">
+          <div
+            class="cursor-pointer absolute flex items-center justify-center left-0 z-10 top-[40%] w-[56px] h-[56px] rounded-[50%] bg-[#eaeaea]"
+          >
+            <img
+              src="/icons/arrow-circle-left.svg"
+              alt="arrow-circle-left"
+            />
           </div>
         </div>
 
@@ -1067,28 +1117,71 @@
 
       <!-- Blog Items -->
       <section class="flex flex-col items-center max-w-[120rem] mx-auto">
-        <div class="flex flex-wrap justify-center gap-y-[32px] items-center gap-x-6 transition ease-in-out pb-[56px]">
-          <div class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3] activeItem">View All</div>
-          <div class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3]">insight</div>
-          <div class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3]">Getting Views</div>
-          <div class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3]">watch time</div>
-          <div class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3]">Monetization</div>
-          <div class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3]">Analytics</div>
-          <div class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3]">Subscribers</div>
+        <div
+          class="flex flex-wrap justify-center gap-y-[32px] items-center gap-x-6 transition ease-in-out pb-[56px]"
+        >
+          <div
+            class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3] activeItem"
+          >
+            View All
+          </div>
+          <div
+            class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3]"
+          >
+            insight
+          </div>
+          <div
+            class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3]"
+          >
+            Getting Views
+          </div>
+          <div
+            class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3]"
+          >
+            watch time
+          </div>
+          <div
+            class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3]"
+          >
+            Monetization
+          </div>
+          <div
+            class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3]"
+          >
+            Analytics
+          </div>
+          <div
+            class="cursor-pointer hover:font-[600] hover:text-[#0C0C0C] hover:transition-all text-[16px] text-[#98A1B3]"
+          >
+            Subscribers
+          </div>
 
           <div class="">
-            <img src="/icons/arrow-circle-down.svg" alt="circle-down">
+            <img
+              src="/icons/arrow-circle-down.svg"
+              alt="circle-down"
+            />
           </div>
         </div>
         <div
           class="grid px-4 lg:grid-cols-3 lg:gap-y-[56px] gap-y-[40px] gap-x-6 justify-between w-full"
         >
           <div class="rounded-[16px] p-6 pb-8 shadow-fifth">
-            <div class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden">
-              <img src="/images/blog/item.jpeg" alt="blog image">
-              <div class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]">
+            <div
+              class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden"
+            >
+              <img
+                src="/images/blog/item.jpeg"
+                alt="blog image"
+              />
+              <div
+                class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]"
+              >
                 <div class="flex items-center gap-4">
-                  <img src="/images/blog/Avatar.png" alt="avatar">
+                  <img
+                    src="/images/blog/Avatar.png"
+                    alt="avatar"
+                  />
                   <div class="flex flex-col">
                     <h3 class="text-[14px] text-white font-[600]">Mojavad</h3>
                     <p class="text-[14px] text-white">Writer</p>
@@ -1102,19 +1195,38 @@
             </div>
             <div class="flex flex-col gap-3 py-8">
               <h1 class="text-[24px] font-[700]">How to Go Viral?</h1>
-              <p class="text-[#667085] text-[16px] leading-[28.8px]">YouTube short videos are one of the most popular video formats on this platform. If you want to create an engaging YouTube ...</p>
+              <p class="text-[#667085] text-[16px] leading-[28.8px]">
+                YouTube short videos are one of the most popular video formats
+                on this platform. If you want to create an engaging YouTube ...
+              </p>
             </div>
-            <button class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center">
+            <button
+              class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center"
+            >
               Read Post
-              <img src="/icons/arrow-right.svg" alt="arrow-right" class="rotate-180">
+              <img
+                src="/icons/arrow-right.svg"
+                alt="arrow-right"
+                class="rotate-180"
+              />
             </button>
           </div>
           <div class="rounded-[16px] p-6 pb-8 shadow-fifth">
-            <div class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden">
-              <img src="/images/blog/item.jpeg" alt="blog image">
-              <div class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]">
+            <div
+              class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden"
+            >
+              <img
+                src="/images/blog/item.jpeg"
+                alt="blog image"
+              />
+              <div
+                class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]"
+              >
                 <div class="flex items-center gap-4">
-                  <img src="/images/blog/Avatar.png" alt="avatar">
+                  <img
+                    src="/images/blog/Avatar.png"
+                    alt="avatar"
+                  />
                   <div class="flex flex-col">
                     <h3 class="text-[14px] text-white font-[600]">Mojavad</h3>
                     <p class="text-[14px] text-white">Writer</p>
@@ -1128,19 +1240,38 @@
             </div>
             <div class="flex flex-col gap-3 py-8">
               <h1 class="text-[24px] font-[700]">How to Go Viral?</h1>
-              <p class="text-[#667085] text-[16px] leading-[28.8px]">YouTube short videos are one of the most popular video formats on this platform. If you want to create an engaging YouTube ...</p>
+              <p class="text-[#667085] text-[16px] leading-[28.8px]">
+                YouTube short videos are one of the most popular video formats
+                on this platform. If you want to create an engaging YouTube ...
+              </p>
             </div>
-            <button class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center">
+            <button
+              class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center"
+            >
               Read Post
-              <img src="/icons/arrow-right.svg" alt="arrow-right" class="rotate-180">
+              <img
+                src="/icons/arrow-right.svg"
+                alt="arrow-right"
+                class="rotate-180"
+              />
             </button>
           </div>
           <div class="rounded-[16px] p-6 pb-8 shadow-fifth">
-            <div class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden">
-              <img src="/images/blog/item.jpeg" alt="blog image">
-              <div class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]">
+            <div
+              class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden"
+            >
+              <img
+                src="/images/blog/item.jpeg"
+                alt="blog image"
+              />
+              <div
+                class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]"
+              >
                 <div class="flex items-center gap-4">
-                  <img src="/images/blog/Avatar.png" alt="avatar">
+                  <img
+                    src="/images/blog/Avatar.png"
+                    alt="avatar"
+                  />
                   <div class="flex flex-col">
                     <h3 class="text-[14px] text-white font-[600]">Mojavad</h3>
                     <p class="text-[14px] text-white">Writer</p>
@@ -1154,19 +1285,38 @@
             </div>
             <div class="flex flex-col gap-3 py-8">
               <h1 class="text-[24px] font-[700]">How to Go Viral?</h1>
-              <p class="text-[#667085] text-[16px] leading-[28.8px]">YouTube short videos are one of the most popular video formats on this platform. If you want to create an engaging YouTube ...</p>
+              <p class="text-[#667085] text-[16px] leading-[28.8px]">
+                YouTube short videos are one of the most popular video formats
+                on this platform. If you want to create an engaging YouTube ...
+              </p>
             </div>
-            <button class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center">
+            <button
+              class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center"
+            >
               Read Post
-              <img src="/icons/arrow-right.svg" alt="arrow-right" class="rotate-180">
+              <img
+                src="/icons/arrow-right.svg"
+                alt="arrow-right"
+                class="rotate-180"
+              />
             </button>
           </div>
           <div class="rounded-[16px] p-6 pb-8 shadow-fifth">
-            <div class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden">
-              <img src="/images/blog/item.jpeg" alt="blog image">
-              <div class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]">
+            <div
+              class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden"
+            >
+              <img
+                src="/images/blog/item.jpeg"
+                alt="blog image"
+              />
+              <div
+                class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]"
+              >
                 <div class="flex items-center gap-4">
-                  <img src="/images/blog/Avatar.png" alt="avatar">
+                  <img
+                    src="/images/blog/Avatar.png"
+                    alt="avatar"
+                  />
                   <div class="flex flex-col">
                     <h3 class="text-[14px] text-white font-[600]">Mojavad</h3>
                     <p class="text-[14px] text-white">Writer</p>
@@ -1180,19 +1330,38 @@
             </div>
             <div class="flex flex-col gap-3 py-8">
               <h1 class="text-[24px] font-[700]">How to Go Viral?</h1>
-              <p class="text-[#667085] text-[16px] leading-[28.8px]">YouTube short videos are one of the most popular video formats on this platform. If you want to create an engaging YouTube ...</p>
+              <p class="text-[#667085] text-[16px] leading-[28.8px]">
+                YouTube short videos are one of the most popular video formats
+                on this platform. If you want to create an engaging YouTube ...
+              </p>
             </div>
-            <button class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center">
+            <button
+              class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center"
+            >
               Read Post
-              <img src="/icons/arrow-right.svg" alt="arrow-right" class="rotate-180">
+              <img
+                src="/icons/arrow-right.svg"
+                alt="arrow-right"
+                class="rotate-180"
+              />
             </button>
           </div>
           <div class="rounded-[16px] p-6 pb-8 shadow-fifth">
-            <div class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden">
-              <img src="/images/blog/item.jpeg" alt="blog image">
-              <div class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]">
+            <div
+              class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden"
+            >
+              <img
+                src="/images/blog/item.jpeg"
+                alt="blog image"
+              />
+              <div
+                class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]"
+              >
                 <div class="flex items-center gap-4">
-                  <img src="/images/blog/Avatar.png" alt="avatar">
+                  <img
+                    src="/images/blog/Avatar.png"
+                    alt="avatar"
+                  />
                   <div class="flex flex-col">
                     <h3 class="text-[14px] text-white font-[600]">Mojavad</h3>
                     <p class="text-[14px] text-white">Writer</p>
@@ -1206,19 +1375,38 @@
             </div>
             <div class="flex flex-col gap-3 py-8">
               <h1 class="text-[24px] font-[700]">How to Go Viral?</h1>
-              <p class="text-[#667085] text-[16px] leading-[28.8px]">YouTube short videos are one of the most popular video formats on this platform. If you want to create an engaging YouTube ...</p>
+              <p class="text-[#667085] text-[16px] leading-[28.8px]">
+                YouTube short videos are one of the most popular video formats
+                on this platform. If you want to create an engaging YouTube ...
+              </p>
             </div>
-            <button class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center">
+            <button
+              class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center"
+            >
               Read Post
-              <img src="/icons/arrow-right.svg" alt="arrow-right" class="rotate-180">
+              <img
+                src="/icons/arrow-right.svg"
+                alt="arrow-right"
+                class="rotate-180"
+              />
             </button>
           </div>
           <div class="rounded-[16px] p-6 pb-8 shadow-fifth">
-            <div class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden">
-              <img src="/images/blog/item.jpeg" alt="blog image">
-              <div class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]">
+            <div
+              class="relative flex flex-col w-full max-h-[240px] items-center justify-center rounded-[8px] overflow-hidden"
+            >
+              <img
+                src="/images/blog/item.jpeg"
+                alt="blog image"
+              />
+              <div
+                class="absolute right-0 left-0 bottom-0 p-4 flex items-center justify-between bg-[#ffffff4d] backdrop-blur-[12px]"
+              >
                 <div class="flex items-center gap-4">
-                  <img src="/images/blog/Avatar.png" alt="avatar">
+                  <img
+                    src="/images/blog/Avatar.png"
+                    alt="avatar"
+                  />
                   <div class="flex flex-col">
                     <h3 class="text-[14px] text-white font-[600]">Mojavad</h3>
                     <p class="text-[14px] text-white">Writer</p>
@@ -1232,19 +1420,28 @@
             </div>
             <div class="flex flex-col gap-3 py-8">
               <h1 class="text-[24px] font-[700]">How to Go Viral?</h1>
-              <p class="text-[#667085] text-[16px] leading-[28.8px]">YouTube short videos are one of the most popular video formats on this platform. If you want to create an engaging YouTube ...</p>
+              <p class="text-[#667085] text-[16px] leading-[28.8px]">
+                YouTube short videos are one of the most popular video formats
+                on this platform. If you want to create an engaging YouTube ...
+              </p>
             </div>
-            <button class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center">
+            <button
+              class="bg-[#F4EEFD] text-[#8F55EA] rounded-[8px] p-[10px] text-[16px] font-[600] flex gap-[10px] w-full justify-center"
+            >
               Read Post
-              <img src="/icons/arrow-right.svg" alt="arrow-right" class="rotate-180">
+              <img
+                src="/icons/arrow-right.svg"
+                alt="arrow-right"
+                class="rotate-180"
+              />
             </button>
           </div>
         </div>
       </section>
       <!-- Blog Items -->
 
-       <!-- Footer -->
-       <footer class="w-full bg-neutral-bg2">
+      <!-- Footer -->
+      <footer class="w-full bg-neutral-bg2">
         <div class="lg:max-w-[111.8rem] mx-auto pt-22 px-4 sm:px-10 lg:px-8">
           <div class="flex justify-between pb-22 flex-col lg:flex-row">
             <div class="flex flex-col gap-y-6">
