@@ -25,7 +25,8 @@
       <!-- Header -->
       <header
         x-data="{pricingOpen: false}"
-        class="h-navHeight lg:h-auto px-4 lg:py-[1.8rem] lg:px-27 flex justify-between lg:justify-around bg-white items-center max-w-[144rem] mx-auto gap-x-10"
+        class="h-navHeight w-full z-50 lg:h-auto px-4 lg:py-[1.8rem] lg:px-27 flex justify-between lg:justify-around bg-white items-center max-w-[144rem] mx-auto gap-x-10"
+        :class="pricingOpen ? 'fixed top-0 lg:static' : ''"
       >
         <img
           src="/images/logo.png"
@@ -70,6 +71,7 @@
             viewBox="0 0 24 24"
             fill="none"
             x-show="pricingOpen === true"
+            x-cloak
           >
             <path
               d="M18 6L6 18M6 6L18 18"
@@ -81,8 +83,8 @@
           </svg>
         </button>
         <nav
-          :class="pricingOpen ? 'block fixed bottom-0 left-0 right-0 top-navHeight bg-white z-20 lg:static overflow-y-auto lg:overflow-hidden' : 'hidden'"
-          class="lg:block"
+          :class="pricingOpen ? '!block overflow-x-hidden fixed bottom-0 left-0 right-0 h-[calc(100vh_-_var(--nav-height))] lg:h-auto bg-white z-50 lg:static overflow-y-auto lg:overflow-hidden' : 'hidden'"
+          class="hidden lg:block"
         >
           <ul
             :class="pricingOpen ? 'flex flex-col [&_li]:w-full [&_li]:text-start lg:flex-row lg:w-auto [&_a]:!text-neutral-text1 [&_a]:font-semibold  [&_a]:justify-between px-4 gap-y-2 py-8 lg:px-0 lg:py-0 border-y border-y-neutral-text3/20 lg:border-none [&_a]:lg:!text-neutral-text3 [&_a]:lg:font-normal' : ''"
@@ -128,6 +130,7 @@
               <!-- Dropdown Mobile -->
               <div
                 x-show="pricingOpen === true"
+                x-cloak
                 x-transition
                 :class="pricingOpen ? '' : ''"
                 class="lg:hidden flex flex-col items-start p-3 gap-5 w-1/2 pt-5"
@@ -502,6 +505,7 @@
               <!-- Dropdown Mobile -->
               <div
                 x-show="extensionOpen === true"
+                x-cloak
                 x-transition
                 class="lg:hidden"
               >
@@ -930,6 +934,7 @@
             </li>
           </ul>
           <ul
+            x-cloak
             :class="pricingOpen ? 'grid grid-cols-2 [&_li]:text-neutral-text2 text-md font-semibold leading-[180%] lg:hidden px-6 py-8' : 'hidden'"
           >
             <div class="flex flex-col gap-y-3 lg:hidden">
@@ -945,7 +950,10 @@
               <li>Mastertube</li>
             </div>
           </ul>
-          <div class="flex flex-col px-6 gap-y-[0.6rem] lg:hidden">
+          <div
+            x-cloak
+            class="flex flex-col px-6 gap-y-[0.6rem] lg:hidden"
+          >
             <button
               class="text-md w-full whitespace-nowrap px-[1.8rem] font-semibold py-[1rem] bg-primary-1 rounded-lg text-white"
             >
@@ -1097,7 +1105,7 @@
             class="self-end rotate-[-21.296deg] w-[5rem] lg:w-auto"
           />
         </div>
-        <div class="flex-1">
+        <div class="flex-1 px-10 lg:px-0">
           <h2
             class="text-neutral-text1 text-2xl lg:text-3xl font-bold mb-4 lg:mb-2"
           >
@@ -1109,7 +1117,7 @@
             help optimize your videos. Title Generator
           </p>
           <button
-            class="p-4 gap-x-2 rounded-lg bg-primary-1 shadow-primary text-white text-md font-semibold flex items-center w-full lg:w-auto justify-center mb-14 lg:mb-0"
+            class="p-4 gap-x-2 rounded-lg bg-primary-1 shadow-primary text-white text-md font-semibold flex items-center w-full lg:w-auto max-w-xl mx-auto justify-center mb-14 lg:mb-0"
           >
             <span>
               <img src="/icons/download.svg" />
@@ -1307,7 +1315,7 @@
           class="flex flex-col gap-y-8 lg:gap-y-0 lg:flex-row gap-x-14 mb-10"
         >
           <div
-            class="flex flex-col-reverselg:flex-row gap-x-14 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain"
+            class="flex flex-col-reverse lg:flex-row gap-x-14 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain"
           >
             <div class="flex flex-col gap-y-2 text-center lg:text-start">
               <h5
@@ -1386,7 +1394,7 @@
       <!-- How To Access Features -->
       <section class="text-center max-w-[111.8rem] mx-auto mb-22 px-4 lg:px-0">
         <h3 class="mb-14">How To Access Features</h3>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div
             class="flex flex-col justify-center items-center py-8 px-23 bg-neutral-bg3 shadow-tertiary rounded-2xl"
           >
@@ -1509,6 +1517,7 @@
             <!-- Content -->
             <p
               x-show="open1"
+              x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2"
             >
@@ -1608,6 +1617,7 @@
             <!-- Content -->
             <p
               x-show="open3"
+              x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2"
             >
@@ -1658,6 +1668,7 @@
             <!-- Content -->
             <p
               x-show="open4"
+              x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2"
             >
@@ -2103,7 +2114,7 @@
 
       <!-- Footer -->
       <footer class="w-full bg-neutral-bg2">
-        <div class="lg:max-w-[111.8rem] mx-auto pt-22 px-10">
+        <div class="lg:max-w-[111.8rem] mx-auto pt-22 px-4 sm:px-10 lg:px-8">
           <div class="flex justify-between pb-22 flex-col lg:flex-row">
             <div class="flex flex-col gap-y-6">
               <div>

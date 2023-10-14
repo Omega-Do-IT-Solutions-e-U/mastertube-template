@@ -18,7 +18,8 @@
       <!-- Header -->
       <header
         x-data="{pricingOpen: false}"
-        class="h-navHeight lg:h-auto px-4 lg:py-[1.8rem] lg:px-27 flex justify-between lg:justify-around bg-white items-center max-w-[144rem] mx-auto gap-x-10"
+        class="h-navHeight w-full z-50 lg:h-auto px-4 lg:py-[1.8rem] lg:px-27 flex justify-between lg:justify-around bg-white items-center max-w-[144rem] mx-auto gap-x-10"
+        :class="pricingOpen ? 'fixed top-0 lg:static' : ''"
       >
         <img
           src="/images/logo.png"
@@ -63,6 +64,7 @@
             viewBox="0 0 24 24"
             fill="none"
             x-show="pricingOpen === true"
+            x-cloak
           >
             <path
               d="M18 6L6 18M6 6L18 18"
@@ -74,8 +76,8 @@
           </svg>
         </button>
         <nav
-          :class="pricingOpen ? 'block fixed bottom-0 left-0 right-0 top-navHeight bg-white z-20 lg:static overflow-y-auto lg:overflow-hidden' : 'hidden'"
-          class="lg:block"
+          :class="pricingOpen ? '!block overflow-x-hidden fixed bottom-0 left-0 right-0 h-[calc(100vh_-_var(--nav-height))] lg:h-auto bg-white z-50 lg:static overflow-y-auto lg:overflow-hidden' : 'hidden'"
+          class="hidden lg:block"
         >
           <ul
             :class="pricingOpen ? 'flex flex-col [&_li]:w-full [&_li]:text-start lg:flex-row lg:w-auto [&_a]:!text-neutral-text1 [&_a]:font-semibold  [&_a]:justify-between px-4 gap-y-2 py-8 lg:px-0 lg:py-0 border-y border-y-neutral-text3/20 lg:border-none [&_a]:lg:!text-neutral-text3 [&_a]:lg:font-normal' : ''"
@@ -925,6 +927,7 @@
             </li>
           </ul>
           <ul
+            x-cloak
             :class="pricingOpen ? 'grid grid-cols-2 [&_li]:text-neutral-text2 text-md font-semibold leading-[180%] lg:hidden px-6 py-8' : 'hidden'"
           >
             <div class="flex flex-col gap-y-3 lg:hidden">
@@ -940,7 +943,10 @@
               <li>Mastertube</li>
             </div>
           </ul>
-          <div class="flex flex-col px-6 gap-y-[0.6rem] lg:hidden">
+          <div
+            x-cloak
+            class="flex flex-col px-6 gap-y-[0.6rem] lg:hidden"
+          >
             <button
               class="text-md w-full whitespace-nowrap px-[1.8rem] font-semibold py-[1rem] bg-primary-1 rounded-lg text-white"
             >
@@ -2546,7 +2552,7 @@
 
       <!-- Footer -->
       <footer class="w-full bg-neutral-bg2">
-        <div class="lg:max-w-[111.8rem] mx-auto pt-22 px-10">
+        <div class="lg:max-w-[111.8rem] mx-auto pt-22 px-4 sm:px-10 lg:px-8">
           <div class="flex justify-between pb-22 flex-col lg:flex-row">
             <div class="flex flex-col gap-y-6">
               <div>
