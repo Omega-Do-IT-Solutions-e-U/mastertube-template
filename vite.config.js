@@ -14,7 +14,9 @@ export default defineConfig({
         'blog-en': resolve(__dirname, 'blog-en.html'),
         'blog-fa': resolve(__dirname, 'blog-fa.html'),
         'single-blog-en': resolve(__dirname, 'single-blog-en.html'),
-        'single-blog-fa': resolve(__dirname, 'single-blog-fa.html')
+        'single-blog-fa': resolve(__dirname, 'single-blog-fa.html'),
+        'privacy-policy-en': resolve(__dirname, 'privacy-policy-en.html'),
+        'privacy-policy-fa': resolve(__dirname, 'privacy-policy-fa.html')
       }
     }
   },
