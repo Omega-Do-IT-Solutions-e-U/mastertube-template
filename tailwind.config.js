@@ -86,7 +86,8 @@ export default {
       'cashout-card-icon': 'linear-gradient(180deg, #A562FD 0%, #984DFA 100%)',
       'dark-cover':
         'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)',
-      pattern: "url('/images/main/pattern.png')"
+      pattern: "url('/images/main/pattern.png')",
+      'line-pattern': "url('/images/line-pattern.png')"
     },
     borderRadius: {
       lg: '0.8rem',
