@@ -84,7 +84,9 @@ export default {
         'linear-gradient(0deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.62) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat, #E1E2E6',
       hero: "url('/images/hero-bg.png')",
       'cashout-card-icon': 'linear-gradient(180deg, #A562FD 0%, #984DFA 100%)',
-      'dark-cover': 'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)'
+      'dark-cover':
+        'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)',
+      pattern: "url('/images/main/pattern.png')"
     },
     borderRadius: {
       lg: '0.8rem',
