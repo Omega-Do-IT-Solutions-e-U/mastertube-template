@@ -115,7 +115,8 @@ export default {
       fourth:
         '0px 0px 0px 0px rgba(0, 0, 0, 0.04), 0px 7px 15px 0px rgba(0, 0, 0, 0.04), 0px 28px 28px 0px rgba(0, 0, 0, 0.03), 0px 63px 38px 0px rgba(0, 0, 0, 0.02), 0px 113px 45px 0px rgba(0, 0, 0, 0.01), 0px 176px 49px 0px rgba(0, 0, 0, 0.00)',
       'cashout-card-shadow':
-        '0px 0px 0px 0px rgba(0, 0, 0, 0.01), 0px 5.26807px 11.28872px 0px rgba(0, 0, 0, 0.01), 0px 21.07228px 21.07228px 0px rgba(0, 0, 0, 0.01), 0px 47.41263px 28.59809px 0px rgba(0, 0, 0, 0.01), 0px 85.0417px 33.86616px 0px rgba(0, 0, 0, 0.00), 0px 132.45433px 36.87649px 0px rgba(0, 0, 0, 0.00)'
+        '0px 0px 0px 0px rgba(0, 0, 0, 0.01), 0px 5.26807px 11.28872px 0px rgba(0, 0, 0, 0.01), 0px 21.07228px 21.07228px 0px rgba(0, 0, 0, 0.01), 0px 47.41263px 28.59809px 0px rgba(0, 0, 0, 0.01), 0px 85.0417px 33.86616px 0px rgba(0, 0, 0, 0.00), 0px 132.45433px 36.87649px 0px rgba(0, 0, 0, 0.00)',
+      fifth: '0px 3.12543px 18.75256px 0px rgba(27, 27, 27, 0.08)'
     },
     extend: {}
   },
