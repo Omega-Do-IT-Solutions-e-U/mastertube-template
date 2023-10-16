@@ -43,7 +43,8 @@ export default {
       transparent: 'transparent',
       'try-for-free-gray': 'rgba(26, 26, 26, 0.81)',
       'course-card-border': 'rgba(214, 214, 214, 0.56)',
-      'articles-section-bg': 'rgba(143, 85, 234, 0.05)'
+      'articles-section-bg': 'rgba(143, 85, 234, 0.05)',
+      gray: 'rgba(80, 97, 138, 0.68)'
     },
     spacing: {
       0: '0',
@@ -117,7 +118,8 @@ export default {
         '0px 0px 0px 0px rgba(0, 0, 0, 0.04), 0px 7px 15px 0px rgba(0, 0, 0, 0.04), 0px 28px 28px 0px rgba(0, 0, 0, 0.03), 0px 63px 38px 0px rgba(0, 0, 0, 0.02), 0px 113px 45px 0px rgba(0, 0, 0, 0.01), 0px 176px 49px 0px rgba(0, 0, 0, 0.00)',
       'cashout-card-shadow':
         '0px 0px 0px 0px rgba(0, 0, 0, 0.01), 0px 5.26807px 11.28872px 0px rgba(0, 0, 0, 0.01), 0px 21.07228px 21.07228px 0px rgba(0, 0, 0, 0.01), 0px 47.41263px 28.59809px 0px rgba(0, 0, 0, 0.01), 0px 85.0417px 33.86616px 0px rgba(0, 0, 0, 0.00), 0px 132.45433px 36.87649px 0px rgba(0, 0, 0, 0.00)',
-      fifth: '0px 3.12543px 18.75256px 0px rgba(27, 27, 27, 0.08)'
+      fifth: '0px 3.12543px 18.75256px 0px rgba(27, 27, 27, 0.08)',
+      six: '0px 0px 0px 0px rgba(0, 0, 0, 0.02), 0px 6.23404px 13.35866px 0px rgba(0, 0, 0, 0.02), 0px 24.93617px 24.93617px 0px rgba(0, 0, 0, 0.02), 0px 56.10638px 33.84195px 0px rgba(0, 0, 0, 0.01), 0px 100.63525px 40.07599px 0px rgba(0, 0, 0, 0.00), 0px 156.74164px 43.6383px 0px rgba(0, 0, 0, 0.00)'
     },
     extend: {}
   },
