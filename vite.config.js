@@ -20,7 +20,9 @@ export default defineConfig({
         'privacy-policy-en': resolve(__dirname, 'privacy-policy-en.html'),
         'privacy-policy-fa': resolve(__dirname, 'privacy-policy-fa.html'),
         'terms-of-service-en': resolve(__dirname, 'terms-of-service-en.html'),
-        'terms-of-service-fa': resolve(__dirname, 'terms-of-service-fa.html')
+        'terms-of-service-fa': resolve(__dirname, 'terms-of-service-fa.html'),
+        'logo-en': resolve(__dirname, 'logo-en.html'),
+        'logo-fa': resolve(__dirname, 'logo-fa.html')
       }
     }
   },
