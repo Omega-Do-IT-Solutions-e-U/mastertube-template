@@ -18,7 +18,9 @@ export default defineConfig({
         'single-blog-en': resolve(__dirname, 'single-blog-en.html'),
         'single-blog-fa': resolve(__dirname, 'single-blog-fa.html'),
         'privacy-policy-en': resolve(__dirname, 'privacy-policy-en.html'),
-        'privacy-policy-fa': resolve(__dirname, 'privacy-policy-fa.html')
+        'privacy-policy-fa': resolve(__dirname, 'privacy-policy-fa.html'),
+        'terms-of-service-en': resolve(__dirname, 'terms-of-service-en.html'),
+        'terms-of-service-fa': resolve(__dirname, 'terms-of-service-fa.html')
       }
     }
   },
