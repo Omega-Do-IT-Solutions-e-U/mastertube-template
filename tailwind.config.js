@@ -88,7 +88,8 @@ export default {
       'dark-cover':
         'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)',
       pattern: "url('/images/main/pattern.png')",
-      'line-pattern': "url('/images/line-pattern.png')"
+      'line-pattern': "url('/images/line-pattern.png')",
+      starts: "linear-gradient(90deg, #F474F7 4.19%, #8C4BD1 102.79%)"
     },
     borderRadius: {
       lg: '0.8rem',
