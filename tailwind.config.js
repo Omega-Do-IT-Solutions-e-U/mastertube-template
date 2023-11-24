@@ -89,7 +89,10 @@ export default {
         'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)',
       pattern: "url('/images/main/pattern.png')",
       'line-pattern': "url('/images/line-pattern.png')",
-      starts: "linear-gradient(90deg, #F474F7 4.19%, #8C4BD1 102.79%)"
+      starts: "linear-gradient(90deg, #F474F7 4.19%, #8C4BD1 102.79%)",
+      purple: "linear-gradient(180deg, #B383FF 0%, #9459F1 100%)",
+      connect: "linear-gradient(244deg, #3C3349 7.51%, #30263D 94.66%)",
+      services: "radial-gradient(342.64% 165.27% at 100% -3.38%, #6F78F8 0%, #8D56EA 70.18%)"
     },
     borderRadius: {
       lg: '0.8rem',
