@@ -979,7 +979,7 @@
         class="flex justify-center bg-[url('/images/cashout/mobile-bg.png')] sm:bg-[url('/images/cashout/desktop-bg.png')] bg-cover bg-center bg-no-repeat mb-15 lg:mb-[11.6rem]"
       >
         <div
-          class="flex flex-col lg:flex-row justify-center items-center gap-[75px] container mx-[50px]"
+          class="flex flex-col lg:flex-row justify-center items-center lg:gap-[75px] container py-[10px] px-[30px] lg:px-0 lg:py-0"
         >
           <div class="flex flex-col">
             <h1
@@ -1006,7 +1006,7 @@
               </button>
             </div>
           </div>
-          <div class="flex justify-center items-center pb-10 w-fit">
+          <div class="flex justify-center items-center lg:pb-10 w-fit">
             <!-- <img
               src="/images/media-player-small.png"
               alt="Media player"
@@ -1015,7 +1015,7 @@
             <img
               src="/images/media-player-big.png"
               alt="Media player"
-              class="w-[472px] h-[472px] lg:w-[472px] lg:h-[472px]"
+              class="w-[294px] h-[294px] lg:w-[472px] lg:h-[472px]"
             />
             <!-- <img
               src="/images/media-player-small.png"
@@ -1029,27 +1029,51 @@
 
       <!-- Steps -->
       <section
-        class="container hidden lg:block mx-auto mb-[5rem] lg:mb-[15.4rem]"
+        class="container mx-auto mb-[5rem] lg:mb-[15.4rem]"
       >
-        <div class="flex gap-x-[91px] items-center justify-center">
+        <div class="flex items-center justify-between w-full relative min-w-[1000px] px-5 lg:px-0">
+          <div class="border-dashed border-t-[2px] border-[#A06AF6] h-[3px] absolute top-[35px] right-[50px] left-[50px]"></div>
+          <div class="border-t-[2px] border-[#A06AF6] h-[3px] absolute top-[35px] right-[66%] left-[50px]"></div>
+          <div class="flex flex-col relative z-10">
+            <img src="/images/cashout/headset.png" alt="headset" class="w-[40.095px] h-[40.095px] lg:w-[58.247px] lg:h-[58.247px] mb-[11.65px]">
+            <span class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#A7A8AD]">Step 1</span>
+            <div class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">Registration</div>
+          </div>
+          <div class="flex flex-col relative z-10">
+            <img src="/images/cashout/headphone.png" alt="headphone" class="w-[40.095px] h-[40.095px] lg:w-[58.247px] lg:h-[58.247px] mb-[11.65px]">
+            <span class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#AC96EF]">Step 2</span>
+            <div class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">Expert review</div>
+          </div>
+          <div class="flex flex-col relative z-10">
+            <img src="/images/cashout/verify.png" alt="verify" class="w-[40.095px] h-[40.095px] lg:w-[59.911px] lg:h-[59.911px] mb-[11.65px]">
+            <span class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#AC96EF]">Step 3</span>
+            <div class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">Notices</div>
+          </div>
+          <div class="flex flex-col relative z-10">
+            <img src="/images/cashout/signature.png" alt="signature" class="w-[40.095px] h-[40.095px] lg:w-[58.247px] lg:h-[58.247px] mb-[11.65px]">
+            <span class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#AC96EF]">Step 4</span>
+            <div class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">contract</div>
+          </div>
+        </div>
+        <div class="flex flex-col-reverse lg:flex-row gap-x-[91px] items-center justify-center mt-[32px]">
           <div class="min-w-fit">
             <img
               src="/images/cashout/Music.png"
               alt="Music"
-              class="w-[342.791px] h-[342.791px]"
+              class="w-[305.657px] h-[305.657px] lg:w-[342.791px] lg:h-[342.791px]"
             />
           </div>
           <div
             x-data="{content: 'consult'}"
-            class="flex flex-col items-start w-full"
+            class="flex flex-col items-start w-full p-[10px] px-5 lg:p-0"
           >
             <h2
-              class="text-neutral-text1-cash text-3xl font-bold leading-[140%] mb-6"
+              class="hidden lg:block text-neutral-text1-cash text-3xl font-bold leading-[140%] mb-6"
             >
               Why Trusting In Us?
             </h2>
             <div
-              class="flex gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]"
+              class="hidden lg:flex gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]"
             >
               <span
                 @click="content = 'consult'"
@@ -1074,6 +1098,34 @@
                 :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
                 >AI Services</span
+              >
+            </div>
+            <div
+              class="flex w-full justify-between lg:hidden gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]"
+            >
+              <span
+                @click="content = 'consult'"
+                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
+                :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                >Step 1</span
+              >
+              <span
+                @click="content = 'educational'"
+                :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Step 2</span
+              >
+              <span
+                @click="content = 'pro'"
+                :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Step 3</span
+              >
+              <span
+                @click="content = 'ai'"
+                :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Step 4</span
               >
             </div>
             <p
@@ -1123,7 +1175,7 @@
 
       <!-- Connect -->
       <section
-        class="flex relative justify-center mx-auto mx-auto pb-[5rem] lg:pb-[15.4rem]"
+        class="flex flex-col lg:flex-row gap-[14px] lg:gap-0 relative justify-center mx-auto pb-[5rem] lg:pb-[15.4rem]"
       >
         <div class="absolute -z-30 bottom-0 -right-10">
           <img
@@ -1131,31 +1183,48 @@
             alt="Effect"
           />
         </div>
-        <div class="container grid grid-cols-3 gap-y-[27px] gap-x-10">
-          <div class="flex py-[50px] overflow-hidden px-[92.65px] relative col-span-3 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect">
-            <div class="max-w-[80%] z-10">
-              <h2 class="text-white text-[35.836px] font-[600] mb-[11.29px]">Connect to the <span class="bg-purple text-transparent bg-clip-text">official Mediacube</span> MCN</h2>
-              <p class="text-[21px] text-[#FFFFFFE5]">(how and in what condation user can connect to MCN)Our YouTube consulting service provides personalized guidance and strategies to help your channel thrive. Whether you're aiming for growth, engagement, or monetization, our experts are here </p>
-              <button class="flex mt-[55.59px] bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2">call to action</button>
+        <div class="container grid grid-cols-3 gap-y-[27px] gap-x-10 px-5 lg:px-0">
+          <div class="flex py-[15px] lg:py-[50px] px-[13px] overflow-hidden lg:px-[92.65px] relative col-span-3 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect">
+            <div class="lg:max-w-[80%] z-10">
+              <h2 class="text-white text-[21px] lg:text-[35.836px] font-[600] mb-[11.29px]">Connect to the <span class="bg-purple text-transparent bg-clip-text">official Mediacube</span> MCN</h2>
+              <p class="text-[12px] lg:text-[21px] text-[#FFFFFFE5]">(how and in what condation user can connect to MCN)Our YouTube consulting service provides personalized guidance and strategies to help your channel thrive. Whether you're aiming for growth, engagement, or monetization, our experts are here </p>
+              <button class="flex mt-[55.59px] bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2 w-full justify-center lg:w-fit">call to action</button>
             </div>
             <img src="" alt="" class="">
 
             <img src="/images/cashout/connect-group.svg" alt="connect background" class="absolute top-0 right-0">
             <img src="/images/cashout/connect-gradient.svg" alt="connect background" class="absolute bottom-0 left-0">
           </div>
-          <div class="flex flex-col py-[25.72px] px-[25px] pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+          <div class="hidden lg:flex flex-col py-[25.72px] px-[25px] pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[30px] font-[700]">What MCN does it connect to?</h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
             <img src="" alt="">
           </div>
-          <div class="flex flex-col py-[25.72px] px-[25px] pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+          <div class="hidden lg:flex flex-col py-[25.72px] px-[25px] pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[30px] font-[700]">channel cannot connect to MCN?</h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
             <img src="" alt="">
           </div>
-          <div class="flex flex-col py-[25.72px] px-[25px] pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+          <div class="hidden lg:flex flex-col py-[25.72px] px-[25px] pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[30px] font-[700]">What MCN does it connect to?</h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="flex lg:hidden items-center gap-[19.3px] overflow-x-auto">
+          <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">What MCN does it connect to?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">channel cannot connect to MCN?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">What MCN does it connect to?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
             <img src="" alt="">
           </div>
         </div>
@@ -1173,10 +1242,10 @@
           />
         </div>
         <div
-          class="bg-white border border-neutral-bg1 shadow-cashout-card-shadow flex flex-col lg:flex-row gap-x-17 pt-10 lg:py-0 lg:rounded-[22px] overflow-hidden"
+          class="bg-white lg:border lg:border-neutral-bg1 lg:shadow-cashout-card-shadow flex flex-col lg:flex-row gap-x-17 pt-10 lg:py-0 lg:rounded-[22px] overflow-hidden"
         >
           <div
-            class="pl-17 px-17 lg:pr-0 lg:w-[70%] text-center text-neutral-text1-cash text-xl font-bold leading-[140%] pb-14 lg:py-14 flex justify-center flex-col"
+            class="lg:pl-17 px-5 lg:px-17 lg:pr-0 lg:w-[70%] text-center text-neutral-text1-cash text-xl font-bold leading-[140%] pb-14 lg:py-14 flex justify-center flex-col"
           >
             <span
               class="mb-12 block text-xl lg:text-4xl text-center lg:text-start"
@@ -1307,10 +1376,10 @@
 
       <!-- Why Trusting Us? -->
       <section
-        class="container hidden lg:block mx-auto mb-[5rem] lg:mb-[15.4rem]"
+        class="container mx-auto mb-[5rem] lg:mb-[15.4rem]"
       >
-        <div class="flex gap-x-[91px] items-center justify-center">
-          <div class="min-w-fit">
+        <div class="flex flex-col-reverse lg:flex-row px-5 lg:px-0 gap-x-[91px] gap-y-[15px] items-center justify-center">
+          <div class="min-w-fit overflow-x-auto">
             <img
               src="/images/cashout/compass.png"
               alt="Compass"
@@ -1327,7 +1396,7 @@
               Why Trusting In Us?
             </h2>
             <div
-              class="flex gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]"
+              class="flex min-w-max gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]"
             >
               <span
                 @click="content = 'consult'"
@@ -1403,37 +1472,39 @@
       <section
         class="container mx-auto mb-[5rem] lg:mb-[15.4rem]"
       >
-        <div class="flex flex-col bg-[url('/images/cashout/Income.png')] bg-no-repeat bg-cover px-[60px] pt-[50px] rounded-[22px] shadow[0px_4px_16.9px_0px_rgba(0,0,0,0.05)">
-          <h2 class="text-[35px] text-white">YouTube <span class="bg-purple text-transparent bg-clip-text">income calculator</span></h2>
-          <div class="flex gap-3 max-w-[80%] mt-[23px]">
-            <div class="relative w-[30%]">
+        <div class="flex flex-col bg-[url('/images/cashout/Income.png')] bg-no-repeat bg-cover px-[30px] lg:px-[60px] pt-[50px] lg:rounded-[22px] shadow[0px_4px_16.9px_0px_rgba(0,0,0,0.05)">
+          <h2 class="text-[35px] text-white text-center lg:text-start">YouTube <span class="bg-purple text-transparent bg-clip-text">income calculator</span></h2>
+          <div class="flex flex-col lg:flex-row gap-3 lg:max-w-[80%] mt-[23px]">
+            <div class="relative lg:w-[30%]">
               <input
-                type="email"
+                type="InEmail"
                 id="name"
-                class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] pb-2 pt-4 w-full text-neutral-text1 bg-transparent rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                placeholder=" "
+                class="block h-[54.636px] text-md px-[25.22px] bg-[#fff] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                placeholder="email  address"
               />
-              <label
-                for="email"
-                class="absolute text-base text-[#B7A6BC] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-[25.22px] peer-focus:px-2 peer-focus:text-[#323232] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
-                >email  address</label
-              >
             </div>
-            <div class="relative w-[70%]">
+            <div class="relative lg:w-[70%]">
               <input
                 type="text"
                 id="youtube"
-                class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] pb-2 pt-4 w-full text-neutral-text1 bg-transparent rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                placeholder=" "
+                class="block h-[54.636px] text-md px-[25.22px] bg-[#fff] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                placeholder="my YouTube channel URL"
               />
-              <label
-                for="youtube"
-                class="absolute text-base text-[#B7A6BC] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-[25.22px] peer-focus:px-2 peer-focus:text-[#323232] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
-                >my YouTube channel URL</label
-              >
+              <button class="hidden lg:flex absolute right-0 top-0 bottom-0 right-3 my-auto h-[32px] flex items-center gap-[10px] text-[13.524px] py-1 px-5 rounded-[77px] text-white bg-purple">
+                submit
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path d="M18.0737 10.9612L12.249 16.7859C12.1276 16.9073 11.9629 16.9755 11.7911 16.9755C11.6194 16.9755 11.4547 16.9073 11.3333 16.7859C11.2118 16.6644 11.1436 16.4997 11.1436 16.328C11.1436 16.1563 11.2118 15.9915 11.3333 15.8701L16.0537 11.1505H3.37766C3.20601 11.1505 3.0414 11.0823 2.92003 10.9609C2.79865 10.8395 2.73047 10.6749 2.73047 10.5033C2.73047 10.3316 2.79865 10.167 2.92003 10.0456C3.0414 9.92427 3.20601 9.85608 3.37766 9.85608H16.0537L11.3333 5.13644C11.2118 5.015 11.1436 4.8503 11.1436 4.67856C11.1436 4.50682 11.2118 4.34211 11.3333 4.22067C11.4547 4.09923 11.6194 4.03101 11.7911 4.03101C11.9629 4.03101 12.1276 4.09923 12.249 4.22067L18.0737 10.0454C18.1339 10.1055 18.1817 10.1769 18.2142 10.2554C18.2468 10.334 18.2636 10.4182 18.2636 10.5033C18.2636 10.5883 18.2468 10.6725 18.2142 10.7511C18.1817 10.8297 18.1339 10.9011 18.0737 10.9612Z" fill="white"/>
+                </svg>
+              </button>
             </div>
+            <button class="flex lg:hidden h-[41px] flex items-center justify-center gap-[10px] text-[13.524px] px-5 rounded-[77px] text-white bg-purple">
+              submit
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path d="M18.0737 10.9612L12.249 16.7859C12.1276 16.9073 11.9629 16.9755 11.7911 16.9755C11.6194 16.9755 11.4547 16.9073 11.3333 16.7859C11.2118 16.6644 11.1436 16.4997 11.1436 16.328C11.1436 16.1563 11.2118 15.9915 11.3333 15.8701L16.0537 11.1505H3.37766C3.20601 11.1505 3.0414 11.0823 2.92003 10.9609C2.79865 10.8395 2.73047 10.6749 2.73047 10.5033C2.73047 10.3316 2.79865 10.167 2.92003 10.0456C3.0414 9.92427 3.20601 9.85608 3.37766 9.85608H16.0537L11.3333 5.13644C11.2118 5.015 11.1436 4.8503 11.1436 4.67856C11.1436 4.50682 11.2118 4.34211 11.3333 4.22067C11.4547 4.09923 11.6194 4.03101 11.7911 4.03101C11.9629 4.03101 12.1276 4.09923 12.249 4.22067L18.0737 10.0454C18.1339 10.1055 18.1817 10.1769 18.2142 10.2554C18.2468 10.334 18.2636 10.4182 18.2636 10.5033C18.2636 10.5883 18.2468 10.6725 18.2142 10.7511C18.1817 10.8297 18.1339 10.9011 18.0737 10.9612Z" fill="white"/>
+              </svg>
+            </button>
           </div>
-          <p class="mt-2 text-[#FFFFFFE8] text-[15px] pb-[84px]">Our YouTube consulting service provides personalized guidance and strategies to help your ch</p>
+          <p class="mt-2 text-[#FFFFFFE8] text-[15px] pb-[84px] text-center">Our YouTube consulting service provides personalized guidance and strategies to help your ch</p>
         </div>
       </section>
       <!-- Income -->
@@ -1442,19 +1513,19 @@
       <section
         class="container mx-auto mb-[5rem] lg:mb-[15.4rem]"
       >
-        <div class="flex gap-[68.12px]">
-          <div class="flex flex-col gap-[27px]">
-            <h2 class="text-[#3D3E4A]">Mastertube <span class="bg-purple text-transparent bg-clip-text">shield service</span></h2>
-            <p class="text-[#666E80] text-[24.665px] ">Our YouTube consulting service provides personalized guidance and strategies to help your channel thrive. </p>
-            <div class="flex gap-[27px]">
-              <button class="rounded-[9.396px] bg-[#8F55EA] text-white py-[11.75px] px-[21.14px] text-[16px] font-[600]">CALL TO ACTION</button>
-              <button class="rounded-[9.396px] text-[#666E80] py-[11.75px] px-[21.14px] text-[16px] font-[600]">CALL TO ACTION</button>
+        <div class="flex flex-col lg:flex-row px-5 lg:px-0 gap-[68.12px]">
+          <div class="flex flex-col items-center lg:items-start gap-[18.9px] lg:gap-[27px]">
+            <h2 class="text-[31px] lg:text-[43.7px] text-[#3D3E4A] text-center lg:text-start">Mastertube <span class="bg-purple text-transparent bg-clip-text">shield service</span></h2>
+            <p class="text-[#666E80] text-[17.257px] lg:text-[24.665px]">Our YouTube consulting service provides personalized guidance and strategies to help your channel thrive. </p>
+            <div class="flex flex-col lg:flex-row gap-x-[27px] w-full">
+              <button class="w-full lg:w-fit rounded-[9.396px] bg-[#8F55EA] text-white py-[11.75px] px-[21.14px] text-[16px] font-[600]">CALL TO ACTION</button>
+              <button class="w-full lg:w-fit rounded-[9.396px] text-[#666E80] py-[11.75px] px-[21.14px] text-[16px] font-[600]">CALL TO ACTION</button>
             </div>
           </div>
-          <div class="relative">
-            <img src="/images/cashout/services.png" alt="services" class="relative z-10">
-            <img src="/images/cashout/services-bg.svg" alt="background" class="absolute top-0 right-0">
-            <img src="/images/cashout/servises-gradient.svg" alt="background" class="absolute top-0 right-0">
+          <div class="relative flex items-center justify-center bg-[url('/images/cashout/servises-gradient.svg')] bg-connect">
+            <img src="/images/cashout/services.png" alt="services" class="relative z-10 w-[212.915px]">
+            <!-- <img src="/images/cashout/services-bg.svg" alt="background" class="absolute top-0 right-0"> -->
+            <!-- <img src="/images/cashout/servises-gradient.svg" alt="background" class="absolute top-0 right-0"> -->
           </div>
         </div>
       </section>
@@ -1462,10 +1533,10 @@
 
       <!-- Services -->
       <section
-        class="flex flex-col relative items-center gap-[27px] mx-auto mx-auto pb-[5rem] lg:pb-[15.4rem]"
+        class="flex flex-col relative gap-[27px] px-5 lg:px-0 mx-auto mx-auto pb-[5rem] lg:pb-[15.4rem]"
       >
-        <h2 class="text-[#3D3E4A] text-[37.207px] p-[10px]">Earnings cashing <span class="bg-purple text-transparent bg-clip-text">services</span> </h2>
-        <div class="container grid grid-cols-3 gap-y-[27px] gap-x-10">
+        <h2 class="text-[#3D3E4A] text-[31px] text-center lg:text-start lg:text-[37.207px] p-[10px]">Earnings cashing <span class="bg-purple text-transparent bg-clip-text">services</span> </h2>
+        <div class="hidden container lg:grid grid-cols-3 gap-y-[27px] gap-x-10">
           <div class="flex py-[40px] overflow-hidden px-[92.65px] relative col-span-2 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-services">
             <div class="flex flex-col justify-between max-w-[60%] z-10">
               <div class="flex flex-col">
@@ -1508,29 +1579,42 @@
             <img src="/images/cashout/connect-group.svg" alt="connect background" class="absolute top-0 right-0">
           </div>
         </div>
+
+        <div class="flex lg:hidden items-center gap-[19.3px] overflow-x-auto">
+          <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">What MCN does it connect to?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">channel cannot connect to MCN?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">What MCN does it connect to?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+        </div>
       </section>
       <!-- Services -->
 
       <!-- Contact US -->
       <section class="bg-[#6455FF] flex flex-col relative items-center gap-[27px] mx-auto mx-auto relative pb-[131px] mt-[131px]">
-        <div class="container -mt-[131px] flex justify-between rounded-[23.115px] py-[21px] px-[42px] bg-white shadow-[0px_0px_0px_0px_rgba(0,0,0,0.01),0px_7.35481px_15.76031px_0px_rgba(0,0,0,0.01),0px_29.41924px_29.41924px_0px_rgba(0,0,0,0.01),0px_66.19331px_39.92612px_0px_rgba(0,0,0,0.01),0px_118.72768px_47.28093px_0px_rgba(0,0,0,0.00),0px_184.92097px_51.48368px_0px_rgba(0,0,0,0.00)]">
-          <div class="">
+        <div class="container -mt-[131px] flex flex-col-reverse lg:flex-row justify-between lg:rounded-[23.115px] py-[21px] px-5 lg:px-[42px] bg-white gap-y-[24px] lg:shadow-[0px_0px_0px_0px_rgba(0,0,0,0.01),0px_7.35481px_15.76031px_0px_rgba(0,0,0,0.01),0px_29.41924px_29.41924px_0px_rgba(0,0,0,0.01),0px_66.19331px_39.92612px_0px_rgba(0,0,0,0.01),0px_118.72768px_47.28093px_0px_rgba(0,0,0,0.00),0px_184.92097px_51.48368px_0px_rgba(0,0,0,0.00)]">
+          <div class="flex flex-col items-center lg:items-start">
             <h1 class="text-[#414141] text-[39.093px] font-bold">contact us</h1>
-            <p class="text-[#98A1B3] text-[18.912px]">professional channel setup and optimization services for those facing time.</p>
-            <div class="flex flex-col gap-[12.61px] p-[10.51px]">
+            <p class="text-[#98A1B3] text-[18.912px] text-center lg:text-start">professional channel setup and optimization services for those facing time.</p>
+            <div class="flex flex-col w-full gap-[12.61px] px-0 lg:px-[10.51px] p-[10.51px]">
               <!-- Input 1 -->
               <div class="relative w-full">
                 <input
                   type="text"
                   id="name"
-                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] pb-2 pt-4 w-full text-neutral-text1 bg-transparent rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                  placeholder=" "
+                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                  placeholder="your name"
                 />
-                <label
-                  for="name"
-                  class="absolute text-base text-[#B7A6BC] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-[25.22px] peer-focus:px-2 peer-focus:text-[#323232] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
-                  >your name</label
-                >
               </div>
               <!-- Input 1 -->
 
@@ -1539,14 +1623,9 @@
                 <input
                   type="text"
                   id="phone"
-                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] pb-2 pt-4 w-full text-neutral-text1 bg-transparent rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                  placeholder=" "
+                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                  placeholder="your phone number"
                 />
-                <label
-                  for="phone"
-                  class="absolute text-base text-[#B7A6BC] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-[25.22px] peer-focus:px-2 peer-focus:text-[#323232] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
-                  >your phone number</label
-                >
               </div>
               <!-- Input 2 -->
 
@@ -1555,14 +1634,9 @@
                 <input
                   type="text"
                   id="email"
-                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] pb-2 pt-4 w-full text-neutral-text1 bg-transparent rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                  placeholder=" "
+                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                  placeholder="email  address"
                 />
-                <label
-                  for="email"
-                  class="absolute text-base text-[#B7A6BC] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-[25.22px] peer-focus:px-2 peer-focus:text-[#323232] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
-                  >email  address</label
-                >
               </div>
               <!-- Input 3 -->
 
@@ -1571,21 +1645,16 @@
                 <input
                   type="text"
                   id="channel-url"
-                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] pb-2 pt-4 w-full text-neutral-text1 bg-transparent rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                  placeholder=" "
+                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                  placeholder="my YouTube channel URL"
                 />
-                <label
-                  for="channel-url"
-                  class="absolute text-base text-[#B7A6BC] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-[25.22px] peer-focus:px-2 peer-focus:text-[#323232] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
-                  >my YouTube channel URL</label
-                >
               </div>
               <!-- Input 4 -->
               <button class="h-[54.636px] rounded-[80.903px] bg-[#D23790] text-white text-[14.209px]">submit</button>
             </div>
           </div>
 
-          <div class="flex flex-col items-center gap-[12.16px] max-w-[428px]">
+          <div class="flex flex-col items-center gap-[12.16px] max-w-[428px] py-[15px] lg:py-0">
             <img src="/images/cashout/Contact.png" alt="contact">
             <div class="flex items-start gap-[10.51px] text-[#98A1B3] text-[18.912px] self-start">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -1628,7 +1697,7 @@
       <!-- Contact US -->
 
       <!-- FAQ -->
-      <section class="text-center container mx-auto my-22">
+      <section class="text-center container mx-auto my-22 px-5 lg:px-0">
         <h3 class="mb-14">Frequently Asked Questions!</h3>
         <div class="flex flex-col gap-y-6">
           <!-- Accordian NO.1 -->
