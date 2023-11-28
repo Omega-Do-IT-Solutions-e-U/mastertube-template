@@ -91,9 +91,10 @@ export default {
       'line-pattern': "url('/images/line-pattern.png')",
       starts: "linear-gradient(90deg, #F474F7 4.19%, #8C4BD1 102.79%)",
       purple: "linear-gradient(180deg, #B383FF 0%, #9459F1 100%)",
+      "purple-main": "linear-gradient(89deg, #895DF7 12.23%, #8C17B9 58.94%)",
       connect: "linear-gradient(244deg, #3C3349 7.51%, #30263D 94.66%)",
       services: "radial-gradient(342.64% 165.27% at 100% -3.38%, #6F78F8 0%, #8D56EA 70.18%)",
-      pricing: "radial-gradient(342.64% 165.27% at 100% -3.38%, #6F78F8 0%, #8D56EA 70.18%)"
+      pricing: "radial-gradient(342.64% 165.27% at 100% -3.38%, #6F78F8 0%, #8D56EA 70.18%)",
     },
     borderRadius: {
       lg: '0.8rem',
@@ -127,7 +128,8 @@ export default {
       six: '0px 0px 0px 0px rgba(0, 0, 0, 0.02), 0px 6.23404px 13.35866px 0px rgba(0, 0, 0, 0.02), 0px 24.93617px 24.93617px 0px rgba(0, 0, 0, 0.02), 0px 56.10638px 33.84195px 0px rgba(0, 0, 0, 0.01), 0px 100.63525px 40.07599px 0px rgba(0, 0, 0, 0.00), 0px 156.74164px 43.6383px 0px rgba(0, 0, 0, 0.00)',
       seventh: '0px 0px 0px 0px rgba(0, 0, 0, 0.01), 0px 7.35481px 15.76031px 0px rgba(0, 0, 0, 0.01), 0px 29.41924px 29.41924px 0px rgba(0, 0, 0, 0.01), 0px 66.19331px 39.92612px 0px rgba(0, 0, 0, 0.01), 0px 118.72768px 47.28093px 0px rgba(0, 0, 0, 0.00), 0px 184.92097px 51.48368px 0px rgba(0, 0, 0, 0.00)'
     },
-    extend: {}
+    extend: {
+    }
   },
   plugins: []
 };

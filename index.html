@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -10,18 +10,15 @@
       rel="stylesheet"
       href="style.css"
     />
-    <title>Pricing tables</title>
+    <title>Cashout</title>
   </head>
   <body>
-    <main
-      id="app"
-      class="overflow-hidden"
-    >
+    <main class="overflow-hidden">
       <!-- Header -->
       <header
         x-data="{pricingOpen: false}"
         x-effect="document.documentElement.classList.toggle('overflow-hidden', pricingOpen)"
-        class="h-navHeight w-full z-50 lg:h-auto px-4 lg:py-[1.8rem] lg:px-27 flex justify-between lg:justify-around bg-white items-center gap-x-10"
+        class="h-navHeight w-full z-50 lg:h-auto px-4 lg:py-[1.8rem] lg:px-27 flex justify-between lg:justify-around bg-white items-center max-w-[144rem] mx-auto gap-x-10"
         :class="pricingOpen ? 'fixed top-0 lg:static' : ''"
       >
         <img
@@ -977,157 +974,941 @@
       </header>
       <!-- Header -->
 
-      <!-- Offer -->
-      <section class="relative">
-        <img src="/images/pricing/head-bg-1.png" class="absolute top-0 left-0"/>
-        <img src="/images/pricing/head-bg-2.png" class="absolute top-0 right-0"/>
-
-        <div class="container mx-auto pt-[112px]">
-          <div class="flex flex-col items-center">
-            <h1 class="text-[56.931px] font-bold"><span class="bg-pricing text-transparent bg-clip-text">Best Offer</span> Of Year</h1>
-            <p class="bg-pricing text-transparent bg-clip-text -mt-1 text-[23.136px]">subtitle about pricing </p>
+      <!-- Hero -->
+      <section
+        class="flex justify-center relative mb-15 lg:mb-[11.6rem]"
+      >
+        <img src="/images/cashout/head-bg-1.png" class="absolute top-0 left-0">
+        <img src="/images/cashout/head-bg-2.png" class="absolute top-0 right-0">
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center lg:gap-[75px] container py-[10px] px-[30px] lg:px-0 lg:py-0"
+        >
+          <div class="flex flex-col">
+            <h1
+              class="text-center lg:text-start pt-13 text-neutral-text1-cash text-[44px] font-bold"
+            >
+              <span class="text-[#9459F1]">Cashing out</span> your Income
+            </h1>
+            <span class="bg-purple text-transparent bg-clip-text text-[17px] font-bold text-center lg:text-start">The first month, you are a guest of MasterTube!</span>
+            <p
+              class="text-center lg:text-start text-neutral-text2 text-[1.7rem] leading-[180%] lg:max-w-[80%]"
+            >
+              Embarking on an Enchanting Journey: Weaving Stories, Creating Memories, and Spreading Joy, One Chapter at a Time
+            </p>
+            <div class="flex flex-col gap-y-3 mb-10 lg:flex-row gap-x-7 mt-[12.8px]">
+              <button
+                class="w-full lg:w-auto bg-try-for-free-gray py-2 px-5 rounded-lg text-md font-semibold leading-[180%] text-white"
+              >
+                Try For Free
+              </button>
+              <button
+                class="w-full lg:w-auto text-base text-neutral-text2 font-semibold"
+              >
+                Read More
+              </button>
+            </div>
           </div>
+          <div class="flex justify-center items-center lg:pb-10 w-fit">
+            <!-- <img
+              src="/images/media-player-small.png"
+              alt="Media player"
+              class="self-start w-[5rem] hidden lg:block lg:w-auto mt-[12rem] -mr-14"
+            /> -->
+            <img
+              src="/images/media-player-big.png"
+              alt="Media player"
+              class="w-[294px] h-[294px] lg:w-[472px] lg:h-[472px]"
+            />
+            <!-- <img
+              src="/images/media-player-small.png"
+              alt="Media player"
+              class="self-end rotate-[-21.296deg] hidden lg:block w-[5rem] lg:w-auto"
+            /> -->
+          </div>
+        </div>
+      </section>
+      <!-- Hero -->
 
-          <div class="grid grid-cols-4 gap-[30px] py-[31px] mt-[62px]">
-            <div class="flex flex-col transition ease-in-out hover:bg-pricing rounded-[14.884px] shadow-[0px_3.50213px_18.82396px_0px_rgba(0,0,0,0.25)] py-[22.8px] px-[18.4px] group">
-              <h2 class="text-[#323232] text-[21.013px] font-[600] group-hover:text-white">intro</h2>
-              <span class="text-[#8B8B8B] mt-[3.5px] text-[12.257px]  group-hover:text-white">useful for xxxx users</span>
-              <div class="text-[#32323233] text-[14.884px] capitalize line-through mt-[21px] group-hover:text-[#FFFFFF85]">$23</div>
-              <div class="flex items-center gap-[5.79px] text-[#8F55EA] text-[32.795px] font-[700] group-hover:text-white">$23 <span class="text-[#666E80] group-hover:text-white text-[12.257px]">/month</span></div>
-              <div class="text-[#8B8B8B] text-[10.506px] -mt-[2.63px] group-hover:text-white">per user</div>
-              <ul class="flex flex-col mt-[21px] gap-[10.51px]">
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">deep like</div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">AI assistant</div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">vpn free upload</div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">Epidemic sound </div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">Advertising</div>
-                </li>
-              </ul>
-              <button class="mt-[21px] w-full rounded-[5.675px] bg-[#8F55EA] group-hover:bg-white text-[15.76px] text-white group-hover:text-[#8F55EA] font-[600] h-[47.32px]">purchase</button>
+      <!-- Steps -->
+      <section
+        class="container mx-auto mb-[5rem] lg:mb-[15.4rem]"
+      >
+        <div class="flex items-center justify-between w-full relative min-w-[1000px] px-5 lg:px-0">
+          <div class="border-dashed border-t-[2px] border-[#A06AF6] h-[3px] absolute top-[35px] right-[50px] left-[50px]"></div>
+          <div class="border-t-[2px] border-[#A06AF6] h-[3px] absolute top-[35px] left-[66%] right-[50px]"></div>
+          <div class="flex flex-col relative z-10">
+            <img src="/images/cashout/headset.png" alt="headset" class="w-[40.095px] h-[40.095px] lg:w-[58.247px] lg:h-[58.247px] mb-[11.65px]">
+            <span class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#A7A8AD]">Step 1</span>
+            <div class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">Registration</div>
+          </div>
+          <div class="flex flex-col relative z-10">
+            <img src="/images/cashout/headphone.png" alt="headphone" class="w-[40.095px] h-[40.095px] lg:w-[58.247px] lg:h-[58.247px] mb-[11.65px]">
+            <span class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#AC96EF]">Step 2</span>
+            <div class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">Expert review</div>
+          </div>
+          <div class="flex flex-col relative z-10">
+            <img src="/images/cashout/verify.png" alt="verify" class="w-[40.095px] h-[40.095px] lg:w-[59.911px] lg:h-[59.911px] mb-[11.65px]">
+            <span class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#AC96EF]">Step 3</span>
+            <div class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">Notices</div>
+          </div>
+          <div class="flex flex-col relative z-10">
+            <img src="/images/cashout/signature.png" alt="signature" class="w-[40.095px] h-[40.095px] lg:w-[58.247px] lg:h-[58.247px] mb-[11.65px]">
+            <span class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#AC96EF]">Step 4</span>
+            <div class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">contract</div>
+          </div>
+        </div>
+        <div class="flex flex-col-reverse lg:flex-row gap-x-[91px] items-center justify-center mt-[32px]">
+          <div class="min-w-fit">
+            <img
+              src="/images/cashout/Music.png"
+              alt="Music"
+              class="w-[305.657px] h-[305.657px] lg:w-[342.791px] lg:h-[342.791px]"
+            />
+          </div>
+          <div
+            x-data="{content: 'consult'}"
+            class="flex flex-col items-start w-full p-[10px] px-5 lg:p-0"
+          >
+            <h2
+              class="hidden lg:block text-neutral-text1-cash text-3xl font-bold leading-[140%] mb-6"
+            >
+              Why Trusting In Us?
+            </h2>
+            <div
+              class="hidden lg:flex gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]"
+            >
+              <span
+                @click="content = 'consult'"
+                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
+                :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                >Youtube Consulting</span
+              >
+              <span
+                @click="content = 'educational'"
+                :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Educational Courses</span
+              >
+              <span
+                @click="content = 'pro'"
+                :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Pro Dasboard</span
+              >
+              <span
+                @click="content = 'ai'"
+                :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >AI Services</span
+              >
             </div>
-            <div class="flex flex-col transition ease-in-out hover:bg-pricing rounded-[14.884px] shadow-[0px_3.50213px_18.82396px_0px_rgba(0,0,0,0.25)] py-[22.8px] px-[18.4px] group">
-              <h2 class="text-[#323232] text-[21.013px] font-[600] group-hover:text-white">intro</h2>
-              <span class="text-[#8B8B8B] mt-[3.5px] text-[12.257px]  group-hover:text-white">useful for xxxx users</span>
-              <div class="text-[#32323233] text-[14.884px] capitalize line-through mt-[21px] group-hover:text-[#FFFFFF85]">$23</div>
-              <div class="flex items-center gap-[5.79px] text-[#8F55EA] text-[32.795px] font-[700] group-hover:text-white">$23 <span class="text-[#666E80] group-hover:text-white text-[12.257px]">/month</span></div>
-              <div class="text-[#8B8B8B] text-[10.506px] -mt-[2.63px] group-hover:text-white">per user</div>
-              <ul class="flex flex-col mt-[21px] gap-[10.51px]">
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">deep like</div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">AI assistant</div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">vpn free upload</div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">Epidemic sound </div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">Advertising</div>
-                </li>
-              </ul>
-              <button class="mt-[21px] w-full rounded-[5.675px] bg-[#8F55EA] group-hover:bg-white text-[15.76px] text-white group-hover:text-[#8F55EA] font-[600] h-[47.32px]">purchase</button>
+            <div
+              class="flex w-full justify-between lg:hidden gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]"
+            >
+              <span
+                @click="content = 'consult'"
+                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
+                :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                >Step 1</span
+              >
+              <span
+                @click="content = 'educational'"
+                :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Step 2</span
+              >
+              <span
+                @click="content = 'pro'"
+                :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Step 3</span
+              >
+              <span
+                @click="content = 'ai'"
+                :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Step 4</span
+              >
             </div>
-            <div class="flex flex-col transition ease-in-out hover:bg-pricing rounded-[14.884px] shadow-[0px_3.50213px_18.82396px_0px_rgba(0,0,0,0.25)] py-[22.8px] px-[18.4px] group">
-              <h2 class="text-[#323232] text-[21.013px] font-[600] group-hover:text-white">intro</h2>
-              <span class="text-[#8B8B8B] mt-[3.5px] text-[12.257px]  group-hover:text-white">useful for xxxx users</span>
-              <div class="text-[#32323233] text-[14.884px] capitalize line-through mt-[21px] group-hover:text-[#FFFFFF85]">$23</div>
-              <div class="flex items-center gap-[5.79px] text-[#8F55EA] text-[32.795px] font-[700] group-hover:text-white">$23 <span class="text-[#666E80] group-hover:text-white text-[12.257px]">/month</span></div>
-              <div class="text-[#8B8B8B] text-[10.506px] -mt-[2.63px] group-hover:text-white">per user</div>
-              <ul class="flex flex-col mt-[21px] gap-[10.51px]">
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">deep like</div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">AI assistant</div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">vpn free upload</div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">Epidemic sound </div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">Advertising</div>
-                </li>
-              </ul>
-              <button class="mt-[21px] w-full rounded-[5.675px] bg-[#8F55EA] group-hover:bg-white text-[15.76px] text-white group-hover:text-[#8F55EA] font-[600] h-[47.32px]">purchase</button>
+            <p
+              x-cloak
+              x-show="content === 'consult'"
+              class="pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+            <p
+              x-cloak
+              x-show="content === 'educational'"
+              class="pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+            <p
+              x-cloak
+              x-show="content === 'pro'"
+              class="pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+            <p
+              x-cloak
+              x-show="content === 'ai'"
+              class="pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Steps -->
+
+      <!-- Connect -->
+      <section
+        class="flex flex-col lg:flex-row gap-[14px] lg:gap-0 relative justify-center mx-auto pb-[5rem] lg:pb-[15.4rem]"
+      >
+        <div class="absolute -z-30 bottom-0 -right-10">
+          <img
+            src="/images/cashout/bg-gradient-content.png"
+            alt="Effect"
+          />
+        </div>
+        <div class="container grid grid-cols-3 gap-y-[27px] gap-x-10 px-5 lg:px-0">
+          <div class="flex py-[15px] lg:py-[50px] px-[13px] overflow-hidden lg:px-[92.65px] relative col-span-3 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect">
+            <div class="lg:max-w-[80%] z-10">
+              <h2 class="text-white text-[21px] lg:text-[35.836px] font-[600] mb-[11.29px]">Connect to the <span class="bg-purple text-transparent bg-clip-text">official Mediacube</span> MCN</h2>
+              <p class="text-[12px] lg:text-[21px] text-[#FFFFFFE5]">(how and in what condation user can connect to MCN)Our YouTube consulting service provides personalized guidance and strategies to help your channel thrive. Whether you're aiming for growth, engagement, or monetization, our experts are here </p>
+              <button class="flex mt-[55.59px] bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2 w-full justify-center lg:w-fit">call to action</button>
             </div>
-            <div class="flex flex-col transition ease-in-out hover:bg-pricing rounded-[14.884px] shadow-[0px_3.50213px_18.82396px_0px_rgba(0,0,0,0.25)] py-[22.8px] px-[18.4px] group">
-              <h2 class="text-[#323232] text-[21.013px] font-[600] group-hover:text-white">intro</h2>
-              <span class="text-[#8B8B8B] mt-[3.5px] text-[12.257px]  group-hover:text-white">useful for xxxx users</span>
-              <div class="text-[#32323233] text-[14.884px] capitalize line-through mt-[21px] group-hover:text-[#FFFFFF85]">$23</div>
-              <div class="flex items-center gap-[5.79px] text-[#8F55EA] text-[32.795px] font-[700] group-hover:text-white">$23 <span class="text-[#666E80] group-hover:text-white text-[12.257px]">/month</span></div>
-              <div class="text-[#8B8B8B] text-[10.506px] -mt-[2.63px] group-hover:text-white">per user</div>
-              <ul class="flex flex-col mt-[21px] gap-[10.51px]">
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">deep like</div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">AI assistant</div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">vpn free upload</div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">Epidemic sound </div>
-                </li>
-                <li class="flex gap-[7.88px]">
-                  <img src="/images/pricing/circle-right-green.svg">
-                  <div class="text-[14.009px] text-[#8B8B8B] group-hover:text-white">Advertising</div>
-                </li>
-              </ul>
-              <button class="mt-[21px] w-full rounded-[5.675px] bg-[#8F55EA] group-hover:bg-white text-[15.76px] text-white group-hover:text-[#8F55EA] font-[600] h-[47.32px]">purchase</button>
+            <img src="" alt="" class="">
+
+            <img src="/images/cashout/connect-group.svg" alt="connect background" class="absolute top-0 right-0 opacity-20">
+            <img src="/images/cashout/connect-gradient.svg" alt="connect background" class="absolute bottom-0 left-0">
+          </div>
+          <div class="hidden lg:flex flex-col py-[25.72px] px-[25px] pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">What MCN does it connect to?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="hidden lg:flex flex-col py-[25.72px] px-[25px] pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">channel cannot connect to MCN?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="hidden lg:flex flex-col py-[25.72px] px-[25px] pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">What MCN does it connect to?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="flex lg:hidden items-center gap-[19.3px] overflow-x-auto">
+          <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">What MCN does it connect to?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">channel cannot connect to MCN?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">What MCN does it connect to?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- Connect -->
+
+      <!-- Calculator -->
+      <section
+        class="container mx-auto relative mb-[5rem] lg:mb-[15.4rem]"
+      >
+        <div class="absolute -z-30 bottom-4 -left-23">
+          <img
+            src="/images/cashout/back-gradient.png"
+            alt="Effect"
+          />
+        </div>
+        <div
+          class="bg-white lg:border lg:border-neutral-bg1 lg:shadow-cashout-card-shadow flex flex-col lg:flex-row gap-x-17 pt-10 lg:py-0 lg:rounded-[22px] overflow-hidden"
+        >
+          <div
+            class="lg:pr-17 px-5 lg:px-17 lg:pr-0 lg:w-[70%] text-center text-neutral-text1-cash text-xl font-bold leading-[140%] pb-14 lg:py-14 flex justify-center flex-col"
+          >
+            <span
+              class="mb-12 block text-xl lg:text-4xl text-center lg:text-start"
+              >Youtube Money Calculator</span
+            >
+            <!-- Range Input 1 -->
+            <div class="flex flex-col gap-y-2 mb-7">
+              <div class="flex justify-between items-center">
+                <div class="gap-x-2 flex items-center">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M22.5762 10.0639C20.169 6.28123 16.6469 4.10333 12.9372 4.10333C11.0823 4.10333 9.27955 4.6452 7.6331 5.656C5.98665 6.67721 4.50693 8.16735 3.29814 10.0639C2.25609 11.6999 2.25609 14.3572 3.29814 15.9932C5.70529 19.7863 9.22744 21.9538 12.9372 21.9538C14.792 21.9538 16.5948 21.4119 18.2412 20.4011C19.8877 19.3799 21.3674 17.8897 22.5762 15.9932C23.6182 14.3676 23.6182 11.6999 22.5762 10.0639ZM12.9372 17.2437C10.603 17.2437 8.72726 15.3575 8.72726 13.0338C8.72726 10.71 10.603 8.82385 12.9372 8.82385C15.2714 8.82385 17.1471 10.71 17.1471 13.0338C17.1471 15.3575 15.2714 17.2437 12.9372 17.2437Z"
+                        fill="#D8B9FF"
+                      />
+                      <path
+                        d="M12.9371 10.0535C11.3011 10.0535 9.96729 11.3874 9.96729 13.0338C9.96729 14.6698 11.3011 16.0037 12.9371 16.0037C14.5732 16.0037 15.9174 14.6698 15.9174 13.0338C15.9174 11.3978 14.5732 10.0535 12.9371 10.0535Z"
+                        fill="#D8B9FF"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="text-neutral-text2 text-md font-medium leading-[140%]"
+                    >Daily Views:</span
+                  >
+                </div>
+                <div
+                  class="text-neutral-text2 text-2xl font-semibold leading-[140%]"
+                >
+                  77,302
+                </div>
+              </div>
+              <input
+                type="range"
+                class="range-input w-full h-[6px] rounded-lg bg-[#B378FF]"
+              />
+            </div>
+            <!-- Range Input 1 -->
+
+            <!-- Range Input 2 -->
+            <div class="flex flex-col gap-y-2">
+              <div class="flex justify-between items-center">
+                <div class="gap-x-2 flex items-center">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.3575 23.0229H2.51641C2.08916 23.0229 1.73486 22.6686 1.73486 22.2414C1.73486 21.8141 2.08916 21.4598 2.51641 21.4598H23.3575C23.7848 21.4598 24.1391 21.8141 24.1391 22.2414C24.1391 22.6686 23.7848 23.0229 23.3575 23.0229Z"
+                        fill="#D8B9FF"
+                      />
+                      <path
+                        d="M10.5928 4.26594V23.023H15.282V4.26594C15.282 3.11967 14.8131 2.18182 13.4063 2.18182H12.4685C11.0617 2.18182 10.5928 3.11967 10.5928 4.26594Z"
+                        fill="#D8B9FF"
+                      />
+                      <path
+                        d="M3.55859 10.5183V23.023H7.72682V10.5183C7.72682 9.37205 7.31 8.4342 6.05953 8.4342H5.22588C3.97542 8.4342 3.55859 9.37205 3.55859 10.5183Z"
+                        fill="#D8B9FF"
+                      />
+                      <path
+                        d="M18.1475 15.7285V23.0229H22.3157V15.7285C22.3157 14.5823 21.8989 13.6444 20.6484 13.6444H19.8148C18.5643 13.6444 18.1475 14.5823 18.1475 15.7285Z"
+                        fill="#D8B9FF"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="text-neutral-text2 text-md font-medium leading-[140%]"
+                    >CRM Rate:</span
+                  >
+                </div>
+                <div
+                  class="text-neutral-text2 text-2xl font-semibold leading-[140%]"
+                >
+                  0.03
+                </div>
+              </div>
+              <input
+                type="range"
+                class="range-input w-full h-[6px] rounded-lg bg-[#B378FF]"
+              />
+            </div>
+            <!-- Range Input 2 -->
+          </div>
+          <div
+            class="lg:w-[30%] bg-no-repeat py-10 flex flex-col gap-y-6 justify-center items-center bg-cover bg-[url('/images/cashout/calculator-bg.png')]"
+          >
+            <div class="text-center flex flex-col">
+              <span
+                class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
+                >Estimated Daily Earning</span
+              >
+              <span class="text-[4rem] font-semibold leading-[140%] text-white"
+                >$503.23</span
+              >
+            </div>
+            <div class="text-center flex flex-col">
+              <span
+                class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
+                >Estimated monthly Earning</span
+              >
+              <span class="text-[4rem] font-semibold leading-[140%] text-white"
+                >$6,503.23
+              </span>
+            </div>
+            <div class="text-center flex flex-col">
+              <span
+                class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
+                >Estimated Yearly Earning</span
+              >
+              <span class="text-[4rem] font-semibold leading-[140%] text-white"
+                >$ 12,503.23
+              </span>
             </div>
           </div>
         </div>
       </section>
-      <!-- Offer -->
+      <!-- Calculator -->
 
-      <!-- Table -->
-      <section class="mt-[100px]">
-        <div class="container mx-auto py-[10px]">
-          <div class="flex flex-col items-center">
-            <h1 class="text-[35.141px] font-bold"><span class="bg-pricing text-transparent bg-clip-text">See The</span> Diffrence</h1>
-            <p class="text-[#666E80] -mt-1 text-[23.136px]">subtitle</p>
+      <!-- Why Trusting Us? -->
+      <section
+        class="container mx-auto mb-[5rem] lg:mb-[15.4rem]"
+      >
+        <div class="flex flex-col-reverse lg:flex-row px-5 lg:px-0 gap-x-[91px] gap-y-[15px] items-center justify-center">
+          <div class="min-w-fit overflow-x-auto">
+            <img
+              src="/images/cashout/compass.png"
+              alt="Compass"
+              class="w-[318.917px] h-[347.298px]"
+            />
           </div>
-
-          <div class="mt-[48px]">
-            
+          <div
+            x-data="{content: 'consult'}"
+            class="flex flex-col items-start w-full"
+          >
+            <h2
+              class="text-neutral-text1-cash text-3xl font-bold leading-[140%] mb-6"
+            >
+              Why Trusting In Us?
+            </h2>
+            <div
+              class="flex min-w-max gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]"
+            >
+              <span
+                @click="content = 'consult'"
+                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
+                :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                >Youtube Consulting</span
+              >
+              <span
+                @click="content = 'educational'"
+                :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Educational Courses</span
+              >
+              <span
+                @click="content = 'pro'"
+                :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >Pro Dasboard</span
+              >
+              <span
+                @click="content = 'ai'"
+                :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
+                >AI Services</span
+              >
+            </div>
+            <p
+              x-cloak
+              x-show="content === 'consult'"
+              class="pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+            <p
+              x-cloak
+              x-show="content === 'educational'"
+              class="pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+            <p
+              x-cloak
+              x-show="content === 'pro'"
+              class="pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
+            <p
+              x-cloak
+              x-show="content === 'ai'"
+              class="pt-8"
+            >
+              Our YouTube consulting service provides personalized guidance and
+              strategies to help your channel thrive. Whether you're aiming for
+              growth, engagement, or monetization, our experts are here to
+              assist you every step of the way.
+            </p>
           </div>
         </div>
       </section>
-      <!-- Table -->
+      <!-- Why Trusting Us? -->
+
+      <!-- Income -->
+      <section
+        class="container mx-auto mb-[5rem] lg:mb-[15.4rem]"
+      >
+        <div class="flex flex-col relative bg-[#BD8EE2] pb-[175px] lg:pb-0 px-[30px] lg:px-[60px] pt-[50px] lg:rounded-[22px] shadow[0px_4px_16.9px_0px_rgba(0,0,0,0.05) overflow-hidden">
+          <h2 class="text-[35px] text-white text-center lg:text-start relative z-10">YouTube <span class="bg-purple-main text-transparent bg-clip-text">income calculator</span></h2>
+          <div class="flex flex-col lg:flex-row gap-3 lg:max-w-[80%] mt-[23px] relative z-10">
+            <div class="relative lg:w-[30%]">
+              <input
+                type="InEmail"
+                id="name"
+                class="block h-[54.636px] text-md px-[25.22px] bg-[#fff] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                placeholder="email  address"
+              />
+            </div>
+            <div class="relative lg:w-[70%]">
+              <input
+                type="text"
+                id="youtube"
+                class="block h-[54.636px] text-md px-[25.22px] bg-[#fff] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                placeholder="my YouTube channel URL"
+              />
+              <button class="hidden lg:flex absolute top-0 bottom-0 left-3 my-auto h-[32px] flex items-center gap-[10px] text-[13.524px] py-1 px-5 rounded-[77px] text-white bg-purple">
+                submit
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" class="rotate-180">
+                  <path d="M18.0737 10.9612L12.249 16.7859C12.1276 16.9073 11.9629 16.9755 11.7911 16.9755C11.6194 16.9755 11.4547 16.9073 11.3333 16.7859C11.2118 16.6644 11.1436 16.4997 11.1436 16.328C11.1436 16.1563 11.2118 15.9915 11.3333 15.8701L16.0537 11.1505H3.37766C3.20601 11.1505 3.0414 11.0823 2.92003 10.9609C2.79865 10.8395 2.73047 10.6749 2.73047 10.5033C2.73047 10.3316 2.79865 10.167 2.92003 10.0456C3.0414 9.92427 3.20601 9.85608 3.37766 9.85608H16.0537L11.3333 5.13644C11.2118 5.015 11.1436 4.8503 11.1436 4.67856C11.1436 4.50682 11.2118 4.34211 11.3333 4.22067C11.4547 4.09923 11.6194 4.03101 11.7911 4.03101C11.9629 4.03101 12.1276 4.09923 12.249 4.22067L18.0737 10.0454C18.1339 10.1055 18.1817 10.1769 18.2142 10.2554C18.2468 10.334 18.2636 10.4182 18.2636 10.5033C18.2636 10.5883 18.2468 10.6725 18.2142 10.7511C18.1817 10.8297 18.1339 10.9011 18.0737 10.9612Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+            <button class="flex lg:hidden h-[41px] flex items-center justify-center gap-[10px] text-[13.524px] px-5 rounded-[77px] text-white bg-[#ffffff54] lg:bg-purple">
+              submit
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" class="rotate-180">
+                <path d="M18.0737 10.9612L12.249 16.7859C12.1276 16.9073 11.9629 16.9755 11.7911 16.9755C11.6194 16.9755 11.4547 16.9073 11.3333 16.7859C11.2118 16.6644 11.1436 16.4997 11.1436 16.328C11.1436 16.1563 11.2118 15.9915 11.3333 15.8701L16.0537 11.1505H3.37766C3.20601 11.1505 3.0414 11.0823 2.92003 10.9609C2.79865 10.8395 2.73047 10.6749 2.73047 10.5033C2.73047 10.3316 2.79865 10.167 2.92003 10.0456C3.0414 9.92427 3.20601 9.85608 3.37766 9.85608H16.0537L11.3333 5.13644C11.2118 5.015 11.1436 4.8503 11.1436 4.67856C11.1436 4.50682 11.2118 4.34211 11.3333 4.22067C11.4547 4.09923 11.6194 4.03101 11.7911 4.03101C11.9629 4.03101 12.1276 4.09923 12.249 4.22067L18.0737 10.0454C18.1339 10.1055 18.1817 10.1769 18.2142 10.2554C18.2468 10.334 18.2636 10.4182 18.2636 10.5033C18.2636 10.5883 18.2468 10.6725 18.2142 10.7511C18.1817 10.8297 18.1339 10.9011 18.0737 10.9612Z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+          <p class="mt-2 text-[#FFFFFFE8] text-[15px] pb-[84px] text-center lg:text-start relative z-10">Our YouTube consulting service provides personalized guidance and strategies to help your ch</p>
+          
+          <img src="/images/cashout/Income.png" alt="background" class="hidden lg:block absolute bottom-0 right-0 left-0 w-full -scale-x-100 scale-y-100">
+          <img src="/images/cashout/income-bg.png" alt="background" class="lg:hidden absolute bottom-0 right-0 left-0 w-full">
+        </div>
+      </section>
+      <!-- Income -->
+
+      <!-- Shield -->
+      <section
+        class="container mx-auto mb-[5rem] lg:mb-[15.4rem] relative"
+      >
+        <div class="flex flex-col lg:flex-row px-5 lg:px-0 gap-[68.12px]">
+          <div class="flex flex-col items-center lg:items-start gap-[18.9px] lg:gap-[27px]">
+            <h2 class="text-[31px] lg:text-[43.7px] text-[#3D3E4A] text-center lg:text-start">Mastertube <span class="bg-purple text-transparent bg-clip-text">shield service</span></h2>
+            <p class="text-[#666E80] text-[17.257px] lg:text-[24.665px]">Our YouTube consulting service provides personalized guidance and strategies to help your channel thrive. </p>
+            <div class="flex flex-col lg:flex-row gap-x-[27px] w-full">
+              <button class="w-full lg:w-fit rounded-[9.396px] bg-[#8F55EA] text-white py-[11.75px] px-[21.14px] text-[16px] font-[600]">CALL TO ACTION</button>
+              <button class="w-full lg:w-fit rounded-[9.396px] text-[#666E80] py-[11.75px] px-[21.14px] text-[16px] font-[600]">CALL TO ACTION</button>
+            </div>
+          </div>
+          <div class="relative flex items-center justify-center max-h-[315px] lg:pl-[38px]">
+            <img src="/images/cashout/services.png" alt="services" class="relative z-10 w-[212.915px] h-[208.671px] lg:w-fit lg:h-fit">
+            <img src="/images/cashout/services-bg.svg" alt="background" class="absolute top-0 right-0">
+            <img src="/images/cashout/servises-gradient.svg" alt="background" class="absolute min-w-[485.896px] min-h-[323.193px] blur-[35px]">
+          </div>
+        </div>
+      </section>
+      <!-- Shield -->
+
+      <!-- Services -->
+      <section
+        class="flex flex-col lg:items-center relative gap-[27px] px-5 lg:px-0 mx-auto mx-auto pb-[5rem] lg:pb-[15.4rem]"
+      >
+        <h2 class="text-[#3D3E4A] text-[31px] text-center lg:text-start lg:text-[37.207px] p-[10px]">Earnings cashing <span class="bg-purple text-transparent bg-clip-text">services</span> </h2>
+        <div class="hidden container lg:grid grid-cols-3 gap-y-[27px] gap-x-10">
+          <div class="flex py-[40px] overflow-hidden px-[92.65px] relative col-span-2 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-services">
+            <div class="flex flex-col justify-between max-w-[60%] z-10">
+              <div class="flex flex-col">
+                <h2 class="text-white text-[35.836px] font-[600] mb-[11.29px]">CONTENT ID</h2>
+                <p class="text-[18px] text-[#FFFFFFE5]">professional channel setup and optimization services fo</p>
+              </div>
+              <button class="flex w-fit mt-[55.59px] bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2">call to action</button>
+            </div>
+            <img src="" alt="" class="">
+
+            <img src="/images/cashout/connect-group.svg" alt="connect background" class="absolute top-0 right-0 opacity-20">
+            <img src="/images/cashout/connect-gradient.svg" alt="connect background" class="absolute bottom-0 left-0">
+          </div>
+          <div class="flex flex-col py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">Vidiq account </h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="flex flex-col py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">Advertising</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="flex relative flex-col justify-between py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <div class="flex flex-col">
+              <h2 class="text-[#3D3E4A] text-[30px] font-[700]">Epidemic sound account</h2>
+              <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            </div>
+            <button class="flex w-fit bg-[#8F55EA] rounded-[999px] px-[21px] text-white text-[13.737px] font-[500] py-2">call to action</button>
+            <img src="" alt="" class="absolute">
+          </div>
+          <div class="flex relative flex-col justify-between py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect">
+            <div class="flex flex-col">
+              <h2 class="text-white text-[30px] font-[700]">Deep link</h2>
+              <p class="mt-[9.55px] text-white text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            </div>
+            <button class="flex w-fit bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2">call to action</button>
+            <img src="" alt="" class="absolute">
+
+            <img src="/images/cashout/connect-group.svg" alt="connect background" class="absolute top-0 right-0 opacity-20">
+          </div>
+        </div>
+
+        <div class="flex lg:hidden items-center gap-[19.3px] overflow-x-auto">
+          <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">What MCN does it connect to?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">channel cannot connect to MCN?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">What MCN does it connect to?</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- Services -->
+
+      <!-- Contact US -->
+      <section class="bg-[url('/images/cashout/contact-bg.png')] bg-cover bg-bottom flex flex-col relative items-center gap-[27px] mx-auto mx-auto relative pb-[131px] mt-[131px]">
+        <div class="container -mt-[131px] flex flex-col-reverse lg:flex-row justify-between lg:rounded-[23.115px] py-[21px] px-5 lg:px-[42px] bg-white gap-y-[24px] lg:shadow-seventh">
+          <div class="flex flex-col items-center lg:items-start">
+            <h1 class="text-[#414141] text-[39.093px] font-bold">contact us</h1>
+            <p class="text-[#98A1B3] text-[18.912px] text-center lg:text-start">professional channel setup and optimization services for those facing time.</p>
+            <div class="flex flex-col w-full gap-[12.61px] px-0 lg:px-[10.51px] p-[10.51px]">
+              <!-- Input 1 -->
+              <div class="relative w-full">
+                <input
+                  type="text"
+                  id="name"
+                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                  placeholder="your name"
+                />
+              </div>
+              <!-- Input 1 -->
+
+              <!-- Input 2 -->
+              <div class="relative w-full">
+                <input
+                  type="text"
+                  id="phone"
+                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                  placeholder="your phone number"
+                />
+              </div>
+              <!-- Input 2 -->
+
+              <!-- Input 3 -->
+              <div class="relative w-full">
+                <input
+                  type="text"
+                  id="email"
+                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                  placeholder="email  address"
+                />
+              </div>
+              <!-- Input 3 -->
+
+              <!-- Input 4 -->
+              <div class="relative w-full">
+                <input
+                  type="text"
+                  id="channel-url"
+                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
+                  placeholder="my YouTube channel URL"
+                />
+              </div>
+              <!-- Input 4 -->
+              <button class="h-[54.636px] rounded-[80.903px] bg-[#D23790] text-white text-[14.209px]">submit</button>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center gap-[12.16px] max-w-[428px] py-[15px] lg:py-0">
+            <img src="/images/cashout/chat.png" alt="contact">
+            <div class="flex items-start gap-[10.51px] text-[#98A1B3] text-[18.912px] self-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path d="M22.9873 25.7173H17.475C18.401 24.8905 19.2742 24.0064 20.0896 23.0703C23.1489 19.5519 24.7705 15.8428 24.7705 12.3433C24.7705 9.74212 23.7372 7.24751 21.8979 5.40823C20.0586 3.56894 17.564 2.53564 14.9629 2.53564C12.3617 2.53564 9.86714 3.56894 8.02786 5.40823C6.18857 7.24751 5.15527 9.74212 5.15527 12.3433C5.15527 15.8428 6.77242 19.5519 9.83618 23.0703C10.6516 24.0064 11.5248 24.8905 12.4508 25.7173H6.93848C6.70201 25.7173 6.47523 25.8112 6.30802 25.9784C6.14081 26.1456 6.04688 26.3724 6.04688 26.6089C6.04688 26.8454 6.14081 27.0721 6.30802 27.2393C6.47523 27.4066 6.70201 27.5005 6.93848 27.5005H22.9873C23.2238 27.5005 23.4506 27.4066 23.6178 27.2393C23.785 27.0721 23.8789 26.8454 23.8789 26.6089C23.8789 26.3724 23.785 26.1456 23.6178 25.9784C23.4506 25.8112 23.2238 25.7173 22.9873 25.7173ZM14.9629 8.77686C15.6683 8.77686 16.3578 8.98602 16.9443 9.3779C17.5308 9.76979 17.9879 10.3268 18.2578 10.9785C18.5278 11.6301 18.5984 12.3472 18.4608 13.039C18.3232 13.7308 17.9835 14.3663 17.4847 14.8651C16.9859 15.3639 16.3505 15.7035 15.6587 15.8411C14.9668 15.9788 14.2498 15.9081 13.5981 15.6382C12.9464 15.3683 12.3894 14.9111 11.9975 14.3247C11.6057 13.7382 11.3965 13.0486 11.3965 12.3433C11.3965 11.3974 11.7722 10.4903 12.4411 9.82143C13.1099 9.1526 14.017 8.77686 14.9629 8.77686Z" fill="#98A1B3"/>
+              </svg>
+              qom, yaseri str, 23 street,qom, yaseri str, 23 street 
+            </div>
+            <div class="flex items-start gap-[10.51px] text-[#98A1B3] text-[18.912px] self-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
+                <path d="M26.5403 19.8736C26.3416 21.3837 25.6 22.77 24.4539 23.7733C23.3078 24.7766 21.8357 25.3284 20.3125 25.3257C11.4634 25.3257 4.26368 18.126 4.26368 9.27687C4.26095 7.75367 4.81278 6.28156 5.81611 5.13549C6.81944 3.98942 8.20564 3.24776 9.71583 3.04904C10.0977 3.00241 10.4844 3.08054 10.8183 3.27176C11.1521 3.46298 11.4152 3.75704 11.5681 4.11004L13.922 9.36492V9.37829C14.0391 9.64851 14.0874 9.94353 14.0627 10.237C14.038 10.5305 13.9411 10.8132 13.7804 11.0601C13.7604 11.0902 13.7392 11.118 13.7169 11.1459L11.3965 13.8965C12.2313 15.5928 14.0055 17.3514 15.7241 18.1884L18.4368 15.8803C18.4634 15.8579 18.4914 15.8371 18.5204 15.8179C18.767 15.6534 19.0508 15.553 19.346 15.5257C19.6412 15.4985 19.9385 15.5453 20.2111 15.6619L20.2256 15.6685L25.476 18.0213C25.8296 18.1737 26.1244 18.4365 26.3163 18.7704C26.5081 19.1043 26.5867 19.4913 26.5403 19.8736Z" fill="#98A1B3"/>
+              </svg>
+              <a href="tel:+989349699944">+989349699944</a> 
+            </div>
+
+            <div class="flex gap-[23.12px]">
+              <a href="http://example.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M38.3268 12.4588L33.7791 17.0065C32.8605 27.6563 23.8792 35.9333 13.1306 35.9333C10.9222 35.9333 9.10156 35.5835 7.71901 34.893C6.60415 34.3348 6.14786 33.7371 6.03379 33.5667C5.93208 33.4142 5.86615 33.2406 5.84093 33.059C5.81572 32.8774 5.83187 32.6925 5.88818 32.518C5.94448 32.3435 6.03949 32.184 6.16611 32.0514C6.29272 31.9188 6.44767 31.8165 6.61936 31.7522C6.65891 31.737 10.3062 30.3362 12.6226 27.67C11.338 26.6138 10.2165 25.3734 9.29473 23.9892C7.40874 21.1891 5.29765 16.3251 5.94862 9.05646C5.96925 8.82549 6.05545 8.60524 6.19707 8.42162C6.33869 8.238 6.52982 8.09868 6.74797 8.02005C6.96612 7.94142 7.20219 7.92676 7.42838 7.97781C7.65458 8.02885 7.86148 8.14346 8.02473 8.30815C8.07796 8.36138 13.0865 13.3425 19.2099 14.9578V14.0315C19.2075 13.0602 19.3996 12.0983 19.7747 11.2023C20.1498 10.3064 20.7003 9.49455 21.394 8.81463C22.0676 8.14195 22.8691 7.611 23.7513 7.25313C24.6334 6.89525 25.5783 6.71768 26.5302 6.73091C27.8072 6.74351 29.0591 7.08629 30.1644 7.72593C31.2696 8.36557 32.1906 9.28031 32.8376 10.3812H37.4659C37.7067 10.381 37.9422 10.4523 38.1424 10.586C38.3427 10.7197 38.4988 10.9098 38.591 11.1322C38.6831 11.3547 38.7072 11.5995 38.6602 11.8356C38.6132 12.0718 38.4972 12.2887 38.3268 12.4588Z" fill="#98A1B3"/>
+                </svg>
+              </a>
+              <a href="http://example.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="40" viewBox="0 0 39 40" fill="none">
+                  <path d="M26.7836 4.29712H12.1824C9.9242 4.29953 7.75918 5.19767 6.16239 6.79447C4.56559 8.39126 3.66745 10.5563 3.66504 12.8145V27.4157C3.66745 29.6739 4.56559 31.8389 6.16239 33.4357C7.75918 35.0325 9.9242 35.9306 12.1824 35.9331H26.7836C29.0418 35.9306 31.2068 35.0325 32.8036 33.4357C34.4004 31.8389 35.2986 29.6739 35.301 27.4157V12.8145C35.2986 10.5563 34.4004 8.39126 32.8036 6.79447C31.2068 5.19767 29.0418 4.29953 26.7836 4.29712ZM19.483 27.4157C18.0391 27.4157 16.6276 26.9875 15.427 26.1853C14.2264 25.3831 13.2907 24.2429 12.7381 22.9089C12.1856 21.5749 12.041 20.107 12.3227 18.6908C12.6044 17.2746 13.2997 15.9738 14.3207 14.9528C15.3417 13.9318 16.6426 13.2365 18.0587 12.9548C19.4749 12.6731 20.9428 12.8176 22.2768 13.3702C23.6108 13.9228 24.751 14.8585 25.5532 16.0591C26.3554 17.2597 26.7836 18.6712 26.7836 20.1151C26.7816 22.0507 26.0118 23.9065 24.6431 25.2752C23.2744 26.6439 21.4186 27.4137 19.483 27.4157ZM28.6088 12.8145C28.2478 12.8145 27.8949 12.7074 27.5948 12.5069C27.2946 12.3063 27.0607 12.0213 26.9225 11.6878C26.7844 11.3543 26.7483 10.9873 26.8187 10.6333C26.8891 10.2792 27.0629 9.95401 27.3182 9.69876C27.5734 9.44351 27.8986 9.26968 28.2527 9.19926C28.6067 9.12883 28.9737 9.16498 29.3072 9.30312C29.6407 9.44126 29.9258 9.67519 30.1263 9.97534C30.3269 10.2755 30.4339 10.6284 30.4339 10.9893C30.4339 11.4734 30.2416 11.9376 29.8993 12.2799C29.5571 12.6222 29.0928 12.8145 28.6088 12.8145ZM24.3501 20.1151C24.3501 21.0777 24.0646 22.0187 23.5298 22.8191C22.995 23.6195 22.2349 24.2433 21.3456 24.6117C20.4562 24.98 19.4776 25.0764 18.5335 24.8886C17.5894 24.7008 16.7221 24.2373 16.0415 23.5566C15.3608 22.876 14.8973 22.0087 14.7095 21.0646C14.5217 20.1205 14.618 19.1419 14.9864 18.2525C15.3548 17.3632 15.9786 16.6031 16.779 16.0683C17.5794 15.5335 18.5204 15.248 19.483 15.248C20.7738 15.248 22.0118 15.7608 22.9245 16.6736C23.8373 17.5863 24.3501 18.8243 24.3501 20.1151Z" fill="#98A1B3"/>
+                </svg>
+              </a>
+              <a href="http://example.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="40" viewBox="0 0 39 40" fill="none">
+                  <path d="M32.9182 4.29712H6.14935C5.50394 4.29712 4.88496 4.55351 4.42859 5.00988C3.97221 5.46626 3.71582 6.08524 3.71582 6.73065V33.4995C3.71582 34.1449 3.97221 34.7639 4.42859 35.2203C4.88496 35.6767 5.50394 35.9331 6.14935 35.9331H32.9182C33.5636 35.9331 34.1826 35.6767 34.639 35.2203C35.0954 34.7639 35.3518 34.1449 35.3518 33.4995V6.73065C35.3518 6.08524 35.0954 5.46626 34.639 5.00988C34.1826 4.55351 33.5636 4.29712 32.9182 4.29712ZM14.6667 27.4157C14.6667 27.7384 14.5385 28.0479 14.3103 28.2761C14.0822 28.5043 13.7727 28.6325 13.45 28.6325C13.1272 28.6325 12.8178 28.5043 12.5896 28.2761C12.3614 28.0479 12.2332 27.7384 12.2332 27.4157V17.6816C12.2332 17.3588 12.3614 17.0494 12.5896 16.8212C12.8178 16.593 13.1272 16.4648 13.45 16.4648C13.7727 16.4648 14.0822 16.593 14.3103 16.8212C14.5385 17.0494 14.6667 17.3588 14.6667 17.6816V27.4157ZM13.45 15.248C13.089 15.248 12.7361 15.141 12.436 14.9404C12.1358 14.7399 11.9019 14.4548 11.7637 14.1213C11.6256 13.7878 11.5895 13.4208 11.6599 13.0668C11.7303 12.7128 11.9041 12.3875 12.1594 12.1323C12.4146 11.877 12.7398 11.7032 13.0939 11.6328C13.4479 11.5624 13.8149 11.5985 14.1484 11.7367C14.4819 11.8748 14.767 12.1087 14.9675 12.4089C15.1681 12.709 15.2751 13.0619 15.2751 13.4229C15.2751 13.9069 15.0828 14.3712 14.7405 14.7134C14.3982 15.0557 13.934 15.248 13.45 15.248ZM28.0512 27.4157C28.0512 27.7384 27.923 28.0479 27.6948 28.2761C27.4666 28.5043 27.1571 28.6325 26.8344 28.6325C26.5117 28.6325 26.2022 28.5043 25.974 28.2761C25.7458 28.0479 25.6176 27.7384 25.6176 27.4157V21.9402C25.6176 21.1335 25.2971 20.3597 24.7267 19.7893C24.1562 19.2188 23.3825 18.8983 22.5757 18.8983C21.7689 18.8983 20.9952 19.2188 20.4247 19.7893C19.8543 20.3597 19.5338 21.1335 19.5338 21.9402V27.4157C19.5338 27.7384 19.4056 28.0479 19.1774 28.2761C18.9492 28.5043 18.6397 28.6325 18.317 28.6325C17.9943 28.6325 17.6848 28.5043 17.4566 28.2761C17.2285 28.0479 17.1003 27.7384 17.1003 27.4157V17.6816C17.1018 17.3835 17.2126 17.0964 17.4118 16.8747C17.6109 16.6529 17.8845 16.512 18.1807 16.4786C18.4769 16.4452 18.775 16.5217 19.0185 16.6935C19.262 16.8654 19.434 17.1206 19.5018 17.4108C20.325 16.8524 21.2846 16.5288 22.2778 16.4747C23.271 16.4206 24.2601 16.638 25.1391 17.1037C26.018 17.5693 26.7535 18.2656 27.2665 19.1177C27.7796 19.9698 28.0508 20.9456 28.0512 21.9402V27.4157Z" fill="#98A1B3"/>
+                </svg>
+              </a>
+              <a href="http://example.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M35.4054 20.115C35.4004 23.981 33.982 27.7117 31.4173 30.6045C28.8526 33.4972 25.3186 35.3524 21.481 35.8204C21.3956 35.8301 21.309 35.8215 21.2271 35.7953C21.1452 35.7691 21.0698 35.7258 21.0059 35.6683C20.9419 35.6108 20.8909 35.5404 20.8561 35.4618C20.8213 35.3831 20.8036 35.298 20.8042 35.212V23.7653H24.4545C24.6213 23.7656 24.7864 23.7317 24.9395 23.6656C25.0927 23.5995 25.2306 23.5025 25.3447 23.3809C25.4588 23.2592 25.5467 23.1154 25.6028 22.9583C25.659 22.8013 25.6823 22.6343 25.6713 22.4679C25.6444 22.155 25.5 21.8639 25.2672 21.6531C25.0345 21.4423 24.7305 21.3275 24.4165 21.3317H20.8042V17.6814C20.8042 17.036 21.0606 16.417 21.517 15.9607C21.9733 15.5043 22.5923 15.2479 23.2377 15.2479H25.6713C25.8381 15.2483 26.0032 15.2143 26.1563 15.1482C26.3094 15.0821 26.4473 14.9852 26.5615 14.8635C26.6756 14.7418 26.7634 14.598 26.8196 14.441C26.8758 14.2839 26.8991 14.117 26.888 13.9505C26.8611 13.6371 26.7163 13.3456 26.4829 13.1347C26.2495 12.9238 25.9447 12.8094 25.6302 12.8144H23.2377C21.9469 12.8144 20.7089 13.3272 19.7962 14.2399C18.8834 15.1527 18.3707 16.3906 18.3707 17.6814V21.3317H14.7204C14.5536 21.3314 14.3885 21.3653 14.2353 21.4314C14.0822 21.4976 13.9443 21.5945 13.8302 21.7161C13.7161 21.8378 13.6282 21.9816 13.572 22.1387C13.5158 22.2957 13.4925 22.4627 13.5036 22.6291C13.5305 22.9425 13.6753 23.2341 13.9087 23.4449C14.1422 23.6558 14.4469 23.7703 14.7614 23.7653H18.3707V35.215C18.3712 35.3009 18.3535 35.3859 18.3189 35.4644C18.2842 35.543 18.2333 35.6133 18.1695 35.6707C18.1057 35.7282 18.0305 35.7715 17.9488 35.7978C17.8671 35.8242 17.7807 35.8329 17.6954 35.8234C13.7551 35.3436 10.1386 33.4019 7.56163 30.3828C4.98468 27.3636 3.63514 23.487 3.78011 19.5203C4.0843 11.3071 10.737 4.6301 18.9562 4.3107C21.0842 4.22827 23.2069 4.57588 25.1974 5.33273C27.188 6.08958 29.0054 7.24012 30.541 8.71554C32.0766 10.191 33.2989 11.9609 34.1347 13.9196C34.9705 15.8783 35.4027 17.9854 35.4054 20.115Z" fill="#98A1B3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact US -->
+
+      <!-- FAQ -->
+      <section class="text-center container mx-auto my-22 px-5 lg:px-0">
+        <h3 class="mb-14">Frequently Asked Questions!</h3>
+        <div class="flex flex-col gap-y-6">
+          <!-- Accordian NO.1 -->
+          <div
+            x-data="{open1: false}"
+            class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8"
+          >
+            <!-- Header -->
+            <div
+              @click="open1 = !open1"
+              class="flex justify-between items-center cursor-pointer"
+            >
+              <span class="text-md font-semibold text-neutral-text1 text-start"
+                >What is MasterTube Title Generator AI?
+              </span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="transition-transform duration-300"
+                  :class="open1 ? 'rotate-180': '' "
+                >
+                  <path
+                    d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
+                    fill="#8F55EA"
+                    stroke="#8F55EA"
+                  />
+                </svg>
+              </span>
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <p
+              x-show="open1"
+              x-cloak
+              x-transition
+              class="text-md text-neutral-text3 text-start font-normal py-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
+            </p>
+            <!-- Content -->
+          </div>
+          <!-- Accordian NO.1 -->
+
+          <!-- Accordian NO.2 -->
+          <div
+            x-data="{open2: true}"
+            class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8"
+          >
+            <!-- Header -->
+            <div
+              @click="open2 = !open2"
+              class="flex justify-between items-center cursor-pointer"
+            >
+              <span class="text-md font-semibold text-neutral-text1 text-start"
+                >How does MasterTube's Title Generator AI work?
+              </span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="transition-transform duration-300"
+                  :class="open2 ? 'rotate-180': '' "
+                >
+                  <path
+                    d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
+                    fill="#8F55EA"
+                    stroke="#8F55EA"
+                  />
+                </svg>
+              </span>
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <p
+              x-show="open2"
+              x-cloak
+              x-transition
+              class="text-md text-neutral-text3 text-start font-normal py-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
+            </p>
+            <!-- Content -->
+          </div>
+          <!-- Accordian NO.2 -->
+
+          <!-- Accordian NO.3 -->
+          <div
+            x-data="{open3: false}"
+            class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8"
+          >
+            <!-- Header -->
+            <div
+              @click="open3 = !open3"
+              class="flex justify-between items-center cursor-pointer"
+            >
+              <span class="text-md font-semibold text-neutral-text1 text-start"
+                >How can TubeBuddy's Title Generator AI benefit my YouTube
+                channel?
+              </span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="transition-transform duration-300"
+                  :class="open3 ? 'rotate-180': '' "
+                >
+                  <path
+                    d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
+                    fill="#8F55EA"
+                    stroke="#8F55EA"
+                  />
+                </svg>
+              </span>
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <p
+              x-show="open3"
+              x-cloak
+              x-transition
+              class="text-md text-neutral-text3 text-start font-normal py-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
+            </p>
+            <!-- Content -->
+          </div>
+          <!-- Accordian NO.3 -->
+
+          <!-- Accordian NO.4 -->
+          <div
+            x-data="{open4: false}"
+            class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8"
+          >
+            <!-- Header -->
+            <div
+              @click="open4 = !open4"
+              class="flex justify-between items-center cursor-pointer"
+            >
+              <span class="text-md font-semibold text-neutral-text1 text-start"
+                >Can I customize the title suggestions provided by TubeBuddy's
+                Title Generator AI?
+              </span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="transition-transform duration-300"
+                  :class="open4 ? 'rotate-180': '' "
+                >
+                  <path
+                    d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
+                    fill="#8F55EA"
+                    stroke="#8F55EA"
+                  />
+                </svg>
+              </span>
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <p
+              x-show="open4"
+              x-cloak
+              x-transition
+              class="text-md text-neutral-text3 text-start font-normal py-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
+            </p>
+            <!-- Content -->
+          </div>
+          <!-- Accordian NO.4 -->
+        </div>
+      </section>
+      <!-- FAQ -->
 
       <!-- Footer -->
       <footer class="w-full bg-neutral-bg2">
@@ -1173,8 +1954,8 @@
                 >
                   <path
                     d="M12.8767 0.0962593V0.0930176H13.7207L14.029 0.15461C14.2346 0.194596 14.4213 0.246997 14.589 0.311831C14.7567 0.376665 14.9191 0.452309 15.0759 0.538749C15.2328 0.625188 15.3751 0.713265 15.5028 0.802946C15.6294 0.891557 15.743 0.985566 15.8437 1.08497C15.9432 1.18546 16.0985 1.2114 16.3095 1.16277C16.5205 1.11415 16.7477 1.04661 16.9912 0.960167C17.2346 0.873728 17.4754 0.776478 17.7135 0.668416C17.9515 0.560355 18.0965 0.491744 18.1485 0.462569C18.1993 0.432324 18.2264 0.416116 18.2296 0.413944L18.2328 0.409082L18.2491 0.400977L18.2653 0.392873L18.2815 0.384769L18.2978 0.376665L18.301 0.371802L18.3059 0.368561L18.3108 0.365319L18.314 0.360456L18.3302 0.355594L18.3465 0.352352L18.3432 0.376665L18.3383 0.400977L18.3302 0.42529L18.3221 0.449603L18.314 0.465811L18.3059 0.482019L18.2978 0.506332C18.2924 0.52254 18.287 0.544146 18.2815 0.571166C18.2761 0.598185 18.2247 0.70623 18.1273 0.895334C18.03 1.08444 17.9082 1.27623 17.7621 1.47073C17.6161 1.66523 17.4851 1.81218 17.3694 1.9116C17.2525 2.01209 17.1751 2.08232 17.1373 2.12231C17.0994 2.16337 17.0534 2.20118 16.9993 2.23577L16.9181 2.28926L16.9019 2.29736L16.8857 2.30547L16.8824 2.31033L16.8776 2.31357L16.8727 2.31681L16.8694 2.32167L16.8532 2.32978L16.837 2.33788L16.8338 2.34274L16.8289 2.34599L16.824 2.34923L16.8208 2.35409L16.8175 2.35895L16.8126 2.36219L16.8078 2.36544L16.8045 2.3703H16.8857L17.3401 2.27305C17.6431 2.20821 17.9326 2.12988 18.2085 2.03803L18.6467 1.89215L18.6954 1.87594L18.7198 1.86784L18.736 1.85973L18.7522 1.85163L18.7685 1.84353L18.7847 1.83542L18.8171 1.83056L18.8496 1.82732V1.85973L18.8415 1.86298L18.8334 1.86784L18.8301 1.8727L18.8253 1.87594L18.8204 1.87918L18.8171 1.88405L18.8139 1.88891L18.809 1.89215L18.8042 1.89539L18.8009 1.90026L18.7977 1.90512L18.7928 1.90836L18.7847 1.92457L18.7766 1.94078L18.7717 1.94402C18.7695 1.94726 18.7008 2.0391 18.5656 2.21956C18.4303 2.40109 18.3573 2.49293 18.3465 2.4951C18.3356 2.49835 18.3205 2.51455 18.301 2.54373C18.2826 2.57397 18.1679 2.69447 17.9569 2.90518C17.7459 3.11589 17.5393 3.30335 17.3369 3.46761C17.1335 3.63293 17.0307 3.83607 17.0285 4.07704C17.0253 4.31693 17.0128 4.58816 16.9912 4.89071C16.9695 5.19327 16.929 5.52013 16.8694 5.87132C16.8099 6.2225 16.718 6.61961 16.5935 7.06263C16.4691 7.50566 16.3176 7.93789 16.1391 8.35931C15.9605 8.78072 15.7739 9.15892 15.5791 9.49389C15.3843 9.82887 15.2058 10.1125 15.0435 10.3448C14.8812 10.5772 14.7162 10.796 14.5484
-       11.0013C14.3807 11.2066 14.1687 11.4378 13.9122 11.695C13.6547 11.9511 13.514 12.0916 13.4902 12.1164C13.4653 12.1402 13.3593 12.2288 13.1721 12.3822C12.986 12.5367 12.7858 12.6913 12.5715 12.8458C12.3584 12.9992 12.1625 13.1273 11.984 13.2299C11.8054 13.3326 11.5901 13.4498 11.338 13.5817C11.087 13.7146 10.8153 13.8377 10.5232 13.9512C10.231 14.0647 9.92265 14.17 9.59803 14.2673C9.27341 14.3645 8.95962 14.4402 8.65664 14.4942C8.35368 14.5482 8.01012 14.5941 7.62598 14.632L7.04979 14.6887V14.6968H5.99479V14.6887L5.85682 14.6806C5.76486 14.6752 5.68911 14.6698 5.62959 14.6644C5.57009 14.659 5.34555 14.6293 4.95601 14.5752C4.56647 14.5212 4.2608 14.4672 4.03897 14.4131C3.81716 14.3591 3.48712 14.2565 3.04889 14.1052C2.61066 13.9539 2.23572 13.801 1.92409 13.6465C1.61355 13.493 1.41878 13.3958 1.33978 13.3547C1.26187 13.3148 1.17423 13.2651 1.07684 13.2056L0.930764 13.1165L0.927534 13.1116L0.922648 13.1084L0.917779 13.1051L0.914533 13.1003L0.898302 13.0922L0.882071 13.0841L0.878841 13.0792L0.873956 13.076L0.869086 13.0727L0.86584 13.0678L0.86261 13.063L0.857725 13.0597H0.849609V13.0273L0.86584 13.0306L0.882071 13.0354L0.95511 13.0435C1.0038 13.0489 1.13636 13.057 1.35277 13.0678C1.56919 13.0787 1.79911 13.0787 2.04258 13.0678C2.28604 13.057 2.53492 13.0327 2.78919 12.9949C3.04348 12.9571 3.34375 12.8923 3.69001 12.8004C4.03627 12.7086 4.3544 12.5994 4.6444 12.473C4.9333 12.3455 5.13888 12.2504 5.26117 12.1877C5.38235 12.1261 5.56738 12.0116 5.81625 11.8441L6.18956 11.5929L6.1928 11.588L6.19767 11.5848L6.20256 11.5815L6.20579 11.5767L6.20903 11.5718L6.2139 11.5686L6.21879 11.5653L6.22202 11.5605L6.23825 11.5556L6.25448 11.5524L6.25772 11.5362L6.26259 11.5199L6.26748 11.5167L6.27071 11.5118L6.14086 11.5037C6.0543 11.4983 5.97044 11.4929 5.88928 11.4875C5.80813 11.4821 5.68099 11.4578 5.50786 11.4146C5.33474 11.3714 5.14809 11.3065 4.9479 11.2201C4.74772 11.1337 4.55295 11.031 4.36359 10.9121C4.17424 10.7933 4.03735 10.6944 3.95295 10.6155C3.86963 10.5377 3.76142 10.4275 3.62833 10.2849C3.49632 10.1412 3.38162 9.99365 3.28424 9.84237C3.18685 9.6911 3.0938 9.51657 3.00508 9.31884L2.87035 9.02385L2.86223 8.99954L2.85412 8.97523L2.84925 8.95902L2.846 8.94281L2.87035 8.94605L2.8947 8.95091L3.07323 8.97523C3.19227 8.99143 3.37893 8.99683 3.6332 8.99143C3.88749 8.98604 4.06332 8.97523 4.1607 8.95902C4.25809 8.94281 4.3176 8.932 4.33924 8.9266L4.3717 8.9185L4.41228 8.91039L4.45286 8.90229L4.4561 8.89743L4.46097 8.89418L4.46586 8.89094L4.46909 8.88608L4.43662 8.87797L4.40416 8.86987L4.3717 8.86177L4.33924 8.85366L4.30678 8.84556C4.28514 8.84016 4.24728 8.82935 4.19316 8.81314C4.13906 8.79693 3.99299 8.7375 3.75493 8.63485C3.51689 8.5322 3.32752 8.43224 3.18685 8.33499C3.04583 8.23746 2.91137 8.1308 2.78433 8.01569C2.65772 7.89899 2.51869 7.74878 2.36719 7.56509C2.21571 7.3814 2.08046 7.16799 1.96142 6.92486C1.8424 6.68174 1.75313 6.44942 1.69361 6.2279C1.63433 6.00768 1.59522 5.78254 1.57677 5.55525L1.54754 5.21487L1.56377 5.21812L1.58 5.22298L1.59623 5.23108L1.61246 5.23919L1.62869 5.24729L1.64492 5.2554L1.8965 5.36885C2.06423 5.4445 2.27252 5.50933 2.52139 5.56336C2.77027 5.61738 2.91904 5.6471 2.96773 5.6525L3.04077 5.66061H3.18685L3.18362 5.65574L3.17873 5.6525L3.17387 5.64926L3.17062 5.6444L3.16739 5.63953L3.1625 5.63629L3.15763 5.63305L3.15439 5.62819L3.13816 5.62008L3.12193 5.61198L3.1187 5.60712L3.11381 5.60388L3.10894 5.60063L3.1057 5.59577L3.08947 5.58767L3.07323 5.57956L3.07 5.5747C3.06676 5.57253 3.02022 5.53796 2.9304 5.47097C2.84167 5.40289 2.74862 5.31483 2.65123 5.20677C2.55385 5.09871 2.45646 4.98525 2.35908 4.86639C2.26151 4.74727 2.17461 4.61981 2.09938 4.4855C2.02365 4.35043 1.94357 4.17861 1.85917 3.97007C1.77585 3.7626 1.71255 3.55351 1.66927 3.3428C1.626 3.13209 1.60165 2.92409 1.59623 2.71878C1.59082 2.51347 1.59623 2.33788 1.61246 2.19201C1.62869 2.04613 1.66115 1.88134 1.70984 1.69765C1.75854 1.51396 1.82888 1.31946 1.92084 1.11415L2.05881 0.806188L2.06692 0.781875L2.07504 0.757562L2.07992 0.754321L2.08315 0.749458L2.0864 0.744596L2.09127 0.741354L2.09615 0.744596L2.09938 0.749458L2.10263 0.754321L2.1075
-       0.757562L2.11238 0.760804L2.11561 0.765667L2.11886 0.770529L2.12373 0.773771L2.13185 0.789979L2.13996 0.806188L2.14485 0.809429L2.14808 0.814292L2.36719 1.05742C2.51327 1.2195 2.6864 1.4005 2.88658 1.6004C3.08677 1.8003 3.19768 1.90403 3.21931 1.9116C3.24096 1.92024 3.268 1.94509 3.30047 1.98616C3.33293 2.02615 3.44114 2.12178 3.62508 2.27305C3.80904 2.42432 4.0498 2.59992 4.34736 2.79982C4.64493 2.99972 4.97495 3.19693 5.33744 3.39143C5.69994 3.58593 6.08948 3.76152 6.50606 3.9182C6.92265 4.07489 7.21481 4.17754 7.38252 4.22616C7.55025 4.27479 7.83699 4.33691 8.24276 4.41256C8.64853 4.4882 8.95422 4.53683 9.1598 4.55843C9.36539 4.58004 9.50607 4.59247 9.5818 4.59571L9.69542 4.59896L9.69219 4.57464L9.6873 4.55033L9.65484 4.34772C9.6332 4.21266 9.62238 4.02356 9.62238 3.78043C9.62238 3.5373 9.64132 3.31309 9.67919 3.10778C9.71707 2.90247 9.77388 2.69447 9.84961 2.48376C9.92536 2.27305 9.99949 2.10393 10.072 1.97643C10.1456 1.85001 10.2419 1.70575 10.3609 1.54367C10.4799 1.38159 10.6341 1.2141 10.8235 1.04121C11.0128 0.868314 11.2292 0.714334 11.4727 0.57927C11.7162 0.444205 11.9407 0.341541 12.1463 0.27131C12.3519 0.201079 12.525 0.155144 12.6657 0.133539C12.8063 0.111933 12.8767 0.0995009 12.8767 0.0962593Z"
+        11.0013C14.3807 11.2066 14.1687 11.4378 13.9122 11.695C13.6547 11.9511 13.514 12.0916 13.4902 12.1164C13.4653 12.1402 13.3593 12.2288 13.1721 12.3822C12.986 12.5367 12.7858 12.6913 12.5715 12.8458C12.3584 12.9992 12.1625 13.1273 11.984 13.2299C11.8054 13.3326 11.5901 13.4498 11.338 13.5817C11.087 13.7146 10.8153 13.8377 10.5232 13.9512C10.231 14.0647 9.92265 14.17 9.59803 14.2673C9.27341 14.3645 8.95962 14.4402 8.65664 14.4942C8.35368 14.5482 8.01012 14.5941 7.62598 14.632L7.04979 14.6887V14.6968H5.99479V14.6887L5.85682 14.6806C5.76486 14.6752 5.68911 14.6698 5.62959 14.6644C5.57009 14.659 5.34555 14.6293 4.95601 14.5752C4.56647 14.5212 4.2608 14.4672 4.03897 14.4131C3.81716 14.3591 3.48712 14.2565 3.04889 14.1052C2.61066 13.9539 2.23572 13.801 1.92409 13.6465C1.61355 13.493 1.41878 13.3958 1.33978 13.3547C1.26187 13.3148 1.17423 13.2651 1.07684 13.2056L0.930764 13.1165L0.927534 13.1116L0.922648 13.1084L0.917779 13.1051L0.914533 13.1003L0.898302 13.0922L0.882071 13.0841L0.878841 13.0792L0.873956 13.076L0.869086 13.0727L0.86584 13.0678L0.86261 13.063L0.857725 13.0597H0.849609V13.0273L0.86584 13.0306L0.882071 13.0354L0.95511 13.0435C1.0038 13.0489 1.13636 13.057 1.35277 13.0678C1.56919 13.0787 1.79911 13.0787 2.04258 13.0678C2.28604 13.057 2.53492 13.0327 2.78919 12.9949C3.04348 12.9571 3.34375 12.8923 3.69001 12.8004C4.03627 12.7086 4.3544 12.5994 4.6444 12.473C4.9333 12.3455 5.13888 12.2504 5.26117 12.1877C5.38235 12.1261 5.56738 12.0116 5.81625 11.8441L6.18956 11.5929L6.1928 11.588L6.19767 11.5848L6.20256 11.5815L6.20579 11.5767L6.20903 11.5718L6.2139 11.5686L6.21879 11.5653L6.22202 11.5605L6.23825 11.5556L6.25448 11.5524L6.25772 11.5362L6.26259 11.5199L6.26748 11.5167L6.27071 11.5118L6.14086 11.5037C6.0543 11.4983 5.97044 11.4929 5.88928 11.4875C5.80813 11.4821 5.68099 11.4578 5.50786 11.4146C5.33474 11.3714 5.14809 11.3065 4.9479 11.2201C4.74772 11.1337 4.55295 11.031 4.36359 10.9121C4.17424 10.7933 4.03735 10.6944 3.95295 10.6155C3.86963 10.5377 3.76142 10.4275 3.62833 10.2849C3.49632 10.1412 3.38162 9.99365 3.28424 9.84237C3.18685 9.6911 3.0938 9.51657 3.00508 9.31884L2.87035 9.02385L2.86223 8.99954L2.85412 8.97523L2.84925 8.95902L2.846 8.94281L2.87035 8.94605L2.8947 8.95091L3.07323 8.97523C3.19227 8.99143 3.37893 8.99683 3.6332 8.99143C3.88749 8.98604 4.06332 8.97523 4.1607 8.95902C4.25809 8.94281 4.3176 8.932 4.33924 8.9266L4.3717 8.9185L4.41228 8.91039L4.45286 8.90229L4.4561 8.89743L4.46097 8.89418L4.46586 8.89094L4.46909 8.88608L4.43662 8.87797L4.40416 8.86987L4.3717 8.86177L4.33924 8.85366L4.30678 8.84556C4.28514 8.84016 4.24728 8.82935 4.19316 8.81314C4.13906 8.79693 3.99299 8.7375 3.75493 8.63485C3.51689 8.5322 3.32752 8.43224 3.18685 8.33499C3.04583 8.23746 2.91137 8.1308 2.78433 8.01569C2.65772 7.89899 2.51869 7.74878 2.36719 7.56509C2.21571 7.3814 2.08046 7.16799 1.96142 6.92486C1.8424 6.68174 1.75313 6.44942 1.69361 6.2279C1.63433 6.00768 1.59522 5.78254 1.57677 5.55525L1.54754 5.21487L1.56377 5.21812L1.58 5.22298L1.59623 5.23108L1.61246 5.23919L1.62869 5.24729L1.64492 5.2554L1.8965 5.36885C2.06423 5.4445 2.27252 5.50933 2.52139 5.56336C2.77027 5.61738 2.91904 5.6471 2.96773 5.6525L3.04077 5.66061H3.18685L3.18362 5.65574L3.17873 5.6525L3.17387 5.64926L3.17062 5.6444L3.16739 5.63953L3.1625 5.63629L3.15763 5.63305L3.15439 5.62819L3.13816 5.62008L3.12193 5.61198L3.1187 5.60712L3.11381 5.60388L3.10894 5.60063L3.1057 5.59577L3.08947 5.58767L3.07323 5.57956L3.07 5.5747C3.06676 5.57253 3.02022 5.53796 2.9304 5.47097C2.84167 5.40289 2.74862 5.31483 2.65123 5.20677C2.55385 5.09871 2.45646 4.98525 2.35908 4.86639C2.26151 4.74727 2.17461 4.61981 2.09938 4.4855C2.02365 4.35043 1.94357 4.17861 1.85917 3.97007C1.77585 3.7626 1.71255 3.55351 1.66927 3.3428C1.626 3.13209 1.60165 2.92409 1.59623 2.71878C1.59082 2.51347 1.59623 2.33788 1.61246 2.19201C1.62869 2.04613 1.66115 1.88134 1.70984 1.69765C1.75854 1.51396 1.82888 1.31946 1.92084 1.11415L2.05881 0.806188L2.06692 0.781875L2.07504 0.757562L2.07992 0.754321L2.08315 0.749458L2.0864 0.744596L2.09127 0.741354L2.09615 0.744596L2.09938 0.749458L2.10263 0.754321L2.1075
+        0.757562L2.11238 0.760804L2.11561 0.765667L2.11886 0.770529L2.12373 0.773771L2.13185 0.789979L2.13996 0.806188L2.14485 0.809429L2.14808 0.814292L2.36719 1.05742C2.51327 1.2195 2.6864 1.4005 2.88658 1.6004C3.08677 1.8003 3.19768 1.90403 3.21931 1.9116C3.24096 1.92024 3.268 1.94509 3.30047 1.98616C3.33293 2.02615 3.44114 2.12178 3.62508 2.27305C3.80904 2.42432 4.0498 2.59992 4.34736 2.79982C4.64493 2.99972 4.97495 3.19693 5.33744 3.39143C5.69994 3.58593 6.08948 3.76152 6.50606 3.9182C6.92265 4.07489 7.21481 4.17754 7.38252 4.22616C7.55025 4.27479 7.83699 4.33691 8.24276 4.41256C8.64853 4.4882 8.95422 4.53683 9.1598 4.55843C9.36539 4.58004 9.50607 4.59247 9.5818 4.59571L9.69542 4.59896L9.69219 4.57464L9.6873 4.55033L9.65484 4.34772C9.6332 4.21266 9.62238 4.02356 9.62238 3.78043C9.62238 3.5373 9.64132 3.31309 9.67919 3.10778C9.71707 2.90247 9.77388 2.69447 9.84961 2.48376C9.92536 2.27305 9.99949 2.10393 10.072 1.97643C10.1456 1.85001 10.2419 1.70575 10.3609 1.54367C10.4799 1.38159 10.6341 1.2141 10.8235 1.04121C11.0128 0.868314 11.2292 0.714334 11.4727 0.57927C11.7162 0.444205 11.9407 0.341541 12.1463 0.27131C12.3519 0.201079 12.525 0.155144 12.6657 0.133539C12.8063 0.111933 12.8767 0.0995009 12.8767 0.0962593Z"
                     fill="currentColor"
                   />
                 </svg>
@@ -1416,8 +2197,8 @@
               >
                 <path
                   d="M12.8767 0.0962593V0.0930176H13.7207L14.029 0.15461C14.2346 0.194596 14.4213 0.246997 14.589 0.311831C14.7567 0.376665 14.9191 0.452309 15.0759 0.538749C15.2328 0.625188 15.3751 0.713265 15.5028 0.802946C15.6294 0.891557 15.743 0.985566 15.8437 1.08497C15.9432 1.18546 16.0985 1.2114 16.3095 1.16277C16.5205 1.11415 16.7477 1.04661 16.9912 0.960167C17.2346 0.873728 17.4754 0.776478 17.7135 0.668416C17.9515 0.560355 18.0965 0.491744 18.1485 0.462569C18.1993 0.432324 18.2264 0.416116 18.2296 0.413944L18.2328 0.409082L18.2491 0.400977L18.2653 0.392873L18.2815 0.384769L18.2978 0.376665L18.301 0.371802L18.3059 0.368561L18.3108 0.365319L18.314 0.360456L18.3302 0.355594L18.3465 0.352352L18.3432 0.376665L18.3383 0.400977L18.3302 0.42529L18.3221 0.449603L18.314 0.465811L18.3059 0.482019L18.2978 0.506332C18.2924 0.52254 18.287 0.544146 18.2815 0.571166C18.2761 0.598185 18.2247 0.70623 18.1273 0.895334C18.03 1.08444 17.9082 1.27623 17.7621 1.47073C17.6161 1.66523 17.4851 1.81218 17.3694 1.9116C17.2525 2.01209 17.1751 2.08232 17.1373 2.12231C17.0994 2.16337 17.0534 2.20118 16.9993 2.23577L16.9181 2.28926L16.9019 2.29736L16.8857 2.30547L16.8824 2.31033L16.8776 2.31357L16.8727 2.31681L16.8694 2.32167L16.8532 2.32978L16.837 2.33788L16.8338 2.34274L16.8289 2.34599L16.824 2.34923L16.8208 2.35409L16.8175 2.35895L16.8126 2.36219L16.8078 2.36544L16.8045 2.3703H16.8857L17.3401 2.27305C17.6431 2.20821 17.9326 2.12988 18.2085 2.03803L18.6467 1.89215L18.6954 1.87594L18.7198 1.86784L18.736 1.85973L18.7522 1.85163L18.7685 1.84353L18.7847 1.83542L18.8171 1.83056L18.8496 1.82732V1.85973L18.8415 1.86298L18.8334 1.86784L18.8301 1.8727L18.8253 1.87594L18.8204 1.87918L18.8171 1.88405L18.8139 1.88891L18.809 1.89215L18.8042 1.89539L18.8009 1.90026L18.7977 1.90512L18.7928 1.90836L18.7847 1.92457L18.7766 1.94078L18.7717 1.94402C18.7695 1.94726 18.7008 2.0391 18.5656 2.21956C18.4303 2.40109 18.3573 2.49293 18.3465 2.4951C18.3356 2.49835 18.3205 2.51455 18.301 2.54373C18.2826 2.57397 18.1679 2.69447 17.9569 2.90518C17.7459 3.11589 17.5393 3.30335 17.3369 3.46761C17.1335 3.63293 17.0307 3.83607 17.0285 4.07704C17.0253 4.31693 17.0128 4.58816 16.9912 4.89071C16.9695 5.19327 16.929 5.52013 16.8694 5.87132C16.8099 6.2225 16.718 6.61961 16.5935 7.06263C16.4691 7.50566 16.3176 7.93789 16.1391 8.35931C15.9605 8.78072 15.7739 9.15892 15.5791 9.49389C15.3843 9.82887 15.2058 10.1125 15.0435 10.3448C14.8812 10.5772 14.7162 10.796 14.5484
-       11.0013C14.3807 11.2066 14.1687 11.4378 13.9122 11.695C13.6547 11.9511 13.514 12.0916 13.4902 12.1164C13.4653 12.1402 13.3593 12.2288 13.1721 12.3822C12.986 12.5367 12.7858 12.6913 12.5715 12.8458C12.3584 12.9992 12.1625 13.1273 11.984 13.2299C11.8054 13.3326 11.5901 13.4498 11.338 13.5817C11.087 13.7146 10.8153 13.8377 10.5232 13.9512C10.231 14.0647 9.92265 14.17 9.59803 14.2673C9.27341 14.3645 8.95962 14.4402 8.65664 14.4942C8.35368 14.5482 8.01012 14.5941 7.62598 14.632L7.04979 14.6887V14.6968H5.99479V14.6887L5.85682 14.6806C5.76486 14.6752 5.68911 14.6698 5.62959 14.6644C5.57009 14.659 5.34555 14.6293 4.95601 14.5752C4.56647 14.5212 4.2608 14.4672 4.03897 14.4131C3.81716 14.3591 3.48712 14.2565 3.04889 14.1052C2.61066 13.9539 2.23572 13.801 1.92409 13.6465C1.61355 13.493 1.41878 13.3958 1.33978 13.3547C1.26187 13.3148 1.17423 13.2651 1.07684 13.2056L0.930764 13.1165L0.927534 13.1116L0.922648 13.1084L0.917779 13.1051L0.914533 13.1003L0.898302 13.0922L0.882071 13.0841L0.878841 13.0792L0.873956 13.076L0.869086 13.0727L0.86584 13.0678L0.86261 13.063L0.857725 13.0597H0.849609V13.0273L0.86584 13.0306L0.882071 13.0354L0.95511 13.0435C1.0038 13.0489 1.13636 13.057 1.35277 13.0678C1.56919 13.0787 1.79911 13.0787 2.04258 13.0678C2.28604 13.057 2.53492 13.0327 2.78919 12.9949C3.04348 12.9571 3.34375 12.8923 3.69001 12.8004C4.03627 12.7086 4.3544 12.5994 4.6444 12.473C4.9333 12.3455 5.13888 12.2504 5.26117 12.1877C5.38235 12.1261 5.56738 12.0116 5.81625 11.8441L6.18956 11.5929L6.1928 11.588L6.19767 11.5848L6.20256 11.5815L6.20579 11.5767L6.20903 11.5718L6.2139 11.5686L6.21879 11.5653L6.22202 11.5605L6.23825 11.5556L6.25448 11.5524L6.25772 11.5362L6.26259 11.5199L6.26748 11.5167L6.27071 11.5118L6.14086 11.5037C6.0543 11.4983 5.97044 11.4929 5.88928 11.4875C5.80813 11.4821 5.68099 11.4578 5.50786 11.4146C5.33474 11.3714 5.14809 11.3065 4.9479 11.2201C4.74772 11.1337 4.55295 11.031 4.36359 10.9121C4.17424 10.7933 4.03735 10.6944 3.95295 10.6155C3.86963 10.5377 3.76142 10.4275 3.62833 10.2849C3.49632 10.1412 3.38162 9.99365 3.28424 9.84237C3.18685 9.6911 3.0938 9.51657 3.00508 9.31884L2.87035 9.02385L2.86223 8.99954L2.85412 8.97523L2.84925 8.95902L2.846 8.94281L2.87035 8.94605L2.8947 8.95091L3.07323 8.97523C3.19227 8.99143 3.37893 8.99683 3.6332 8.99143C3.88749 8.98604 4.06332 8.97523 4.1607 8.95902C4.25809 8.94281 4.3176 8.932 4.33924 8.9266L4.3717 8.9185L4.41228 8.91039L4.45286 8.90229L4.4561 8.89743L4.46097 8.89418L4.46586 8.89094L4.46909 8.88608L4.43662 8.87797L4.40416 8.86987L4.3717 8.86177L4.33924 8.85366L4.30678 8.84556C4.28514 8.84016 4.24728 8.82935 4.19316 8.81314C4.13906 8.79693 3.99299 8.7375 3.75493 8.63485C3.51689 8.5322 3.32752 8.43224 3.18685 8.33499C3.04583 8.23746 2.91137 8.1308 2.78433 8.01569C2.65772 7.89899 2.51869 7.74878 2.36719 7.56509C2.21571 7.3814 2.08046 7.16799 1.96142 6.92486C1.8424 6.68174 1.75313 6.44942 1.69361 6.2279C1.63433 6.00768 1.59522 5.78254 1.57677 5.55525L1.54754 5.21487L1.56377 5.21812L1.58 5.22298L1.59623 5.23108L1.61246 5.23919L1.62869 5.24729L1.64492 5.2554L1.8965 5.36885C2.06423 5.4445 2.27252 5.50933 2.52139 5.56336C2.77027 5.61738 2.91904 5.6471 2.96773 5.6525L3.04077 5.66061H3.18685L3.18362 5.65574L3.17873 5.6525L3.17387 5.64926L3.17062 5.6444L3.16739 5.63953L3.1625 5.63629L3.15763 5.63305L3.15439 5.62819L3.13816 5.62008L3.12193 5.61198L3.1187 5.60712L3.11381 5.60388L3.10894 5.60063L3.1057 5.59577L3.08947 5.58767L3.07323 5.57956L3.07 5.5747C3.06676 5.57253 3.02022 5.53796 2.9304 5.47097C2.84167 5.40289 2.74862 5.31483 2.65123 5.20677C2.55385 5.09871 2.45646 4.98525 2.35908 4.86639C2.26151 4.74727 2.17461 4.61981 2.09938 4.4855C2.02365 4.35043 1.94357 4.17861 1.85917 3.97007C1.77585 3.7626 1.71255 3.55351 1.66927 3.3428C1.626 3.13209 1.60165 2.92409 1.59623 2.71878C1.59082 2.51347 1.59623 2.33788 1.61246 2.19201C1.62869 2.04613 1.66115 1.88134 1.70984 1.69765C1.75854 1.51396 1.82888 1.31946 1.92084 1.11415L2.05881 0.806188L2.06692 0.781875L2.07504 0.757562L2.07992 0.754321L2.08315 0.749458L2.0864 0.744596L2.09127 0.741354L2.09615 0.744596L2.09938 0.749458L2.10263 0.754321L2.1075
-       0.757562L2.11238 0.760804L2.11561 0.765667L2.11886 0.770529L2.12373 0.773771L2.13185 0.789979L2.13996 0.806188L2.14485 0.809429L2.14808 0.814292L2.36719 1.05742C2.51327 1.2195 2.6864 1.4005 2.88658 1.6004C3.08677 1.8003 3.19768 1.90403 3.21931 1.9116C3.24096 1.92024 3.268 1.94509 3.30047 1.98616C3.33293 2.02615 3.44114 2.12178 3.62508 2.27305C3.80904 2.42432 4.0498 2.59992 4.34736 2.79982C4.64493 2.99972 4.97495 3.19693 5.33744 3.39143C5.69994 3.58593 6.08948 3.76152 6.50606 3.9182C6.92265 4.07489 7.21481 4.17754 7.38252 4.22616C7.55025 4.27479 7.83699 4.33691 8.24276 4.41256C8.64853 4.4882 8.95422 4.53683 9.1598 4.55843C9.36539 4.58004 9.50607 4.59247 9.5818 4.59571L9.69542 4.59896L9.69219 4.57464L9.6873 4.55033L9.65484 4.34772C9.6332 4.21266 9.62238 4.02356 9.62238 3.78043C9.62238 3.5373 9.64132 3.31309 9.67919 3.10778C9.71707 2.90247 9.77388 2.69447 9.84961 2.48376C9.92536 2.27305 9.99949 2.10393 10.072 1.97643C10.1456 1.85001 10.2419 1.70575 10.3609 1.54367C10.4799 1.38159 10.6341 1.2141 10.8235 1.04121C11.0128 0.868314 11.2292 0.714334 11.4727 0.57927C11.7162 0.444205 11.9407 0.341541 12.1463 0.27131C12.3519 0.201079 12.525 0.155144 12.6657 0.133539C12.8063 0.111933 12.8767 0.0995009 12.8767 0.0962593Z"
+        11.0013C14.3807 11.2066 14.1687 11.4378 13.9122 11.695C13.6547 11.9511 13.514 12.0916 13.4902 12.1164C13.4653 12.1402 13.3593 12.2288 13.1721 12.3822C12.986 12.5367 12.7858 12.6913 12.5715 12.8458C12.3584 12.9992 12.1625 13.1273 11.984 13.2299C11.8054 13.3326 11.5901 13.4498 11.338 13.5817C11.087 13.7146 10.8153 13.8377 10.5232 13.9512C10.231 14.0647 9.92265 14.17 9.59803 14.2673C9.27341 14.3645 8.95962 14.4402 8.65664 14.4942C8.35368 14.5482 8.01012 14.5941 7.62598 14.632L7.04979 14.6887V14.6968H5.99479V14.6887L5.85682 14.6806C5.76486 14.6752 5.68911 14.6698 5.62959 14.6644C5.57009 14.659 5.34555 14.6293 4.95601 14.5752C4.56647 14.5212 4.2608 14.4672 4.03897 14.4131C3.81716 14.3591 3.48712 14.2565 3.04889 14.1052C2.61066 13.9539 2.23572 13.801 1.92409 13.6465C1.61355 13.493 1.41878 13.3958 1.33978 13.3547C1.26187 13.3148 1.17423 13.2651 1.07684 13.2056L0.930764 13.1165L0.927534 13.1116L0.922648 13.1084L0.917779 13.1051L0.914533 13.1003L0.898302 13.0922L0.882071 13.0841L0.878841 13.0792L0.873956 13.076L0.869086 13.0727L0.86584 13.0678L0.86261 13.063L0.857725 13.0597H0.849609V13.0273L0.86584 13.0306L0.882071 13.0354L0.95511 13.0435C1.0038 13.0489 1.13636 13.057 1.35277 13.0678C1.56919 13.0787 1.79911 13.0787 2.04258 13.0678C2.28604 13.057 2.53492 13.0327 2.78919 12.9949C3.04348 12.9571 3.34375 12.8923 3.69001 12.8004C4.03627 12.7086 4.3544 12.5994 4.6444 12.473C4.9333 12.3455 5.13888 12.2504 5.26117 12.1877C5.38235 12.1261 5.56738 12.0116 5.81625 11.8441L6.18956 11.5929L6.1928 11.588L6.19767 11.5848L6.20256 11.5815L6.20579 11.5767L6.20903 11.5718L6.2139 11.5686L6.21879 11.5653L6.22202 11.5605L6.23825 11.5556L6.25448 11.5524L6.25772 11.5362L6.26259 11.5199L6.26748 11.5167L6.27071 11.5118L6.14086 11.5037C6.0543 11.4983 5.97044 11.4929 5.88928 11.4875C5.80813 11.4821 5.68099 11.4578 5.50786 11.4146C5.33474 11.3714 5.14809 11.3065 4.9479 11.2201C4.74772 11.1337 4.55295 11.031 4.36359 10.9121C4.17424 10.7933 4.03735 10.6944 3.95295 10.6155C3.86963 10.5377 3.76142 10.4275 3.62833 10.2849C3.49632 10.1412 3.38162 9.99365 3.28424 9.84237C3.18685 9.6911 3.0938 9.51657 3.00508 9.31884L2.87035 9.02385L2.86223 8.99954L2.85412 8.97523L2.84925 8.95902L2.846 8.94281L2.87035 8.94605L2.8947 8.95091L3.07323 8.97523C3.19227 8.99143 3.37893 8.99683 3.6332 8.99143C3.88749 8.98604 4.06332 8.97523 4.1607 8.95902C4.25809 8.94281 4.3176 8.932 4.33924 8.9266L4.3717 8.9185L4.41228 8.91039L4.45286 8.90229L4.4561 8.89743L4.46097 8.89418L4.46586 8.89094L4.46909 8.88608L4.43662 8.87797L4.40416 8.86987L4.3717 8.86177L4.33924 8.85366L4.30678 8.84556C4.28514 8.84016 4.24728 8.82935 4.19316 8.81314C4.13906 8.79693 3.99299 8.7375 3.75493 8.63485C3.51689 8.5322 3.32752 8.43224 3.18685 8.33499C3.04583 8.23746 2.91137 8.1308 2.78433 8.01569C2.65772 7.89899 2.51869 7.74878 2.36719 7.56509C2.21571 7.3814 2.08046 7.16799 1.96142 6.92486C1.8424 6.68174 1.75313 6.44942 1.69361 6.2279C1.63433 6.00768 1.59522 5.78254 1.57677 5.55525L1.54754 5.21487L1.56377 5.21812L1.58 5.22298L1.59623 5.23108L1.61246 5.23919L1.62869 5.24729L1.64492 5.2554L1.8965 5.36885C2.06423 5.4445 2.27252 5.50933 2.52139 5.56336C2.77027 5.61738 2.91904 5.6471 2.96773 5.6525L3.04077 5.66061H3.18685L3.18362 5.65574L3.17873 5.6525L3.17387 5.64926L3.17062 5.6444L3.16739 5.63953L3.1625 5.63629L3.15763 5.63305L3.15439 5.62819L3.13816 5.62008L3.12193 5.61198L3.1187 5.60712L3.11381 5.60388L3.10894 5.60063L3.1057 5.59577L3.08947 5.58767L3.07323 5.57956L3.07 5.5747C3.06676 5.57253 3.02022 5.53796 2.9304 5.47097C2.84167 5.40289 2.74862 5.31483 2.65123 5.20677C2.55385 5.09871 2.45646 4.98525 2.35908 4.86639C2.26151 4.74727 2.17461 4.61981 2.09938 4.4855C2.02365 4.35043 1.94357 4.17861 1.85917 3.97007C1.77585 3.7626 1.71255 3.55351 1.66927 3.3428C1.626 3.13209 1.60165 2.92409 1.59623 2.71878C1.59082 2.51347 1.59623 2.33788 1.61246 2.19201C1.62869 2.04613 1.66115 1.88134 1.70984 1.69765C1.75854 1.51396 1.82888 1.31946 1.92084 1.11415L2.05881 0.806188L2.06692 0.781875L2.07504 0.757562L2.07992 0.754321L2.08315 0.749458L2.0864 0.744596L2.09127 0.741354L2.09615 0.744596L2.09938 0.749458L2.10263 0.754321L2.1075
+        0.757562L2.11238 0.760804L2.11561 0.765667L2.11886 0.770529L2.12373 0.773771L2.13185 0.789979L2.13996 0.806188L2.14485 0.809429L2.14808 0.814292L2.36719 1.05742C2.51327 1.2195 2.6864 1.4005 2.88658 1.6004C3.08677 1.8003 3.19768 1.90403 3.21931 1.9116C3.24096 1.92024 3.268 1.94509 3.30047 1.98616C3.33293 2.02615 3.44114 2.12178 3.62508 2.27305C3.80904 2.42432 4.0498 2.59992 4.34736 2.79982C4.64493 2.99972 4.97495 3.19693 5.33744 3.39143C5.69994 3.58593 6.08948 3.76152 6.50606 3.9182C6.92265 4.07489 7.21481 4.17754 7.38252 4.22616C7.55025 4.27479 7.83699 4.33691 8.24276 4.41256C8.64853 4.4882 8.95422 4.53683 9.1598 4.55843C9.36539 4.58004 9.50607 4.59247 9.5818 4.59571L9.69542 4.59896L9.69219 4.57464L9.6873 4.55033L9.65484 4.34772C9.6332 4.21266 9.62238 4.02356 9.62238 3.78043C9.62238 3.5373 9.64132 3.31309 9.67919 3.10778C9.71707 2.90247 9.77388 2.69447 9.84961 2.48376C9.92536 2.27305 9.99949 2.10393 10.072 1.97643C10.1456 1.85001 10.2419 1.70575 10.3609 1.54367C10.4799 1.38159 10.6341 1.2141 10.8235 1.04121C11.0128 0.868314 11.2292 0.714334 11.4727 0.57927C11.7162 0.444205 11.9407 0.341541 12.1463 0.27131C12.3519 0.201079 12.525 0.155144 12.6657 0.133539C12.8063 0.111933 12.8767 0.0995009 12.8767 0.0962593Z"
                   fill="currentColor"
                 />
               </svg>
