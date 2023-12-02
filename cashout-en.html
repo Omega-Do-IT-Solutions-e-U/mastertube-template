@@ -1033,7 +1033,7 @@
       <section
         class="container mx-auto mb-[5rem] lg:mb-[15.4rem]"
       >
-        <div class="flex items-center justify-between w-full relative min-w-[1000px] px-5 lg:px-0">
+        <div class="flex lg:items-center justify-between w-full relative min-w-[1000px] px-5 lg:px-0 overflow-auto">
           <div class="border-dashed border-t-[2px] border-[#A06AF6] h-[3px] absolute top-[35px] right-[50px] left-[50px]"></div>
           <div class="border-t-[2px] border-[#A06AF6] h-[3px] absolute top-[35px] right-[66%] left-[50px]"></div>
           <div class="flex flex-col relative z-10">
@@ -1177,7 +1177,7 @@
 
       <!-- Connect -->
       <section
-        class="flex flex-col lg:flex-row gap-[14px] lg:gap-0 relative justify-center mx-auto pb-[5rem] lg:pb-[15.4rem]"
+        class="flex flex-col container lg:flex-row gap-[14px] lg:gap-0 relative lg:items-center justify-center mx-auto pb-[5rem] lg:pb-[15.4rem]"
       >
         <div class="absolute -z-30 bottom-0 -right-10">
           <img
@@ -1185,7 +1185,7 @@
             alt="Effect"
           />
         </div>
-        <div class="container grid grid-cols-3 gap-y-[27px] gap-x-10 px-5 lg:px-0">
+        <div class="grid grid-cols-3 gap-y-[27px] gap-x-10 px-5 sm:px-0 md:px-0">
           <div class="flex py-[15px] lg:py-[50px] px-[13px] overflow-hidden lg:px-[92.65px] relative col-span-3 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect">
             <div class="lg:max-w-[80%] z-10">
               <h2 class="text-white text-[21px] lg:text-[35.836px] font-[600] mb-[11.29px]">Connect to the <span class="bg-purple text-transparent bg-clip-text">official Mediacube</span> MCN</h2>
@@ -1213,7 +1213,7 @@
             <img src="" alt="">
           </div>
         </div>
-        <div class="flex lg:hidden items-center gap-[19.3px] overflow-x-auto">
+        <div class="flex lg:hidden items-center justify-between gap-[19.3px] overflow-x-auto">
           <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">What MCN does it connect to?</h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
@@ -1244,7 +1244,7 @@
           />
         </div>
         <div
-          class="bg-white lg:border lg:border-neutral-bg1 lg:shadow-cashout-card-shadow flex flex-col lg:flex-row gap-x-17 pt-10 lg:py-0 lg:rounded-[22px] overflow-hidden"
+          class="bg-white sm:border sm:border-neutral-bg1 sm:shadow-cashout-card-shadow flex flex-col lg:flex-row gap-x-17 pt-10 lg:py-0 sm:rounded-[22px] overflow-hidden"
         >
           <div
             class="lg:pl-17 px-5 lg:px-17 lg:pr-0 lg:w-[70%] text-center text-neutral-text1-cash text-xl font-bold leading-[140%] pb-14 lg:py-14 flex justify-center flex-col"
@@ -1472,9 +1472,9 @@
 
       <!-- Income -->
       <section
-        class="container mx-auto mb-[5rem] lg:mb-[15.4rem]"
+        class="container mx-auto mb-[5rem] lg:mb-[15.4rem] overflow-hidden sm:rounded-[22px]"
       >
-        <div class="flex flex-col relative bg-[#BD8EE2] pb-[175px] lg:pb-0 lg:bg-[url('/images/cashout/Income.png')] bg-no-repeat bg-cover px-[30px] lg:px-[60px] pt-[50px] lg:rounded-[22px] shadow[0px_4px_16.9px_0px_rgba(0,0,0,0.05)">
+        <div class="flex flex-col relative bg-[#BD8EE2] pb-[175px] lg:pb-0 lg:bg-[url('/images/cashout/Income.png')] bg-no-repeat bg-cover px-[30px] lg:px-[60px] pt-[50px] shadow[0px_4px_16.9px_0px_rgba(0,0,0,0.05)">
           <h2 class="text-[35px] text-white text-center lg:text-start relative z-10">YouTube <span class="bg-purple-main text-transparent bg-clip-text">income calculator</span></h2>
           <div class="flex flex-col lg:flex-row gap-3 lg:max-w-[80%] mt-[23px] relative z-10">
             <div class="relative lg:w-[30%]">
@@ -1529,7 +1529,7 @@
           <div class="relative flex items-center justify-center max-h-[315px] lg:pl-[38px]">
             <img src="/images/cashout/services.png" alt="services" class="relative z-10 w-[212.915px] h-[208.671px] lg:w-fit lg:h-fit">
             <img src="/images/cashout/services-bg.svg" alt="background" class="absolute top-0 right-0">
-            <img src="/images/cashout/servises-gradient.svg" alt="background" class="absolute min-w-[485.896px] min-h-[323.193px]">
+            <img src="/images/cashout/servises-gradient.svg" alt="background" class="absolute min-w-[485.896px] min-h-[323.193px] blur-[45px]">
           </div>
         </div>
       </section>
@@ -1537,9 +1537,9 @@
 
       <!-- Services -->
       <section
-        class="flex flex-col lg:items-center relative gap-[27px] px-5 lg:px-0 mx-auto mx-auto pb-[5rem] lg:pb-[15.4rem]"
+        class="flex flex-col lg:items-center relative gap-[27px] mx-auto mx-auto pb-[5rem] lg:pb-[15.4rem]"
       >
-        <h2 class="text-[#3D3E4A] text-[31px] text-center lg:text-start lg:text-[37.207px] p-[10px]">Earnings cashing <span class="bg-purple text-transparent bg-clip-text">services</span> </h2>
+        <h2 class="text-[#3D3E4A] text-[31px] text-center lg:text-start lg:text-[37.207px] p-[10px] px-5">Earnings cashing <span class="bg-purple text-transparent bg-clip-text">services</span> </h2>
         <div class="hidden container lg:grid grid-cols-3 gap-y-[27px] gap-x-10">
           <div class="flex py-[40px] overflow-hidden px-[92.65px] relative col-span-2 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-services">
             <div class="flex flex-col justify-between max-w-[60%] z-10">
@@ -1584,7 +1584,51 @@
           </div>
         </div>
 
-        <div class="flex lg:hidden items-center gap-[19.3px] overflow-x-auto">
+        <div class="hidden container md:grid gap-y-[27px] mx-auto gap-x-10">
+          <div class="flex py-[40px] overflow-hidden px-[92.65px] relative col-span-2 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-services">
+            <div class="flex flex-col justify-between max-w-[60%] z-10">
+              <div class="flex flex-col">
+                <h2 class="text-white text-[35.836px] font-[600] mb-[11.29px]">CONTENT ID</h2>
+                <p class="text-[18px] text-[#FFFFFFE5]">professional channel setup and optimization services fo</p>
+              </div>
+              <button class="flex w-fit mt-[55.59px] bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2">call to action</button>
+            </div>
+            <img src="" alt="" class="">
+
+            <img src="/images/cashout/connect-group.svg" alt="connect background" class="absolute top-0 right-0 opacity-20">
+            <img src="/images/cashout/connect-gradient.svg" alt="connect background" class="absolute bottom-0 left-0">
+          </div>
+          <div class="flex flex-col py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">Vidiq account </h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="flex flex-col py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">Advertising</h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            <img src="" alt="">
+          </div>
+          <div class="flex relative flex-col justify-between py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <div class="flex flex-col">
+              <h2 class="text-[#3D3E4A] text-[30px] font-[700]">Epidemic sound account</h2>
+              <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            </div>
+            <button class="flex w-fit bg-[#8F55EA] rounded-[999px] px-[21px] text-white text-[13.737px] font-[500] py-2">call to action</button>
+            <img src="" alt="" class="absolute">
+          </div>
+          <div class="flex relative flex-col justify-between py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect">
+            <div class="flex flex-col">
+              <h2 class="text-white text-[30px] font-[700]">Deep link</h2>
+              <p class="mt-[9.55px] text-white text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
+            </div>
+            <button class="flex w-fit bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2">call to action</button>
+            <img src="" alt="" class="absolute">
+
+            <img src="/images/cashout/connect-group.svg" alt="connect background" class="absolute top-0 right-0 opacity-20">
+          </div>
+        </div>
+
+        <div class="flex md:hidden items-center gap-[19.3px] overflow-x-auto">
           <div class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">What MCN does it connect to?</h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">professional channel setup and optimization services for those facing time constraints, lack of experience, or struggling to monetize their channel.</p>
@@ -1606,8 +1650,8 @@
 
       <!-- Contact US -->
       <section class="bg-[url('/images/cashout/contact-bg.png')] bg-cover bg-bottom flex flex-col relative items-center gap-[27px] mx-auto mx-auto relative pb-[131px] mt-[131px]">
-        <div class="container -mt-[131px] flex flex-col-reverse lg:flex-row justify-between lg:rounded-[23.115px] py-[21px] px-5 lg:px-[42px] bg-white gap-y-[24px] lg:shadow-seventh">
-          <div class="flex flex-col items-center lg:items-start">
+        <div class="container -mt-[131px] flex items-center flex-col-reverse lg:flex-row justify-between md:rounded-[23.115px] py-[21px] px-5 lg:px-[42px] bg-white gap-y-[24px] md:shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)]">
+          <div class="flex flex-col items-center lg:items-start justify-center">
             <h1 class="text-[#414141] text-[39.093px] font-bold">contact us</h1>
             <p class="text-[#98A1B3] text-[18.912px] text-center lg:text-start">professional channel setup and optimization services for those facing time.</p>
             <div class="flex flex-col w-full gap-[12.61px] px-0 lg:px-[10.51px] p-[10.51px]">
