@@ -9,7 +9,7 @@ export default defineConfig({
         'about-en': resolve(__dirname, 'about-us-en.html'),
         'cashout-en': resolve(__dirname, 'cashout-en.html'),
         'cashout-fa': resolve(__dirname, 'cashout-fa.html'),
-        'index': resolve(__dirname, 'index.html'),
+        index: resolve(__dirname, 'index.html'),
         'main-fa': resolve(__dirname, 'main-fa.html'),
         'main-en': resolve(__dirname, 'main-en.html'),
         'services-en': resolve(__dirname, 'services-en.html'),
