@@ -988,8 +988,8 @@
             <p class="bg-pricing text-transparent bg-clip-text -mt-1 text-[10.534px] lg:text-[23.136px]">subtitle about pricing </p>
           </div>
 
-          <div class="grid grid-cols-4 gap-[30px] py-[22.56px] lg:py-[31px] mt-[62px]">
-            <div class="flex flex-col transition ease-in-out hover:bg-pricing rounded-[14.884px] shadow-[0px_3.50213px_18.82396px_0px_rgba(0,0,0,0.25)] py-[22.8px] px-[18.4px] group">
+          <div class="flex lg:grid grid-cols-4 gap-[30px] py-[22.56px] lg:py-[31px] px-5 lg:px-0 mt-[62px] overflow-auto md:overflow-visible">
+            <div class="flex flex-col min-w-[210px] transition ease-in-out hover:bg-pricing rounded-[14.884px] shadow-[0px_3.50213px_18.82396px_0px_rgba(0,0,0,0.25)] py-[22.8px] px-[18.4px] group">
               <h2 class="text-[#323232] text-[21.013px] font-[600] group-hover:text-white">intro</h2>
               <span class="text-[#8B8B8B] mt-[3.5px] text-[12.257px]  group-hover:text-white">useful for xxxx users</span>
               <div class="text-[#32323233] text-[14.884px] capitalize line-through mt-[21px] group-hover:text-[#FFFFFF85]">$23</div>
@@ -1024,7 +1024,7 @@
               </ul>
               <button class="mt-[21px] w-full rounded-[5.675px] bg-[#8F55EA] group-hover:bg-white text-[15.76px] text-white group-hover:text-[#8F55EA] font-[600] h-[47.32px]">purchase</button>
             </div>
-            <div class="flex flex-col transition ease-in-out hover:bg-pricing rounded-[14.884px] shadow-[0px_3.50213px_18.82396px_0px_rgba(0,0,0,0.25)] py-[22.8px] px-[18.4px] group">
+            <div class="flex flex-col min-w-[210px] transition ease-in-out hover:bg-pricing rounded-[14.884px] shadow-[0px_3.50213px_18.82396px_0px_rgba(0,0,0,0.25)] py-[22.8px] px-[18.4px] group">
               <h2 class="text-[#323232] text-[21.013px] font-[600] group-hover:text-white">intro</h2>
               <span class="text-[#8B8B8B] mt-[3.5px] text-[12.257px]  group-hover:text-white">useful for xxxx users</span>
               <div class="text-[#32323233] text-[14.884px] capitalize line-through mt-[21px] group-hover:text-[#FFFFFF85]">$23</div>
@@ -1059,7 +1059,7 @@
               </ul>
               <button class="mt-[21px] w-full rounded-[5.675px] bg-[#8F55EA] group-hover:bg-white text-[15.76px] text-white group-hover:text-[#8F55EA] font-[600] h-[47.32px]">purchase</button>
             </div>
-            <div class="flex flex-col transition ease-in-out hover:bg-pricing rounded-[14.884px] shadow-[0px_3.50213px_18.82396px_0px_rgba(0,0,0,0.25)] py-[22.8px] px-[18.4px] group">
+            <div class="flex flex-col min-w-[210px] transition ease-in-out hover:bg-pricing rounded-[14.884px] shadow-[0px_3.50213px_18.82396px_0px_rgba(0,0,0,0.25)] py-[22.8px] px-[18.4px] group">
               <h2 class="text-[#323232] text-[21.013px] font-[600] group-hover:text-white">intro</h2>
               <span class="text-[#8B8B8B] mt-[3.5px] text-[12.257px]  group-hover:text-white">useful for xxxx users</span>
               <div class="text-[#32323233] text-[14.884px] capitalize line-through mt-[21px] group-hover:text-[#FFFFFF85]">$23</div>
@@ -1094,7 +1094,7 @@
               </ul>
               <button class="mt-[21px] w-full rounded-[5.675px] bg-[#8F55EA] group-hover:bg-white text-[15.76px] text-white group-hover:text-[#8F55EA] font-[600] h-[47.32px]">purchase</button>
             </div>
-            <div class="flex flex-col transition ease-in-out hover:bg-pricing rounded-[14.884px] shadow-[0px_3.50213px_18.82396px_0px_rgba(0,0,0,0.25)] py-[22.8px] px-[18.4px] group">
+            <div class="flex flex-col min-w-[210px] transition ease-in-out hover:bg-pricing rounded-[14.884px] shadow-[0px_3.50213px_18.82396px_0px_rgba(0,0,0,0.25)] py-[22.8px] px-[18.4px] group">
               <h2 class="text-[#323232] text-[21.013px] font-[600] group-hover:text-white">intro</h2>
               <span class="text-[#8B8B8B] mt-[3.5px] text-[12.257px]  group-hover:text-white">useful for xxxx users</span>
               <div class="text-[#32323233] text-[14.884px] capitalize line-through mt-[21px] group-hover:text-[#FFFFFF85]">$23</div>
@@ -1138,33 +1138,165 @@
       <section class="mt-[100px]">
         <div class="container mx-auto py-[10px]">
           <div class="flex flex-col items-center">
-            <h1 class="text-[35.141px] font-bold"><span class="bg-pricing text-transparent bg-clip-text">Let’s get it</span> done</h1>
-            <p class="text-[#666E80] -mt-1 text-[23.136px]">pricing tables</p>
+            <h1 class="text-[35.141px] font-bold"><span class="bg-pricing text-transparent bg-clip-text">Let’s Get It</span> Done</h1>
+            <p class="text-[#666E80] -mt-1 text-[23.136px]">Pricing Tables</p>
+            <label
+              class="relative inline-flex items-center gap-[9.9px] mt-1 justify-between w-fit cursor-pointer"
+            >
+              <span class="text-[16.458px] text-[#6E6E6E]">monthly price</span>
+              <div class="relative">
+                <input
+                  type="checkbox"
+                  class="sr-only peer"
+                />
+                <div
+                  class="peer w-[52.80px] h-[26.40px] bg-[#25CB87] focus:outline-none rounded-[85.808px] after:content-[''] after:absolute after:top-[1.25px] after:bg-white after:rounded-[50%] shadow-[0px_1.65px_6.601px_0px_rgba(37,203,135,0.13)] checked:after:bg-white after:h-[23.102px] after:end-[28px] checked:after:end-[4px] after:w-[23.102px] after:transition-all"
+                >
+                </div>
+              </div>
+              <span class="text-[16.458px] text-[#6E6E6E]">yearly price <span class="text-[#8F55EA] text-[11.551px] font-[800]">/10% off</span></span>
+            </label>
           </div>
 
-          <div class="mt-[48px]">
-            <div class=""></div>
-            <div class="flex bg-purple-main rounded-[22px]">
-              <div class="flex">
-                <ul class="flex flex-col gap-10 px-10 py-5">
-                  <li class="text-white">1</li>
-                  <li class="text-white">2</li>
-                  <li class="text-white">2</li>
-                  <li class="text-white">2</li>
-                  <li class="text-white">2</li>
-                  <li class="text-white">2</li>
-                </ul>
+          <div class="w-full flex gap-[93px] pl-[10px] pr-[15px] mt-[58px] overflow-auto">
+            <div class="flex items-center min-w-[246px] gap-[14px] py-[11px] px-[21px] bg-[#EEE] rounded-[9px]">
+              <img src="/images/pricing/cart.png" alt="cart icon">
+              <div class="flex flex-col gap[3px]">
+                <div class="text-[#303030] text-[16px] font-[700]">contact us</div>
+                <button class="flex items-center text-[#8F55EA] text-[12px] font-[600]">
+                  consulting
+                  <img src="/images/pricing/arrow-right.svg" alt="arrow right">
+                </button>
               </div>
-              <div class="bg-white rounded-[]">
-                <div class="">
-                  <ul class="">
-                    <li class="">1</li>
-                    <li class="">2</li>
-                    <li class="">2</li>
-                    <li class="">2</li>
-                    <li class="">2</li>
-                    <li class="">2</li>
-                  </ul>
+            </div>
+            <div class="flex items-center lg:grid grid-flow-col auto-cols-fr w-full gap-[18px] md:[18px]">
+              <div class="flex gap-[14px] p-[10px] min-w-fit">
+                <div class="flex items-start flex-col gap[3px]">
+                  <div class="text-[#303030] text-[15px] font-[600]">Intro</div>
+                  <div class="text-[#303030] text-[19.93px] font-[800]">Free</div>
+                  <button class="flex items-center justify-center mt-1 w-[85px] text-[#8F55EA] bg-[#8F55EA33] text-[8.839px] font-[600] p-[5.89px] rounded-[6.482px]">
+                    purchase
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-[14px] p-[10px] min-w-fit">
+                <div class="flex items-start flex-col gap[3px]">
+                  <div class="text-[#303030] text-[15px] font-[600]">common</div>
+                  <div class="text-[#303030] text-[19.93px] font-[800] flex items-center gap-[3.52px]">$23 <span class="text-[#9899B4] text-[9.789px] font-[800]">/month</span></div>
+                  <button class="flex items-center justify-center mt-1 w-[85px] text-[#8F55EA] bg-[#8F55EA33] text-[8.839px] font-[600] p-[5.89px] rounded-[6.482px]">
+                    purchase
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-[14px] p-[10px] min-w-fit">
+                <div class="flex items-start flex-col gap[3px]">
+                  <div class="text-[#303030] text-[15px] font-[600]">expert</div>
+                  <div class="text-[#303030] text-[19.93px] font-[800] flex items-center gap-[3.52px]">$32 <span class="text-[#9899B4] text-[9.789px] font-[800]">/month</span></div>
+                  <button class="flex items-center justify-center mt-1 w-[85px] text-[#8F55EA] bg-[#8F55EA33] text-[8.839px] font-[600] p-[5.89px] rounded-[6.482px]">
+                    purchase
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-[14px] p-[10px] min-w-fit">
+                <div class="flex items-start flex-col gap[3px]">
+                  <div class="text-[#303030] text-[15px] font-[600]">compony</div>
+                  <div class="text-[#303030] text-[19.93px] font-[800] flex items-center gap-[3.52px]">$62 <span class="text-[#9899B4] text-[9.789px] font-[800]">/month</span></div>
+                  <button class="flex items-center justify-center mt-1 w-[85px] text-[#8F55EA] bg-[#8F55EA33] text-[8.839px] font-[600] p-[5.89px] rounded-[6.482px]">
+                    purchase
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full flex bg-purple-main py-5 pl-[10px] pr-[15px] rounded-[20px] mt-[30px] relative before:content-[''] before:bg-[url('/images/pricing/table-bg.png')] before:absolute before:w-[580.341px] before:h-[749.385px] before:bottom-0 before:left-0 before:opacity-20">
+            <div class="grid grid-rows-6 grid-flow-col min-w-[236px]">
+              <div class="flex items-center py-5 px-[21px] text-white">Deep Like</div>
+              <div class="flex items-center py-5 px-[21px] text-white">Deep Like</div>
+              <div class="flex items-center py-5 px-[21px] text-white">Deep Like</div>
+              <div class="flex items-center py-5 px-[21px] text-white">Deep Like</div>
+              <div class="flex items-center py-5 px-[21px] text-white">Deep Like</div>
+              <div class="flex items-center py-5 px-[21px] text-white">Deep Like</div>
+            </div>
+            <div class="flex lg:grid grid-flow-col auto-cols-fr w-full bg-white rounded-[15px] overflow-auto lg:overflow-hidden pl-[103px]">
+              <div class="grid grid-rows-6 grid-flow-col auto-cols-fr min-w-fit">
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/accept.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/accept.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/accept.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/reject.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/reject.svg">
+                </div>
+                <div class="w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/reject.svg">
+                </div>
+              </div>
+              <div class="grid grid-rows-6 grid-flow-col auto-cols-fr min-w-fit">
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/accept.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/accept.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/accept.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/reject.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/reject.svg">
+                </div>
+                <div class="w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/reject.svg">
+                </div>
+              </div>
+              <div class="grid grid-rows-6 grid-flow-col auto-cols-fr min-w-fit">
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/accept.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/accept.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/accept.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/reject.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/reject.svg">
+                </div>
+                <div class="w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/reject.svg">
+                </div>
+              </div>
+              <div class="grid grid-rows-6 grid-flow-col auto-cols-fr min-w-fit">
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/accept.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/accept.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/accept.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/reject.svg">
+                </div>
+                <div class="border-b border-[#969696] w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/reject.svg">
+                </div>
+                <div class="w-full min-w-[105px] flex items-center justify-center lg:justify-start py-5">
+                  <img src="/images/pricing/reject.svg">
                 </div>
               </div>
             </div>
