@@ -95,6 +95,7 @@ export default {
       connect: "linear-gradient(244deg, #3C3349 7.51%, #30263D 94.66%)",
       services: "radial-gradient(342.64% 165.27% at 100% -3.38%, #6F78F8 0%, #8D56EA 70.18%)",
       pricing: "radial-gradient(342.64% 165.27% at 100% -3.38%, #6F78F8 0%, #8D56EA 70.18%)",
+      green: "radial-gradient(208.76% 86.45% at 14.9% 31.97%, #0A5E2A 0%, #115C2E 100%)"
     },
     borderRadius: {
       lg: '0.8rem',
