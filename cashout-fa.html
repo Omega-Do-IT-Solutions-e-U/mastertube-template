@@ -889,26 +889,25 @@
           <div class="flex flex-col">
             <h1
               class="text-center lg:text-start pt-13 text-neutral-text1-cash text-[44px] font-bold">
-              <span class="text-[#9459F1]">Cashing out</span> your Income
+              <span class="text-[#9459F1]"></span> نقد کردن درآمد یوتیوب
             </h1>
             <span
               class="bg-purple text-transparent bg-clip-text text-[17px] font-bold text-center lg:text-start"
-              >The first month, you are a guest of MasterTube!</span
+              >اتصال کانال یوتیوب به MCN</span
             >
             <p
-              class="text-center lg:text-start text-neutral-text2 text-[1.7rem] leading-[180%] lg:max-w-[80%]">
-              Embarking on an Enchanting Journey: Weaving Stories, Creating
-              Memories, and Spreading Joy, One Chapter at a Time
+              class="text-center lg:text-start text-neutral-text2 text-[1.7rem] leading-[180%] lg:max-w-[70%]">
+              برای کسب درآمد از یوتیوب کافیست یک کانال داشته باشید که به شرایط درآمدزایی از یوتیوب رسیده باشد. سپس برای نقد کردن درآمد خود از یوتیوب با کارشناسان مسترتیوب در ارتباط باشید. 
             </p>
             <div
               class="flex flex-col gap-y-3 mb-10 lg:flex-row gap-x-7 mt-[12.8px]">
               <button
-                class="w-full lg:w-auto bg-try-for-free-gray py-2 px-5 rounded-lg text-md font-semibold leading-[180%] text-white">
-                Try For Free
+                class="w-full lg:w-auto text-base text-neutral-text2 font-semibold">
+                اطلاعات بیشتر
               </button>
               <button
-                class="w-full lg:w-auto text-base text-neutral-text2 font-semibold">
-                Read More
+                class="w-full lg:w-auto bg-try-for-free-gray py-2 px-5 rounded-lg text-md font-semibold leading-[180%] text-white">
+                ثبت درخواست
               </button>
             </div>
           </div>
@@ -948,11 +947,11 @@
               class="w-[40.095px] h-[40.095px] lg:w-[58.247px] lg:h-[58.247px] mb-[11.65px]" />
             <span
               class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#A7A8AD]"
-              >Step 1</span
+              >مرحله اول</span
             >
             <div
               class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">
-              Registration
+              ثبت درخواست
             </div>
           </div>
           <div class="flex flex-col relative z-10">
@@ -962,11 +961,11 @@
               class="w-[40.095px] h-[40.095px] lg:w-[58.247px] lg:h-[58.247px] mb-[11.65px]" />
             <span
               class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#AC96EF]"
-              >Step 2</span
+              >مرحله دوم</span
             >
             <div
               class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">
-              Expert review
+              بررسی
             </div>
           </div>
           <div class="flex flex-col relative z-10">
@@ -976,11 +975,11 @@
               class="w-[40.095px] h-[40.095px] lg:w-[59.911px] lg:h-[59.911px] mb-[11.65px]" />
             <span
               class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#AC96EF]"
-              >Step 3</span
+              >مرحله سوم</span
             >
             <div
               class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">
-              Notices
+              اطلاع رسانی
             </div>
           </div>
           <div class="flex flex-col relative z-10">
@@ -990,11 +989,11 @@
               class="w-[40.095px] h-[40.095px] lg:w-[58.247px] lg:h-[58.247px] mb-[11.65px]" />
             <span
               class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#AC96EF]"
-              >Step 4</span
+              >مرحله چهارم</span
             >
             <div
               class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">
-              contract
+              قرارداد
             </div>
           </div>
         </div>
@@ -1007,101 +1006,85 @@
               class="w-[305.657px] h-[305.657px] lg:w-[342.791px] lg:h-[342.791px]" />
           </div>
           <div
-            x-data="{content: 'consult'}"
+            x-data="{step: 1}"
             class="flex flex-col items-start w-full p-[10px] px-5 lg:p-0">
-            <h2
-              class="hidden lg:block text-neutral-text1-cash text-3xl font-bold leading-[140%] mb-6">
-              Why Trusting In Us?
-            </h2>
             <div
               class="hidden lg:flex gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]">
               <span
-                @click="content = 'consult'"
+                @click="step = 1"
                 class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
-                :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                >Youtube Consulting</span
+                :class="step === 1 && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                >مرحله اول</span
               >
               <span
-                @click="content = 'educational'"
-                :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                @click="step = 2"
+                :class="step === 2 && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Educational Courses</span
+                >مرحله دوم</span
               >
               <span
-                @click="content = 'pro'"
-                :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                @click="step = 3"
+                :class="step === 3 && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Pro Dasboard</span
+                >مرحله سوم</span
               >
               <span
-                @click="content = 'ai'"
-                :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                 @click="step = 4"
+                :class="step === 4 && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >AI Services</span
+                >مرحله چهارم</span
               >
             </div>
             <div
               class="flex w-full justify-between lg:hidden gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]">
               <span
-                @click="content = 'consult'"
+                @click="step = 1"
                 class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
                 :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                >Step 1</span
+                >مرحله اول</span
               >
               <span
-                @click="content = 'educational'"
-                :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                @click="step = 2"
+                :class="step === 2 && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Step 2</span
+                >مرحله دوم</span
               >
               <span
-                @click="content = 'pro'"
-                :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                @click="step = 3"
+                :class="step === 3 && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Step 3</span
+                >مرحله سوم</span
               >
               <span
-                @click="content = 'ai'"
-                :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                @click="step = 4"
+                :class="step === 4 && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Step 4</span
+                >مرحله چهارم</span
               >
             </div>
             <p
-              x-cloak
-              x-show="content === 'consult'"
-              class="pt-8">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive. Whether you're aiming for
-              growth, engagement, or monetization, our experts are here to
-              assist you every step of the way.
+              x-if="step == 1"
+              class="pt-4">
+               <h4>ثبت درخواست <span class="text-[#9459F1]">نقد کردن درآمد یوتیوب</span></h4>
+               <p>با تکمیل فرم انتهای صفحه، می‌توانید درخواست خود را ثبت کنید و کارشناسان مسترتیوب برای هماهنگی بیشتر با شما تماس خواهند گرفت.</p>
             </p>
             <p
-              x-cloak
-              x-show="content === 'educational'"
+              x-if="step == 2"
               class="pt-8">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive. Whether you're aiming for
-              growth, engagement, or monetization, our experts are here to
-              assist you every step of the way.
+                <h4>بررسی کارشناسان مسترتیوب برای اتصال کانال به MCN یا ادسنس شرکتی</h4>
+                <p>پس از درخواست شما، تیم کارشناسی کانال شما را بررسی می‌کند. کانال شما می‌بایست مطابق با قوانین یوتیوب باشد و به شرایط درآمدزایی نیز رسیده باشد.</p>
             </p>
             <p
-              x-cloak
-              x-show="content === 'pro'"
+              x-if="step == 3"
               class="pt-8">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive. Whether you're aiming for
-              growth, engagement, or monetization, our experts are here to
-              assist you every step of the way.
+              <h4>اطلاع‌رسانی نحوه همکاری با مسترتیوب و میزان کارمزد</h4>
+              <p>پس از بررسی کارشناسان، شرایط همکاری با مسترتیوب، درصد کارمزد و نحوه نقد کردن درآمد شما به شما اطلاع رسانی می‌شود.</p>
             </p>
             <p
-              x-cloak
-              x-show="content === 'ai'"
+              x-if="step == 4"
               class="pt-8">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive. Whether you're aiming for
-              growth, engagement, or monetization, our experts are here to
-              assist you every step of the way.
+              <h4>عقد قرارداد و دریافت درآمد</h4>
+              <p>در نهایت با موافقت شما، به صورت کاملا شفاف یک قرارداد میان شما و مسترتیوب تنظیم می‌شود و پس از آن نقد کردن درآمد یوتیوب شما توسط مسترتیوب انجام می‌شود.</p>
             </p>
           </div>
         </div>
@@ -1123,21 +1106,18 @@
             <div class="lg:max-w-[80%] z-10">
               <h2
                 class="text-white text-[21px] lg:text-[35.836px] font-[600] mb-[11.29px]">
-                Connect to the
+                اتصال به
                 <span class="bg-purple text-transparent bg-clip-text"
-                  >official Mediacube</span
+                  >MCN رسمی</span
                 >
-                MCN
+                مدیاکیوب
               </h2>
               <p class="text-[12px] lg:text-[21px] text-[#FFFFFFE5]">
-                (how and in what condation user can connect to MCN)Our YouTube
-                consulting service provides personalized guidance and strategies
-                to help your channel thrive. Whether you're aiming for growth,
-                engagement, or monetization, our experts are here
+                مسترتیوب به عنوان نماینده رسمی و انحصاری مدیاکیوب، کانال‌های یوتیوبی با شرایط لازم را به MCN متصل می‌کند. با اتصال به مدیاکیوب، بدون هیچ نگرانی درآمد خود را از یوتیوب نقد کنید و از امکانات جذاب با اتصال کانال به MCN بهره‌مند شوید. با مدیاکیوب ساده‌تر رشد می‌کنید، بیشتر درآمد خواهید داشت و از امکانات نقدکردن درآمد به راه‌های مختلف نیز برخوردار می‌شوید.
               </p>
               <button
                 class="flex mt-[55.59px] bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2 w-full justify-center lg:w-fit">
-                call to action
+                <a href="https://mediacube.ir/" target="_blank">مشاهده جزییات</a>
               </button>
             </div>
             <img
@@ -1157,12 +1137,10 @@
           <div
             class="hidden lg:flex flex-col py-[25.72px] px-[25px] pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[30px] font-[700]">
-              What MCN does it connect to?
+              طور برای اتصال به MCN درخواست بدهیم؟
             </h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
+              در مسترتیوب همه کانال‌های واجد شرایط به MCN متصل می‌شوند و در صورتی که شرایط لازم را نداشته باشید، با هماهنگی خودتان به ادسنس متصل می‌شوید.
             </p>
             <img
               src=""
@@ -1171,12 +1149,10 @@
           <div
             class="hidden lg:flex flex-col py-[25.72px] px-[25px] pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[30px] font-[700]">
-              channel cannot connect to MCN?
+              آیا مدیاکیوب معتبر است؟
             </h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
+              مدیاکیوب پارتنر رسمی یوتیوب و کمپانی متا است و یکی از معتبرترین و بزرگترین MCNهای دنیاست.
             </p>
             <img
               src=""
@@ -1185,12 +1161,10 @@
           <div
             class="hidden lg:flex flex-col py-[25.72px] px-[25px] pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[30px] font-[700]">
-              What MCN does it connect to?
+              شرایط اتصال به MCN مدیاکیوب چیست؟
             </h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
+              برای اتصال به هر MCN در دنیا، کانال یوتیوب شما باید مانیتایز باشد و این امکان برای کانال‌هایی که تازه به شرایط درآمدزایی رسیده‌اند وجود ندارد.
             </p>
             <img
               src=""
@@ -1202,13 +1176,11 @@
           <div
             class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">
-              What MCN does it connect to?
+              طور برای اتصال به MCN درخواست بدهیم؟
             </h2>
             <p
               class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
+              در مسترتیوب همه کانال‌های واجد شرایط به MCN متصل می‌شوند و در صورتی که شرایط لازم را نداشته باشید، با هماهنگی خودتان به ادسنس متصل می‌شوید.
             </p>
             <img
               src=""
@@ -1217,13 +1189,11 @@
           <div
             class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">
-              channel cannot connect to MCN?
+              آیا مدیاکیوب معتبر است؟
             </h2>
             <p
               class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
+              مدیاکیوب پارتنر رسمی یوتیوب و کمپانی متا است و یکی از معتبرترین و بزرگترین MCNهای دنیاست.
             </p>
             <img
               src=""
@@ -1232,13 +1202,11 @@
           <div
             class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">
-              What MCN does it connect to?
+              شرایط اتصال به MCN مدیاکیوب چیست؟
             </h2>
             <p
               class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
+              برای اتصال به هر MCN در دنیا، کانال یوتیوب شما باید مانیتایز باشد و این امکان برای کانال‌هایی که تازه به شرایط درآمدزایی رسیده‌اند وجود ندارد.
             </p>
             <img
               src=""
@@ -1262,7 +1230,7 @@
             class="lg:pr-17 px-5 lg:px-17 lg:pr-0 lg:w-[70%] text-center text-neutral-text1-cash text-xl font-bold leading-[140%] pb-14 lg:py-14 flex justify-center flex-col">
             <span
               class="mb-12 block text-xl lg:text-4xl text-center lg:text-start"
-              >Youtube Money Calculator</span
+              >محاسبه‌گر میزان درآمد از یویتیوب</span
             >
             <!-- Range Input 1 -->
             <div class="flex flex-col gap-y-2 mb-7">
@@ -1285,7 +1253,7 @@
                   </span>
                   <span
                     class="text-neutral-text2 text-md font-medium leading-[140%]"
-                    >Daily Views:</span
+                    >میزان بازدید روزانه :</span
                   >
                 </div>
                 <div
@@ -1326,7 +1294,7 @@
                   </span>
                   <span
                     class="text-neutral-text2 text-md font-medium leading-[140%]"
-                    >CRM Rate:</span
+                    >نرخ CPM :</span
                   >
                 </div>
                 <div
@@ -1345,7 +1313,7 @@
             <div class="text-center flex flex-col">
               <span
                 class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
-                >Estimated Daily Earning</span
+                >درآمد تقریبی روزانه</span
               >
               <span class="text-[4rem] font-semibold leading-[140%] text-white"
                 >$503.23</span
@@ -1354,7 +1322,7 @@
             <div class="text-center flex flex-col">
               <span
                 class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
-                >Estimated monthly Earning</span
+                >درآمد تقریبی ماهانه</span
               >
               <span class="text-[4rem] font-semibold leading-[140%] text-white"
                 >$6,503.23
@@ -1363,7 +1331,7 @@
             <div class="text-center flex flex-col">
               <span
                 class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
-                >Estimated Yearly Earning</span
+                >درآمد تقریبی سالانه</span
               >
               <span class="text-[4rem] font-semibold leading-[140%] text-white"
                 >$ 12,503.23
@@ -1389,7 +1357,7 @@
             class="flex flex-col items-start w-full">
             <h2
               class="text-neutral-text1-cash text-3xl font-bold leading-[140%] mb-6">
-              Why Trusting In Us?
+              چرا مسترتیوب را برای نقد کردن درآمد انتخاب کنید؟
             </h2>
             <div
               class="flex w-full whitespace-nowrap scrollbar-hide gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2] overflow-x-scroll">
@@ -1397,62 +1365,50 @@
                 @click="content = 'consult'"
                 class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
                 :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                >Youtube Consulting</span
+                >مشاوره رایگان</span
               >
               <span
                 @click="content = 'educational'"
                 :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Educational Courses</span
+                >پرداخت ارزی</span
               >
               <span
                 @click="content = 'pro'"
                 :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Pro Dasboard</span
+                >داشبورد مسترتیوب</span
               >
               <span
                 @click="content = 'ai'"
                 :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >AI Services</span
+                >پشتیبانی</span
               >
             </div>
             <p
               x-cloak
               x-show="content === 'consult'"
               class="pt-8">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive. Whether you're aiming for
-              growth, engagement, or monetization, our experts are here to
-              assist you every step of the way.
+              مسترتیوب از سال ۱۳۹۹ خدمات نقدکردن درآمد را به یوتیوبر‌ها ارائه می‌دهد و با بهره‌گیری از کارشناسان مجرب یوتیوب، امکان رفع مشکلات کانال شما را به بهترین شکل فراهم می‌نماید. شما می‌توانید به صورت کاملا رایگان برای ساخت کانال، تولید محتوا و نقد کردن درآمد کانال یوتیوب خود از مسترتیوب مشاوره دریافت کنید.
             </p>
             <p
               x-cloak
               x-show="content === 'educational'"
               class="pt-8">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive. Whether you're aiming for
-              growth, engagement, or monetization, our experts are here to
-              assist you every step of the way.
+              با طرح‌های متنوع نقد کردن درآمد یوتیوب، حق انتخاب بیشتری برای دریافت درآمد کانال یوتیوب خود دارید و می‌توانید درآمد کانال خود را به ریال در حساب ایران و یا تتر در کیف پول الکترونیک خود دریافت کنید.
             </p>
             <p
               x-cloak
               x-show="content === 'pro'"
               class="pt-8">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive. Whether you're aiming for
-              growth, engagement, or monetization, our experts are here to
-              assist you every step of the way.
+              داشبورد مسترتیوب، یک ابزار جامع برای تحلیل، بررسی و مدیریت کانال یوتیوب است که به شما کمک ‌می‌کند تا کانال خود را بهینه کرده و رشد بیشتری را تجربه کنید. با استفاده از این ابزار، به امکانات بسیاری دسترسی خواهید داشت که تولید محتوا در یوتیوب را ساده‌تر از همیشه می‌کند. کافیست فقط به تولید محتوا فکر کنید و بررسی کانال را به داشبورد مسترتیوب و نقد کردن درآمد یوتیوب را به مسترتیوب بسپارید
             </p>
             <p
               x-cloak
               x-show="content === 'ai'"
               class="pt-8">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive. Whether you're aiming for
-              growth, engagement, or monetization, our experts are here to
-              assist you every step of the way.
+              با سرویس پشتیبانی مسترتیوب، در کمترین زمان به سوالات شما پاسخ می‌دهیم و شما نیز می‌توانید در تمامی مراحل به راحتی سوالات و مشکلات خود را با ما مطرح کنید.
             </p>
           </div>
         </div>
@@ -1466,10 +1422,8 @@
           class="flex flex-col relative bg-[#BD8EE2] pb-[175px] lg:pb-0 lg:bg-[url('/images/cashout/Income.png')] bg-no-repeat bg-cover px-[30px] lg:px-[60px] pt-[50px] shadow[0px_4px_16.9px_0px_rgba(0,0,0,0.05)">
           <h2
             class="text-[35px] text-white text-center lg:text-start relative z-10">
-            YouTube
-            <span class="bg-purple-main text-transparent bg-clip-text"
-              >income calculator</span
-            >
+            محاسبه میزان
+            <span class="bg-purple-main text-transparent bg-clip-text">کارمزد مسترتیوب</span> برای کانال شما
           </h2>
           <div
             class="flex flex-col lg:flex-row gap-3 lg:max-w-[80%] mt-[23px] relative z-10">
@@ -1478,17 +1432,17 @@
                 type="InEmail"
                 id="name"
                 class="block h-[54.636px] text-md px-[25.22px] bg-[#fff] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                placeholder="email  address" />
+                placeholder="آدرس ایمیل" />
             </div>
             <div class="relative lg:w-[70%]">
               <input
                 type="text"
                 id="youtube"
                 class="block h-[54.636px] text-md px-[25.22px] bg-[#fff] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                placeholder="my YouTube channel URL" />
+                placeholder="آدرس کانال یوتیوب" />
               <button
                 class="hidden lg:flex absolute top-0 bottom-0 left-3 my-auto h-[32px] flex items-center gap-[10px] text-[13.524px] py-1 px-5 rounded-[77px] text-white bg-purple">
-                submit
+                بررسی
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -1504,7 +1458,7 @@
             </div>
             <button
               class="flex lg:hidden h-[41px] flex items-center justify-center gap-[10px] text-[13.524px] px-5 rounded-[77px] text-white bg-[#ffffff54] lg:bg-purple">
-              submit
+              بررسی
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"
@@ -1520,8 +1474,7 @@
           </div>
           <p
             class="mt-2 text-[#FFFFFFE8] text-[15px] pb-[84px] text-center lg:text-start relative z-10">
-            Our YouTube consulting service provides personalized guidance and
-            strategies to help your ch
+            برای اطلاع از میزان کارمزد، کافیست اطلاعات خود را وارد کنید و به صورت دقیق پس از بررسی کارشناسان، میزان کارمزد دریافتی را در ایمیل خود ببینید.
           </p>
 
           <img
@@ -1540,23 +1493,22 @@
             class="flex flex-col items-center lg:items-start gap-[18.9px] lg:gap-[27px]">
             <h2
               class="text-[31px] lg:text-[43.7px] text-[#3D3E4A] text-center lg:text-start">
-              Mastertube
+              سرویس
               <span class="bg-purple text-transparent bg-clip-text"
-                >shield service</span
+                >مسترشیلد</span
               >
             </h2>
             <p class="text-[#666E80] text-[17.257px] lg:text-[24.665px]">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive.
+              سرویس جدید مسترشیلد از سواستفاده محتوای شما توسط دیگران در شبکه‌های اجتماعی جلوگیری می‌کند. شما قادر خواهید بود به صورت کاملا قانونی، حق مالکیت محتوای خود را از کشور کانادا دریافت کنید.
             </p>
             <div class="flex flex-col lg:flex-row gap-x-[27px] w-full">
               <button
                 class="w-full lg:w-fit rounded-[9.396px] bg-[#8F55EA] text-white py-[11.75px] px-[21.14px] text-[16px] font-[600]">
-                CALL TO ACTION
+                مسترشیلد چیست؟
               </button>
               <button
                 class="w-full lg:w-fit rounded-[9.396px] text-[#666E80] py-[11.75px] px-[21.14px] text-[16px] font-[600]">
-                CALL TO ACTION
+                جزییات
               </button>
             </div>
           </div>
@@ -1584,8 +1536,8 @@
         class="flex flex-col lg:items-center relative gap-[27px] max-w-[124rem] mx-auto pb-[5rem] lg:pb-[15.4rem]">
         <h2
           class="text-[#3D3E4A] text-[31px] text-center lg:text-start lg:text-[37.207px] p-[10px] px-5">
-          Earnings cashing
-          <span class="bg-purple text-transparent bg-clip-text">services</span>
+          خدمات
+          <span class="bg-purple text-transparent bg-clip-text">نقد کردن درآمد</span> با MCN مدیاکیوب
         </h2>
         <div class="hidden container lg:grid grid-cols-3 gap-y-[27px] gap-x-10">
           <div
@@ -1593,10 +1545,10 @@
             <div class="flex flex-col justify-between max-w-[60%] z-10">
               <div class="flex flex-col">
                 <h2 class="text-white text-[35.836px] font-[600] mb-[11.29px]">
-                  CONTENT ID
+                  کانتنت آی‌دی
                 </h2>
                 <p class="text-[18px] text-[#FFFFFFE5]">
-                  professional channel setup and optimization services fo
+                  برای محتوای شما سرویس کانتنت آی‌دی فعال میشود که از سو استفاده محتوای شما جلوگیری میکند
                 </p>
               </div>
               <button
@@ -1620,11 +1572,9 @@
           </div>
           <div
             class="flex flex-col py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
-            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">Vidiq account</h2>
+            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">اکانت VidIQ </h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
+              در صورت  تایید کانال شما برای اتصال به MCN، اکانت VidIQ در اختیار شما قرار خواهد گرفت.
             </p>
             <img
               src=""
@@ -1632,11 +1582,9 @@
           </div>
           <div
             class="flex flex-col py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
-            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">Advertising</h2>
+            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">تبلیغات </h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
+              چه به دنبال کمپین‌های تبلیغاتی باشید و یا نیاز به مدیریت و بهینه سازی تبلیغات بر روی ویدیوهای خود داشته باشید، توسط ما قابل انجام است.
             </p>
             <img
               src=""
@@ -1646,12 +1594,10 @@
             class="flex relative flex-col justify-between py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <div class="flex flex-col">
               <h2 class="text-[#3D3E4A] text-[30px] font-[700]">
-                Epidemic sound account
+                اکانت Epidemic sound
               </h2>
               <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">
-                professional channel setup and optimization services for those
-                facing time constraints, lack of experience, or struggling to
-                monetize their channel.
+                یک مجموعه کامل از موزیک‌های بدون کپی‌رایت در تنوع بالا. اپیدمیک ساند یکی از مطرح‌ترین پلتفرم‌های موزیک‌های بدون کپی‌رایت در دنیاست که شما نیز آن را در اختیار خواهید داشت.
               </p>
             </div>
             <button
@@ -1666,113 +1612,9 @@
           <div
             class="flex relative flex-col justify-between py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect">
             <div class="flex flex-col">
-              <h2 class="text-white text-[30px] font-[700]">Deep link</h2>
+              <h2 class="text-white text-[30px] font-[700]">دیپ‌لینک حرفه‌ای</h2>
               <p class="mt-[9.55px] text-white text-[18px] font-[400]">
-                professional channel setup and optimization services for those
-                facing time constraints, lack of experience, or struggling to
-                monetize their channel.
-              </p>
-            </div>
-            <button
-              class="flex w-fit bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2">
-              call to action
-            </button>
-            <img
-              src=""
-              alt=""
-              class="absolute" />
-
-            <img
-              src="/images/cashout/connect-group.svg"
-              alt="connect background"
-              class="absolute top-0 right-0 opacity-20" />
-          </div>
-        </div>
-
-        <div class="hidden container md:grid gap-y-[27px] mx-auto gap-x-10">
-          <div
-            class="flex py-[40px] overflow-hidden px-[92.65px] relative col-span-2 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-services">
-            <div class="flex flex-col justify-between max-w-[60%] z-10">
-              <div class="flex flex-col">
-                <h2 class="text-white text-[35.836px] font-[600] mb-[11.29px]">
-                  CONTENT ID
-                </h2>
-                <p class="text-[18px] text-[#FFFFFFE5]">
-                  professional channel setup and optimization services fo
-                </p>
-              </div>
-              <button
-                class="flex w-fit mt-[55.59px] bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2">
-                call to action
-              </button>
-            </div>
-            <img
-              src=""
-              alt=""
-              class="" />
-
-            <img
-              src="/images/cashout/connect-group.svg"
-              alt="connect background"
-              class="absolute top-0 right-0 opacity-20" />
-            <img
-              src="/images/cashout/connect-gradient.svg"
-              alt="connect background"
-              class="absolute bottom-0 left-0" />
-          </div>
-          <div
-            class="flex flex-col py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
-            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">Vidiq account</h2>
-            <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
-            </p>
-            <img
-              src=""
-              alt="" />
-          </div>
-          <div
-            class="flex flex-col py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
-            <h2 class="text-[#3D3E4A] text-[30px] font-[700]">Advertising</h2>
-            <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
-            </p>
-            <img
-              src=""
-              alt="" />
-          </div>
-          <div
-            class="flex relative flex-col justify-between py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
-            <div class="flex flex-col">
-              <h2 class="text-[#3D3E4A] text-[30px] font-[700]">
-                Epidemic sound account
-              </h2>
-              <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">
-                professional channel setup and optimization services for those
-                facing time constraints, lack of experience, or struggling to
-                monetize their channel.
-              </p>
-            </div>
-            <button
-              class="flex w-fit bg-[#8F55EA] rounded-[999px] px-[21px] text-white text-[13.737px] font-[500] py-2">
-              call to action
-            </button>
-            <img
-              src=""
-              alt=""
-              class="absolute" />
-          </div>
-          <div
-            class="flex relative flex-col justify-between py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect">
-            <div class="flex flex-col">
-              <h2 class="text-white text-[30px] font-[700]">Deep link</h2>
-              <p class="mt-[9.55px] text-white text-[18px] font-[400]">
-                professional channel setup and optimization services for those
-                facing time constraints, lack of experience, or struggling to
-                monetize their channel.
+                این سرویس لینک‌هایی به شما میدهد که مخاطبانی که با گوشی موبایل بر روی لینک کلیک می‌کنند بدون توقف، مستقیم وارد اپلیکیشن یوتیوب می‌شوند.
               </p>
             </div>
             <button
@@ -1796,13 +1638,11 @@
           <div
             class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">
-              What MCN does it connect to?
+              کانتنت آی‌دی
             </h2>
             <p
               class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
+              برای محتوای شما سرویس کانتنت آی‌دی فعال میشود که از سو استفاده محتوای شما جلوگیری میکند
             </p>
             <img
               src=""
@@ -1811,13 +1651,11 @@
           <div
             class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">
-              channel cannot connect to MCN?
+              اکانت VidIQ
             </h2>
             <p
               class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
+              در صورت  تایید کانال شما برای اتصال به MCN، اکانت VidIQ در اختیار شما قرار خواهد گرفت.
             </p>
             <img
               src=""
@@ -1826,17 +1664,25 @@
           <div
             class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">
-              What MCN does it connect to?
+              تبلیغات
             </h2>
             <p
               class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">
-              professional channel setup and optimization services for those
-              facing time constraints, lack of experience, or struggling to
-              monetize their channel.
+              چه به دنبال کمپین‌های تبلیغاتی باشید و یا نیاز به مدیریت و بهینه سازی تبلیغات بر روی ویدیوهای خود داشته باشید، توسط ما قابل انجام است.
             </p>
             <img
               src=""
               alt="" />
+          </div>
+          <div
+                  class="min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
+            <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">
+              اکانت Epidemic sound
+            </h2>
+            <p class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">
+              یک مجموعه کامل از موزیک‌های بدون کپی‌رایت در تنوع بالا. اپیدمیک ساند یکی از مطرح‌ترین پلتفرم‌های موزیک‌های بدون کپی‌رایت در دنیاست که شما نیز آن را در اختیار خواهید داشت.
+            </p>
+            <img src="" alt="" />
           </div>
         </div>
       </section>
@@ -1848,10 +1694,9 @@
         <div
           class="container max-w-[124rem] -mt-[131px] flex items-center flex-col-reverse lg:flex-row justify-between md:rounded-[23.115px] py-[21px] px-5 lg:px-[42px] bg-white gap-y-[24px] md:shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)]">
           <div class="flex flex-col items-center lg:items-start justify-center">
-            <h1 class="text-[#414141] text-[39.093px] font-bold">contact us</h1>
+            <h1 class="text-[#414141] text-[39.093px] font-bold">درخواست مشاوره</h1>
             <p class="text-[#98A1B3] text-[18.912px] text-center lg:text-start">
-              professional channel setup and optimization services for those
-              facing time.
+              با تکمیل فرم زیر، در اولین فرصت کانال یوتیوب شما را بررسی می‌کنیم و با شما تماس می‌گیریم.
             </p>
             <div
               class="flex flex-col w-full gap-[12.61px] px-0 lg:px-[10.51px] p-[10.51px]">
@@ -1861,7 +1706,7 @@
                   type="text"
                   id="name"
                   class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                  placeholder="your name" />
+                  placeholder="نام و نام خانوادگی" />
               </div>
               <!-- Input 1 -->
 
@@ -1871,7 +1716,7 @@
                   type="text"
                   id="phone"
                   class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                  placeholder="your phone number" />
+                  placeholder="شماره موبایل" />
               </div>
               <!-- Input 2 -->
 
@@ -1881,7 +1726,7 @@
                   type="text"
                   id="email"
                   class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                  placeholder="email  address" />
+                  placeholder="آدرس ایمیل" />
               </div>
               <!-- Input 3 -->
 
@@ -1891,12 +1736,12 @@
                   type="text"
                   id="channel-url"
                   class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                  placeholder="my YouTube channel URL" />
+                  placeholder="آدرس کانال یوتیوب" />
               </div>
               <!-- Input 4 -->
               <button
                 class="h-[54.636px] rounded-[80.903px] bg-[#D23790] text-white text-[14.209px]">
-                submit
+                ثبت درخواست
               </button>
             </div>
           </div>
@@ -1993,7 +1838,7 @@
       <!-- FAQ -->
       <section
         class="text-center container mx-auto my-22 px-5 lg:px-0 max-w-[124rem]">
-        <h3 class="mb-14">Frequently Asked Questions!</h3>
+        <h3 class="mb-14">سوالات متداول نقد کردن درآمد یوتیوب</h3>
         <div class="flex flex-col gap-y-6">
           <!-- Accordian NO.1 -->
           <div
@@ -2004,7 +1849,7 @@
               @click="open1 = !open1"
               class="flex justify-between items-center cursor-pointer">
               <span class="text-md font-semibold text-neutral-text1 text-start"
-                >What is MasterTube Title Generator AI?
+                >شرایط مسترتیوب برای نقد کردن درآمد یوتیوب در‌ ایران چیست؟ آیا هر کانالی مورد تایید است؟
               </span>
               <span
                 ><svg
@@ -2030,11 +1875,7 @@
               x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-              fugiat iusto fuga praesentium optio, eaque rerum! Provident
-              similique accusantium nemo autem. Veritatis
+              با توجه به سیاست‌های کاری مسترتیوب، کانال یوتیوب شما باید از نظر روند رشد، سلامت محتوایی و همچنین قوانین یوتیوب مورد تایید کارشناسان مسترتیوب باشد تا امکان نقد کردن درآمد کانال وجود داشته باشد. کانال شما در ابتدا برای اتصال به MCN مورد بررسی قرار می‌گیرد و در صورت تایید، از همان ابتدا به MCN متصل خواهید شد. در صورتی که شرایط لازم برای اتصال به MCN را نداشته باشید، کانال شما با هماهنگی شما به ادسنس شرکتی متصل خواهد شد.
             </p>
             <!-- Content -->
           </div>
@@ -2049,7 +1890,7 @@
               @click="open2 = !open2"
               class="flex justify-between items-center cursor-pointer">
               <span class="text-md font-semibold text-neutral-text1 text-start"
-                >How does MasterTube's Title Generator AI work?
+                >نحوه انعقاد قرار داد با مسترتیوب چگونه است؟
               </span>
               <span
                 ><svg
@@ -2075,11 +1916,7 @@
               x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-              fugiat iusto fuga praesentium optio, eaque rerum! Provident
-              similique accusantium nemo autem. Veritatis
+              پس از بررسی کارشناسان مسترتیوب، تنظیمات اولیه بر روی کانال شما انجام و درخواست مانیتایز کانال شما ارسال می‌شود. بعد از تایید یوتیوب، مدارک مورد نیاز دریافت و قرار داد برای شما ارسال می‌شود. مدت زمان قرارداد ۲ سال است.
             </p>
             <!-- Content -->
           </div>
@@ -2094,8 +1931,7 @@
               @click="open3 = !open3"
               class="flex justify-between items-center cursor-pointer">
               <span class="text-md font-semibold text-neutral-text1 text-start"
-                >How can TubeBuddy's Title Generator AI benefit my YouTube
-                channel?
+                >واریز درآمد یوتیوب در چه تاریخی از ماه انجام می‌شود؟
               </span>
               <span
                 ><svg
@@ -2121,61 +1957,12 @@
               x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-              fugiat iusto fuga praesentium optio, eaque rerum! Provident
-              similique accusantium nemo autem. Veritatis
+              یوتیوب بین ۱۵ تا ۲۵ هر ماه میلادی درآمدها را به حساب ادسنس واریز می‌کند و پس از انجام امور حسابداری در مسترتیوب، ۲۵ تا پایان ماه میلادی هرماه، به حساب ایران شما واریز می‌شود.
             </p>
             <!-- Content -->
           </div>
           <!-- Accordian NO.3 -->
 
-          <!-- Accordian NO.4 -->
-          <div
-            x-data="{open4: false}"
-            class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8">
-            <!-- Header -->
-            <div
-              @click="open4 = !open4"
-              class="flex justify-between items-center cursor-pointer">
-              <span class="text-md font-semibold text-neutral-text1 text-start"
-                >Can I customize the title suggestions provided by TubeBuddy's
-                Title Generator AI?
-              </span>
-              <span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                  class="transition-transform duration-300"
-                  :class="open4 ? 'rotate-180': '' ">
-                  <path
-                    d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
-                    fill="#8F55EA"
-                    stroke="#8F55EA" />
-                </svg>
-              </span>
-            </div>
-            <!-- Header -->
-
-            <!-- Content -->
-            <p
-              x-show="open4"
-              x-cloak
-              x-transition
-              class="text-md text-neutral-text3 text-start font-normal py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-              fugiat iusto fuga praesentium optio, eaque rerum! Provident
-              similique accusantium nemo autem. Veritatis
-            </p>
-            <!-- Content -->
-          </div>
-          <!-- Accordian NO.4 -->
         </div>
       </section>
       <!-- FAQ -->
