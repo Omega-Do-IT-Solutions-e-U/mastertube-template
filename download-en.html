@@ -1108,31 +1108,37 @@
 
       <!-- Products -->
       <section
-        class="container mx-auto mt-[45px] md:mt-[112px]">
+        class="container mx-auto mt-[45px] md:mt-[112px]" x-data="{ format: false, filter: 'all' }">
         <div class="flex md:justify-between mb-4 overflow-auto scrollbar-hide px-4 md:px-0">
           <div class="flex gap-[14px]">
-            <div class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] rounded-[100px] cursor-pointer bg-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]">
-              <img src="/images/download/calculator.svg">
-              <span class="text-[13.737px] text-white font-[500]">All Products</span>
+            <div @click="filter = 'all'" class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] rounded-[100px] cursor-pointer border-[1.5px] border-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]" :class="filter === 'all' && 'bg-[#8F55EA]' || 'border-[1.5px] border-[#8F55EA]'">
+              <img src="/images/download/calculator.svg" :class="filter === 'all' && 'block' || 'hidden'">
+              <img src="/images/download/calculator-white.svg" :class="filter === 'all' && 'hidden' || 'block'">
+              <span class="text-[13.737px] text-[#8F55EA] font-[500]" :class="filter === 'all' && 'text-white' || 'text-[#8f55ea]'">All Products</span>
             </div>
-            <div class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] rounded-[100px] cursor-pointer border-[1.5px] border-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]">
-              <img src="/images/download/monitor.svg">
-              <span class="text-[13.737px] text-[#8F55EA] font-[500]">Books</span>
+            <div @click="filter = 'books'" class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] rounded-[100px] cursor-pointer border-[1.5px] border-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]" :class="filter === 'books' && 'bg-[#8F55EA]' || 'border-[1.5px] border-[#8F55EA]'">
+              <img src="/images/download/monitor.svg" :class="filter === 'books' && 'hidden' || 'block'">
+              <img src="/images/download/monitor-white.svg" :class="filter === 'books' && 'block' || 'hidden'">
+              <span class="text-[13.737px] text-[#8F55EA] font-[500]" :class="filter === 'books' && 'text-white' || 'text-[#8f55ea]'">Books</span>
             </div>
-            <div class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] rounded-[100px] cursor-pointer border-[1.5px] border-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]">
-              <img src="/images/download/clapperboard.svg">
-              <span class="text-[13.737px] text-[#8F55EA] font-[500]">Videos</span>
+            <div @click="filter = 'videos'" class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] rounded-[100px] cursor-pointer border-[1.5px] border-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]" :class="filter === 'videos' && 'bg-[#8F55EA]' || 'border-[1.5px] border-[#8F55EA]'">
+              <img src="/images/download/clapperboard.svg" :class="filter === 'videos' && 'hidden' || 'block'">
+              <img src="/images/download/clapperboard-white.svg" :class="filter === 'videos' && 'block' || 'hidden'">
+              <span class="text-[13.737px] text-[#8F55EA] font-[500]" :class="filter === 'videos' && 'text-white' || 'text-[#8f55ea]'">Videos</span>
             </div>
-            <div class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] rounded-[100px] cursor-pointer border-[1.5px] border-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]">
-              <img src="/images/download/pen.svg">
-              <span class="text-[13.737px] text-[#8F55EA] font-[500]">Graphics</span>
+            <div @click="filter = 'graphics'" class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] rounded-[100px] cursor-pointer border-[1.5px] border-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]" :class="filter === 'graphics' && 'bg-[#8F55EA]' || 'border-[1.5px] border-[#8F55EA]'">
+              <img src="/images/download/pen.svg" :class="filter === 'graphics' && 'hidden' || 'block'">
+              <img src="/images/download/pen-white.svg" :class="filter === 'graphics' && 'block' || 'hidden'">
+              <span class="text-[13.737px] text-[#8F55EA] font-[500]" :class="filter === 'graphics' && 'text-white' || 'text-[#8f55ea]'">Graphics</span>
             </div>
           </div>
 
-          <div class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] ml-4 md:ml-0 rounded-[100px] cursor-pointer border-[1.5px] border-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]">
+          <div @click="format = !format" class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] ml-4 md:ml-0 rounded-[100px] cursor-pointer border-[1.5px] border-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]">
             <span class="text-[13.737px] text-[#8F55EA] font-[500]">Format</span>
             <img src="/images/download/filter.svg">
           </div>
+
+          <!-- <div x-cloak x-show="format === true" class="">ksdfkjskdjfk</div> -->
         </div>
 
         <div class="grid md:grid-cols-2 gap-4 pb-[112px] px-4 md:px-0">
