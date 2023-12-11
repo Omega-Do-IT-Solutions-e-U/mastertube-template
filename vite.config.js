@@ -11,7 +11,7 @@ export default defineConfig({
         'cashout-fa': resolve(__dirname, 'cashout-fa.html'),
         index: resolve(__dirname, 'index.html'),
         'main-fa': resolve(__dirname, 'main-fa.html'),
-        'main-en': resolve(__dirname, 'main-en.html'),
+        // 'main-en': resolve(__dirname, 'main-en.html'),
         'services-en': resolve(__dirname, 'services-en.html'),
         'services-fa': resolve(__dirname, 'services-fa.html'),
         'blog-en': resolve(__dirname, 'blog-en.html'),
