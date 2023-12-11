@@ -883,10 +883,10 @@
           src="/images/cashout/head-bg-2.png"
           class="absolute top-0 right-0 -z-50" />
         <div
-          class="flex flex-col lg:flex-row max-w-[116.6rem] mx-5 justify-center items-center lg:gap-[75px] container py-[10px] px-[30px] lg:px-0 lg:py-0">
+          class="flex flex-col lg:flex-row max-w-[110.8rem] mx-5 justify-center items-center lg:gap-[75px] container py-[10px] px-[30px] lg:px-0 lg:py-0">
           <div class="flex flex-col">
             <h1
-              class="text-center lg:text-start pt-13 text-neutral-text1-cash text-[44px] font-bold">
+              class="text-center lg:text-start pt-13 text-neutral-text1-cash text-[3.5rem] lg:text-[44px] font-bold">
               <span class="text-[#9459F1]">Cashing out</span> your Income
             </h1>
             <span
@@ -936,9 +936,9 @@
         <div
           class="flex lg:items-center justify-between w-full relative px-5 lg:px-0 overflow-x-scroll scrollbar-hide">
           <div
-            class="border-dashed border-t-[2px] border-[#A06AF6] h-[3px] absolute top-[35px] w-full max-w-[60rem] md:max-w-[110rem] left-[50px]"></div>
+            class="border-dashed border-t-[2px] border-[#A06AF6] h-[3px] absolute top-[2.5rem] w-full max-w-[40rem] sm:max-w-[60rem] md:max-w-[85rem] lg:max-w-[110rem] left-[50px]"></div>
           <div
-            class="border-t-[2px] border-[#A06AF6] h-[3px] absolute top-[35px] right-[66%] left-[50px]"></div>
+            class="border-t-[2px] border-[#A06AF6] h-[3px] absolute top-[2.5rem] right-[66%] left-[50px]"></div>
           <div class="flex flex-col relative z-10 shrink-0 mx-5 ml-5">
             <img
               src="/images/cashout/headset.png"
@@ -949,7 +949,7 @@
               >Step 1</span
             >
             <div
-              class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">
+              class="text-[15.591px] lg:text-[22.649px] text-neutral-text1 font-semibold">
               Registration
             </div>
           </div>
@@ -1012,34 +1012,7 @@
               Why Trusting In Us?
             </h2>
             <div
-              class="hidden lg:flex gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]">
-              <span
-                @click="content = 'consult'"
-                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
-                :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                >Youtube Consulting</span
-              >
-              <span
-                @click="content = 'educational'"
-                :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Educational Courses</span
-              >
-              <span
-                @click="content = 'pro'"
-                :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Pro Dasboard</span
-              >
-              <span
-                @click="content = 'ai'"
-                :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >AI Services</span
-              >
-            </div>
-            <div
-              class="flex w-full justify-between lg:hidden gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2]">
+              class="flex w-full justify-between lg:justify-start gap-x-12 border-b-2 border-[#B795E5] border-opacity-[0.2]">
               <span
                 @click="content = 'consult'"
                 class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
@@ -1065,42 +1038,83 @@
                 >Step 4</span
               >
             </div>
-            <p
+            <div
               x-cloak
               x-show="content === 'consult'"
-              class="pt-8">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive. Whether you're aiming for
-              growth, engagement, or monetization, our experts are here to
-              assist you every step of the way.
-            </p>
-            <p
+              class="pt-[1.5rem]">
+              <h3
+                class="text-neutral-text1 text-[2.8rem] font-semibold mb-[1.8rem] text-center lg:text-start">
+                Registration request to
+                <span class="bg-starts text-transparent bg-clip-text"
+                  >withdraw YouTube</span
+                >
+                income
+              </h3>
+              <p class="text-center lg:text-start">
+                Our YouTube consulting service provides personalized guidance
+                and strategies to help your channel thrive. Whether you're
+                aiming for growth, engagement, or monetization, our experts are
+                here to assist you every step of the way.
+              </p>
+            </div>
+
+            <div
               x-cloak
               x-show="content === 'educational'"
-              class="pt-8">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive. Whether you're aiming for
-              growth, engagement, or monetization, our experts are here to
-              assist you every step of the way.
-            </p>
-            <p
+              class="pt-[1.5rem]">
+              <h3
+                class="text-neutral-text1 text-[2.8rem] font-semibold mb-[1.8rem] text-center lg:text-start">
+                Registration request to
+                <span class="bg-starts text-transparent bg-clip-text"
+                  >withdraw YouTube</span
+                >
+                income
+              </h3>
+              <p class="text-center lg:text-start">
+                Our YouTube consulting service provides personalized guidance
+                and strategies to help your channel thrive. Whether you're
+                aiming for growth, engagement, or monetization, our experts are
+                here to assist you every step of the way.
+              </p>
+            </div>
+            <div
               x-cloak
               x-show="content === 'pro'"
-              class="pt-8">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive. Whether you're aiming for
-              growth, engagement, or monetization, our experts are here to
-              assist you every step of the way.
-            </p>
-            <p
+              class="pt-[1.5rem]">
+              <h3
+                class="text-neutral-text1 text-[2.8rem] font-semibold mb-[1.8rem] text-center lg:text-start">
+                Registration request to
+                <span class="bg-starts text-transparent bg-clip-text"
+                  >withdraw YouTube</span
+                >
+                income
+              </h3>
+              <p class="text-center lg:text-start">
+                Our YouTube consulting service provides personalized guidance
+                and strategies to help your channel thrive. Whether you're
+                aiming for growth, engagement, or monetization, our experts are
+                here to assist you every step of the way.
+              </p>
+            </div>
+            <div
               x-cloak
               x-show="content === 'ai'"
-              class="pt-8">
-              Our YouTube consulting service provides personalized guidance and
-              strategies to help your channel thrive. Whether you're aiming for
-              growth, engagement, or monetization, our experts are here to
-              assist you every step of the way.
-            </p>
+              class="pt-[1.5rem]">
+              <h3
+                class="text-neutral-text1 text-[2.8rem] font-semibold mb-[1.8rem] text-center lg:text-start">
+                asdasd to
+                <span class="bg-starts text-transparent bg-clip-text"
+                  >withdraw YouTube</span
+                >
+                income
+              </h3>
+              <p class="text-center lg:text-start">
+                Our YouTube consulting service provides personalized guidance
+                and strategies to help your channel thrive. Whether you're
+                aiming for growth, engagement, or monetization, our experts are
+                here to assist you every step of the way.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -1114,8 +1128,7 @@
             src="/images/cashout/bg-gradient-content.png"
             alt="Effect" />
         </div>
-        <div
-          class="grid grid-cols-3 gap-y-[27px] mx-5 gap-x-10 px-5 sm:px-0 md:px-0">
+        <div class="grid grid-cols-3 gap-y-[27px] gap-x-10 mx-5">
           <div
             class="flex py-[15px] lg:py-[50px] px-[13px] overflow-hidden lg:px-[92.65px] relative col-span-3 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect">
             <div class="lg:max-w-[80%] z-10">
@@ -1127,7 +1140,8 @@
                 >
                 MCN
               </h2>
-              <p class="text-[12px] lg:text-[21px] text-[#FFFFFFE5]">
+              <p
+                class="text-[12px] lg:text-[21px] text-[#FFFFFFE5] max-w-[60rem]">
                 (how and in what condation user can connect to MCN)Our YouTube
                 consulting service provides personalized guidance and strategies
                 to help your channel thrive. Whether you're aiming for growth,
@@ -1471,22 +1485,49 @@
             >
           </h2>
           <div
-            class="flex flex-col lg:flex-row gap-3 lg:max-w-[80%] mt-[23px] relative z-10">
-            <div class="relative lg:w-[30%]">
+            class="flex flex-col lg:flex-row gap-3 lg:max-w-[80%] mt-[23px] relative z-10 items-center">
+            <div
+              class="flex items-center bg-[#f5f5f5] rounded-[3.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full lg:w-fit max-w-[60rem] lg:max-w-none">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none">
+                  <path
+                    d="M20.8312 4.99792H3.69637C3.50702 4.99792 3.32543 5.07314 3.19153 5.20704C3.05764 5.34093 2.98242 5.52253 2.98242 5.71188V17.8491C2.98242 18.2278 3.13286 18.591 3.40065 18.8588C3.66843 19.1265 4.03162 19.277 4.41033 19.277H20.1173C20.496 19.277 20.8592 19.1265 21.127 18.8588C21.3948 18.591 21.5452 18.2278 21.5452 17.8491V5.71188C21.5452 5.52253 21.47 5.34093 21.3361 5.20704C21.2022 5.07314 21.0206 4.99792 20.8312 4.99792ZM9.64985 12.1375L4.41033 16.9397V7.33523L9.64985 12.1375ZM10.7065 13.1058L11.7774 14.0919C11.9091 14.2128 12.0814 14.2799 12.2602 14.2799C12.439 14.2799 12.6113 14.2128 12.743 14.0919L13.814 13.1058L18.9901 17.8491H5.53213L10.7065 13.1058ZM14.8778 12.1375L20.1173 7.33434V16.9406L14.8778 12.1375Z"
+                    fill="#B7A6BC" />
+                </svg>
+              </span>
               <input
                 type="InEmail"
                 id="name"
-                class="block h-[54.636px] text-md px-[25.22px] bg-[#fff] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                placeholder="email  address" />
+                placeholder="Email Address"
+                class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
             </div>
-            <div class="relative lg:w-[70%]">
+            <div
+              class="flex items-center bg-[#f5f5f5] rounded-[3.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] flex-1 w-full max-w-[60rem] lg:max-w-none">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="29"
+                  viewBox="0 0 30 29"
+                  fill="none">
+                  <path
+                    d="M26.6693 8.05994C26.5655 7.65376 26.3666 7.2781 26.089 6.96393C25.8114 6.64976 25.4631 6.40609 25.0728 6.25303C21.2959 4.79428 15.2847 4.8075 14.9541 4.8075C14.6236 4.8075 8.61232 4.79428 4.83543 6.25303C4.44515 6.40609 4.09684 6.64976 3.81926 6.96393C3.54168 7.2781 3.34278 7.65376 3.23896 8.05994C2.9536 9.15951 2.61426 11.1691 2.61426 14.5031C2.61426 17.8371 2.9536 19.8467 3.23896 20.9463C3.34262 21.3527 3.54146 21.7285 3.81905 22.0429C4.09663 22.3573 4.44502 22.6011 4.83543 22.7543C8.45366 24.1502 14.1168 24.1987 14.8814 24.1987H15.0268C15.7915 24.1987 21.4579 24.1502 25.0728 22.7543C25.4632 22.6011 25.8116 22.3573 26.0892 22.0429C26.3668 21.7285 26.5656 21.3527 26.6693 20.9463C26.9546 19.8445 27.294 17.8371 27.294 14.5031C27.294 11.1691 26.9546 9.15951 26.6693 8.05994ZM18.7244 14.87L13.4359 18.3957C13.3695 18.44 13.2923 18.4654 13.2126 18.4693C13.1329 18.4731 13.0536 18.4553 12.9833 18.4176C12.9129 18.3799 12.8541 18.3239 12.8131 18.2554C12.7721 18.1869 12.7505 18.1086 12.7506 18.0288V10.9774C12.7505 10.8976 12.7721 10.8193 12.8131 10.7508C12.8541 10.6823 12.9129 10.6263 12.9833 10.5886C13.0536 10.5509 13.1329 10.5331 13.2126 10.537C13.2923 10.5408 13.3695 10.5663 13.4359 10.6105L18.7244 14.1362C18.7848 14.1764 18.8344 14.231 18.8687 14.295C18.903 14.359 18.9209 14.4305 18.9209 14.5031C18.9209 14.5757 18.903 14.6472 18.8687 14.7112C18.8344 14.7752 18.7848 14.8298 18.7244 14.87Z"
+                    fill="#B7A6BC" />
+                </svg>
+              </span>
               <input
-                type="text"
-                id="youtube"
-                class="block h-[54.636px] text-md px-[25.22px] bg-[#fff] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                placeholder="my YouTube channel URL" />
+                type="InEmail"
+                id="name"
+                placeholder="my YouTube channel URL"
+                class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
+
               <button
-                class="hidden lg:flex absolute right-0 top-0 bottom-0 right-3 my-auto h-[32px] flex items-center gap-[10px] text-[13.524px] py-1 px-5 rounded-[77px] text-white bg-purple">
+                class="hidden h-[32px] lg:flex items-center gap-[10px] text-[13.524px] py-1 px-5 rounded-[77px] text-white bg-purple">
                 submit
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1500,8 +1541,9 @@
                 </svg>
               </button>
             </div>
+
             <button
-              class="flex lg:hidden h-[41px] flex items-center justify-center gap-[10px] text-[13.524px] px-5 rounded-[77px] text-white bg-[#ffffff54] lg:bg-purple">
+              class="flex lg:hidden h-[41px] w-full max-w-[60rem] items-center justify-center gap-[10px] text-[13.524px] px-5 rounded-[77px] text-white bg-[#ffffff54] lg:bg-purple">
               submit
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1524,7 +1566,7 @@
           <img
             src="/images/cashout/income-bg.png"
             alt="background"
-            class="lg:hidden absolute bottom-0 right-0 left-0 w-full" />
+            class="lg:hidden absolute bottom-0 right-0 w-full max-w-[50rem] lg:max-w-none lg:left-0" />
         </div>
       </section>
       <!-- Income -->
@@ -1686,7 +1728,7 @@
           </div>
         </div>
 
-        <div class="hidden container md:grid gap-y-[27px] mx-auto gap-x-10">
+        <!-- <div class="hidden container md:grid gap-y-[27px] mx-auto gap-x-10">
           <div
             class="flex py-[40px] overflow-hidden px-[92.65px] relative col-span-2 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-services">
             <div class="flex flex-col justify-between max-w-[60%] z-10">
@@ -1786,7 +1828,7 @@
               alt="connect background"
               class="absolute top-0 right-0 opacity-20" />
           </div>
-        </div>
+        </div> -->
 
         <div
           class="flex md:hidden items-center gap-[19.3px] overflow-x-auto scrollbar-hide">
@@ -1853,42 +1895,94 @@
             <div
               class="flex flex-col w-full gap-[12.61px] px-0 lg:px-[10.51px] p-[10.51px]">
               <!-- Input 1 -->
-              <div class="relative w-full">
+              <div
+                class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="29"
+                    viewBox="0 0 30 29"
+                    fill="none">
+                    <path
+                      d="M26.6693 8.05994C26.5655 7.65376 26.3666 7.2781 26.089 6.96393C25.8114 6.64976 25.4631 6.40609 25.0728 6.25303C21.2959 4.79428 15.2847 4.8075 14.9541 4.8075C14.6236 4.8075 8.61232 4.79428 4.83543 6.25303C4.44515 6.40609 4.09684 6.64976 3.81926 6.96393C3.54168 7.2781 3.34278 7.65376 3.23896 8.05994C2.9536 9.15951 2.61426 11.1691 2.61426 14.5031C2.61426 17.8371 2.9536 19.8467 3.23896 20.9463C3.34262 21.3527 3.54146 21.7285 3.81905 22.0429C4.09663 22.3573 4.44502 22.6011 4.83543 22.7543C8.45366 24.1502 14.1168 24.1987 14.8814 24.1987H15.0268C15.7915 24.1987 21.4579 24.1502 25.0728 22.7543C25.4632 22.6011 25.8116 22.3573 26.0892 22.0429C26.3668 21.7285 26.5656 21.3527 26.6693 20.9463C26.9546 19.8445 27.294 17.8371 27.294 14.5031C27.294 11.1691 26.9546 9.15951 26.6693 8.05994ZM18.7244 14.87L13.4359 18.3957C13.3695 18.44 13.2923 18.4654 13.2126 18.4693C13.1329 18.4731 13.0536 18.4553 12.9833 18.4176C12.9129 18.3799 12.8541 18.3239 12.8131 18.2554C12.7721 18.1869 12.7505 18.1086 12.7506 18.0288V10.9774C12.7505 10.8976 12.7721 10.8193 12.8131 10.7508C12.8541 10.6823 12.9129 10.6263 12.9833 10.5886C13.0536 10.5509 13.1329 10.5331 13.2126 10.537C13.2923 10.5408 13.3695 10.5663 13.4359 10.6105L18.7244 14.1362C18.7848 14.1764 18.8344 14.231 18.8687 14.295C18.903 14.359 18.9209 14.4305 18.9209 14.5031C18.9209 14.5757 18.903 14.6472 18.8687 14.7112C18.8344 14.7752 18.7848 14.8298 18.7244 14.87Z"
+                      fill="#B7A6BC" />
+                  </svg>
+                </span>
                 <input
-                  type="text"
+                  type="InEmail"
                   id="name"
-                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                  placeholder="your name" />
+                  placeholder="Your Name"
+                  class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
               </div>
               <!-- Input 1 -->
 
               <!-- Input 2 -->
-              <div class="relative w-full">
+              <div
+                class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none">
+                    <path
+                      d="M19.8085 15.2395C19.6593 16.3731 19.1026 17.4137 18.2422 18.1669C17.3819 18.9201 16.2768 19.3343 15.1334 19.3323C8.49057 19.3323 3.08595 13.9276 3.08595 7.28481C3.0839 6.14138 3.49814 5.0363 4.25131 4.17597C5.00449 3.31565 6.04508 2.7589 7.17874 2.60972C7.46541 2.57472 7.75572 2.63337 8.00632 2.77691C8.25692 2.92046 8.45438 3.1412 8.56921 3.40619L10.3362 7.3509V7.36094C10.4241 7.56379 10.4604 7.78525 10.4419 8.00555C10.4233 8.22584 10.3505 8.43812 10.2299 8.62342C10.2149 8.64601 10.199 8.66692 10.1822 8.68784L8.44037 10.7526C9.06701 12.026 10.3989 13.3462 11.689 13.9745L13.7254 12.2418C13.7454 12.225 13.7663 12.2094 13.7881 12.195C13.9732 12.0715 14.1863 11.9961 14.4079 11.9757C14.6295 11.9552 14.8527 11.9903 15.0573 12.0779L15.0682 12.0829L19.0095 13.849C19.275 13.9634 19.4963 14.1607 19.6403 14.4114C19.7843 14.662 19.8433 14.9525 19.8085 15.2395Z"
+                      fill="#B7A6BC" />
+                  </svg>
+                </span>
                 <input
-                  type="text"
-                  id="phone"
-                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                  placeholder="your phone number" />
+                  type="InEmail"
+                  id="name"
+                  placeholder="Your Phone Number"
+                  class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
               </div>
               <!-- Input 2 -->
 
               <!-- Input 3 -->
-              <div class="relative w-full">
+              <div
+                class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none">
+                    <path
+                      d="M19.287 4.51318H3.10585C2.92704 4.51318 2.75555 4.58422 2.62911 4.71066C2.50267 4.8371 2.43164 5.00858 2.43164 5.1874V16.649C2.43164 17.0067 2.57371 17.3496 2.82659 17.6025C3.07946 17.8554 3.42244 17.9975 3.78007 17.9975H18.6128C18.9704 17.9975 19.3134 17.8554 19.5662 17.6025C19.8191 17.3496 19.9612 17.0067 19.9612 16.649V5.1874C19.9612 5.00858 19.8902 4.8371 19.7637 4.71066C19.6373 4.58422 19.4658 4.51318 19.287 4.51318ZM8.72795 11.2553L3.78007 15.7902V6.72039L8.72795 11.2553ZM9.72579 12.1697L10.7371 13.101C10.8615 13.2152 11.0242 13.2785 11.193 13.2785C11.3619 13.2785 11.5246 13.2152 11.649 13.101L12.6603 12.1697L17.5484 16.649H4.83943L9.72579 12.1697ZM13.6649 11.2553L18.6128 6.71955V15.7911L13.6649 11.2553Z"
+                      fill="#B7A6BC" />
+                  </svg>
+                </span>
                 <input
-                  type="text"
-                  id="email"
-                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                  placeholder="email  address" />
+                  type="InEmail"
+                  id="name"
+                  placeholder="Email Address"
+                  class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
               </div>
               <!-- Input 3 -->
 
               <!-- Input 4 -->
-              <div class="relative w-full">
+              <div
+                class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="29"
+                    viewBox="0 0 30 29"
+                    fill="none">
+                    <path
+                      d="M26.6693 8.05994C26.5655 7.65376 26.3666 7.2781 26.089 6.96393C25.8114 6.64976 25.4631 6.40609 25.0728 6.25303C21.2959 4.79428 15.2847 4.8075 14.9541 4.8075C14.6236 4.8075 8.61232 4.79428 4.83543 6.25303C4.44515 6.40609 4.09684 6.64976 3.81926 6.96393C3.54168 7.2781 3.34278 7.65376 3.23896 8.05994C2.9536 9.15951 2.61426 11.1691 2.61426 14.5031C2.61426 17.8371 2.9536 19.8467 3.23896 20.9463C3.34262 21.3527 3.54146 21.7285 3.81905 22.0429C4.09663 22.3573 4.44502 22.6011 4.83543 22.7543C8.45366 24.1502 14.1168 24.1987 14.8814 24.1987H15.0268C15.7915 24.1987 21.4579 24.1502 25.0728 22.7543C25.4632 22.6011 25.8116 22.3573 26.0892 22.0429C26.3668 21.7285 26.5656 21.3527 26.6693 20.9463C26.9546 19.8445 27.294 17.8371 27.294 14.5031C27.294 11.1691 26.9546 9.15951 26.6693 8.05994ZM18.7244 14.87L13.4359 18.3957C13.3695 18.44 13.2923 18.4654 13.2126 18.4693C13.1329 18.4731 13.0536 18.4553 12.9833 18.4176C12.9129 18.3799 12.8541 18.3239 12.8131 18.2554C12.7721 18.1869 12.7505 18.1086 12.7506 18.0288V10.9774C12.7505 10.8976 12.7721 10.8193 12.8131 10.7508C12.8541 10.6823 12.9129 10.6263 12.9833 10.5886C13.0536 10.5509 13.1329 10.5331 13.2126 10.537C13.2923 10.5408 13.3695 10.5663 13.4359 10.6105L18.7244 14.1362C18.7848 14.1764 18.8344 14.231 18.8687 14.295C18.903 14.359 18.9209 14.4305 18.9209 14.5031C18.9209 14.5757 18.903 14.6472 18.8687 14.7112C18.8344 14.7752 18.7848 14.8298 18.7244 14.87Z"
+                      fill="#B7A6BC" />
+                  </svg>
+                </span>
                 <input
-                  type="text"
-                  id="channel-url"
-                  class="block h-[54.636px] text-md px-[25.22px] bg-[#F5F5F5] w-full text-neutral-text1 rounded-[43.078px] appearance-none focus:outline-none focus:ring-0 focus:border-[#D1D1D1] peer"
-                  placeholder="my YouTube channel URL" />
+                  type="InEmail"
+                  id="name"
+                  placeholder="my YouTube channel URL"
+                  class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
               </div>
               <!-- Input 4 -->
               <button
