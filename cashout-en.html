@@ -16,7 +16,7 @@
       <header
         x-data="{pricingOpen: false}"
         x-effect="document.documentElement.classList.toggle('overflow-hidden', pricingOpen)"
-        class="h-navHeight w-full z-50 lg:h-auto px-4 lg:py-[1.8rem] lg:px-27 flex justify-between lg:justify-around bg-white items-center max-w-[144rem] mx-auto gap-x-10"
+        class="h-navHeight w-full z-50 lg:h-auto px-4 lg:py-[1.8rem] lg:px-27 flex justify-between lg:justify-around bg-white items-center mx-auto gap-x-10"
         :class="pricingOpen ? 'fixed top-0 lg:static' : ''">
         <img
           src="/images/logo.png"
@@ -876,14 +876,14 @@
 
       <!-- Hero -->
       <section class="flex justify-center relative mb-15 lg:mb-[11.6rem]">
-        <img
-          src="/images/cashout/head-bg-1.png"
-          class="absolute top-0 left-0" />
-        <img
-          src="/images/cashout/head-bg-2.png"
-          class="absolute top-0 right-0 -z-50" />
         <div
-          class="flex flex-col lg:flex-row max-w-[110.8rem] mx-5 justify-center items-center lg:gap-[75px] container py-[10px] px-[30px] lg:px-0 lg:py-0">
+          class="flex flex-col relative lg:flex-row max-w-[110.8rem] mx-5 justify-center items-center lg:gap-[75px] container py-[10px] px-[30px] lg:px-0 lg:py-0">
+          <img
+          src="/images/cashout/gradient-shape-2-full.png"
+          class="absolute -top-[40rem] -z-50 -left-[30rem] w-[70rem] h-[72.4rem]" />
+          <img
+            src="/images/cashout/gradient-shape-1-full.png"
+            class="absolute -top-[20rem] -right-[64rem] -z-50 w-[70rem] h-[72.4rem] object-contain" />
           <div class="flex flex-col">
             <h1
               class="text-center lg:text-start pt-13 text-neutral-text1-cash text-[3.5rem] lg:text-[44px] font-bold">
