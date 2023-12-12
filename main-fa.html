@@ -17,7 +17,8 @@
       id="app"
       class="overflow-hidden">
       <!-- Language Bar -->
-      <section class="w-full h-[6.1rem] flex items-center bg-[#F8F8F8]">
+      <section
+        class="hidden lg:flex w-full h-[6.1rem] items-center bg-[#F8F8F8]">
         <div
           class="flex py-[1rem] px-[11.1rem] w-full justify-between items-center lg:max-w-[124rem] mx-auto">
           <div class="flex gap-x-[1rem]">
@@ -66,7 +67,7 @@
         class="h-navHeight w-full z-50 lg:h-auto px-4 lg:py-[1.8rem] lg:px-27 flex justify-between lg:justify-around bg-white items-center gap-x-10"
         :class="pricingOpen ? 'fixed top-0 lg:static' : ''">
         <div
-          class="lg:max-w-[124rem] mx-auto flex items-center h-full justify-between xl:px-0 px-4 gap-x-[3rem]">
+          class="lg:max-w-[124rem] mx-auto flex items-center h-full justify-between lg:justify-around xl:px-0 px-4 w-full">
           <img
             src="/images/logo.png"
             alt="Mastertube Logo" />
@@ -161,135 +162,44 @@
                   class="lg:hidden flex flex-col items-start p-3 gap-5 w-1/2 pt-5">
                   <!-- Item 1 -->
                   <div class="flex justify-start items-start gap-x-4 lg:hidden">
-                    <span class="mt-[0.3rem]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none">
-                        <path
-                          d="M11.97 22C17.4928 22 21.97 17.5228 21.97 12C21.97 6.47715 17.4928 2 11.97 2C6.44712 2 1.96997 6.47715 1.96997 12C1.96997 17.5228 6.44712 22 11.97 22Z"
-                          stroke="#8F55EA"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <path
-                          d="M7.20996 16C8.25996 17.51 10.02 18.5 12 18.5C13.98 18.5 15.73 17.51 16.79 16"
-                          stroke="#8F55EA"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </span>
                     <div class="">
                       <span
                         class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                        >Free</span
+                        >مستر راکت</span
                       >
-                      <p class="text-neutral-text2 text-base font-normal">
-                        Get started with our extension <br />
-                        service at no cost.
-                      </p>
                     </div>
                   </div>
                   <!-- Item 1 -->
 
                   <!-- Item 2 -->
-                  <div
-                    class="flex gap-x-4 justify-start text-start items-start">
-                    <span class="mt-[0.3rem]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none">
-                        <path
-                          d="M16.29 2.1499H7.69995C5.99995 2.1499 5.24995 2.9999 4.78995 4.0399L2.22995 9.7999C1.76995 10.8399 2.01995 12.3899 2.78995 13.2299L9.64995 20.7699C10.95 22.1899 13.07 22.1899 14.36 20.7699L21.21 13.2199C21.98 12.3699 22.23 10.8299 21.76 9.7899L19.2 4.0299C18.74 2.9999 17.99 2.1499 16.29 2.1499Z"
-                          stroke="#8F55EA"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <path
-                          d="M3.5 8H20.5"
-                          stroke="#8F55EA"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                    <div>
+                  <div class="flex justify-start items-start gap-x-4 lg:hidden">
+                    <div class="">
                       <span
                         class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                        >Pro</span
+                        >مستر شیلد</span
                       >
-                      <p class="text-neutral-text2 text-base font-normal">
-                        Elevate your experience with our <br />
-                        premium extension service.
-                      </p>
                     </div>
                   </div>
                   <!-- Item 2 -->
 
                   <!-- Item 3 -->
-                  <div
-                    class="flex gap-x-4 justify-start text-start items-start">
-                    <span class="mt-[0.3rem]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none">
-                        <path
-                          d="M13.7299 3.50989L15.4899 7.02989C15.7299 7.51989 16.3699 7.98989 16.9099 8.07989L20.0999 8.60989C22.1399 8.94989 22.6199 10.4299 21.1499 11.8899L18.6699 14.3699C18.2499 14.7899 18.0199 15.5999 18.1499 16.1799L18.8599 19.2499C19.4199 21.6799 18.1299 22.6199 15.9799 21.3499L12.9899 19.5799C12.4499 19.2599 11.5599 19.2599 11.0099 19.5799L8.01991 21.3499C5.87991 22.6199 4.57991 21.6699 5.13991 19.2499L5.84991 16.1799C5.97991 15.5999 5.74991 14.7899 5.32991 14.3699L2.84991 11.8899C1.38991 10.4299 1.85991 8.94989 3.89991 8.60989L7.08991 8.07989C7.61991 7.98989 8.25991 7.51989 8.49991 7.02989L10.2599 3.50989C11.2199 1.59989 12.7799 1.59989 13.7299 3.50989Z"
-                          stroke="#8F55EA"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                    <div>
+                  <div class="flex justify-start items-start gap-x-4 lg:hidden">
+                    <div class="">
                       <span
                         class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                        >Star</span
+                        >دشبورد</span
                       >
-                      <p class="text-neutral-text2 text-base font-normal">
-                        Shine bright with our top-tier <br />
-                        extension service.
-                      </p>
                     </div>
                   </div>
                   <!-- Item 3 -->
 
                   <!-- Item 4 -->
-                  <div
-                    class="flex gap-x-4 justify-start text-start items-start">
-                    <span class="mt-[0.3rem]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none">
-                        <path
-                          d="M2 15.29V5.71002C2 4.38002 2.77 4.06002 3.71 5.00002L6.3 7.59002C6.69 7.98002 7.33 7.98002 7.71 7.59002L11.29 4.00002C11.68 3.61002 12.32 3.61002 12.7 4.00002L16.29 7.59002C16.68 7.98002 17.32 7.98002 17.7 7.59002L20.29 5.00002C21.23 4.06002 22 4.38002 22 5.71002V15.3C22 18.3 20 20.3 17 20.3H7C4.24 20.29 2 18.05 2 15.29Z"
-                          stroke="#8F55EA"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                    <div>
+                  <div class="flex justify-start items-start gap-x-4 lg:hidden">
+                    <div class="">
                       <span
                         class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                        >Legend</span
+                        >اکستنشن</span
                       >
-                      <p class="text-neutral-text2 text-base font-normal">
-                        Unleash the extraordinary with <br />
-                        our Legend extension service.
-                      </p>
                     </div>
                   </div>
                   <!-- Item 4 -->
@@ -304,36 +214,11 @@
                       <!-- Item 1 -->
                       <div
                         class="flex gap-x-4 justify-start text-start items-start">
-                        <span class="mt-[0.3rem]">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none">
-                            <path
-                              d="M11.97 22C17.4928 22 21.97 17.5228 21.97 12C21.97 6.47715 17.4928 2 11.97 2C6.44712 2 1.96997 6.47715 1.96997 12C1.96997 17.5228 6.44712 22 11.97 22Z"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M7.20996 16C8.25996 17.51 10.02 18.5 12 18.5C13.98 18.5 15.73 17.51 16.79 16"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </span>
                         <div>
                           <span
                             class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >Free</span
+                            >مسترراکت</span
                           >
-                          <p class="text-neutral-text2 text-base font-normal">
-                            Get started with our extension <br />
-                            service at no cost.
-                          </p>
                         </div>
                       </div>
                       <!-- Item 1 -->
@@ -341,36 +226,11 @@
                       <!-- Item 2 -->
                       <div
                         class="flex gap-x-4 justify-start text-start items-start">
-                        <span class="mt-[0.3rem]">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none">
-                            <path
-                              d="M16.29 2.1499H7.69995C5.99995 2.1499 5.24995 2.9999 4.78995 4.0399L2.22995 9.7999C1.76995 10.8399 2.01995 12.3899 2.78995 13.2299L9.64995 20.7699C10.95 22.1899 13.07 22.1899 14.36 20.7699L21.21 13.2199C21.98 12.3699 22.23 10.8299 21.76 9.7899L19.2 4.0299C18.74 2.9999 17.99 2.1499 16.29 2.1499Z"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M3.5 8H20.5"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </span>
                         <div>
                           <span
                             class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >Pro</span
+                            >مسترشیلد</span
                           >
-                          <p class="text-neutral-text2 text-base font-normal">
-                            Elevate your experience with our <br />
-                            premium extension service.
-                          </p>
                         </div>
                       </div>
                       <!-- Item 2 -->
@@ -378,30 +238,11 @@
                       <!-- Item 3 -->
                       <div
                         class="flex gap-x-4 justify-start text-start items-start">
-                        <span class="mt-[0.3rem]">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none">
-                            <path
-                              d="M13.7299 3.50989L15.4899 7.02989C15.7299 7.51989 16.3699 7.98989 16.9099 8.07989L20.0999 8.60989C22.1399 8.94989 22.6199 10.4299 21.1499 11.8899L18.6699 14.3699C18.2499 14.7899 18.0199 15.5999 18.1499 16.1799L18.8599 19.2499C19.4199 21.6799 18.1299 22.6199 15.9799 21.3499L12.9899 19.5799C12.4499 19.2599 11.5599 19.2599 11.0099 19.5799L8.01991 21.3499C5.87991 22.6199 4.57991 21.6699 5.13991 19.2499L5.84991 16.1799C5.97991 15.5999 5.74991 14.7899 5.32991 14.3699L2.84991 11.8899C1.38991 10.4299 1.85991 8.94989 3.89991 8.60989L7.08991 8.07989C7.61991 7.98989 8.25991 7.51989 8.49991 7.02989L10.2599 3.50989C11.2199 1.59989 12.7799 1.59989 13.7299 3.50989Z"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </span>
                         <div>
                           <span
                             class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >Star</span
+                            >دشبورد</span
                           >
-                          <p class="text-neutral-text2 text-base font-normal">
-                            Shine bright with our top-tier <br />
-                            extension service.
-                          </p>
                         </div>
                       </div>
                       <!-- Item 3 -->
@@ -409,479 +250,26 @@
                       <!-- Item 4 -->
                       <div
                         class="flex gap-x-4 justify-start text-start items-start">
-                        <span class="mt-[0.3rem]">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none">
-                            <path
-                              d="M2 15.29V5.71002C2 4.38002 2.77 4.06002 3.71 5.00002L6.3 7.59002C6.69 7.98002 7.33 7.98002 7.71 7.59002L11.29 4.00002C11.68 3.61002 12.32 3.61002 12.7 4.00002L16.29 7.59002C16.68 7.98002 17.32 7.98002 17.7 7.59002L20.29 5.00002C21.23 4.06002 22 4.38002 22 5.71002V15.3C22 18.3 20 20.3 17 20.3H7C4.24 20.29 2 18.05 2 15.29Z"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </span>
                         <div>
                           <span
                             class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >Legend</span
+                            >اکستنشن</span
                           >
-                          <p class="text-neutral-text2 text-base font-normal">
-                            Unleash the extraordinary with <br />
-                            our Legend extension service.
-                          </p>
                         </div>
                       </div>
                       <!-- Item 4 -->
                     </div>
                   </div>
-                  <div
-                    class="w-full py-7 px-8 flex justify-center items-center gap-x-2 bg-[#F9F5FF]">
-                    <span class="text-primary-1 text-md font-semibold"
-                      >All Features</span
-                    >
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="21"
-                        viewBox="0 0 20 21"
-                        fill="none">
-                        <path
-                          d="M12.0249 5.44165L17.0832 10.5L12.0249 15.5583"
-                          stroke="#8F55EA"
-                          stroke-width="1.5"
-                          stroke-miterlimit="10"
-                          stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <path
-                          d="M2.91675 10.5H16.9417"
-                          stroke="#8F55EA"
-                          stroke-width="1.5"
-                          stroke-miterlimit="10"
-                          stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <!-- Dropdown Desktop -->
-              </li>
-              <li
-                x-data="{extensionOpen: false}"
-                class="group relative">
-                <div
-                  @click="extensionOpen = !extensionOpen"
-                  class="flex justify-between lg:justify-start items-center gap-x-2">
-                  <span
-                    class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3"
-                    >Extension</span
-                  >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    :class="extensionOpen && 'rotate-180 transition-transform duration-300 lg:rotate-0'">
-                    <path
-                      d="M20.0244 8.94995L13.5044 15.47C12.7344 16.24 11.4744 16.24 10.7044 15.47L4.18445 8.94995"
-                      stroke="#98A1B3"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
-                <!-- Dropdown Mobile -->
-                <div
-                  x-show="extensionOpen === true"
-                  x-cloak
-                  x-transition
-                  class="lg:hidden">
-                  <div class="flex flex-col gap-x-5">
-                    <!-- Col 1 -->
-                    <div class="flex flex-col p-5">
-                      <!-- Item 1 -->
-                      <div
-                        class="flex gap-x-4 p-3 justify-start text-start items-start">
-                        <span class="mt-[0.3rem]">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none">
-                            <path
-                              d="M2.66992 7.17003V5.35003C2.66992 4.20003 3.59992 3.28003 4.73992 3.28003H19.2599C20.4099 3.28003 21.3299 4.21003 21.3299 5.35003V7.17003"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M12 20.7201V4.11011"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M8.06006 20.72H15.9401"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </span>
-                        <div>
-                          <span
-                            class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >Great titles with ai
-                          </span>
-                          <p class="text-neutral-text2 text-base font-normal">
-                            The latest industry news, updates <br />
-                            and info.
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Item 1 -->
-
-                      <!-- Item 2 -->
-                      <div
-                        class="flex gap-x-4 p-3 justify-start text-start items-start">
-                        <span class="mt-[0.3rem]">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none">
-                            <path
-                              d="M22 11V17C22 21 21 22 17 22H7C3 22 2 21 2 17V7C2 3 3 2 7 2H8.5C10 2 10.33 2.44 10.9 3.2L12.4 5.2C12.78 5.7 13 6 14 6H17C21 6 22 7 22 11Z"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10" />
-                            <path
-                              d="M8 2H17C19 2 20 3 20 5V6.38"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </span>
-                        <div>
-                          <span
-                            class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >Best Topics
-                          </span>
-                          <p class="text-neutral-text2 text-base font-normal">
-                            Learn how our customers are <br />
-                            making big changes.
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Item 2 -->
-
-                      <!-- Item 3 -->
-                      <div
-                        class="flex gap-x-4 p-3 justify-start text-start items-start">
-                        <span class="mt-[0.3rem]">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none">
-                            <path
-                              d="M8 2V5"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M16 2V5"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M7 11H15"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M7 15H12"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M15 22H9C4 22 3 19.94 3 15.82V9.65C3 4.95 4.67 3.69 8 3.5H16C19.33 3.68 21 4.95 21 9.65V16"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M21 16L15 22V19C15 17 16 16 18 16H21Z"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </span>
-                        <div>
-                          <span
-                            class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >Create catchy headlines
-                          </span>
-                          <p class="text-neutral-text2 text-base font-normal">
-                            Get up and running on new <br />
-                            features and techniques.
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Item 3 -->
-                    </div>
-                    <!-- Col 1 -->
-
-                    <!-- Col 2 -->
-                    <div class="flex flex-col p-5 bg-neutral-bg2">
-                      <div class="w-full mb-6 rounded-lg overflow-hidden">
-                        <img
-                          src="/images/extension-nav-image.png"
-                          alt="" />
-                      </div>
-                      <div class="text-start">
-                        <span class="text-md font-semibold leading-[180%]"
-                          >We've just released an <br />
-                          update!</span
-                        >
-                        <p
-                          class="text-base mb-3 font-normal leading-[180%] text-neutral-text2">
-                          Check out the all new Extension <br />
-                          view. Pages now load faster.
-                        </p>
-                        <div class="flex gap-x-3">
-                          <span
-                            class="text-base font-semibold text-neutral-text2 leading-[2.4rem]"
-                            >Dismiss</span
-                          >
-                          <span
-                            class="text-base font-semibold text-primary-1 leading-[2.4rem]"
-                            >Changelog</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Col 2 -->
-                  </div>
-                </div>
-                <!-- Dropdown Mobile -->
-                <!-- Dropdown Desktop -->
-                <div
-                  class="opacity-0 lg:group-hover:opacity-100 invisible group-hover:lg:visible duration-300 group z-50 bg-white absolute top-12 rounded-lg border border-neutral-bg1 shadow-fourth overflow-hidden">
-                  <div class="flex gap-x-5">
-                    <!-- Col 1 -->
-                    <div class="flex flex-col p-5">
-                      <!-- Item 1 -->
-                      <div
-                        class="flex gap-x-4 p-3 justify-start text-start items-start">
-                        <span class="mt-[0.3rem]">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none">
-                            <path
-                              d="M2.66992 7.17003V5.35003C2.66992 4.20003 3.59992 3.28003 4.73992 3.28003H19.2599C20.4099 3.28003 21.3299 4.21003 21.3299 5.35003V7.17003"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M12 20.7201V4.11011"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M8.06006 20.72H15.9401"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </span>
-                        <div>
-                          <span
-                            class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >Great titles with ai
-                          </span>
-                          <p class="text-neutral-text2 text-base font-normal">
-                            The latest industry news, updates <br />
-                            and info.
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Item 1 -->
-
-                      <!-- Item 2 -->
-                      <div
-                        class="flex gap-x-4 p-3 justify-start text-start items-start">
-                        <span class="mt-[0.3rem]">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none">
-                            <path
-                              d="M22 11V17C22 21 21 22 17 22H7C3 22 2 21 2 17V7C2 3 3 2 7 2H8.5C10 2 10.33 2.44 10.9 3.2L12.4 5.2C12.78 5.7 13 6 14 6H17C21 6 22 7 22 11Z"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10" />
-                            <path
-                              d="M8 2H17C19 2 20 3 20 5V6.38"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </span>
-                        <div>
-                          <span
-                            class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >Best Topics
-                          </span>
-                          <p class="text-neutral-text2 text-base font-normal">
-                            Learn how our customers are <br />
-                            making big changes.
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Item 2 -->
-
-                      <!-- Item 3 -->
-                      <div
-                        class="flex gap-x-4 p-3 justify-start text-start items-start">
-                        <span class="mt-[0.3rem]">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none">
-                            <path
-                              d="M8 2V5"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M16 2V5"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M7 11H15"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M7 15H12"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M15 22H9C4 22 3 19.94 3 15.82V9.65C3 4.95 4.67 3.69 8 3.5H16C19.33 3.68 21 4.95 21 9.65V16"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path
-                              d="M21 16L15 22V19C15 17 16 16 18 16H21Z"
-                              stroke="#8F55EA"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-                        </span>
-                        <div>
-                          <span
-                            class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >Create catchy headlines
-                          </span>
-                          <p class="text-neutral-text2 text-base font-normal">
-                            Get up and running on new <br />
-                            features and techniques.
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Item 3 -->
-                    </div>
-                    <!-- Col 1 -->
-
-                    <!-- Col 2 -->
-                    <div class="flex flex-col p-5 bg-neutral-bg2">
-                      <div
-                        class="w-full mb-6 bg-primary-1 rounded-lg overflow-hidden">
-                        <img
-                          src="/images/extension-nav-image.png"
-                          alt="" />
-                      </div>
-                      <div class="text-start">
-                        <span class="text-md font-semibold leading-[180%]"
-                          >We've just released an <br />
-                          update!</span
-                        >
-                        <p
-                          class="text-base mb-3 font-normal leading-[180%] text-neutral-text2">
-                          Check out the all new Extension <br />
-                          view. Pages now load faster.
-                        </p>
-                        <div class="flex gap-x-3">
-                          <span
-                            class="text-base font-semibold text-neutral-text2 leading-[2.4rem]"
-                            >Dismiss</span
-                          >
-                          <span
-                            class="text-base font-semibold text-primary-1 leading-[2.4rem]"
-                            >Changelog</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Col 2 -->
-                  </div>
                 </div>
                 <!-- Dropdown Desktop -->
               </li>
               <li
                 class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3">
-                <a href="/">About us</a>
+                <a href="/">بلاگ</a>
               </li>
               <li
                 class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3">
-                <a href="/">Blog</a>
+                <a href="/">درباره ما</a>
               </li>
             </ul>
             <ul
@@ -905,22 +293,22 @@
               class="flex flex-col px-6 gap-y-[0.6rem] lg:hidden">
               <button
                 class="text-md w-full whitespace-nowrap px-[1.8rem] font-semibold py-[1rem] bg-primary-1 rounded-lg text-white">
-                Try For Free
+                ورود
               </button>
               <button
                 class="px-[1.8rem] bg-neutral-bg2 text-primary-1 w-full whitespace-nowrap py-[1rem] text-md font-semibold leading-[180%]">
-                Sign In
+                ثبت نام
               </button>
             </div>
           </nav>
-          <div class="hidden lg:flex">
+          <div class="hidden lg:flex gap-x-4">
             <button
               class="px-[1.8rem] whitespace-nowrap py-[1rem] text-md font-semibold leading-[180%]">
-              Sign In
+              ثبت نام
             </button>
             <button
               class="text-md whitespace-nowrap px-[1.8rem] font-semibold py-[1rem] bg-primary-1 rounded-lg text-white">
-              Try For Free
+              ورود
             </button>
           </div>
         </div>
@@ -1218,10 +606,11 @@
       <!-- How can we help? -->
 
       <!-- Our Purpose -->
-      <section class="container mx-auto py-[26px]">
+      <section class="container mx-auto py-[26px] max-w-[132rem]">
         <h2
           class="text-center text-neutral-text1-cash text-[2.8rem] lg:text-[4.4rem] mb-14 lg:mb-9">
-          رشد سریع‌تر در یوتیوب با مسترتیوب
+          رشد سریع‌تر در یوتیوب با
+          <span class="bg-starts text-transparent bg-clip-text">مسترتیوب</span>
         </h2>
         <div
           class="flex flex-col md:flex-row gap-5 mb-14 items-center px-5 max-w-3xl md:max-w-none mx-auto md:mx-0">
