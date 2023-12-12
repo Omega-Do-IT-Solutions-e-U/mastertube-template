@@ -14,6 +14,8 @@ export default defineConfig({
         // 'main-en': resolve(__dirname, 'main-en.html'),
         'services-en': resolve(__dirname, 'services-en.html'),
         'services-fa': resolve(__dirname, 'services-fa.html'),
+        'rocket-en': resolve(__dirname, 'rocket-en.html'),
+        'rocket-fa': resolve(__dirname, 'rocket-fa.html'),
         'blog-en': resolve(__dirname, 'blog-en.html'),
         'blog-fa': resolve(__dirname, 'blog-fa.html'),
         'single-blog-en': resolve(__dirname, 'single-blog-en.html'),
