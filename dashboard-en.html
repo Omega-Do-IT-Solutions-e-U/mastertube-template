@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  dir="rtl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg" />
     <link
       rel="stylesheet"
       href="style.css" />
-    <title>Home</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
   </head>
   <body>
     <main
-      id="app"
-      class="overflow-hidden">
+      class="overflow-hidden"
+      id="app">
       <!-- Language Bar -->
-      <section
-        class="hidden lg:flex w-full h-[6.1rem] items-center bg-[#F8F8F8]">
+      <section class="w-full h-auto flex items-center bg-[#F8F8F8]">
         <div
-          class="flex py-[1rem] px-[11.1rem] w-full justify-between items-center lg:max-w-[124rem] mx-auto">
+          class="flex lg:flex-row flex-col py-[1rem] w-full justify-between items-center lg:max-w-[124rem] xl:px-0 px-4 mx-auto gap-3">
           <div class="flex gap-x-[1rem]">
             <span>
               <svg
@@ -41,7 +42,7 @@
             </p>
           </div>
 
-          <div class="flex gap-x-[1rem] items-center">
+          <div class="flex gap-x-[1rem] items-center mx-auto lg:mx-0">
             <select
               class="min-w-[11.9rem] border-[#8F55EA] border outline-none focus:outline-none ring-0 bg-white rounded-[4px] px-4 py-2 [font-family:inherit] text-[#633D6F] text-[1.4rem] min-h-[3.2rem]">
               <option
@@ -64,10 +65,10 @@
       <header
         x-data="{pricingOpen: false}"
         x-effect="document.documentElement.classList.toggle('overflow-hidden', pricingOpen)"
-        class="h-navHeight w-full z-50 lg:h-auto px-4 lg:py-[1.8rem] lg:px-27 flex justify-between lg:justify-around bg-white items-center gap-x-10"
+        class="h-navHeight w-full z-50 lg:h-auto lg:py-[1.8rem] bg-white mx-auto"
         :class="pricingOpen ? 'fixed top-0 lg:static' : ''">
         <div
-          class="lg:max-w-[124rem] mx-auto flex items-center h-full justify-between lg:justify-around xl:px-0 px-4 w-full">
+          class="lg:max-w-[124rem] mx-auto flex items-center h-full justify-between xl:px-0 px-4">
           <img
             src="/images/logo.png"
             alt="Mastertube Logo" />
@@ -128,6 +129,10 @@
                 >
               </li>
               <li
+                class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3">
+                <a href="/">MT Pay</a>
+              </li>
+              <li
                 x-data="{pricingOpen: false}"
                 class="group relative">
                 <div
@@ -135,7 +140,7 @@
                   class="flex justify-between lg:justify-start items-center gap-x-2">
                   <span
                     class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3"
-                    >Pricing</span
+                    >Services</span
                   >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +170,7 @@
                     <div class="">
                       <span
                         class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                        >مستر راکت</span
+                        >MasterRocket</span
                       >
                     </div>
                   </div>
@@ -176,7 +181,7 @@
                     <div class="">
                       <span
                         class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                        >مستر شیلد</span
+                        >MasterShield</span
                       >
                     </div>
                   </div>
@@ -187,7 +192,7 @@
                     <div class="">
                       <span
                         class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                        >دشبورد</span
+                        >MasterTube Dashboard</span
                       >
                     </div>
                   </div>
@@ -198,7 +203,7 @@
                     <div class="">
                       <span
                         class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                        >اکستنشن</span
+                        >MasterTube Extention</span
                       >
                     </div>
                   </div>
@@ -217,7 +222,7 @@
                         <div>
                           <span
                             class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >مسترراکت</span
+                            >MasterRocket</span
                           >
                         </div>
                       </div>
@@ -229,7 +234,7 @@
                         <div>
                           <span
                             class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >مسترشیلد</span
+                            >MasterShield</span
                           >
                         </div>
                       </div>
@@ -241,7 +246,7 @@
                         <div>
                           <span
                             class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >دشبورد</span
+                            >MasterTube Dashboard</span
                           >
                         </div>
                       </div>
@@ -253,7 +258,7 @@
                         <div>
                           <span
                             class="text-md font-semibold leading-[180%] block mb-[0.2rem]"
-                            >اکستنشن</span
+                            >MasterTube Extention</span
                           >
                         </div>
                       </div>
@@ -265,11 +270,11 @@
               </li>
               <li
                 class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3">
-                <a href="/">بلاگ</a>
+                <a href="/">Blog</a>
               </li>
               <li
                 class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3">
-                <a href="/">درباره ما</a>
+                <a href="/">About Us</a>
               </li>
             </ul>
             <ul
@@ -293,22 +298,22 @@
               class="flex flex-col px-6 gap-y-[0.6rem] lg:hidden">
               <button
                 class="text-md w-full whitespace-nowrap px-[1.8rem] font-semibold py-[1rem] bg-primary-1 rounded-lg text-white">
-                ورود
+                Try For Free
               </button>
               <button
                 class="px-[1.8rem] bg-neutral-bg2 text-primary-1 w-full whitespace-nowrap py-[1rem] text-md font-semibold leading-[180%]">
-                ثبت نام
+                Sign In
               </button>
             </div>
           </nav>
-          <div class="hidden lg:flex gap-x-4">
+          <div class="hidden lg:flex">
             <button
               class="px-[1.8rem] whitespace-nowrap py-[1rem] text-md font-semibold leading-[180%]">
-              ثبت نام
+              Sign In
             </button>
             <button
               class="text-md whitespace-nowrap px-[1.8rem] font-semibold py-[1rem] bg-primary-1 rounded-lg text-white">
-              ورود
+              Try For Free
             </button>
           </div>
         </div>
@@ -316,149 +321,172 @@
       <!-- Header -->
 
       <!-- Hero -->
-      <section class="mb-15 lg:mb-[11.6rem] relative">
+      <section class="flex justify-center relative mb-15 lg:mb-[11.6rem]">
         <div
-          class="flex flex-col xl:flex-row items-center gap-x-[11.7rem] lg:max-w-[120rem] mx-auto relative">
-          <div class="flex flex-col gap-y-3 px-6">
+          class="flex flex-col relative lg:flex-row max-w-[111.8rem] mx-5 justify-center items-center lg:gap-[75px] container py-[10px] px-[30px] lg:px-0 lg:py-0">
+          <!-- Mobile Gradients -->
+          <div class="lg:hidden top-[-3rem] -z-20 left-0 absolute">
+            <svg
+              class="blur-[6rem]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="149"
+              height="128"
+              viewBox="0 0 149 128"
+              fill="none">
+              <circle
+                cx="74.2"
+                cy="53.3333"
+                r="74.2"
+                fill="#6BC9F9" />
+            </svg>
+          </div>
+          <div class="lg:hidden top-[-3rem] -z-20 right-0 absolute">
+            <svg
+              class="blur-[6rem]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="139"
+              viewBox="0 0 150 139"
+              fill="none">
+              <circle
+                cx="74.9998"
+                cy="64.5335"
+                r="74.2"
+                fill="#8F55EA" />
+            </svg>
+          </div>
+          <!-- Mobile Gradients -->
+
+          <div
+            class="w-[37.5rem] h-[37.5rem] rounded-[37.5rem] bg-[#8F55EA] absolute right-0 bottom-0 blur-[12rem] -z-10"></div>
+          <div class="absolute left-0 blur-[22rem] -z-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="228"
+              height="228"
+              viewBox="0 0 228 228"
+              fill="none">
+              <circle
+                cx="113.576"
+                cy="114.165"
+                r="113.576"
+                fill="#C355EA" />
+            </svg>
+          </div>
+          <div
+            class="w-[22.4rem] h-[22.4rem] lg:w-[37.5rem] lg:h-[37.5rem] rounded-[37.5rem] bg-[#6BC9F9] absolute left-0 bottom-0 lg:bottom-auto lg:left-auto right-[30rem] blur-[12rem] -z-10"></div>
+          <div class="flex flex-col">
             <h1
-              class="text-center whitespace-nowrap lg:text-start pt-13 text-neutral-text1-cash text-[2.8rem] lg:text-5xl font-bold leading-[140%]">
-              مسیر حرفه‌ای شما در<br />
-              یوتیوب با
-              <span class="bg-starts text-transparent bg-clip-text"
-                >مسترتیوب</span
-              >
+              class="text-start pt-13 max-w-[52.5rem] leading-[110%] text-[3.5rem] lg:text-[5rem] mb-3 lg:mb-0">
+              Unlock the
+              <span
+                class="bg-starts text-transparent bg-clip-text leading-[140%]"
+                >Power Of Data </span
+              >with MasterTube Dashboard
             </h1>
+
             <p
-              class="text-center lg:max-w-6xl lg:text-start text-neutral-text1-cash text-[1.7rem] leading-[180%] mb-2 lg:mb-14">
-              در مسترتیوب تلاش می‌کنیم تا با ارائه سرویس‌های کاربردی به
-              تولیدکنندگان محتوای یوتیوب، باعث افزایش بازدید ویدیوها، رشد کانال
-              و افزایش درآمد از یوتیوب شویم و با نقد کردن درآمد یوتیوب توسط MCN
-              به یوتیوبرها خدمات حرفه‌ای را ارائه دهیم.
+              class="text-start text-neutral-text2 text-[2rem] leading-[180%] lg:max-w-[64.5rem]">
+              In the competitive world of YouTube, data is your key to unlocking growth and success. MasterTube Dashboard, empowers you to analyze, understand, and optimize your channel's performance.
             </p>
             <div
-              class="flex flex-col gap-y-3 mb-10 lg:flex-row gap-x-7 items-center max-w-2xl mx-auto w-full lg:mx-0 lg:max-w-none">
+              class="flex flex-col gap-y-3 mb-10 lg:flex-row gap-x-7 mt-[12.8px]">
               <button
-                class="w-full lg:w-auto flex items-center justify-center gap-x-2 bg-primary-1 py-4 px-10 rounded-lg text-md font-semibold leading-[180%] text-white">
-                <span><a href="https://chromewebstore.google.com/detail/mastertube/ebenecbhjmfnidklknaigagobpjppdna" target="_blank">اکستنشن مسترتیوب</a></span>
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    class="rotate-180">
-                    <path
-                      d="M12.0459 5.3501L16.8097 10.1139L12.0459 14.8777"
-                      stroke="white"
-                      stroke-width="1.17722"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path
-                      d="M3.46875 10.114H16.6771"
-                      stroke="white"
-                      stroke-width="1.17722"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
+                class="w-full lg:w-auto bg-[#8F55EA] shadow-primary py-4 px-6 rounded-lg text-md font-semibold leading-[180%] text-white">
+                try for free
               </button>
               <button
-                class="w-full lg:w-auto text-md text-neutral-text2 font-semibold">
-                <a href="https://app.master.tube" target="_blank">دشبورد مسترتیوب</a>
+                class="w-full lg:w-auto text-md text-[#8F55EA] font-semibold">
+                explore more
               </button>
-              <!--              <div class="flex -space-x-3 lg:ml-auto">-->
-              <!--                <div-->
-              <!--                  class="rounded-[5rem] w-[5rem] h-[5rem] border border-neutral-bg3">-->
-              <!--                  <img-->
-              <!--                    src="/images/cashout/card-1-avatar.png"-->
-              <!--                    alt="avatar"-->
-              <!--                    class="w-full h-full" />-->
-              <!--                </div>-->
-              <!--                <div-->
-              <!--                  class="rounded-[5rem] w-[5rem] h-[5rem] border border-neutral-bg3">-->
-              <!--                  <img-->
-              <!--                    src="/images/cashout/card-2-avatar.png"-->
-              <!--                    alt="avatar"-->
-              <!--                    class="w-full h-full" />-->
-              <!--                </div>-->
-              <!--                <div-->
-              <!--                  class="rounded-[5rem] w-[5rem] h-[5rem] border border-neutral-bg3">-->
-              <!--                  <img-->
-              <!--                    src="/images/cashout/card-3-avatar.png"-->
-              <!--                    alt="avatar"-->
-              <!--                    class="w-full h-full" />-->
-              <!--                </div>-->
-              <!--                <div-->
-              <!--                  class="rounded-[5rem] w-[5rem] h-[5rem] border border-neutral-bg3">-->
-              <!--                  <img-->
-              <!--                    src="/images/cashout/card-4-avatar.png"-->
-              <!--                    alt="avatar"-->
-              <!--                    class="w-full h-full" />-->
-              <!--                </div>-->
-              <!--                <div-->
-              <!--                  class="rounded-[5rem] w-[5rem] h-[5rem] border border-neutral-bg3 bg-[#D1D5DC] flex justify-center items-center">-->
-              <!--                  <svg-->
-              <!--                    xmlns="http://www.w3.org/2000/svg"-->
-              <!--                    width="20"-->
-              <!--                    height="19"-->
-              <!--                    viewBox="0 0 20 19"-->
-              <!--                    fill="none">-->
-              <!--                    <path-->
-              <!--                      d="M5.07715 9.56982H14.4949"-->
-              <!--                      stroke="white"-->
-              <!--                      stroke-width="1.17722"-->
-              <!--                      stroke-linecap="round"-->
-              <!--                      stroke-linejoin="round" />-->
-              <!--                    <path-->
-              <!--                      d="M9.78613 14.2786V4.86084"-->
-              <!--                      stroke="white"-->
-              <!--                      stroke-width="1.17722"-->
-              <!--                      stroke-linecap="round"-->
-              <!--                      stroke-linejoin="round" />-->
-              <!--                  </svg>-->
-              <!--                </div>-->
-              <!--              </div>-->
             </div>
-          </div>
-          <div class="hidden xl:flex justify-center items-center pb-10 w-full">
-            <div class="absolute -z-10 -top-[200px] -right-[20rem]">
-              <img
-                src="/images/main/gradient-shape-1.png"
-                width="500" />
-            </div>
-            <img
-              src="/images/main/gallery-small.png"
-              alt="Media player"
-              class="self-end -mr-22 -mb-10" />
-            <img
-              src="/images/main/gallery.png"
-              alt="Media player"
-              class="" />
-            <img
-              src="/images/main/gallery-small.png"
-              alt="Media player"
-              class="self-start -ml-14 w-[5rem] h-[5rem]" />
-            <img
-              src="/images/main/gradient-shape-2.png"
-              width="500"
-              class="absolute -z-10 -bottom-22 mr-[30rem] -scale-x-100" />
           </div>
 
-          <div class="flex xl:hidden justify-center items-center w-full">
-            <img
-              src="/images/main/gallery.png"
-              alt="Media player"
-              class="w-[257.063px] h-[257.063px]" />
+          <div class="relative flex justify-center items-center">
+            <div
+              class="w-[22.4rem] h-[22.4rem] lg:hidden rounded-[37.5rem] bg-[#8F55EA] absolute right-0 bottom-0 blur-[12rem] -z-10"></div>
+            <div
+              class="w-[22.4rem] h-[22.4rem] lg:hidden rounded-[37.5rem] bg-[#6BC9F9] absolute left-0 bottom-0 right-[30rem] blur-[12rem] -z-10"></div>
+
+            <!-- Glassy Effect -->
+            <div
+              class="absolute top-[12rem] right-[2.5rem] hidden -z-10 rounded-[8rem] w-[22rem] h-[22rem] sm:w-[28rem] sm:h-[28rem] lg:w-[30rem] lg:h-[30rem] sm:flex justify-center items-center border border-white lg:rounded-[10rem] backdrop-blur-[3.2rem]"></div>
+            <!-- Glassy Effect -->
+
+            <!-- Words Around Image -->
+            <div
+              class="flex justify-center items-center min-w-22 lg:min-w-[13.4rem] right-[-5rem] top-[45%] absolute py-[.6rem] px-[1rem] rounded-2xl bg-white shadow-eighth text-[1.5rem] text-[#3d3e4a]">
+              Keywords
+            </div>
+            <div
+              class="flex justify-center items-center min-w-[10.4rem] lg:min-w-[15.8rem] right-[-2rem] lg:right-[-6rem] top-[75%] absolute py-[.6rem] px-[1rem] rounded-2xl bg-white shadow-eighth text-[1.5rem] text-[#3d3e4a]">
+              Keywords
+            </div>
+            <div
+              class="flex justify-center items-center min-w-[11.6rem] lg:min-w-[17.6rem] left-[4rem] lg:left-[-2rem] top-[75%] absolute py-[.6rem] px-[1rem] rounded-2xl bg-white shadow-eighth text-[1.5rem] text-[#3d3e4a]">
+              Keywords
+            </div>
+            <!-- Words Around Image -->
+            <div class="flex justify-center items-center mt-10">
+              <img
+                src="/images/services-hero.png"
+                alt="services"
+                class="object-cover" />
+            </div>
           </div>
         </div>
       </section>
       <!-- Hero -->
 
-      <!-- How can we help? -->
-      <section class="flex flex-col gap-[23px] mx-auto lg:w-auto py-[43px]">
+      <!-- Extension Section -->
+      <section
+        class="flex flex-col-reverse text-center lg:text-start mb-[10rem] lg:flex-row justify-between items-center max-w-[111.8rem] mx-auto">
+        <div class="flex flex-1">
+          <img
+                  src="/images/dashboard/dashboard-01.png"
+                  width="300px"
+                  alt=""
+                  class="w-[21.2rem] lg:w-[35rem]" />
+        </div>
+        <div class="flex-1 px-10 lg:px-0">
+          <h2
+            class="text-neutral-text1 text-2xl lg:text-3xl font-bold mb-4 lg:mb-2">
+            Grow your channel Faster with
+            <span class="bg-starts text-transparent bg-clip-text">MasterTube dashboard</span>
+            <br class="lg:hidden" />
+          </h2>
+          <p class="text-md lg:text-xl text-neutral-text3 mb-8">
+            Our YouTube consulting service provides personalized guidance and strategies to help your channel thrive. Our YouTube consulting service provides personalized guidance and strategies to help your channel thrive.
+          </p>
+          <div class="flex justify-start items-start w-full">
+            <button
+              class="p-4 gap-x-2 rounded-lg bg-primary-1 shadow-primary text-white text-md font-semibold flex items-center w-full lg:w-auto max-w-xl mx-auto lg:mx-0 justify-center mb-14 lg:mb-0">
+              <span>Request Try for free</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Extension Section -->
+
+      <!-- More Features -->
+      <section class="flex flex-col gap-[23px] mx-auto lg:w-auto py-[43px] max-w-[111.8rem]">
+        <h2 class="text-[4rem] font-bold text-neutral-text1 mb-4 lg:mb-5 text-center">
+          MasterTube dashboard <span class="bg-starts text-transparent bg-clip-text">Features </span>
+        </h2>
+        <div class="flex py-[15px] lg:py-[50px] min-h-[10.8rem] lg:min-h-[27.8rem] px-[13px] overflow-hidden lg:px-[92.65px] relative rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect mb-7">
+          <div class="max-w-[80%] z-10 text-start px-4 lg:px-0">
+            <h2 class="text-white text-[21px] lg:text-[35.836px] font-[600] mb-[11.29px]">
+              MasterAssistant
+            </h2>
+            <p class="text-[1.4rem] lg:text-[21px] text-[#FFFFFFE5] max-w-[80rem]">
+              MasterTube Assistant helps you grow your YouTube channel by providing insights into your channel's performance. It uses YouTube API data to analyze your channel's settings, videos, and needs for review.
+            </p>
+          </div>
+
+          <img src="/images/cashout/connect-group.svg" alt="connect background" class="absolute top-0 right-0 opacity-20">
+          <img src="/images/cashout/connect-gradient.svg" alt="connect background" class="absolute bottom-0 left-0">
+        </div>
+
         <div
                 class="w-full lg:overflow-visible scrollbar-hide overflow-x-scroll"
         >
@@ -472,18 +500,19 @@
               <h2
                       class="text-[#3D3E4A] text-[24px] font-bold max-w-[33rem] mb-[8.32px] group-hover:text-white"
               >
-                مسترشیلد
+                MasterAI
               </h2>
 
               <p class="text-[#98A1B3] text-[16px] group-hover:text-white">
-                با مسترشیلد، به صورت تخصصی جلوی کپی شدن محتوای شما در شبکه‌های مجازی را می‌گیریم. مسترشیلد سرویسی برای حفاظت از محتوای شماست.
+                MasterAI takes the guesswork out of ideating and optimizing YouTube video titles, tags, keywords and descriptions.
               </p>
 
               <div
                       class="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0"
               >
                 <img
-                        src="/images/main/setting.png"
+                        src="/images/dashboard/dashboard-02.png"
+                        width="280px"
                         alt="Note Icon"
                         class="object-cover"
                 />
@@ -498,18 +527,19 @@
               <h2
                       class="text-[#3D3E4A] text-[24px] font-bold max-w-[33rem] mb-[8.32px] group-hover:text-white"
               >
-                نقد کردن درآمد یوتیوب
+                Deeplink
               </h2>
 
               <p class="text-[#98A1B3] text-[16px] group-hover:text-white">
-                تتر یا ریال؟ با مسترتیوب می‌توانید به نقد کردن درآمد با MCN را تجربه کنید و درآمد یوتیوب خود را به تتر یا ریال در حساب بانکی دلخواه، با بالاترین قیمت نقد کنید.
+                Simplify your video sharing with Deeplink, a tool that generates concise URLs and tracks clicks
               </p>
 
               <div
                       class="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0"
               >
                 <img
-                        src="/images/main/calendar.png"
+                        src="/images/dashboard/dashboard-03.png"
+                        width="338px"
                         alt="Calender Icon"
                         class="object-cover"
                 />
@@ -524,18 +554,19 @@
               <h2
                       class="text-[#3D3E4A] text-[24px] font-bold max-w-[33rem] mb-[8.32px] group-hover:text-white"
               >
-                داشبورد مسترتیوب
+                MasterFiles
               </h2>
 
               <p class="text-[#98A1B3] text-[16px] group-hover:text-white">
-                مجموعه‌ای کامل از تمامی امکاناتی که برای تبدیل شدن به یک یوتیوبر حرفه‌ای نیاز دارید. به صورت دقیق کانال یوتیوب خود را در یک نگاه بررسی کنید.
+                Ever had a brain fart? Yah, we get them all the time. With our Title .
               </p>
 
               <div
                       class="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0"
               >
                 <img
-                        src="/images/main/channel.png"
+                        src="/images/dashboard/dashboard-04.png"
+                        width="230px"
                         alt="Channel Icon"
                         class="object-cover"
                 />
@@ -544,510 +575,712 @@
             <!-- Item 3 -->
           </div>
         </div>
-
-        <div
-                class="container max-w-[1092px] w-auto lg:w-full mx-4 lg:mx-0 relative lg:mx-auto flex flex-col gap-[8.32px] rounded-[16px] bg-white shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] overflow-visible"
-        >
-          <div
-                  class="relative overflow-hidden px-[41.75px] py-[59.34px] pr-[20%] md:pr-[40%] min-h-[21.6rem]"
-          >
-            <h2 class="text-[#3D3E4A] text-[24px] font-bold">
-              مسترتیوب، پارتنر رسمی مدیا کیوب و گوگل
-            </h2>
-            <p class="text-[#98A1B3] text-[16px]">
-              مسترتیوب نماینده رسمی یوتیوبرهای فارسی زبان است و شما می‌توانید با پیوستن به MCN مدیاکیوب، از تمامی خدمات یکی از بزرگترین شرکت‌های MCN دنیا استفاده کنید.
-            </p>
-            <img
-                    src="/images/main/google.png"
-                    alt="google"
-                    class="absolute right-0 md:top-0 top-[50%] w-[86.631px] h-[86.631px] md:w-[271.203px] md:h-[271.203px]"
-            />
-          </div>
-        </div>
       </section>
-      <!-- How can we help? -->
+      <!-- More Features -->
 
-      <!-- Our Purpose -->
-      <section class="container mx-auto py-[26px] max-w-[132rem]">
-        <h2
-                class="text-center text-neutral-text1-cash text-[2.8rem] lg:text-[4.4rem] mb-14 lg:mb-9">
-          رشد سریع‌تر در یوتیوب با
-          <span class="bg-starts text-transparent bg-clip-text">مسترتیوب</span>
-        </h2>
+      <!-- Steps -->
+      <section class="max-w-[122.3rem] mx-auto mb-22">
         <div
-                class="grid md:grid-cols-3 gap-5 mb-14 items-center px-5 max-w-3xl md:max-w-none mx-auto md:mx-0"
-        >
-          <!-- Card 1 -->
-          <div class="bg-white rounded-lg shadow-fifth py-8 px-5 w-full h-full">
-            <span class="block mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="73" height="72" viewBox="0 0 73 72" fill="none">
-                <path d="M36.8086 7.3125C31.1348 7.3125 25.5883 8.99499 20.8707 12.1472C16.153 15.2994 12.4761 19.7798 10.3048 25.0218C8.13352 30.2637 7.56542 36.0318 8.67233 41.5967C9.77924 47.1615 12.5115 52.2731 16.5235 56.2851C20.5355 60.2971 25.6471 63.0294 31.212 64.1363C36.7768 65.2432 42.5449 64.6751 47.7868 62.5038C53.0288 60.3325 57.5092 56.6556 60.6614 51.9379C63.8136 47.2203 65.4961 41.6739 65.4961 36C65.4872 28.3943 62.4619 21.1028 57.0839 15.7247C51.7059 10.3467 44.4143 7.32143 36.8086 7.3125ZM47.0658 43.875C48.805 41.6182 49.7482 38.8492 49.7482 36C49.7482 33.1508 48.805 30.3818 47.0658 28.125L55.852 19.3416C59.8932 23.949 62.1214 29.8686 62.1214 35.9972C62.1214 42.1258 59.8932 48.0453 55.852 52.6528L47.0658 43.875ZM27.2461 36C27.2461 34.1087 27.8069 32.2599 28.8577 30.6874C29.9084 29.1148 31.4019 27.8892 33.1492 27.1654C34.8965 26.4416 36.8192 26.2523 38.6742 26.6212C40.5291 26.9902 42.233 27.901 43.5703 29.2383C44.9077 30.5756 45.8184 32.2795 46.1874 34.1344C46.5563 35.9894 46.367 37.9121 45.6432 39.6594C44.9194 41.4067 43.6938 42.9002 42.1212 43.9509C40.5487 45.0017 38.6999 45.5625 36.8086 45.5625C34.2725 45.5625 31.8402 44.555 30.0469 42.7617C28.2536 40.9684 27.2461 38.5361 27.2461 36ZM53.4642 16.9566L44.6836 25.7428C42.4268 24.0036 39.6578 23.0604 36.8086 23.0604C33.9594 23.0604 31.1904 24.0036 28.9336 25.7428L20.153 16.9566C24.7605 12.9154 30.68 10.6872 36.8086 10.6872C42.9372 10.6872 48.8568 12.9154 53.4642 16.9566ZM17.7652 19.3444L26.5514 28.125C24.8122 30.3818 23.869 33.1508 23.869 36C23.869 38.8492 24.8122 41.6182 26.5514 43.875L17.7652 52.6556C13.724 48.0482 11.4959 42.1286 11.4959 36C11.4959 29.8714 13.724 23.9518 17.7652 19.3444ZM20.153 55.0434L28.9336 46.2572C31.1904 47.9964 33.9594 48.9396 36.8086 48.9396C39.6578 48.9396 42.4268 47.9964 44.6836 46.2572L53.467 55.0434C48.8596 59.0846 42.94 61.3128 36.8114 61.3128C30.6828 61.3128 24.7633 59.0846 20.1558 55.0434H20.153Z" fill="url(#paint0_linear_5_12230)"/>
-                <defs>
-                  <linearGradient id="paint0_linear_5_12230" x1="36.8086" y1="7.3125" x2="36.8086" y2="64.6875" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#9D66F5"/>
-                    <stop offset="1" stop-color="#9363DF"/>
-                  </linearGradient>
-                </defs>
-              </svg>
-            </span>
-            <h3
-                    class="text-neutral-text1 text-[1.8rem] mb-1 font-semibold leading-[140%]"
-            >
-              دستیار مسترتیوب، ابزاری برای آنالیز ویدیوها و کانال
-            </h3>
-            <p
-                    class="max-w-[29rem] text-base leading-[180%] text-neutral-text3"
-            >
-              دستیار مسترتیوب با بهره گیری از اطلاعات YouTube API، در سه بخش آنالیز کانال، آنالیز ویدیو و نیاز به بررسی، تنظیمات کانال یوتیوب شما را بررسی کرده و به شما پیشنهاداتی برای بهبود وضعیت کانالتان می‌دهد. اگر نمیدانید کجای مسیر را اشتباه رفته‌اید، دستیار مسترتیوب همراه شما برای رسیدن به نتیجه‌ای بهتر است            </p>
-          </div>
-          <!-- Card 1 -->
-
-          <!-- Card 2 -->
-          <div class="bg-white rounded-lg shadow-fifth py-8 px-5 w-full h-full">
-            <span class="block mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="73" height="72" viewBox="0 0 73 72" fill="none">
-                <path d="M69.4568 34.875C69.4531 31.9411 68.6016 29.0708 67.0049 26.6094C65.4082 24.148 63.1343 22.2004 60.4568 21.0009V20.25C60.454 17.3952 59.507 14.6215 57.7634 12.3611C56.0198 10.1006 53.5776 8.48035 50.8171 7.75267C48.0566 7.025 45.1329 7.23079 42.5016 8.338C39.8703 9.44521 37.6791 11.3916 36.2693 13.8741C34.8596 11.3916 32.6684 9.44521 30.037 8.338C27.4057 7.23079 24.4821 7.025 21.7216 7.75267C18.9611 8.48035 16.5188 10.1006 14.7752 12.3611C13.0316 14.6215 12.0847 17.3952 12.0818 20.25V21.0009C9.40223 22.1964 7.12627 24.1424 5.52913 26.6038C3.93198 29.0652 3.08203 31.9366 3.08203 34.8708C3.08203 37.805 3.93198 40.6763 5.52913 43.1377C7.12627 45.5991 9.40223 47.5452 12.0818 48.7406V49.5C12.0847 52.3548 13.0316 55.1285 14.7752 57.3889C16.5188 59.6494 18.9611 61.2696 21.7216 61.9973C24.4821 62.725 27.4057 62.5192 30.037 61.412C32.6684 60.3048 34.8596 58.3584 36.2693 55.8759C37.6791 58.3584 39.8703 60.3048 42.5016 61.412C45.1329 62.5192 48.0566 62.725 50.8171 61.9973C53.5776 61.2696 56.0198 59.6494 57.7634 57.3889C59.507 55.1285 60.454 52.3548 60.4568 49.5V48.7406C63.1343 47.5435 65.4085 45.5976 67.0053 43.1375C68.6022 40.6773 69.4535 37.8079 69.4568 34.875ZM25.0193 59.0625C22.534 59.0637 20.1459 58.0973 18.3609 56.3679C16.5759 54.6386 15.5343 52.2822 15.4568 49.7981C16.384 49.974 17.3256 50.0625 18.2693 50.0625H20.5193C20.9669 50.0625 21.3961 49.8847 21.7126 49.5682C22.029 49.2518 22.2068 48.8226 22.2068 48.375C22.2068 47.9274 22.029 47.4982 21.7126 47.1818C21.3961 46.8653 20.9669 46.6875 20.5193 46.6875H18.2693C15.4811 46.6898 12.782 45.7057 10.6495 43.9094C8.51705 42.113 7.08874 39.6203 6.61732 36.8722C6.14589 34.1242 6.66174 31.2979 8.0736 28.8936C9.48545 26.4892 11.7023 24.6618 14.3318 23.7347C14.661 23.6183 14.9459 23.4027 15.1474 23.1176C15.3489 22.8325 15.457 22.4919 15.4568 22.1428V20.25C15.4568 17.7139 16.4643 15.2816 18.2576 13.4883C20.0509 11.695 22.4832 10.6875 25.0193 10.6875C27.5555 10.6875 29.9877 11.695 31.781 13.4883C33.5744 15.2816 34.5818 17.7139 34.5818 20.25V40.7953C33.3715 39.4616 31.8954 38.396 30.2485 37.667C28.6016 36.938 26.8204 36.5618 25.0193 36.5625C24.5718 36.5625 24.1426 36.7403 23.8261 37.0568C23.5096 37.3732 23.3318 37.8024 23.3318 38.25C23.3318 38.6976 23.5096 39.1268 23.8261 39.4432C24.1426 39.7597 24.5718 39.9375 25.0193 39.9375C27.5555 39.9375 29.9877 40.945 31.781 42.7383C33.5744 44.5316 34.5818 46.9639 34.5818 49.5C34.5818 52.0361 33.5744 54.4684 31.781 56.2617C29.9877 58.055 27.5555 59.0625 25.0193 59.0625ZM54.2693 46.6875H52.0193C51.5718 46.6875 51.1426 46.8653 50.8261 47.1818C50.5096 47.4982 50.3318 47.9274 50.3318 48.375C50.3318 48.8226 50.5096 49.2518 50.8261 49.5682C51.1426 49.8847 51.5718 50.0625 52.0193 50.0625H54.2693C55.213 50.0625 56.1547 49.974 57.0818 49.7981C57.0233 51.6756 56.4131 53.4943 55.3274 55.0271C54.2417 56.5599 52.7285 57.7391 50.9769 58.4173C49.2252 59.0956 47.3126 59.2429 45.4777 58.841C43.6428 58.439 41.967 57.5056 40.6593 56.1571C39.3516 54.8087 38.47 53.105 38.1246 51.2586C37.7791 49.4123 37.9851 47.5051 38.7168 45.775C39.4485 44.045 40.6735 42.5688 42.239 41.5307C43.8044 40.4925 45.6409 39.9384 47.5193 39.9375C47.9669 39.9375 48.3961 39.7597 48.7126 39.4432C49.029 39.1268 49.2068 38.6976 49.2068 38.25C49.2068 37.8024 49.029 37.3732 48.7126 37.0568C48.3961 36.7403 47.9669 36.5625 47.5193 36.5625C45.7183 36.5618 43.9371 36.938 42.2902 37.667C40.6433 38.396 39.1672 39.4616 37.9568 40.7953V20.25C37.9568 17.7139 38.9643 15.2816 40.7576 13.4883C42.5509 11.695 44.9832 10.6875 47.5193 10.6875C50.0555 10.6875 52.4877 11.695 54.281 13.4883C56.0744 15.2816 57.0818 17.7139 57.0818 20.25V22.1428C57.0816 22.4919 57.1898 22.8325 57.3912 23.1176C57.5927 23.4027 57.8777 23.6183 58.2068 23.7347C60.8364 24.6618 63.0532 26.4892 64.4651 28.8936C65.8769 31.2979 66.3928 34.1242 65.9214 36.8722C65.4499 39.6203 64.0216 42.113 61.8892 43.9094C59.7567 45.7057 57.0575 46.6898 54.2693 46.6875ZM58.2068 31.5C58.2068 31.9476 58.029 32.3768 57.7126 32.6932C57.3961 33.0097 56.9669 33.1875 56.5193 33.1875H55.3943C52.8582 33.1875 50.4259 32.18 48.6326 30.3867C46.8393 28.5934 45.8318 26.1611 45.8318 23.625V22.5C45.8318 22.0524 46.0096 21.6232 46.3261 21.3068C46.6426 20.9903 47.0718 20.8125 47.5193 20.8125C47.9669 20.8125 48.3961 20.9903 48.7126 21.3068C49.029 21.6232 49.2068 22.0524 49.2068 22.5V23.625C49.2068 25.266 49.8587 26.8398 51.0191 28.0002C52.1795 29.1606 53.7533 29.8125 55.3943 29.8125H56.5193C56.9669 29.8125 57.3961 29.9903 57.7126 30.3068C58.029 30.6232 58.2068 31.0524 58.2068 31.5ZM17.1443 33.1875H16.0193C15.5718 33.1875 15.1426 33.0097 14.8261 32.6932C14.5096 32.3768 14.3318 31.9476 14.3318 31.5C14.3318 31.0524 14.5096 30.6232 14.8261 30.3068C15.1426 29.9903 15.5718 29.8125 16.0193 29.8125H17.1443C18.7854 29.8125 20.3592 29.1606 21.5196 28.0002C22.6799 26.8398 23.3318 25.266 23.3318 23.625V22.5C23.3318 22.0524 23.5096 21.6232 23.8261 21.3068C24.1426 20.9903 24.5718 20.8125 25.0193 20.8125C25.4669 20.8125 25.8961 20.9903 26.2126 21.3068C26.529 21.6232 26.7068 22.0524 26.7068 22.5V23.625C26.7068 26.1611 25.6994 28.5934 23.906 30.3867C22.1127 32.18 19.6805 33.1875 17.1443 33.1875Z" fill="url(#paint0_linear_5_12237)"/>
-                <defs>
-                <linearGradient id="paint0_linear_5_12237" x1="36.2694" y1="7.32532" x2="36.2694" y2="62.4247" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#9D66F5"/>
-                <stop offset="1" stop-color="#9363DF"/>
-                </linearGradient>
-                </defs>
-              </svg>
-            </span>
-            <h3
-                    class="text-neutral-text1 text-[1.8rem] mb-1 font-semibold leading-[140%]"
-            >
-              هوش مصنوعی، همراه تولید محتوای شما
-            </h3>
-            <p
-                    class="max-w-[29rem] text-base leading-[180%] text-neutral-text3"
-            >
-              با استفاده از هوش مصنوعی در داشبورد مسترتیوب، شما می‌توانید پیشنهادات به روز برای عنوان ویدیو، تگ و دیسکریپشن را با چند کلیک ببینید. همچنین می‌توانید کلمات کلیدی مرتبط با موضوع کانال‌تان را پیدا کرده و با استفاده از آن محتوای بهتری را تولید کنید. هوش مصنوعی به شما کمک می‌کند که سریع‌تر در جستجوها دیده شوید و بازدید بیشتری کسب کنید.
-            </p>
-          </div>
-          <!-- Card 2 -->
-
-          <!-- Card 3 -->
-          <div class="bg-white rounded-lg shadow-fifth py-8 px-5 w-full h-full">
-            <span class="block mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="73" height="72" viewBox="0 0 73 72" fill="none">
-                <path d="M62.6216 23.625C65.6947 30.0461 66.2723 37.38 64.2421 44.203C62.212 51.0259 57.719 56.8511 51.6354 60.5477C45.5518 64.2442 38.3116 65.5483 31.3206 64.2068C24.3295 62.8654 18.0863 58.974 13.803 53.2882C9.51976 47.6024 7.50201 40.5279 8.14151 33.4381C8.78101 26.3483 12.0321 19.749 17.2637 14.9215C22.4953 10.0939 29.334 7.38254 36.4523 7.31372C43.5706 7.2449 50.4605 9.82354 55.7844 14.549L62.5344 7.79903C62.8519 7.48699 63.2799 7.31307 63.7251 7.31514C64.1702 7.31721 64.5966 7.4951 64.9112 7.81008C65.2258 8.12505 65.4032 8.55158 65.4047 8.99676C65.4063 9.44194 65.2318 9.86969 64.9194 10.1868L37.9194 37.1868C37.7631 37.3455 37.5769 37.4717 37.3716 37.5581C37.1662 37.6445 36.9458 37.6893 36.7231 37.6901C36.5003 37.6909 36.2796 37.6475 36.0737 37.5626C35.8678 37.4776 35.6807 37.3528 35.5233 37.1952C35.3659 37.0375 35.2412 36.8503 35.1565 36.6443C35.0718 36.4383 35.0287 36.2175 35.0297 35.9948C35.0308 35.772 35.0759 35.5517 35.1625 35.3464C35.2491 35.1412 35.3755 34.9552 35.5344 34.799L43.8004 26.5303C41.6467 24.9199 39.008 24.0925 36.3204 24.185C33.6328 24.2774 31.0573 25.2841 29.0193 27.0387C26.9814 28.7932 25.6031 31.1906 25.1124 33.8347C24.6216 36.4787 25.0476 39.211 26.3201 41.58C27.5926 43.9491 29.6354 45.8131 32.1108 46.8638C34.5861 47.9146 37.346 48.0894 39.9341 47.3591C42.5222 46.6289 44.7837 45.0374 46.3448 42.8478C47.9059 40.6581 48.6732 38.0013 48.5197 35.3165C48.4944 34.869 48.6478 34.4297 48.9464 34.0953C49.2449 33.7609 49.6641 33.5588 50.1116 33.5334C50.5592 33.508 50.9985 33.6615 51.3329 33.96C51.6673 34.2586 51.8694 34.6777 51.8947 35.1253C52.0972 38.5982 51.1013 42.0354 49.0734 44.8621C47.0456 47.6888 44.1088 49.7337 40.7541 50.6547C37.3994 51.5758 33.8301 51.3173 30.6432 49.9223C27.4563 48.5274 24.8448 46.0807 23.2455 42.9912C21.6462 39.9018 21.156 36.3569 21.8569 32.9494C22.5578 29.5419 24.4072 26.4783 27.096 24.2708C29.7848 22.0634 33.15 20.846 36.6287 20.8221C40.1075 20.7982 43.489 21.9693 46.2079 24.1397L53.391 16.9537C48.6714 12.8383 42.5928 10.6204 36.3319 10.7294C30.071 10.8384 24.0732 13.2664 19.4997 17.5435C14.9262 21.8206 12.1022 27.6425 11.5746 33.8821C11.047 40.1217 12.8532 46.3351 16.6436 51.3194C20.434 56.3038 25.9389 59.7045 32.0926 60.8632C38.2463 62.022 44.6111 60.8563 49.9547 57.5918C55.2983 54.3274 59.2406 49.1964 61.0185 43.1923C62.7963 37.1881 62.2832 30.7379 59.5785 25.0903C59.4823 24.8905 59.4264 24.6737 59.4139 24.4522C59.4015 24.2308 59.4328 24.0091 59.5061 23.7998C59.5793 23.5905 59.6931 23.3976 59.8409 23.2323C59.9887 23.0669 60.1676 22.9323 60.3674 22.8361C60.5672 22.7398 60.784 22.6839 61.0054 22.6715C61.2269 22.6591 61.4486 22.6904 61.6579 22.7636C61.8672 22.8369 62.0601 22.9507 62.2254 23.0985C62.3908 23.2462 62.5254 23.4251 62.6216 23.625Z" fill="url(#paint0_linear_5_12244)"/>
-                <defs>
-                <linearGradient id="paint0_linear_5_12244" x1="36.7298" y1="7.31238" x2="36.7298" y2="64.7212" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#9D66F5"/>
-                <stop offset="1" stop-color="#9363DF"/>
-                </linearGradient>
-                </defs>
-              </svg>
-            </span>
-            <h3
-                    class="text-neutral-text1 text-[1.8rem] mb-1 font-semibold leading-[140%]"
-            >
-              مسترراکت؛ منتورینگ و کوچینگ یوتیوب
-            </h3>
-            <p
-                    class="max-w-[29rem] text-base leading-[180%] text-neutral-text3"
-            >
-              سرویس مسترراکت، به شما کمک میکند تا کانال یوتیوبتان را به بهترین شکل ممکن مدیریت کنید و از رقبای خود پیشی بگیرید. با سرویس مسترراکت، کانال خود را توسط تیم حرفه‌ای مسترتیوب راه‌اندازی و بهینه‌سازی کنید. این سرویس برای کسانیست که به خاطر کمبود وقت، محدودیت‌ها و عدم تجربه تا به حال اقدامی برای راه‌اندازی کانال یوتیوب خود نکرده‌اند یا در رسیدن به درآمد ناکام مانده‌اند.            </p>
-          </div>
-          <!-- Card 3 -->
-        </div>
-      </section>
-      <!-- Our Purpose -->
-
-      <!-- View Extension -->
-      <section class="pt-15 pb-20">
-        <div
-          class="max-w-[132rem] px-5 md:px-0 mx-auto flex flex-col items-center lg:flex-row-reverse lg:justify-between pt-8 gap-4">
-          <div
-            class="bg-[url('/images/main/extention.svg')] bg-no-repeat bg-contain max-w-[676.706px] -scale-x-100">
+          class="flex flex-col-reverse lg:flex-row gap-x-[91px] items-center justify-center mt-[32px]">
+          <div class="min-w-fit">
             <img
-              src="/images/main/extention.png"
-              alt="Camera Icon" />
+              src="/images/dashboard/dashboard-05.png"
+              width="344px"
+              alt="Music"
+              class="w-[305.657px] h-[305.657px] lg:w-[342.791px] lg:h-[342.791px]" />
           </div>
-          <div class="mb-7 lg:mb-0 mx-5">
+          <div
+            x-data="{content: 'consult'}"
+            class="flex flex-col items-start w-full p-[10px] px-5 lg:p-0">
             <h2
-              class="text-neutral-text1-cash text-[3rem] text-center md:text-start lg:text-[4.1rem] font-bold leading-[140%] mb-3">
-              اکستنشن مسترتیوب، ابزار
-              <span class="bg-starts text-transparent bg-clip-text"
-                >آنالیزی داده‌های یوتیوب</span
-              >
+              class="hidden lg:block text-neutral-text1-cash text-3xl font-bold leading-[140%] mb-6">
+               <span class="bg-starts text-transparent bg-clip-text">10X </span>Your Channel
             </h2>
-            <p
-              class="text-base lg:text-xl text-center md:text-start leading-[180%] text-neutral-text3 mb-12">
-              اکستنشن مسترتیوب، یک ابزار اندازه‌گیری موفقیت در یوتیوب است که به
-              شما کمک می‌کند به سادگی از رقبای خود سبقت بگیرید. بهترین
-              قابلیت‌های داشبورد مسترتیوب را در اکستنشن تجربه کنید و در
-              سریع‌ترین زمان ممکن به آنها دسترسی داشته باشید.
-            </p>
-            <button
-              class="w-full h-12 lg:h-16 lg:text-base py-3 px-7 lg:px-10 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit">
-              <a href="https://chromewebstore.google.com/detail/mastertube/ebenecbhjmfnidklknaigagobpjppdna" target="_blank">نصب رایگان اکستنش</a>
-            </button>
-            <button
-              class="w-full h-12 lg:h-16 lg:text-base py-3 px-7 md:ml-[27px] lg:px-10 rounded-lg text-[#666E80] font-semibold text-[16px] md:w-fit">
-              اطلاعات بیشتر
-            </button>
+            <div
+              class="flex w-full whitespace-nowrap scrollbar-hide gap-x-11 border-b-2 snap-x snap-mandatory border-[#B795E5] border-opacity-[0.2] overflow-x-scroll">
+              <span
+                @click="content = 'consult'"
+                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3 snap-start snap-always"
+                :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                >easy to access</span
+              >
+              <span
+                @click="content = 'educational'"
+                :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3 snap-start snap-always"
+                >Trusted Data</span
+              >
+              <span
+                @click="content = 'pro'"
+                :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3 snap-start snap-always"
+                >more tools</span
+              >
+            </div>
+            <div
+              x-cloak
+              x-show="content === 'consult'"
+              class="pt-[1.5rem]">
+              <h3
+                class="text-neutral-text1 text-[2.8rem] font-semibold mb-[1.8rem] text-center lg:text-start">
+                Simply Powerful
+                <span class="bg-starts text-transparent bg-clip-text"
+                  >Analytics</span
+                >
+              </h3>
+              <p class="text-center lg:text-start">
+                MasterTube dashboard makes accessing in-depth YouTube analytics incredibly easy. it is intuitively designed so you can instantly view key metrics, compare growth trends, and identify opportunities - no advanced technical skills required. Navigating the powerful features is simple.
+              </p>
+            </div>
+
+            <div
+              x-cloak
+              x-show="content === 'educational'"
+              class="pt-[1.5rem]">
+              <h3
+                class="text-neutral-text1 text-[2.8rem] font-semibold mb-[1.8rem] text-center lg:text-start">
+                <span class="bg-starts text-transparent bg-clip-text"
+                  >YouTube-Verified </span
+                >Data
+              </h3>
+              <p class="text-center lg:text-start">
+                The subscriber counts, view time metrics, and other insights within MasterTube dashboard leverage trusted data straight from the source - YouTube. The numbers are the same ones YouTube uses, giving you transparency.
+              </p>
+            </div>
+            <div
+              x-cloak
+              x-show="content === 'pro'"
+              class="pt-[1.5rem]">
+              <h3
+                class="text-neutral-text1 text-[2.8rem] font-semibold mb-[1.8rem] text-center lg:text-start">
+                <span class="bg-starts text-transparent bg-clip-text"
+                  >The Best Is</span
+                >
+                Yet To Come
+              </h3>
+              <p class="text-center lg:text-start">
+                While MasterTube already centralizes the key YouTube data you need, they continuously develop new visualizations, connections, predictions, and other in-demand enhancements to help you optimize your channel.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <!-- View Extension -->
+      <!-- Steps -->
 
-      <!-- Testimonial -->
-      <section class="lg:px-9 py-10 pb-[116px] mt-10 relative">
-        <div class="flex flex-col lg:items-center">
-          <div class="relative lg:ml-10 text-center">
-            <span class="text-[41px] text-[#3D3E4A] font-bold text-center">
-              درباره مسترتیوب چه می‌گویند؟
-            </span>
-            <span
-              class="text-[1.8rem] ml-2 lg:text-2xl font-medium leading-[180%] text-neutral-text2 mb-7 block"
-              >یوتیوبرها درباره مسترتیوب چه می‌گویند؟
-            </span>
-          </div>
-
+      <!-- Access -->
+      <section class="max-w-[111.8rem] mx-auto mb-22 px-5">
+        <h3 class="text-center mb-14">How to access features?</h3>
+        <div
+                class="flex flex-col gap-y-8 lg:gap-y-0 lg:flex-row gap-x-14 mb-10 max-w-3xl mx-auto lg:max-w-none">
           <div
-            class="flex overflow-x-scroll gap-x-4 scrollbar-hide lg:-mx-20 mb-6">
-            <!-- Card 1 -->
-            <div
-              class="flex p-5 min-w-[30rem] justify-center items-center rounded-[12px] border border-neutral-bg1 bg-white shadow-cashout-card-shadow">
-              <div class="flex flex-col items-start h-full">
-                <div class="flex flex-col items-center w-full">
-                  <div
-                    class="w-[137.175px] h-[137.175px] rounded-full mb-[17.68px]">
-                    <img
-                      src="/images/testimonial/RezaArashnia.jpg"
-                      alt=""
-                      class="w-full h-full rounded-[50%]" />
-                  </div>
-                  <div class="flex flex-col items-center">
-                    <h3 class="text-[24.797px] text-[#666E80] font-bold">
-                      رضا آرش نیا
-                    </h3>
-                    <span
-                      class="text-[15px] font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
-                        href="https://www.instagram.com/rezaarashnia/?hl=en"
-                        target="_blank"
-                        >مشاهده کانال</a
-                      ></span
-                    >
-                  </div>
-                </div>
+                  class="flex flex-col-reverse lg:flex-row gap-x-14 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain">
+            <div class="flex flex-col gap-y-2 text-center lg:text-start">
+              <h5
+                      class="flex items-center gap-x-2 justify-center lg:justify-start">
                 <div>
-                  <p
-                    class="text-base leading-[180%] text-neutral-text3 max-w-md text-center mt-[17.68px]">
-                    به نظر من کارشون قابل تقدیره چون که دارن مسیری رو برای ما
-                    هموار میکنن که بالاخره باید به سمتش حرکت کنیم به نظر من
-                    کسانی که تو زمینه آموزش دارن فعالیت میکنن دیر یا زود باید از
-                    قابلیت های یوتیوب استفاده کنن و خود من هم قصد دارم با کمک
-                    آقای میکاِئیلی وارد یوتیوب بشم و آموزش های فوق العاده ای رو
-                    ارائه بدم
-                  </p>
+                  <img
+                          src="/icons/video.svg"
+                          alt="" />
                 </div>
-              </div>
+                <span> Step 1 </span>
+              </h5>
+              <p class="text-xl text-neutral-text3 lg:max-w-sm pb-8 lg:pb-0">
+                Go to MasterTube dashboard
+              </p>
             </div>
-            <!-- Card 1 -->
-
-            <!-- Card 2 -->
-            <div
-              class="flex p-5 min-w-[30rem] justify-center items-center rounded-[12px] border border-neutral-bg1 bg-white shadow-cashout-card-shadow">
-              <div class="flex flex-col items-start h-full">
-                <div class="flex flex-col items-center w-full">
-                  <div
-                    class="w-[137.175px] h-[137.175px] rounded-full mb-[17.68px]">
-                    <img
-                      src="/images/testimonial/ReneSinani.jpg"
-                      alt=""
-                      class="w-full h-full rounded-[50%]" />
-                  </div>
-                  <div class="flex flex-col items-center">
-                    <h3 class="text-[24.797px] text-[#666E80] font-bold">
-                      رنه سینانی
-                    </h3>
-                    <span
-                      class="text-[15px] font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
-                        href="https://www.instagram.com/renesinani2/?hl=en"
-                        target="_blank"
-                        >مشاهده کانال</a
-                      ></span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <p
-                    class="text-base leading-[180%] text-neutral-text3 max-w-md text-center mt-[17.68px]">
-                    من برای اولین بار بود دیدم توی ایران اینقدر منظم و دقیق
-                    یوتیوب رو بررسی کردن و راهکارهای اجرایی براش در نظر گرفتن که
-                    هرکسی که میخواد از یوتیوب کسب درآمد کنه بتونه با این راهکار
-                    ها و با پنلی که در اختیار متقاضیان میزارن هم مدیریت کنن هم
-                    راحت کسب درآمد کنن و با توجه به سابقه و تجربه ای که تو
-                    یوتیوب داشتن خیل میتونن کمک کنن به دوستانی که میخوان تو
-                    یوتیوب فعالیت حرفه ایشون رو پیش ببرن.
-                  </p>
-                </div>
-              </div>
+            <div class="mb-8 lg:mb-0 flex justify-center items-center">
+              <img
+                      src="/images/dashboard/dashboard-06.png"
+                      width="130px"
+                      alt="Step 1" />
             </div>
-            <!-- Card 2 -->
-
-            <!-- Card 3 -->
-            <div
-              class="flex p-5 min-w-[30rem] justify-center items-center rounded-[12px] border border-neutral-bg1 bg-white shadow-cashout-card-shadow">
-              <div class="flex flex-col items-start h-full">
-                <div class="flex flex-col items-center w-full">
-                  <div
-                    class="w-[137.175px] h-[137.175px] rounded-full mb-[17.68px]">
-                    <img
-                      src="/images/testimonial/SinaEzzati.jpg"
-                      alt=""
-                      class="w-full h-full rounded-[50%]" />
-                  </div>
-                  <div class="flex flex-col items-center">
-                    <h3 class="text-[24.797px] text-[#666E80] font-bold">
-                      سینا عزتی
-                    </h3>
-                    <span
-                      class="text-[15px] font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
-                        href="https://www.instagram.com/sinaezzati.ir/?hl=en"
-                        target="_blank"
-                        >مشاهده کانال</a
-                      ></span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <p
-                    class="text-base leading-[180%] text-neutral-text3 max-w-md text-center mt-[17.68px]">
-                    کسایی که تو حوضه تولید محتوا دارن فعالیت میکنن یکی از روش
-                    های درآمد زایی براشون همین یوتیوب هست که یه مشکلی که داره
-                    اینه که نمیشه درآمدش رو تو ایران نقد کرد. که مسترتیوب این
-                    مشکل رو برای ما حل کرده.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 3 -->
-
-            <!-- Card 4 -->
-            <div
-              class="flex p-5 min-w-[30rem] justify-center items-center rounded-[12px] border border-neutral-bg1 bg-white shadow-cashout-card-shadow">
-              <div class="flex flex-col items-start h-full">
-                <div class="flex flex-col items-center w-full">
-                  <div
-                    class="w-[137.175px] h-[137.175px] rounded-full mb-[17.68px]">
-                    <img
-                      src="/images/testimonial/adelkhan.jpg"
-                      alt=""
-                      class="w-full h-full rounded-[50%]" />
-                  </div>
-                  <div class="flex flex-col items-center">
-                    <h3 class="text-[24.797px] text-[#666E80] font-bold">
-                      عادل خان
-                    </h3>
-                    <span
-                      class="text-[15px] font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
-                        href="https://www.instagram.com/adelkhaan/"
-                        target="_blank"
-                        >مشاهده کانال</a
-                      ></span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <p
-                    class="text-base leading-[180%] text-neutral-text3 max-w-md text-center mt-[17.68px]">
-                    یکی از استرتایی که من برای شروع یوتیوبم داشتم برای همین هم
-                    شروع نکردم این بود که میترسیدم راه رو اشتباه برم بعد مجبورشم
-                    دوباره از اول همه این مسیر رو طی کنم. مسترتیوب انگار دستت رو
-                    گرفته میبرتت بالا
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 4 -->
-
-            <!-- Card 5 -->
-            <div
-              class="flex p-5 min-w-[30rem] justify-center items-center rounded-[12px] border border-neutral-bg1 bg-white shadow-cashout-card-shadow">
-              <div class="flex flex-col items-start h-full">
-                <div class="flex flex-col items-center w-full">
-                  <div
-                    class="w-[137.175px] h-[137.175px] rounded-full mb-[17.68px]">
-                    <img
-                      src="/images/testimonial/Youtubersho.jpg"
-                      alt=""
-                      class="w-full h-full rounded-[50%]" />
-                  </div>
-                  <div class="flex flex-col items-center">
-                    <h3 class="text-[24.797px] text-[#666E80] font-bold">
-                      محمد پسندیده
-                    </h3>
-                    <span
-                      class="text-[15px] font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
-                        href="https://www.instagram.com/youtubersho_/?hl=fa"
-                        target="_blank"
-                        >مشاهده کانال</a
-                      ></span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <p
-                    class="text-base leading-[180%] text-neutral-text3 max-w-md text-center mt-[17.68px]">
-                    داشبورد مسترتیوب بخش جذابیه که کمتر دیده شده و اطلاعات خیلی
-                    زیادی میتونه برای یوتیوبر ها داشته باشه مخصوصا برای کسایی که
-                    انگلیسی سختشون هست یه داشبورد ایرانیزه شده خوبی هست براشون
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 5 -->
-
-            <!-- Card 6 -->
-            <div
-              class="flex p-5 min-w-[30rem] justify-center items-center rounded-[12px] border border-neutral-bg1 bg-white shadow-cashout-card-shadow">
-              <div class="flex flex-col items-start h-full">
-                <div class="flex flex-col items-center w-full">
-                  <div class="w-[137.175px] h-[137.175px] mb-[17.68px]">
-                    <img
-                      src="/images/testimonial/FarhadHarati.jpg"
-                      alt=""
-                      class="w-full h-full rounded-[50%]" />
-                  </div>
-                  <div class="flex flex-col items-center">
-                    <h3 class="text-[24.797px] text-[#666E80] font-bold">
-                      فرهاد هراتی
-                    </h3>
-                    <span
-                      class="text-[15px] font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
-                        href="https://www.instagram.com/farhadharati.official/"
-                        target="_blank"
-                        >مشاهده کانال</a
-                      ></span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <p
-                    class="text-base leading-[180%] text-neutral-text3 max-w-md text-center mt-[17.68px]">
-                    من آهنگساز هستم و به طور حرفه ای در زمینه موسیقی در یوتیوب
-                    فعالیت میکنم. چیزی که در مسترتیوب برای من اهمیت داره این هست
-                    که معمولا اعتماد کردن سخت هست در این شرایط اما خوشبختانه
-                    پشتیبانی مسترتیوب این حس اعتماد رو در من به وجود آوردن تا
-                    کارم رو با مسترتیوب دنبال کنم و از نتیجه بسیار راضی هستم
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 6 -->
-
-            <!-- Card 7 -->
-            <div
-              class="flex p-5 min-w-[30rem] justify-center items-center rounded-[12px] border border-neutral-bg1 bg-white shadow-cashout-card-shadow">
-              <div class="flex flex-col items-start h-full">
-                <div class="flex flex-col items-center w-full">
-                  <div
-                    class="w-[137.175px] h-[137.175px] rounded-full mb-[17.68px]">
-                    <img
-                      src="/images/testimonial/Beatkori.jpeg"
-                      alt=""
-                      class="w-full h-full rounded-[50%]" />
-                  </div>
-                  <div class="flex flex-col items-center">
-                    <h3 class="text-[24.797px] text-[#666E80] font-bold">
-                      بیت کوری
-                    </h3>
-                    <span
-                      class="text-[15px] font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
-                        href="https://www.youtube.com/@Beatkori"
-                        target="_blank"
-                        >مشاهده کانال</a
-                      ></span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <p
-                    class="text-base leading-[180%] text-neutral-text3 max-w-md text-center mt-[17.68px]">
-                    سه سال هست که مسترتیوب رو میشناسم و نقطه قوتشون پشتیبانی خوب
-                    هست و اگر مشکلی در یوتیوب داشته باشیم همیشه برطرف میکنن.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 7 -->
-
-            <!-- Card 8 -->
-            <div
-              class="flex p-5 min-w-[30rem] justify-center items-center rounded-[12px] border border-neutral-bg1 bg-white shadow-cashout-card-shadow">
-              <div class="flex flex-col items-start h-full">
-                <div class="flex flex-col items-center w-full">
-                  <div
-                    class="w-[137.175px] h-[137.175px] rounded-full mb-[17.68px]">
-                    <img
-                      src="/images/about-us/avatar-1.png"
-                      alt=""
-                      class="w-full h-full rounded-[50%]" />
-                  </div>
-                  <div class="flex flex-col items-center">
-                    <h3 class="text-[24.797px] text-[#666E80] font-bold">
-                      علی نیکوبیان
-                    </h3>
-                    <span
-                      class="text-[15px] font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
-                        href=""
-                        target="_blank"
-                        >مشاهده کانال</a
-                      ></span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <p
-                    class="text-base leading-[180%] text-neutral-text3 max-w-md text-center mt-[17.68px]">
-                    چندماه که با مسترتیوب آشنا شدم و همکاری میکنم واقعا نسبت به
-                    رقبا متفاوتن و پشتیبانی خیلی خوبی دارن.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 8 -->
           </div>
-        </div>
-      </section>
-      <!-- Testimonial -->
-
-      <!-- Try Now -->
-      <section
-        class="w-full bg-[#F9F6FE] p-3 min-h-[22.8rem] relative flex items-center">
-        <div class="absolute left-0 z-10">
-          <img
-            src="/images/main/wires.png"
-            alt="wires icon" />
+          <div
+                  class="flex flex-col-reverse lg:flex-row gap-x-14 w-full flex-1 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain justify-between">
+            <div class="flex flex-col gap-y-2 text-center lg:text-start">
+              <h5
+                      class="flex items-center gap-x-2 justify-center lg:justify-start">
+                <span>
+                  <img
+                          src="/icons/video.svg"
+                          alt="" />
+                </span>
+                <span> Step 2 </span>
+              </h5>
+              <p class="text-xl text-neutral-text3 lg:max-w-sm pb-8 lg:pb-0">
+                Create account with email and password, log in
+              </p>
+            </div>
+            <div class="mb-8 lg:mb-0 flex justify-center items-center">
+              <img
+                      src="/images/dashboard/dashboard-07.png"
+                      width="130px"
+                      alt="Step 1" />
+            </div>
+          </div>
         </div>
         <div
-          class="flex justify-between relative z-20 flex-col lg:flex-row h-full items-center max-w-[110rem] mx-auto w-full px-10 lg:px-0">
-          <h3
-            class="text-neutral-text1-cash text-[1.7rem] mb-4 lg:mb-0 max-w-[36.9rem] lg:max-w-none lg:text-3xl text-center lg:text-start">
-            با داشبورد مسترتیوب، در زمان صرفه‌ جویی کنید، بازدید بیشتری
-            <br class="hidden lg:block" />
-            بگیرید و درآمد بیشتری کسب کنید.
-          </h3>
-          <button
-            class="h-[6.4rem] w-full max-w-xl lg:w-auto py-3 px-7 lg:py-4 lg:px-10 flex justify-center items-center text-white bg-primary-1 rounded-lg text-md font-semibold">
-            <a href="https://app.master.tube" target="_blank">ثبت نام کاملا رایگان</a>
-          </button>
+                class="flex flex-col gap-y-8 lg:gap-y-0 lg:flex-row gap-x-14 mb-10">
+          <div
+                  class="flex flex-col-reverse lg:flex-row gap-x-14 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain">
+            <div class="flex flex-col gap-y-2 text-center lg:text-start">
+              <h5
+                      class="flex items-center gap-x-2 justify-center lg:justify-start">
+                <span>
+                  <img
+                          src="/icons/video.svg"
+                          alt="" />
+                </span>
+                <span> Step 3 </span>
+              </h5>
+              <p class="text-xl text-neutral-text3 lg:max-w-sm pb-8 lg:pb-0">
+                Link YouTube channel with your google account
+              </p>
+            </div>
+            <div class="mb-8 lg:mb-0 flex justify-center items-center">
+              <img
+                      src="/images/dashboard/dashboard-08.png"
+                      width="130px"
+                      alt="Step 1" />
+            </div>
+          </div>
+          <div
+                  class="flex gap-x-14 flex-col-reverse lg:flex-row rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain">
+            <div class="flex flex-col gap-y-2 text-center lg:text-start">
+              <h5
+                      class="flex items-center gap-x-2 justify-center lg:justify-start">
+                <span>
+                  <img
+                          src="/icons/video.svg"
+                          alt="" />
+                </span>
+                <span> Step 4 </span>
+              </h5>
+              <p class="text-xl text-neutral-text3 lg:max-w-sm pb-8 lg:pb-0">
+                Access data and optimization tools
+              </p>
+            </div>
+            <div class="mb-8 lg:mb-0 flex justify-center items-center">
+              <img
+                      src="/images/dashboard/dashboard-09.png"
+                      width="130px"
+                      alt="Step 1" />
+            </div>
+          </div>
         </div>
       </section>
-      <!-- Try Now -->
+      <!-- Access -->
+
+      <!-- FAQ -->
+      <section class="text-center max-w-[111.8rem] mx-auto mb-22 px-5">
+        <h3 class="mb-14">Frequently
+          <span class="bg-starts text-transparent bg-clip-text"
+          > Asked Questions!</span
+          >
+          </h3>
+        <div class="flex flex-col gap-y-6">
+          <!-- Accordian NO.1 -->
+          <div
+            x-data="{open1: false}"
+            class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8">
+            <!-- Header -->
+            <div
+              @click="open1 = !open1"
+              class="flex justify-between items-center cursor-pointer">
+              <span class="text-md font-semibold text-neutral-text1 text-start"
+                >what is masterTube dashboard?
+              </span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="transition-transform duration-300"
+                  :class="open1 ? 'rotate-180': '' ">
+                  <path
+                    d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
+                    fill="#8F55EA"
+                    stroke="#8F55EA" />
+                </svg>
+              </span>
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <p
+              x-show="open1"
+              x-cloak
+              x-transition
+              class="text-md text-neutral-text3 text-start font-normal py-2">
+              The MasterTube dashboard is a YouTube channel data analytics tool that can provide intelligent solutions tailored to address issues with your YouTube channel.
+            </p>
+            <!-- Content -->
+          </div>
+          <!-- Accordian NO.1 -->
+
+          <!-- Accordian NO.2 -->
+          <div
+            x-data="{open2: true}"
+            class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8">
+            <!-- Header -->
+            <div
+              @click="open2 = !open2"
+              class="flex justify-between items-center cursor-pointer">
+              <span class="text-md font-semibold text-neutral-text1 text-start"
+                >Will granting access to my MasterTube dashboard cause any issues for my channel?
+              </span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="transition-transform duration-300"
+                  :class="open2 ? 'rotate-180': '' ">
+                  <path
+                    d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
+                    fill="#8F55EA"
+                    stroke="#8F55EA" />
+                </svg>
+              </span>
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <p
+              x-show="open2"
+              x-transition
+              class="text-md text-neutral-text3 text-start font-normal py-2">
+              No, the MasterTube dashboard officially accesses information about your YouTube channel directly from the YouTube API
+            </p>
+            <!-- Content -->
+          </div>
+          <!-- Accordian NO.2 -->
+
+
+          <!-- Accordian NO.3 -->
+          <div
+                  x-data="{open4: false}"
+                  class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8">
+            <!-- Header -->
+            <div
+                    @click="open4 = !open4"
+                    class="flex justify-between items-center cursor-pointer">
+              <span class="text-md font-semibold text-neutral-text1 text-start"
+              >Is it possible to view copyright strike warnings through the MasterTube dashboard?
+              </span>
+              <span
+              ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      class="transition-transform duration-300"
+                      :class="open3 ? 'rotate-180': '' ">
+                  <path
+                          d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
+                          fill="#8F55EA"
+                          stroke="#8F55EA" />
+                </svg>
+              </span>
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <p
+                    x-show="open4"
+                    x-cloak
+                    x-transition
+                    class="text-md text-neutral-text3 text-start font-normal py-2">
+              Yes. Similar to YouTube Studio, you can view Content ID claim and Copyright strike warnings related to your channel through the MasterTube dashboard.
+            </p>
+            <!-- Content -->
+          </div>
+          <!-- Accordian NO.4 -->
+        </div>
+      </section>
+      <!-- FAQ -->
+
+      <!-- Other Features -->
+
+      <section class="max-w-[111.8rem] mx-auto mb-22 px-5">
+        <h3 class="text-neutral-text1 mb-2 text-center">Othere Services</h3>
+        <p class="text-xl font-normal mb-14 text-center">
+          explore more with these related MasterTube’s Services
+        </p>
+        <div
+                class="grid grid-cols-1 lg:grid-cols-3 gap-x-9 px-4 lg:px-0 gap-y-8 max-w-3xl lg:max-w-none mx-auto">
+          <!-- Card 1 -->
+          <div
+                  class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary">
+            <div class="flex items-center gap-x-4 mb-2">
+              <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none">
+                <path
+                        d="M21.5918 15.9654L21.5918 15.9654L21.5955 15.9698C22.1618 16.6512 22.5 17.5384 22.5 18.5002C22.5 19.2448 22.2872 19.956 21.9218 20.5621L21.9213 20.563C21.7076 20.9191 21.4419 21.2372 21.1346 21.5006L21.1346 21.5006L21.1284 21.506C20.4267 22.1278 19.5137 22.5002 18.5 22.5002C17.55 22.5002 16.6723 22.1632 15.9896 21.5957L15.8507 21.4802H15.8416C15.5448 21.22 15.2885 20.9126 15.0787 20.563L15.0782 20.5621C14.7128 19.956 14.5 19.2448 14.5 18.5002C14.5 17.2361 15.0777 16.1098 15.9996 15.3829L15.9996 15.3829L16.0036 15.3797C16.6878 14.8287 17.558 14.5002 18.5 14.5002C19.7546 14.5002 20.8637 15.0686 21.5918 15.9654ZM15.8564 19.3838L16.21 19.0302L15.8564 19.3838L16.9664 20.4938C17.2152 20.7425 17.5345 20.8602 17.85 20.8602C18.1516 20.8602 18.4642 20.7456 18.6998 20.527C18.6999 20.5269 18.7001 20.5268 18.7002 20.5266L21.0976 18.3091C21.6146 17.8397 21.6435 17.0504 21.1655 16.5391C20.7003 16.0406 19.9048 16.0035 19.3998 16.4739C19.3995 16.4741 19.3991 16.4744 19.3988 16.4747L17.8835 17.8766L17.6236 17.6167C17.1383 17.1314 16.3417 17.1314 15.8564 17.6167C15.3712 18.102 15.3712 18.8985 15.8564 19.3838Z"
+                        fill="#8F55EA"
+                        stroke="#8F55EA" />
+                <path
+                        d="M14.23 2.50024V5.86024H9.77002V2.50024H14.23Z"
+                        fill="#8F55EA"
+                        stroke="#8F55EA" />
+                <path
+                        d="M4.35248 3.49614C5.09744 2.94103 6.07316 2.59661 7.26926 2.51999C7.2695 2.52041 7.2697 2.52081 7.26987 2.52119C7.26991 2.52129 7.26995 2.52138 7.26998 2.52146V5.86021H2.76998C2.76984 5.86021 2.76972 5.86021 2.7696 5.86021C2.76952 5.86011 2.76943 5.85999 2.76935 5.85987C2.76826 5.85838 2.76754 5.85664 2.76726 5.85504C2.76713 5.8543 2.76704 5.85338 2.76712 5.85213C2.76719 5.85093 2.76744 5.84868 2.76849 5.84521L2.7685 5.84522L2.76949 5.84188C3.06646 4.83674 3.60753 4.05124 4.35248 3.49614Z"
+                        fill="#8F55EA"
+                        stroke="#8F55EA" />
+                <path
+                        d="M16.7301 2.51118C16.7303 2.5108 16.7305 2.5104 16.7307 2.50998C17.9268 2.5866 18.9025 2.93102 19.6475 3.48613C20.3924 4.04123 20.9335 4.82673 21.2305 5.83187L21.2305 5.83188L21.2315 5.8352C21.2325 5.83867 21.2328 5.84092 21.2328 5.84212C21.2329 5.84337 21.2328 5.8443 21.2327 5.84503C21.2324 5.84663 21.2317 5.84837 21.2306 5.84986C21.2305 5.84998 21.2304 5.8501 21.2304 5.8502C21.2302 5.8502 21.2301 5.8502 21.23 5.8502H16.73V2.51145C16.73 2.51137 16.7301 2.51128 16.7301 2.51118Z"
+                        fill="#8F55EA"
+                        stroke="#8F55EA" />
+                <path
+                        d="M21.5 8.36023V12.731C20.5913 12.2575 19.5561 12.0002 18.5 12.0002C16.7562 12.0002 15.0571 12.7139 13.8425 13.9606C12.6494 15.1758 12 16.792 12 18.5002C12 19.4145 12.3528 20.5308 12.7653 21.4283C12.7723 21.4435 12.7728 21.4667 12.76 21.4884C12.756 21.4953 12.7524 21.4988 12.7506 21.5002C12.7504 21.5002 12.7502 21.5002 12.75 21.5002H7.81C4.87614 21.5002 2.5 19.1241 2.5 16.1902V8.36023H21.5Z"
+                        fill="#8F55EA"
+                        stroke="#8F55EA" />
+              </svg>
+              <h5>MasterShield</h5>
+            </div>
+            <p class="text-neutral-text3 text-start mb-8">
+              Legal measures to prevent copying of content
+            </p>
+            <span
+                    class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
+            >Includes:</span
+            >
+            <div class="flex flex-col gap-y-4 mb-10">
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span
+                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
+                >Protecting your brand and reputation</span
+                >
+              </div>
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span
+                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
+                >Copyright certificate</span
+                >
+              </div>
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span
+                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
+                >Trademark</span
+                >
+              </div>
+            </div>
+            <button
+                    class="w-full mt-auto py-3 px-6 justify-center items-center flex rounded-lg border-2 border-neutral-text2 bg-primary-1 hover:bg-white hover:text-primary-1 hover:border-2 hover:border-primary-1 text-md font-semibold leading-[180%] text-neutral-bg2 transition-colors duration-300">
+              Explore service
+            </button>
+          </div>
+          <!-- Card 1 -->
+
+          <!-- Card 2 -->
+          <div
+                  class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary">
+            <div class="flex items-center gap-x-4 mb-2">
+              <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none">
+                <path
+                        d="M21.67 6.95027C21.03 4.78027 19.22 2.97027 17.05 2.33027C15.4 1.85027 14.26 1.89027 13.47 2.48027C12.52 3.19027 12.41 4.47027 12.41 5.38027V7.87027C12.41 10.3303 13.53 11.5803 15.73 11.5803H18.6C19.5 11.5803 20.79 11.4703 21.5 10.5203C22.11 9.74027 22.16 8.60027 21.67 6.95027Z"
+                        fill="#8F55EA" />
+                <path
+                        d="M18.91 13.3603C18.65 13.0603 18.27 12.8903 17.88 12.8903H14.3C12.54 12.8903 11.11 11.4603 11.11 9.70027V6.12027C11.11 5.73027 10.94 5.35027 10.64 5.09027C10.35 4.83027 9.95002 4.71027 9.57002 4.76027C7.22002 5.06027 5.06002 6.35027 3.65002 8.29027C2.23002 10.2403 1.71002 12.6203 2.16002 15.0003C2.81002 18.4403 5.56002 21.1903 9.01002 21.8403C9.56002 21.9503 10.11 22.0003 10.66 22.0003C12.47 22.0003 14.22 21.4403 15.71 20.3503C17.65 18.9403 18.94 16.7803 19.24 14.4303C19.29 14.0403 19.17 13.6503 18.91 13.3603Z"
+                        fill="#8F55EA" />
+              </svg>
+              <h5>MasterTube Dashboard</h5>
+            </div>
+            <p class="text-neutral-text3 text-start mb-8">
+              The answers to most unknown questions are hidden in the data.
+            </p>
+            <span
+                    class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
+            >Includes:</span
+            >
+            <div class="flex flex-col gap-y-4 mb-10">
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span
+                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
+                >Getting Data from Google API</span
+                >
+              </div>
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span
+                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
+                > analyzing videos and channels </span
+                >
+              </div>
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span
+                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
+                >generate aI Powered Keywords</span
+                >
+              </div>
+            </div>
+            <button
+                    class="w-full mt-auto py-3 px-6 justify-center items-center flex rounded-lg border-2 border-neutral-text2 bg-primary-1 hover:bg-white hover:text-primary-1 hover:border-2 hover:border-primary-1 text-md font-semibold leading-[180%] text-neutral-bg2 transition-colors duration-300">
+              Explore service
+            </button>
+          </div>
+          <!-- Card 2 -->
+
+          <!-- Card 3 -->
+          <div
+                  class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary">
+            <div class="flex items-center gap-x-4 mb-2">
+              <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none">
+                <path
+                        d="M20.97 1.00024H18.03C16.76 1.00024 16 1.76024 16 3.03024V5.97024C16 7.24024 16.76 8.00024 18.03 8.00024H20.97C22.24 8.00024 23 7.24024 23 5.97024V3.03024C23 1.76024 22.24 1.00024 20.97 1.00024ZM19.01 6.57024C18.98 6.60024 18.91 6.64024 18.86 6.64024L17.82 6.79024C17.79 6.80024 17.75 6.80024 17.72 6.80024C17.57 6.80024 17.44 6.75024 17.35 6.65024C17.23 6.53024 17.18 6.36024 17.21 6.18024L17.36 5.14024C17.37 5.09024 17.4 5.02024 17.43 4.99024L19.13 3.29024C19.16 3.36024 19.19 3.44024 19.22 3.52024C19.26 3.60024 19.3 3.67024 19.34 3.74024C19.37 3.80024 19.41 3.86024 19.45 3.90024C19.49 3.96024 19.53 4.02024 19.56 4.05024C19.58 4.08024 19.59 4.09024 19.6 4.10024C19.69 4.21024 19.79 4.31024 19.88 4.38024C19.9 4.40024 19.92 4.42024 19.93 4.42024C19.98 4.46024 20.04 4.51024 20.08 4.54024C20.14 4.58024 20.19 4.62024 20.25 4.65024C20.32 4.69024 20.4 4.73024 20.48 4.77024C20.56 4.81024 20.64 4.84024 20.71 4.86024L19.01 6.57024ZM21.4 4.18024L21.08 4.50024C21.06 4.53024 21.03 4.54024 21 4.54024C20.99 4.54024 20.98 4.54024 20.97 4.54024C20.25 4.33024 19.68 3.76024 19.47 3.04024C19.46 3.00024 19.47 2.96024 19.5 2.93024L19.83 2.60024C20.37 2.06024 20.88 2.07024 21.41 2.60024C21.68 2.87024 21.81 3.13024 21.81 3.39024C21.8 3.65024 21.67 3.91024 21.4 4.18024Z"
+                        fill="#8F55EA" />
+                <path
+                        d="M9 10.3802C10.3144 10.3802 11.38 9.31468 11.38 8.00024C11.38 6.6858 10.3144 5.62024 9 5.62024C7.68556 5.62024 6.62 6.6858 6.62 8.00024C6.62 9.31468 7.68556 10.3802 9 10.3802Z"
+                        fill="#8F55EA" />
+                <path
+                        d="M20.97 8.00024H20.5V12.6102L20.37 12.5002C19.59 11.8302 18.33 11.8302 17.55 12.5002L13.39 16.0702C12.61 16.7402 11.35 16.7402 10.57 16.0702L10.23 15.7902C9.52 15.1702 8.39 15.1102 7.59 15.6502L3.85 18.1602C3.63 17.6002 3.5 16.9502 3.5 16.1902V7.81024C3.5 4.99024 4.99 3.50024 7.81 3.50024H16V3.03024C16 2.63024 16.07 2.29024 16.23 2.00024H7.81C4.17 2.00024 2 4.17024 2 7.81024V16.1902C2 17.2802 2.19 18.2302 2.56 19.0302C3.42 20.9302 5.26 22.0002 7.81 22.0002H16.19C19.83 22.0002 22 19.8302 22 16.1902V7.77024C21.71 7.93024 21.37 8.00024 20.97 8.00024Z"
+                        fill="#8F55EA" />
+              </svg>
+              <h5>MasterRocket</h5>
+            </div>
+            <p class="text-neutral-text3 text-start mb-8">
+              VIP management of your YouTube channel by MasterTube experts
+            </p>
+            <span
+                    class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
+            >Includes:</span
+            >
+            <div class="flex flex-col gap-y-4 mb-10">
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span
+                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
+                >YouTube channel management</span
+                >
+              </div>
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span
+                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
+                >Professional analysis and SEO</span
+                >
+              </div>
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span
+                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
+                >Counseling and mentoring</span
+                >
+              </div>
+            </div>
+            <button
+                    class="w-full mt-auto py-3 px-6 justify-center items-center flex rounded-lg border-2 border-neutral-text2 bg-primary-1 hover:bg-white hover:text-primary-1 hover:border-2 hover:border-primary-1 text-md font-semibold leading-[180%] text-neutral-bg2 transition-colors duration-300">
+              Explore service
+            </button>
+          </div> 
+          <!-- Card 3 -->
+        </div>
+      </section>
+      <!-- Other Features -->
 
       <!-- Footer -->
       <footer class="w-full bg-neutral-bg2">
@@ -1060,10 +1293,8 @@
                   alt="mastertube logo" />
               </div>
               <p class="text-neutral-text3 text-xl mb-12 lg:mb-0">
-                مسترتیوب اینجاست تا مسیر شما را کوتاه کند و هر چیزی که برای
-                یوتیوبر شدن نیاز است،به شما آموزش دهد. ما به تعهدات خود وفاداریم
-                و برای بهتر دیده شدن کانال شما و کسب درآمد دلاری در کنار شما
-                ایستاده ایم.
+                Our team supports YouTubers all over the world and you can
+                optimize the content of your YouTube channels.
               </p>
             </div>
             <nav class="grid grid-cols-auto lg:flex gap-x-20 gap-y-8">
@@ -1076,7 +1307,7 @@
               <div class="whitespace-nowrap">
                 <span
                   class="text-neutral-text1 text-xl font-bold leading-[2.2rem] mb-10 block"
-                  >خدمات</span
+                  >Services</span
                 >
                 <div class="menu-footer-1-container">
                   <ul
@@ -1088,7 +1319,7 @@
                       <a
                         href="https://chrome.google.com/webstore/detail/mastertube/ebenecbhjmfnidklknaigagobpjppdna"
                         class="text-[1.8rem] font-normal leading-[2rem] text-neutral-text3"
-                        >اکستنشن</a
+                        >Extension</a
                       >
                     </li>
                     <li
@@ -1097,7 +1328,7 @@
                       <a
                         href="https://panel.master.tube/"
                         class="text-[1.8rem] font-normal leading-[2rem] text-neutral-text3"
-                        >داشبورد</a
+                        >Dashboard</a
                       >
                     </li>
                     <li
@@ -1106,7 +1337,7 @@
                       <a
                         href="https://support.master.tube/"
                         class="text-[1.8rem] font-normal leading-[2rem] text-neutral-text3"
-                        >پشتیبانی</a
+                        >Support</a
                       >
                     </li>
                   </ul>
@@ -1118,7 +1349,7 @@
               <div class="whitespace-nowrap">
                 <span
                   class="text-neutral-text1 text-xl font-bold leading-[2.2rem] mb-10 block"
-                  >مسترتیوب</span
+                  >MasterTube</span
                 >
                 <div class="menu-footer-2-container">
                   <ul
@@ -1131,7 +1362,7 @@
                         rel="privacy-policy"
                         href="https://wp.master.tube/privacy-policy/"
                         class="text-[1.8rem] font-normal leading-[2rem] text-neutral-text3"
-                        >سیاست حفظ حریم خصوصی</a
+                        >Privacy Policy</a
                       >
                     </li>
                     <li
@@ -1140,7 +1371,7 @@
                       <a
                         href="https://wp.master.tube/terms-of-service/"
                         class="text-[1.8rem] font-normal leading-[2rem] text-neutral-text3"
-                        >شرایط و مقررات</a
+                        >Terms and Conditions</a
                       >
                     </li>
                     <li
@@ -1149,7 +1380,7 @@
                       <a
                         href="https://wp.master.tube/logo/"
                         class="text-[1.8rem] font-normal leading-[2rem] text-neutral-text3"
-                        >لوگو</a
+                        >logo</a
                       >
                     </li>
                   </ul>
@@ -1161,11 +1392,11 @@
               <div class="whitespace-nowrap">
                 <span
                   class="text-neutral-text1 text-xl font-bold leading-[2.2rem] mb-10 block"
-                  >ارتباط با ما</span
+                  >Contact us</span
                 >
                 <div class="menu-footer-4-container">
                   <p class="text-neutral-text3 text-l mb-12 lg:mb-0">
-                    تماس با تیم مسترتیوب:<br />
+                    Contact the Mastertube team : <br />
                     Email: office[at]master.tube<br />
                     WApp: +43 66 5656 30000<br />
                     Tel: +98 910 090 5511<br />
@@ -1357,7 +1588,7 @@
             </div>
             <p
               class="text-[1.8rem] font-normal leading-[180%] text-neutral-text1 lg:text-neutral-text1">
-              تمامی حقوق برای مجموعه مسترتیوب محفوظ است © 2023
+              Copyright © 2023 Master Tube | All Rights Reserved
             </p>
             <div
               class="hidden lg:flex text-neutral-text1 text-[1.8rem] font-normal leading-[30px] [&amp;_span]:cursor-pointer gap-x-4">
@@ -1377,6 +1608,7 @@
       </footer>
       <!-- Footer -->
     </main>
+
     <script
       src="//unpkg.com/alpinejs"
       defer></script>
