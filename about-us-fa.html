@@ -766,8 +766,8 @@
 
       <!-- Certificates -->
       <section
-        class="px-9 pt-10 relative lg:max-w-[100rem] mx-auto mb-[5rem] lg:mb-[15.4rem]">
-        <div class="flex flex-col lg:flex-row-reverse">
+        class="px-9 pt-10 relative lg:max-w-[100rem] mx-auto mb-[5rem] lg:mb-[15.4rem]" x-data="{ slide: 1 }">
+        <div class="flex flex-col lg:flex-row-reverse" x-show="slide == 1">
           <div class="mb-8">
             <h2
               class="text-3xl lg:text-[5.6rem] text-neutral-text1-cash font-bold">
@@ -785,7 +785,8 @@
             </p>
             <div class="hidden lg:flex gap-x-1 items-end justify-end">
               <div
-                class="bg-[#EAEAEA] w-11 h-11 p-2 flex justify-center items-center">
+                class="bg-[#EAEAEA] w-11 h-11 p-2 flex justify-center items-center cursor-pointer hover:bg-purple"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
@@ -803,7 +804,152 @@
                 </svg>
               </div>
               <div
-                class="bg-[#EAEAEA] w-11 h-11 p-2 flex justify-center items-center">
+                class="bg-[#EAEAEA] w-11 h-11 p-2 flex justify-center items-center cursor-pointer hover:bg-purple"
+                x-on:click="slide += 1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none">
+                  <path
+                    d="M17.6914 22.8341L10.2574 15.4001C9.37949 14.5222 9.37949 13.0855 10.2574 12.2076L17.6914 4.77362"
+                    stroke="white"
+                    stroke-width="1.71027"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center w-full h-full">
+            <img
+              src="/images/about-us/google.png"
+              alt="Google" />
+            <!-- Dots -->
+            <div class="flex gap-x-1 w-full justify-center mt-6 lg:hidden">
+              <div class="w-2 h-2 rounded-[5px] bg-[#9747FF]"></div>
+              <div class="w-2 h-2 rounded-[5px] bg-[#D2BBF7]"></div>
+              <div class="w-2 h-2 rounded-[5px] bg-[#D2BBF7]"></div>
+              <div class="w-2 h-2 rounded-[5px] bg-[#D2BBF7]"></div>
+            </div>
+            <!-- Dots -->
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row-reverse" x-show="slide == 2">
+          <div class="mb-8">
+            <h2
+              class="text-3xl lg:text-[5.6rem] text-neutral-text1-cash font-bold">
+              slide 2
+            </h2>
+            <span
+              class="text-[1.8rem] font-medium leading-[180%] text-neutral-text2 mb-3"
+              >Contecnt Ownership Assessment</span
+            >
+            <p class="text-neutral-text3 text-md leading-[180%] mb-10">
+              This certification demonstrates that an individual or organization
+              has successfully evaluated and documented their ownership rights,
+              ensuring they have legal and ethical control over their
+              intellectual property.
+            </p>
+            <div class="hidden lg:flex gap-x-1 items-end justify-end">
+              <div
+                class="bg-[#EAEAEA] w-11 h-11 p-2 flex justify-center items-center cursor-pointer hover:bg-purple"
+                x-on:click="slide -= 1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  class="rotate-180">
+                  <path
+                    d="M17.6914 22.8341L10.2574 15.4001C9.37949 14.5222 9.37949 13.0855 10.2574 12.2076L17.6914 4.77362"
+                    stroke="white"
+                    stroke-width="1.71027"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div
+                class="bg-[#EAEAEA] w-11 h-11 p-2 flex justify-center items-center cursor-pointer hover:bg-purple"
+                x-on:click="slide += 1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none">
+                  <path
+                    d="M17.6914 22.8341L10.2574 15.4001C9.37949 14.5222 9.37949 13.0855 10.2574 12.2076L17.6914 4.77362"
+                    stroke="white"
+                    stroke-width="1.71027"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center w-full h-full">
+            <img
+              src="/images/about-us/google.png"
+              alt="Google" />
+            <!-- Dots -->
+            <div class="flex gap-x-1 w-full justify-center mt-6 lg:hidden">
+              <div class="w-2 h-2 rounded-[5px] bg-[#9747FF]"></div>
+              <div class="w-2 h-2 rounded-[5px] bg-[#D2BBF7]"></div>
+              <div class="w-2 h-2 rounded-[5px] bg-[#D2BBF7]"></div>
+              <div class="w-2 h-2 rounded-[5px] bg-[#D2BBF7]"></div>
+            </div>
+            <!-- Dots -->
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row-reverse" x-show="slide == 3">
+          <div class="mb-8">
+            <h2
+              class="text-3xl lg:text-[5.6rem] text-neutral-text1-cash font-bold">
+              slide 3
+            </h2>
+            <span
+              class="text-[1.8rem] font-medium leading-[180%] text-neutral-text2 mb-3"
+              >Contecnt Ownership Assessment</span
+            >
+            <p class="text-neutral-text3 text-md leading-[180%] mb-10">
+              This certification demonstrates that an individual or organization
+              has successfully evaluated and documented their ownership rights,
+              ensuring they have legal and ethical control over their
+              intellectual property.
+            </p>
+            <div class="hidden lg:flex gap-x-1 items-end justify-end">
+              <div
+                class="bg-[#EAEAEA] w-11 h-11 p-2 flex justify-center items-center cursor-pointer hover:bg-purple"
+                x-on:click="slide -= 1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  class="rotate-180">
+                  <path
+                    d="M17.6914 22.8341L10.2574 15.4001C9.37949 14.5222 9.37949 13.0855 10.2574 12.2076L17.6914 4.77362"
+                    stroke="white"
+                    stroke-width="1.71027"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div
+                class="bg-[#EAEAEA] w-11 h-11 p-2 flex justify-center items-center cursor-pointer hover:bg-purple"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
