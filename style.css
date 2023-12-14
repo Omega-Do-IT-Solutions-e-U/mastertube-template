@@ -151,6 +151,13 @@ html {
   font-display: swap;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Iransans';
+  src: url('./assets/fonts/fa/IRANSansXFaNum-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
 
 .range-input {
   -webkit-appearance: none;
