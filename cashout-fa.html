@@ -326,14 +326,14 @@
 
       <!-- Steps -->
       <section
-        x-data="{content: 'consult'}"
+        x-data="{content: '1'}"
         class="container mx-auto mb-[5rem] lg:mb-[15.4rem] max-w-[124rem]">
         <div
           class="flex lg:items-center w-full relative px-5 lg:px-0 overflow-x-scroll lg:overflow-hidden scrollbar-hide">
           <div
-            @click="content = 'consult'"
+            @click="content = '1'"
             class="flex flex-col relative z-10 shrink-0 mx-5 ml-[25rem]">
-            <div x-show="content !== 'consult'">
+            <div x-show="content !== '1'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
@@ -349,8 +349,29 @@
                   stroke-width="1.31" />
               </svg>
             </div>
+            <!-- Dashed Line -->
+            <div
+              x-show="content !== '2' || content !== '3' || content !== '4'"
+              class="absolute top-[3rem] -z-10 overflow-hidden max-w-[124rem]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="324"
+                height="4"
+                viewBox="0 0 324 4"
+                fill="none">
+                <path
+                  d="M2 2H322"
+                  stroke="#DFD6ED"
+                  stroke-width="2.91207"
+                  stroke-linecap="round"
+                  stroke-dasharray="10.19 10.19" />
+              </svg>
+            </div>
+            <!-- Dashed Line -->
+
             <!-- Full Line -->
             <div
+              x-show="content === '2' || content === '3' || content === '4'"
               class="absolute top-[1.5rem] -z-10 overflow-hidden max-w-[124rem]">
               >
               <svg
@@ -367,7 +388,7 @@
               </svg>
             </div>
             <!-- Full Line -->
-            <div x-show="content === 'consult'">
+            <div x-show="content === '1'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
@@ -406,9 +427,9 @@
             </div>
           </div>
           <div
-            @click="content = 'educational'"
-            class="flex flex-col relative z-10 shrink-0 mx-5 ml-[25rem]">
-            <div x-show="content !== 'educational'">
+            @click="content = '2'"
+            class="flex flex-col relative z-10 shrink-0 mx-5 ml-[29rem] lg:ml-[25rem]">
+            <div x-show="content !== '2'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
@@ -428,6 +449,7 @@
 
             <!-- Dashed Line -->
             <div
+              x-show="content !== '3' || content !== '4'"
               class="absolute top-[3rem] -z-10 overflow-hidden max-w-[124rem]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -445,7 +467,27 @@
             </div>
             <!-- Dashed Line -->
 
-            <div x-show="content === 'educational'">
+            <!-- Full Line -->
+            <div
+              x-show="content === '3' || content === '4'"
+              class="absolute top-[1.5rem] -z-10 overflow-hidden max-w-[124rem]">
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="384"
+                height="4"
+                viewBox="0 0 384 4"
+                fill="none">
+                <path
+                  d="M382.49 1.99997L2 2"
+                  stroke="#A06AF6"
+                  stroke-width="2.91207"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <!-- Full Line -->
+
+            <div x-show="content === '2'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
@@ -484,9 +526,9 @@
             </div>
           </div>
           <div
-            @click="content = 'pro'"
-            class="flex flex-col relative z-10 shrink-0 mx-5 ml-[21rem]">
-            <div x-show="content !== 'pro'">
+            @click="content = '3'"
+            class="flex flex-col relative z-10 shrink-0 mx-5 ml-[26rem] lg:ml-[21rem]">
+            <div x-show="content !== '3'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
@@ -505,6 +547,7 @@
             </div>
             <!-- Dashed Line -->
             <div
+              x-show="content !== '4'"
               class="absolute top-[3rem] -z-10 overflow-hidden max-w-[124rem]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -521,7 +564,27 @@
               </svg>
             </div>
             <!-- Dashed Line -->
-            <div x-show="content === 'pro'">
+
+            <!-- Full Line -->
+            <div
+              x-show="content === '4'"
+              class="absolute top-[1.5rem] -z-10 overflow-hidden max-w-[124rem]">
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="384"
+                height="4"
+                viewBox="0 0 384 4"
+                fill="none">
+                <path
+                  d="M382.49 1.99997L2 2"
+                  stroke="#A06AF6"
+                  stroke-width="2.91207"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <!-- Full Line -->
+            <div x-show="content === '3'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
@@ -560,9 +623,9 @@
             </div>
           </div>
           <div
-            @click="content = 'ai'"
+            @click="content = '4'"
             class="flex flex-col relative z-10 shrink-0 mx-5 mr-5">
-            <div x-show="content !== 'ai'">
+            <div x-show="content !== '4'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
@@ -579,7 +642,7 @@
                   stroke-width="1.37673" />
               </svg>
             </div>
-            <div x-show="content === 'ai'">
+            <div x-show="content === '4'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
@@ -629,7 +692,7 @@
           <div class="flex flex-col items-start w-full p-[10px] px-5 lg:p-0">
             <div
               x-cloak
-              x-show="content === 'consult'"
+              x-show="content === '1'"
               class="pt-[1.5rem]">
               <h3
                 class="text-neutral-text1 text-[2.8rem] font-semibold mb-[1.8rem] text-center lg:text-start">
@@ -646,7 +709,7 @@
 
             <div
               x-cloak
-              x-show="content === 'educational'"
+              x-show="content === '2'"
               class="pt-[1.5rem]">
               <h3
                 class="text-neutral-text1 text-[2.8rem] font-semibold mb-[1.8rem] text-center lg:text-start">
@@ -664,7 +727,7 @@
             </div>
             <div
               x-cloak
-              x-show="content === 'pro'"
+              x-show="content === '3'"
               class="pt-[1.5rem]">
               <h3
                 class="text-neutral-text1 text-[2.8rem] font-semibold mb-[1.8rem] text-center lg:text-start">
@@ -677,7 +740,7 @@
             </div>
             <div
               x-cloak
-              x-show="content === 'ai'"
+              x-show="content === '4'"
               class="pt-[1.5rem]">
               <h3
                 class="text-neutral-text1 text-[2.8rem] font-semibold mb-[1.8rem] text-center lg:text-start">
@@ -981,7 +1044,7 @@
               alt="Cashout Trust" />
           </div>
           <div
-            x-data="{content: 'consult'}"
+            x-data="{content: '1'}"
             class="flex flex-col items-start w-full min-h-[25rem]">
             <h2
               class="text-neutral-text1-cash text-3xl font-bold leading-[140%] mb-6">
@@ -990,45 +1053,45 @@
             <div
               class="grid grid-cols-2 sm:flex w-full gap-x-11 gap-y-4 border-b-2 border-[#B795E5] border-opacity-[0.2]">
               <span
-                @click="content = 'consult'"
+                @click="content = '1'"
                 class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
-                :class="content === 'consult' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'">
+                :class="content === '1' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'">
                 <span
-                  :class="content === 'consult' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
+                  :class="content === '1' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
                   >مشاوره رایگان</span
                 >
               </span>
               <span
-                @click="content = 'educational'"
-                :class="content === 'educational' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'"
+                @click="content = '2'"
+                :class="content === '2' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
                 ><span
-                  :class="content === 'educational' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
+                  :class="content === '2' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
                   >پرداخت ارزی</span
                 >
               </span>
               <span
-                @click="content = 'pro'"
-                :class="content === 'pro' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'"
+                @click="content = '3'"
+                :class="content === '3' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3">
                 <span
-                  :class="content === 'pro' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
+                  :class="content === '3' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
                   >داشبورد مسترتیوب</span
                 >
               </span>
               <span
-                @click="content = 'ai'"
-                :class="content === 'ai' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'"
+                @click="content = '4'"
+                :class="content === '4' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'"
                 class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3">
                 <span
-                  :class="content === 'ai' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
+                  :class="content === '4' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
                   >پشتیبانی</span
                 >
               </span>
             </div>
             <p
               x-cloak
-              x-show="content === 'consult'"
+              x-show="content === '1'"
               class="pt-8 text-neutral-text2">
               مسترتیوب از سال ۱۳۹۹ خدمات نقدکردن درآمد را به یوتیوبر‌ها ارائه
               می‌دهد و با بهره‌گیری از کارشناسان مجرب یوتیوب، امکان رفع مشکلات
@@ -1038,7 +1101,7 @@
             </p>
             <p
               x-cloak
-              x-show="content === 'educational'"
+              x-show="content === '2'"
               class="pt-8 text-neutral-text2">
               با طرح‌های متنوع نقد کردن درآمد یوتیوب، حق انتخاب بیشتری برای
               دریافت درآمد کانال یوتیوب خود دارید و می‌توانید درآمد کانال خود را
@@ -1047,7 +1110,7 @@
             </p>
             <p
               x-cloak
-              x-show="content === 'pro'"
+              x-show="content === '3'"
               class="pt-8 text-neutral-text2">
               داشبورد مسترتیوب، یک ابزار جامع برای تحلیل، بررسی و مدیریت کانال
               یوتیوب است که به شما کمک ‌می‌کند تا کانال خود را بهینه کرده و رشد
@@ -1058,7 +1121,7 @@
             </p>
             <p
               x-cloak
-              x-show="content === 'ai'"
+              x-show="content === '4'"
               class="pt-8 text-neutral-text2">
               با سرویس پشتیبانی مسترتیوب، در کمترین زمان به سوالات شما پاسخ
               می‌دهیم و شما نیز می‌توانید در تمامی مراحل به راحتی سوالات و
