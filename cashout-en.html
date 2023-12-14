@@ -324,9 +324,10 @@
           <img
             src="/images/cashout/gradient-shape-1-full.png"
             class="absolute -top-[20rem] -right-[64rem] -z-50 w-[70rem] h-[72.4rem] object-contain" />
-          <div class="flex flex-col">
+
+          <div class="flex flex-col gap-y-3 px-6">
             <h1
-              class="text-center lg:text-start pt-13 text-neutral-text1-cash text-[3.5rem] lg:text-[44px] font-bold">
+              class="text-center max-w-[200rem] lg:text-start pt-13 text-neutral-text1-cash text-[2.8rem] lg:text-[4.5rem] font-bold leading-[100%]">
               Withdraw Your <span class="text-[#9459F1]">YouTube Earnings</span>
             </h1>
             <span
@@ -334,26 +335,30 @@
               >From Views to Dollars with an MCN</span
             >
             <p
-              class="text-center lg:text-start text-neutral-text2 text-[1.7rem] leading-[180%] lg:max-w-[80%]">
-              Unlock The Potential Of Your Youtube Channel With An Mcn And Experience The Ease Of Withdrawing Your Earnings Seamlessly.
+              class="text-center lg:max-w-6xl lg:text-start text-neutral-text1-cash text-[1.7rem] leading-[220%] mb-2 lg:mb-14">
+              Unlock The Potential Of Your Youtube Channel With An Mcn And
+              Experience The Ease Of Withdrawing Your Earnings Seamlessly.
             </p>
             <div
-              class="flex flex-col gap-y-3 mb-10 lg:flex-row gap-x-7 mt-[12.8px]">
+              class="flex flex-col gap-y-3 mb-10 lg:flex-row gap-x-7 items-center max-w-2xl mx-auto w-full lg:mx-0 lg:max-w-none">
               <button
                 class="w-full lg:w-auto bg-try-for-free-gray py-2 px-5 rounded-lg text-md font-semibold leading-[180%] text-white">
                 <a href="#form">Request MT Pay</a>
               </button>
+
               <button
                 class="w-full lg:w-auto text-base text-neutral-text2 font-semibold">
                 <a href="#whayMasterTube">Why Mastertube?</a>
               </button>
             </div>
           </div>
-          <div class="flex justify-center items-center lg:pb-10 w-fit">
+
+          <div
+            class="flex justify-center items-center lg:pb-10 w-[20rem] lg:min-w-fit">
             <img
               src="/images/cashout/cashout-1.png"
               alt="Cashout"
-              class="object-cover" />
+              class="object-cover w-fit h-full" />
           </div>
         </div>
       </section>
@@ -361,6 +366,7 @@
 
       <!-- Steps -->
       <section
+        x-data="{content: 'consult'}"
         class="container mx-auto mb-[5rem] lg:mb-[15.4rem] max-w-[124rem]">
         <div
           class="flex lg:items-center justify-between w-full relative px-5 lg:px-0 overflow-x-scroll scrollbar-hide">
@@ -368,7 +374,9 @@
             class="border-dashed border-t-[2px] border-[#A06AF6] h-[3px] absolute top-[2.5rem] w-full max-w-[40rem] sm:max-w-[60rem] md:max-w-[85rem] lg:max-w-[110rem] left-[50px]"></div>
           <div
             class="border-t-[2px] border-[#A06AF6] h-[3px] absolute top-[2.5rem] right-[66%] left-[50px]"></div>
-          <div class="flex flex-col relative z-10 shrink-0 mx-5 ml-5">
+          <div
+            @click="content = 'consult'"
+            class="flex flex-col relative z-10 shrink-0 cursor-pointer mx-5 ml-5">
             <img
               src="/images/cashout/headset.png"
               alt="headset"
@@ -382,7 +390,9 @@
               Registration
             </div>
           </div>
-          <div class="flex flex-col relative z-10 shrink-0 mx-5">
+          <div
+            @click="content = 'educational'"
+            class="flex flex-col relative z-10 shrink-0 cursor-pointer mx-5">
             <img
               src="/images/cashout/headphone.png"
               alt="headphone"
@@ -396,7 +406,9 @@
               Expert review
             </div>
           </div>
-          <div class="flex flex-col relative z-10 shrink-0 mx-5">
+          <div
+            @click="content = 'pro'"
+            class="flex flex-col relative z-10 shrink-0 cursor-pointer mx-5">
             <img
               src="/images/cashout/verify.png"
               alt="verify"
@@ -410,7 +422,9 @@
               Notices
             </div>
           </div>
-          <div class="flex flex-col relative z-10 shrink-0 mx-5 mr-5">
+          <div
+            @click="content = 'ai'"
+            class="flex flex-col relative z-10 shrink-0 cursor-pointer mx-5 mr-5">
             <img
               src="/images/cashout/signature.png"
               alt="signature"
@@ -433,36 +447,7 @@
               alt="Cashout"
               class="" />
           </div>
-          <div
-            x-data="{content: 'consult'}"
-            class="flex flex-col items-start w-full p-[10px] px-5 lg:p-0">
-            <div
-              class="flex w-full justify-between lg:justify-start gap-x-12 border-b-2 border-[#B795E5] border-opacity-[0.2]">
-              <span
-                @click="content = 'consult'"
-                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
-                :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                >Step 1</span
-              >
-              <span
-                @click="content = 'educational'"
-                :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Step 2</span
-              >
-              <span
-                @click="content = 'pro'"
-                :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Step 3</span
-              >
-              <span
-                @click="content = 'ai'"
-                :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Step 4</span
-              >
-            </div>
+          <div class="flex flex-col items-start w-full p-[10px] px-5 lg:p-0">
             <div
               x-cloak
               x-show="content === 'consult'"
@@ -492,7 +477,11 @@
                 Expert Review
               </h3>
               <p class="text-center lg:text-start">
-                After Applying, Our Experienced Team Reviews Applicant Channels, Evaluating Growth Metrics, Content Quality, And Monetization Potential. We Carefully Select Creators Poised To Leverage Mastertube’s Premium Resources. Our Experts Decide Whether To Connect Accepted Channels To Our Mcn Or Adsense.
+                After Applying, Our Experienced Team Reviews Applicant Channels,
+                Evaluating Growth Metrics, Content Quality, And Monetization
+                Potential. We Carefully Select Creators Poised To Leverage
+                Mastertube’s Premium Resources. Our Experts Decide Whether To
+                Connect Accepted Channels To Our Mcn Or Adsense.
               </p>
             </div>
             <div
@@ -504,7 +493,12 @@
                 Approval
               </h3>
               <p class="text-center lg:text-start">
-                This Includes Whether Your Channel Is Approved For Partnership And Will Join Our Mcn Or Adsense Program Based On Monetization Assessment. We Provide Review Details Like Top-performing Content, Audience Region Data, Peak Viewing Times, And More For Accepted Channels. Rejected Applications Also Receive Analysis Of Areas Needing Improvement.
+                This Includes Whether Your Channel Is Approved For Partnership
+                And Will Join Our Mcn Or Adsense Program Based On Monetization
+                Assessment. We Provide Review Details Like Top-performing
+                Content, Audience Region Data, Peak Viewing Times, And More For
+                Accepted Channels. Rejected Applications Also Receive Analysis
+                Of Areas Needing Improvement.
               </p>
             </div>
             <div
@@ -516,7 +510,10 @@
                 Contract
               </h3>
               <p class="text-center lg:text-start">
-                Final step is signing our standard monetization contract, formalizing partnership and locking in competitive revenue rates for integrated channels. Upon agreement, accounts are connected to our payment ecosystem for efficient income tracking
+                Final step is signing our standard monetization contract,
+                formalizing partnership and locking in competitive revenue rates
+                for integrated channels. Upon agreement, accounts are connected
+                to our payment ecosystem for efficient income tracking
               </p>
             </div>
           </div>
@@ -526,7 +523,7 @@
 
       <!-- Connect -->
       <section
-        class="flex flex-col max-w-[124rem] container lg:flex-row gap-[14px] lg:gap-0 relative lg:items-center justify-center mx-auto pb-[5rem] lg:pb-[15.4rem]">
+        class="flex flex-col max-w-[124rem] container lg:flex-row gap-[14px] lg:gap-0 relative lg:items-center justify-center mx-auto mb-[5rem] lg:mb-[15.4rem]">
         <div class="absolute -z-30 bottom-0 -right-10">
           <img
             src="/images/cashout/bg-gradient-content.png"
@@ -546,18 +543,18 @@
               </h2>
               <p
                 class="text-[12px] lg:text-[21px] text-[#FFFFFFE5] max-w-[60rem]">
-                MasterTube, as the official and exclusive representative of Mediacube, connects YouTube channels with the necessary conditions to MCN. By connecting to Mediacube, you can cash out your YouTube income without any worries and benefit from the attractive features of connecting your channel to MCN.
+                MasterTube, as the official and exclusive representative of
+                Mediacube, connects YouTube channels with the necessary
+                conditions to MCN. By connecting to Mediacube, you can cash out
+                your YouTube income without any worries and benefit from the
+                attractive features of connecting your channel to MCN.
               </p>
-<!--              <button-->
-<!--                class="flex mt-[55.59px] bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2 w-full justify-center lg:w-fit">-->
-<!--                call to action-->
-<!--              </button>-->
+              <!--              <button-->
+              <!--                class="flex mt-[55.59px] bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2 w-full justify-center lg:w-fit">-->
+              <!--                call to action-->
+              <!--              </button>-->
             </div>
 
-            <img
-              class="absolute right-0 bottom-0 object-cover w-[25.7rem] h-[25.7rem] lg:w-fit lg:h-fit"
-              src="/images/cashout/cashout-3.png"
-              alt="cashout" />
             <img
               src="/images/cashout/connect-group.svg"
               alt="connect background"
@@ -573,12 +570,16 @@
               What Are Mediacube’s Requirements?
             </h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">
-              To connect to any MCN in the world, your YouTube channel must be monetized, and this is not possible for channels that have just reached the income-generating conditions.
+              To connect to any MCN in the world, your YouTube channel must be
+              monetized, and this is not possible for channels that have just
+              reached the income-generating conditions.
             </p>
-            <img
-              class="absolute bottom-0"
-              src="/images/cashout/cashout-6.png"
-              alt="cashout" />
+            <div class="flex justify-center items-center">
+              <img
+                class="absolute bottom-0 max-w-[20rem]"
+                src="/images/cashout/cashout-6.png"
+                alt="cashout" />
+            </div>
           </div>
           <div
             class="relative hidden lg:flex flex-col py-[25.72px] px-[25px] pb-[20rem] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
@@ -586,12 +587,16 @@
               Is Mediacube legitimate?
             </h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">
-              Mediacube is an official partner of YouTube and Meta, which means that it has been vetted by these companies and is considered to be a reputable organization
+              Mediacube is an official partner of YouTube and Meta, which means
+              that it has been vetted by these companies and is considered to be
+              a reputable organization
             </p>
-            <img
-              class="absolute bottom-0"
-              src="/images/cashout/cashout-5.png"
-              alt="cashout" />
+            <div class="flex justify-center items-center">
+              <img
+                class="absolute bottom-0 max-w-[25rem]"
+                src="/images/cashout/cashout-5.png"
+                alt="cashout" />
+            </div>
           </div>
           <div
             class="relative hidden lg:flex flex-col py-[25.72px] px-[25px] pb-[20rem] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
@@ -599,16 +604,21 @@
               How do we apply to connect to an MCN?
             </h2>
             <p class="mt-[9.55px] text-[#98A1B3] text-[18px] font-[400]">
-              To apply to connect to an MCN at MasterTube, your channel must meet the necessary conditions. If your channel does not meet the conditions, you will be connected to AdSense.
+              To apply to connect to an MCN at MasterTube, your channel must
+              meet the necessary conditions. If your channel does not meet the
+              conditions, you will be connected to AdSense.
             </p>
-            <img
-              class="absolute bottom-0"
-              src="/images/cashout/cashout-4.png"
-              alt="cashout" />
+            <div class="flex justify-center items-center">
+              <img
+                class="absolute bottom-0 max-w-[25rem]"
+                src="/images/cashout/cashout-4.png"
+                alt="cashout" />
+            </div>
           </div>
         </div>
+        <!-- Mobile -->
         <div
-          class="flex lg:hidden items-center justify-between gap-[19.3px] overflow-x-scroll scrollbar-hide overflow-y-hidden">
+          class="flex lg:hidden items-center justify-between gap-[19.3px] overflow-x-scroll scrollbar-hide px-4">
           <div
             class="relative min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">
@@ -616,12 +626,16 @@
             </h2>
             <p
               class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">
-              To connect to any MCN in the world, your YouTube channel must be monetized, and this is not possible for channels that have just reached the income-generating conditions.
+              To connect to any MCN in the world, your YouTube channel must be
+              monetized, and this is not possible for channels that have just
+              reached the income-generating conditions.
             </p>
-            <img
-              class="absolute bottom-[-3rem] h-[15.2rem] object-cover"
-              src="/images/cashout/cashout-6.png"
-              alt="cashout" />
+            <div class="flex justify-center items-center">
+              <img
+                class="absolute bottom-0 max-w-[12rem]"
+                src="/images/cashout/cashout-4.png"
+                alt="cashout" />
+            </div>
           </div>
           <div
             class="relative min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
@@ -630,12 +644,16 @@
             </h2>
             <p
               class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">
-              Mediacube is an official partner of YouTube and Meta, which means that it has been vetted by these companies and is considered to be a reputable organization
+              Mediacube is an official partner of YouTube and Meta, which means
+              that it has been vetted by these companies and is considered to be
+              a reputable organization
             </p>
-            <img
-              class="absolute bottom-[-3rem] h-[15.2rem] object-cover"
-              src="/images/cashout/cashout-5.png"
-              alt="cashout" />
+            <div class="flex justify-center items-center">
+              <img
+                class="absolute bottom-0 max-w-[12rem]"
+                src="/images/cashout/cashout-5.png"
+                alt="cashout" />
+            </div>
           </div>
           <div
             class="relative min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
@@ -644,14 +662,19 @@
             </h2>
             <p
               class="mt-[9.55px] text-[#98A1B3] text-[12px] lg:text-[18px] font-[400]">
-              To apply to connect to an MCN at MasterTube, your channel must meet the necessary conditions. If your channel does not meet the conditions, you will be connected to AdSense.
+              To apply to connect to an MCN at MasterTube, your channel must
+              meet the necessary conditions. If your channel does not meet the
+              conditions, you will be connected to AdSense.
             </p>
-            <img
-              class="absolute bottom-[-3rem] h-[15.2rem] object-cover"
-              src="/images/cashout/cashout-4.png"
-              alt="cashout" />
+            <div class="flex justify-center items-center">
+              <img
+                class="absolute bottom-0 max-w-[12rem]"
+                src="/images/cashout/cashout-6.png"
+                alt="cashout" />
+            </div>
           </div>
         </div>
+        <!-- Mobile -->
       </section>
       <!-- Connect -->
 
@@ -664,7 +687,7 @@
             alt="Effect" />
         </div>
         <div
-          class="bg-white sm:border sm:border-neutral-bg1 sm:shadow-cashout-card-shadow flex flex-col lg:flex-row gap-x-17 pt-10 lg:py-0 sm:rounded-[22px] overflow-hidden">
+          class="bg-white sm:border sm:border-neutral-bg1 sm:shadow-cashout-card-shadow flex flex-col-reverse lg:flex-row gap-x-17 pt-10 lg:py-0 sm:rounded-[22px] overflow-hidden">
           <div
             class="lg:pl-17 px-5 lg:px-17 lg:pr-0 lg:w-[70%] text-center text-neutral-text1-cash text-xl font-bold leading-[140%] pb-14 lg:py-14 flex justify-center flex-col">
             <span
@@ -748,7 +771,7 @@
             <!-- Range Input 2 -->
           </div>
           <div
-            class="lg:w-[30%] bg-no-repeat py-10 flex flex-col gap-y-6 justify-center items-center bg-cover bg-[url('/images/cashout/calculator-bg.png')]">
+            class="lg:w-[30%] mb-8 lg:mb-0 bg-no-repeat py-10 flex flex-col gap-y-6 justify-center items-center bg-cover bg-[url('/images/cashout/calculator-bg.png')]">
             <div class="text-center flex flex-col">
               <span
                 class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
@@ -794,73 +817,125 @@
           </div>
           <div
             x-data="{content: 'consult'}"
-            class="flex flex-col items-start w-full">
+            class="flex flex-col items-start w-full min-h-[25.5rem]">
             <h2
               class="text-neutral-text1-cash text-3xl font-bold leading-[140%] mb-6">
-              why <span class="bg-purple text-transparent bg-clip-text"
-            >MasterTube</span
-            >?
+              why
+              <span class="bg-purple text-transparent bg-clip-text"
+                >MasterTube</span
+              >?
             </h2>
             <div
-              class="flex w-full whitespace-nowrap scrollbar-hide gap-x-11 border-b-2 border-[#B795E5] border-opacity-[0.2] overflow-x-scroll">
+              class="grid grid-cols-2 sm:flex w-full gap-x-11 gap-y-4 border-b-2 border-[#B795E5] border-opacity-[0.2]">
               <span
                 @click="content = 'consult'"
-                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
-                :class="content === 'consult' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                >Free Consulting</span
-              >
+                :class="content === 'consult' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3">
+                <span
+                  :class="content === 'consult' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
+                  >Free Consulting</span
+                >
+              </span>
               <span
                 @click="content = 'educational'"
-                :class="content === 'educational' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Payment Methods</span
-              >
+                :class="content === 'educational' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3">
+                <span
+                  :class="content === 'educational' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
+                  >Payment Methods</span
+                >
+              </span>
               <span
                 @click="content = 'pro'"
-                :class="content === 'pro' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Mastertube Dashboard</span
-              >
+                :class="content === 'pro' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3">
+                <span
+                  :class="content === 'pro' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
+                  >Mastertube Dashboard</span
+                >
+              </span>
               <span
                 @click="content = 'ai'"
-                :class="content === 'ai' && 'border-b-2 border-[#B378FF] text-neutral-text1/100'"
-                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3"
-                >Support</span
-              >
+                :class="content === 'ai' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'"
+                class="text-neutral-text1-cash/60 text-md cursor-pointer font-medium pb-3">
+                <span
+                  :class="content === 'ai' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
+                  >Support</span
+                >
+              </span>
             </div>
             <p
               x-cloak
               x-show="content === 'consult'"
               class="pt-8 text-neutral-text2">
-              MasterTube has been providing monetization services to YouTubers since 2020. With the help of
-              <span class="text-transparent bg-starts bg-clip-text font-bold capitalize">experienced YouTube experts</span>, it provides the
-              <span class="text-transparent bg-starts bg-clip-text font-bold capitalize">best possible solution</span> for solving your channel problems. You can receive
-              <span class="text-transparent bg-starts bg-clip-text font-bold capitalize">consultation from MasterTube</span> for creating a channel, producing content, and monetizing your YouTube channel.
-
+              MasterTube has been providing monetization services to YouTubers
+              since 2020. With the help of
+              <span
+                class="text-transparent bg-starts bg-clip-text font-bold capitalize"
+                >experienced YouTube experts</span
+              >, it provides the
+              <span
+                class="text-transparent bg-starts bg-clip-text font-bold capitalize"
+                >best possible solution</span
+              >
+              for solving your channel problems. You can receive
+              <span
+                class="text-transparent bg-starts bg-clip-text font-bold capitalize"
+                >consultation from MasterTube</span
+              >
+              for creating a channel, producing content, and monetizing your
+              YouTube channel.
             </p>
             <p
               x-cloak
               x-show="content === 'educational'"
               class="pt-8 text-neutral-text2">
               With the
-              <span class="text-transparent bg-starts bg-clip-text font-bold capitalize">diverse Payment methods</span> you have more choices for receiving your YouTube channel income, and you can receive your channel income in
-              <span class="text-transparent bg-starts bg-clip-text font-bold capitalize"> Iranian rials</span>  in your Iranian Bank account or
-              <span class="text-transparent bg-starts bg-clip-text font-bold capitalize">Tether</span> in your electronic
+              <span
+                class="text-transparent bg-starts bg-clip-text font-bold capitalize"
+                >diverse Payment methods</span
+              >
+              you have more choices for receiving your YouTube channel income,
+              and you can receive your channel income in
+              <span
+                class="text-transparent bg-starts bg-clip-text font-bold capitalize">
+                Iranian rials</span
+              >
+              in your Iranian Bank account or
+              <span
+                class="text-transparent bg-starts bg-clip-text font-bold capitalize"
+                >Tether</span
+              >
+              in your electronic
             </p>
             <p
               x-cloak
               x-show="content === 'pro'"
               class="pt-8 text-neutral-text2">
-              MasterTube Dashboard is a comprehensive tool for analyzing, reviewing, and managing your YouTube channel that helps you
-              <span class="text-transparent bg-starts bg-clip-text font-bold capitalize">optimize your channel</span> and experience more growth. With this tool, you will have access to many features that make it easier than ever to create content on YouTube. Just focus on content creation.
+              MasterTube Dashboard is a comprehensive tool for analyzing,
+              reviewing, and managing your YouTube channel that helps you
+              <span
+                class="text-transparent bg-starts bg-clip-text font-bold capitalize"
+                >optimize your channel</span
+              >
+              and experience more growth. With this tool, you will have access
+              to many features that make it easier than ever to create content
+              on YouTube. Just focus on content creation.
             </p>
             <p
               x-cloak
               x-show="content === 'ai'"
               class="pt-8 text-neutral-text2">
               With the MasterTube support, we will answer your questions in the
-              <span class="text-transparent bg-starts bg-clip-text font-bold capitalize">shortest possible time</span> , and you can also easily ask your questions and problems with us
-              <span class="text-transparent bg-starts bg-clip-text font-bold capitalize"> at all stages</span>
+              <span
+                class="text-transparent bg-starts bg-clip-text font-bold capitalize"
+                >shortest possible time</span
+              >
+              , and you can also easily ask your questions and problems with us
+              <span
+                class="text-transparent bg-starts bg-clip-text font-bold capitalize">
+                at all stages</span
+              >
             </p>
           </div>
         </div>
@@ -919,8 +994,8 @@
                 class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
 
               <button
-                class="hidden h-[32px] lg:flex items-center gap-[10px] text-[13.524px] py-1 px-5 rounded-[77px] text-white bg-purple">
-                submit
+                class="hidden h-[32px] lg:flex items-center gap-[10px] text-md py-1 px-5 rounded-[77px] text-white bg-purple">
+                Submit
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -935,23 +1010,25 @@
             </div>
 
             <button
-              class="flex lg:hidden h-[41px] w-full max-w-[60rem] items-center justify-center gap-[10px] text-[13.524px] px-5 rounded-[77px] text-white bg-[#ffffff54] lg:bg-purple">
-              submit
+              class="flex group hover:bg-[#f5f5f5] transition-colors ease-out hover:text-primary-1 lg:hidden h-[41px] w-full max-w-[60rem] items-center justify-center gap-[10px] text-md px-5 rounded-[77px] text-white bg-primary-1">
+              Submit
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"
                 height="21"
+                class="fill-white group-hover:fill-primary-1"
                 viewBox="0 0 21 21"
                 fill="none">
                 <path
-                  d="M18.0737 10.9612L12.249 16.7859C12.1276 16.9073 11.9629 16.9755 11.7911 16.9755C11.6194 16.9755 11.4547 16.9073 11.3333 16.7859C11.2118 16.6644 11.1436 16.4997 11.1436 16.328C11.1436 16.1563 11.2118 15.9915 11.3333 15.8701L16.0537 11.1505H3.37766C3.20601 11.1505 3.0414 11.0823 2.92003 10.9609C2.79865 10.8395 2.73047 10.6749 2.73047 10.5033C2.73047 10.3316 2.79865 10.167 2.92003 10.0456C3.0414 9.92427 3.20601 9.85608 3.37766 9.85608H16.0537L11.3333 5.13644C11.2118 5.015 11.1436 4.8503 11.1436 4.67856C11.1436 4.50682 11.2118 4.34211 11.3333 4.22067C11.4547 4.09923 11.6194 4.03101 11.7911 4.03101C11.9629 4.03101 12.1276 4.09923 12.249 4.22067L18.0737 10.0454C18.1339 10.1055 18.1817 10.1769 18.2142 10.2554C18.2468 10.334 18.2636 10.4182 18.2636 10.5033C18.2636 10.5883 18.2468 10.6725 18.2142 10.7511C18.1817 10.8297 18.1339 10.9011 18.0737 10.9612Z"
-                  fill="white" />
+                  d="M18.0737 10.9612L12.249 16.7859C12.1276 16.9073 11.9629 16.9755 11.7911 16.9755C11.6194 16.9755 11.4547 16.9073 11.3333 16.7859C11.2118 16.6644 11.1436 16.4997 11.1436 16.328C11.1436 16.1563 11.2118 15.9915 11.3333 15.8701L16.0537 11.1505H3.37766C3.20601 11.1505 3.0414 11.0823 2.92003 10.9609C2.79865 10.8395 2.73047 10.6749 2.73047 10.5033C2.73047 10.3316 2.79865 10.167 2.92003 10.0456C3.0414 9.92427 3.20601 9.85608 3.37766 9.85608H16.0537L11.3333 5.13644C11.2118 5.015 11.1436 4.8503 11.1436 4.67856C11.1436 4.50682 11.2118 4.34211 11.3333 4.22067C11.4547 4.09923 11.6194 4.03101 11.7911 4.03101C11.9629 4.03101 12.1276 4.09923 12.249 4.22067L18.0737 10.0454C18.1339 10.1055 18.1817 10.1769 18.2142 10.2554C18.2468 10.334 18.2636 10.4182 18.2636 10.5033C18.2636 10.5883 18.2468 10.6725 18.2142 10.7511C18.1817 10.8297 18.1339 10.9011 18.0737 10.9612Z" />
               </svg>
             </button>
           </div>
           <p
             class="mt-2 text-[#FFFFFFE8] text-[15px] pb-[84px] text-center lg:text-start relative z-10">
-            To find out the exact amount of your fees, simply enter your information and we will send you an email with the amount after our experts have reviewed your account.
+            To find out the exact amount of your fees, simply enter your
+            information and we will send you an email with the amount <br />
+            after our experts have reviewed your account.
           </p>
 
           <img
@@ -975,18 +1052,21 @@
                 >Shield</span
               >
             </h2>
-            <p class="text-[#666E80] text-[17.257px] lg:text-[24.665px]">
-              MasterShield protects your content from being used without your permission on social media. You can legally request that your content be removed from other channels.
+            <p
+              class="text-[#666E80] text-[17.257px] lg:text-[24.665px] text-center lg:text-start">
+              MasterShield protects your content from being used without your
+              permission on social media. You can legally request that your
+              content be removed from other channels.
             </p>
             <div class="flex flex-col lg:flex-row gap-x-[27px] w-full">
-<!--              <button-->
-<!--                class="w-full lg:w-fit rounded-[9.396px] bg-[#8F55EA] text-white py-[11.75px] px-[21.14px] text-[16px] font-[600]">-->
-<!--                CALL TO ACTION-->
-<!--              </button>-->
-<!--              <button-->
-<!--                class="w-full lg:w-fit rounded-[9.396px] text-[#666E80] py-[11.75px] px-[21.14px] text-[16px] font-[600]">-->
-<!--                CALL TO ACTION-->
-<!--              </button>-->
+              <!--              <button-->
+              <!--                class="w-full lg:w-fit rounded-[9.396px] bg-[#8F55EA] text-white py-[11.75px] px-[21.14px] text-[16px] font-[600]">-->
+              <!--                CALL TO ACTION-->
+              <!--              </button>-->
+              <!--              <button-->
+              <!--                class="w-full lg:w-fit rounded-[9.396px] text-[#666E80] py-[11.75px] px-[21.14px] text-[16px] font-[600]">-->
+              <!--                CALL TO ACTION-->
+              <!--              </button>-->
             </div>
           </div>
           <div
@@ -1018,7 +1098,7 @@
         </h2>
         <div class="hidden container lg:grid grid-cols-3 gap-y-[27px] gap-x-10">
           <div
-            class="flex py-[40px] overflow-hidden px-[92.65px] relative col-span-2 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-services">
+            class="flex py-[40px] overflow-hidden pl-[2.5rem] relative col-span-2 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-services">
             <div class="flex flex-col justify-between max-w-[60%] z-10">
               <div class="flex flex-col">
                 <h2 class="text-white text-[35.836px] font-[600] mb-[11.29px]">
@@ -1028,17 +1108,16 @@
                   Protect your videos from copying and monetization.
                 </p>
               </div>
-<!--              <button-->
-<!--                class="flex gap-x-2 w-fit mt-[55.59px] bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2">-->
-<!--                Call To Action-->
-<!--              </button>-->
+              <!--              <button-->
+              <!--                class="flex gap-x-2 w-fit mt-[55.59px] bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2">-->
+              <!--                Call To Action-->
+              <!--              </button>-->
             </div>
 
             <img
-              class="absolute right-0 bottom-0"
-              src="/images/cashout/content-id.png"
-              width="350px"
-              alt="cashout" />
+              src="/images/main/channel.png"
+              alt="Channel Icon"
+              class="absolute right-0 bottom-[-4rem] object-cover max-w-[30rem] z-50" />
             <img
               src="/images/cashout/connect-group.svg"
               alt="connect background"
@@ -1055,7 +1134,7 @@
               Track, identify, and insights for Youtube channel performance.
             </p>
             <img
-              class="absolute right-0 bottom-0"
+              class="absolute right-0 bottom-[-2rem] max-w-[28rem]"
               src="/images/cashout/cashout-9.png"
               alt="cashout" />
           </div>
@@ -1066,7 +1145,7 @@
               Target ads to reach wider audience for YouTube channel growth.
             </p>
             <img
-              class="absolute right-0 bottom-0"
+              class="absolute right-0 bottom-[-2rem] max-w-[30rem]"
               src="/images/cashout/ads.png"
               width="248px"
               alt="cashout" />
@@ -1081,26 +1160,10 @@
                 Epidemic sound account
               </p>
               <img
-                class="absolute right-0 bottom-0"
+                class="absolute right-0 bottom-[-4rem] max-w-[28rem]"
                 src="/images/cashout/cashout-11.png"
                 alt="cashout" />
             </div>
-<!--            <button-->
-<!--              class="flex gap-x-2 items-center w-fit z-20 bg-[#8F55EA] rounded-[999px] px-[21px] text-white text-[13.737px] font-[500] py-2">-->
-<!--              <span>Call To Action</span>-->
-<!--              <span>-->
-<!--                <svg-->
-<!--                  xmlns="http://www.w3.org/2000/svg"-->
-<!--                  width="22"-->
-<!--                  height="23"-->
-<!--                  viewBox="0 0 22 23"-->
-<!--                  fill="none">-->
-<!--                  <path-->
-<!--                    d="M18.6014 11.9734L12.5801 17.9947C12.4546 18.1203 12.2843 18.1908 12.1068 18.1908C11.9292 18.1908 11.7589 18.1203 11.6334 17.9947C11.5079 17.8692 11.4373 17.6989 11.4373 17.5214C11.4373 17.3439 11.5079 17.1736 11.6334 17.0481L16.5132 12.1691H3.40927C3.23183 12.1691 3.06166 12.0986 2.93619 11.9731C2.81072 11.8477 2.74023 11.6775 2.74023 11.5001C2.74023 11.3226 2.81072 11.1525 2.93619 11.027C3.06166 10.9015 3.23183 10.831 3.40927 10.831H16.5132L11.6334 5.95208C11.5079 5.82654 11.4373 5.65627 11.4373 5.47874C11.4373 5.3012 11.5079 5.13093 11.6334 5.00539C11.7589 4.87985 11.9292 4.80933 12.1068 4.80933C12.2843 4.80933 12.4546 4.87985 12.5801 5.00539L18.6014 11.0267C18.6636 11.0889 18.713 11.1626 18.7466 11.2439C18.7803 11.3251 18.7976 11.4121 18.7976 11.5001C18.7976 11.588 18.7803 11.675 18.7466 11.7563C18.713 11.8375 18.6636 11.9113 18.6014 11.9734Z"-->
-<!--                    fill="white" />-->
-<!--                </svg>-->
-<!--              </span>-->
-<!--            </button>-->
           </div>
           <div
             class="flex relative flex-col justify-between py-[25.72px] px-[25px] h-[344px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect">
@@ -1110,14 +1173,10 @@
                 Drive viewers to watch more content with special links.
               </p>
               <img
-                class="absolute right-0 bottom-0"
+                class="absolute right-0 bottom-[-4rem] max-w-[30rem]"
                 src="/images/cashout/cashout-12.png"
                 alt="cashout" />
             </div>
-<!--            <button-->
-<!--              class="flex w-fit bg-white rounded-[999px] px-[21px] text-[#32283F] text-[13.737px] font-[500] py-2">-->
-<!--              Call To Action-->
-<!--            </button>-->
 
             <img
               src="/images/cashout/connect-group.svg"
@@ -1128,7 +1187,7 @@
 
         <!-- Mobile -->
         <div
-          class="flex md:hidden items-center gap-[19.3px] overflow-x-auto overflow-y-hidden scrollbar-hide">
+          class="flex md:hidden items-center gap-[19.3px] overflow-x-auto overflow-y-hidden px-4 scrollbar-hide">
           <div
             class="relative min-w-[240px] w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
             <h2 class="text-[#3D3E4A] text-[16px] lg:text-[30px] font-[700]">
@@ -1141,9 +1200,9 @@
               monetize their channel.
             </p>
             <img
-              class="absolute bottom-[-4rem] h-[18.1rem]"
-              src="/images/cashout/cashout-8.png"
-              alt="cashout" />
+              src="/images/main/channel.png"
+              alt="Channel Icon"
+              class="absolute right-0 bottom-[-2rem] object-cover max-w-[15rem] z-50" />
           </div>
           <div
             class="min-w-[240px] relative w-[240px] max-w-[240px] flex flex-col py-[25.72px] px-[25px] pb-[115px] lg:pb-[155.72px] rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-white">
@@ -1157,7 +1216,7 @@
               monetize their channel.
             </p>
             <img
-              class="absolute bottom-[-4rem] h-[18.1rem]"
+              class="absolute right-0 bottom-0 max-w-[12rem]"
               src="/images/cashout/cashout-9.png"
               alt="cashout" />
           </div>
@@ -1173,8 +1232,8 @@
               monetize their channel.
             </p>
             <img
-              class="absolute bottom-[-4rem] h-[18.1rem]"
-              src="/images/cashout/cashout-10.png"
+              class="absolute right-0 bottom-0 max-w-[12rem]"
+              src="/images/cashout/ads.png"
               alt="cashout" />
           </div>
           <div
@@ -1189,7 +1248,7 @@
               monetize their channel.
             </p>
             <img
-              class="absolute bottom-[-4rem] h-[18.1rem]"
+              class="absolute right-0 bottom-0 max-w-[12rem]"
               src="/images/cashout/cashout-11.png"
               alt="cashout" />
           </div>
@@ -1205,7 +1264,7 @@
               monetize their channel.
             </p>
             <img
-              class="absolute bottom-[-4rem] h-[18.1rem]"
+              class="absolute right-0 bottom-0 max-w-[12rem]"
               src="/images/cashout/cashout-12.png"
               alt="cashout" />
           </div>
@@ -1216,15 +1275,22 @@
 
       <!-- Contact US -->
       <section
-        class="bg-[url('/images/cashout/contact-bg.png')] bg-cover bg-bottom flex flex-col relative items-center gap-[27px] mx-auto pb-[131px] mt-[131px]">
+        class="bg-[url('/images/cashout/contact-bg.png')] bg-cover bg-bottom flex flex-col relative items-center gap-[27px] mx-auto mb-[5rem] lg:mb-[15.4rem] pb-[131px] mt-[131px]">
         <div
           class="container max-w-[124rem] -mt-[131px] flex items-center flex-col-reverse lg:flex-row justify-between md:rounded-[23.115px] py-[21px] px-5 lg:px-[42px] bg-white gap-y-[24px] md:shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)]">
-          <div class="flex flex-col items-center lg:items-start justify-center">
-            <h1 class="text-[#414141] text-[39.093px] font-bold">contact us</h1>
-            <p class="text-[#98A1B3] text-[18.912px] text-center lg:text-start">
-              professional channel setup and optimization services for those
-              facing time.
-            </p>
+          <div
+            class="flex flex-col-reverse lg:flex-col items-center lg:items-start justify-center">
+            <div>
+              <h1
+                class="text-[#414141] text-[39.093px] font-bold text-center lg:text-start">
+                contact us
+              </h1>
+              <p
+                class="text-[#98A1B3] text-[18.912px] mb-2 text-center lg:text-start">
+                professional channel setup and optimization services for those
+                facing time.
+              </p>
+            </div>
             <div
               class="flex flex-col w-full gap-[12.61px] px-0 lg:px-[10.51px] p-[10.51px]">
               <!-- Input 1 -->
@@ -1319,8 +1385,8 @@
               </div>
               <!-- Input 4 -->
               <button
-                class="h-[54.636px] rounded-[80.903px] bg-[#D23790] text-white text-[14.209px]">
-                submit
+                class="flex group hover:bg-[#f5f5f5] transition-colors ease-out hover:text-primary-1 h-[41px] w-full items-center justify-center gap-[10px] text-md px-5 rounded-[77px] text-white bg-primary-1">
+                Submit
               </button>
             </div>
           </div>
@@ -1330,22 +1396,9 @@
             <img
               src="/images/cashout/cashout-13.png"
               alt="contact" />
+
             <div
-              class="flex items-start gap-[10.51px] text-[#98A1B3] text-[18.912px] self-start">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 30 30"
-                fill="none">
-                <path
-                  d="M22.9873 25.7173H17.475C18.401 24.8905 19.2742 24.0064 20.0896 23.0703C23.1489 19.5519 24.7705 15.8428 24.7705 12.3433C24.7705 9.74212 23.7372 7.24751 21.8979 5.40823C20.0586 3.56894 17.564 2.53564 14.9629 2.53564C12.3617 2.53564 9.86714 3.56894 8.02786 5.40823C6.18857 7.24751 5.15527 9.74212 5.15527 12.3433C5.15527 15.8428 6.77242 19.5519 9.83618 23.0703C10.6516 24.0064 11.5248 24.8905 12.4508 25.7173H6.93848C6.70201 25.7173 6.47523 25.8112 6.30802 25.9784C6.14081 26.1456 6.04688 26.3724 6.04688 26.6089C6.04688 26.8454 6.14081 27.0721 6.30802 27.2393C6.47523 27.4066 6.70201 27.5005 6.93848 27.5005H22.9873C23.2238 27.5005 23.4506 27.4066 23.6178 27.2393C23.785 27.0721 23.8789 26.8454 23.8789 26.6089C23.8789 26.3724 23.785 26.1456 23.6178 25.9784C23.4506 25.8112 23.2238 25.7173 22.9873 25.7173ZM14.9629 8.77686C15.6683 8.77686 16.3578 8.98602 16.9443 9.3779C17.5308 9.76979 17.9879 10.3268 18.2578 10.9785C18.5278 11.6301 18.5984 12.3472 18.4608 13.039C18.3232 13.7308 17.9835 14.3663 17.4847 14.8651C16.9859 15.3639 16.3505 15.7035 15.6587 15.8411C14.9668 15.9788 14.2498 15.9081 13.5981 15.6382C12.9464 15.3683 12.3894 14.9111 11.9975 14.3247C11.6057 13.7382 11.3965 13.0486 11.3965 12.3433C11.3965 11.3974 11.7722 10.4903 12.4411 9.82143C13.1099 9.1526 14.017 8.77686 14.9629 8.77686Z"
-                  fill="#98A1B3" />
-              </svg>
-              qom, yaseri str, 23 street,qom, yaseri str, 23 street
-            </div>
-            <div
-              class="flex items-start gap-[10.51px] text-[#98A1B3] text-[18.912px] self-start">
+              class="flex items-center justify-center w-full gap-[10.51px] text-[#98A1B3] text-[18.912px] self-start">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -1358,57 +1411,6 @@
               </svg>
               <a href="tel:+989349699944">+989349699944</a>
             </div>
-
-            <div class="flex gap-[23.12px]">
-              <a href="http://example.com">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none">
-                  <path
-                    d="M38.3268 12.4588L33.7791 17.0065C32.8605 27.6563 23.8792 35.9333 13.1306 35.9333C10.9222 35.9333 9.10156 35.5835 7.71901 34.893C6.60415 34.3348 6.14786 33.7371 6.03379 33.5667C5.93208 33.4142 5.86615 33.2406 5.84093 33.059C5.81572 32.8774 5.83187 32.6925 5.88818 32.518C5.94448 32.3435 6.03949 32.184 6.16611 32.0514C6.29272 31.9188 6.44767 31.8165 6.61936 31.7522C6.65891 31.737 10.3062 30.3362 12.6226 27.67C11.338 26.6138 10.2165 25.3734 9.29473 23.9892C7.40874 21.1891 5.29765 16.3251 5.94862 9.05646C5.96925 8.82549 6.05545 8.60524 6.19707 8.42162C6.33869 8.238 6.52982 8.09868 6.74797 8.02005C6.96612 7.94142 7.20219 7.92676 7.42838 7.97781C7.65458 8.02885 7.86148 8.14346 8.02473 8.30815C8.07796 8.36138 13.0865 13.3425 19.2099 14.9578V14.0315C19.2075 13.0602 19.3996 12.0983 19.7747 11.2023C20.1498 10.3064 20.7003 9.49455 21.394 8.81463C22.0676 8.14195 22.8691 7.611 23.7513 7.25313C24.6334 6.89525 25.5783 6.71768 26.5302 6.73091C27.8072 6.74351 29.0591 7.08629 30.1644 7.72593C31.2696 8.36557 32.1906 9.28031 32.8376 10.3812H37.4659C37.7067 10.381 37.9422 10.4523 38.1424 10.586C38.3427 10.7197 38.4988 10.9098 38.591 11.1322C38.6831 11.3547 38.7072 11.5995 38.6602 11.8356C38.6132 12.0718 38.4972 12.2887 38.3268 12.4588Z"
-                    fill="#98A1B3" />
-                </svg>
-              </a>
-              <a href="http://example.com">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="39"
-                  height="40"
-                  viewBox="0 0 39 40"
-                  fill="none">
-                  <path
-                    d="M26.7836 4.29712H12.1824C9.9242 4.29953 7.75918 5.19767 6.16239 6.79447C4.56559 8.39126 3.66745 10.5563 3.66504 12.8145V27.4157C3.66745 29.6739 4.56559 31.8389 6.16239 33.4357C7.75918 35.0325 9.9242 35.9306 12.1824 35.9331H26.7836C29.0418 35.9306 31.2068 35.0325 32.8036 33.4357C34.4004 31.8389 35.2986 29.6739 35.301 27.4157V12.8145C35.2986 10.5563 34.4004 8.39126 32.8036 6.79447C31.2068 5.19767 29.0418 4.29953 26.7836 4.29712ZM19.483 27.4157C18.0391 27.4157 16.6276 26.9875 15.427 26.1853C14.2264 25.3831 13.2907 24.2429 12.7381 22.9089C12.1856 21.5749 12.041 20.107 12.3227 18.6908C12.6044 17.2746 13.2997 15.9738 14.3207 14.9528C15.3417 13.9318 16.6426 13.2365 18.0587 12.9548C19.4749 12.6731 20.9428 12.8176 22.2768 13.3702C23.6108 13.9228 24.751 14.8585 25.5532 16.0591C26.3554 17.2597 26.7836 18.6712 26.7836 20.1151C26.7816 22.0507 26.0118 23.9065 24.6431 25.2752C23.2744 26.6439 21.4186 27.4137 19.483 27.4157ZM28.6088 12.8145C28.2478 12.8145 27.8949 12.7074 27.5948 12.5069C27.2946 12.3063 27.0607 12.0213 26.9225 11.6878C26.7844 11.3543 26.7483 10.9873 26.8187 10.6333C26.8891 10.2792 27.0629 9.95401 27.3182 9.69876C27.5734 9.44351 27.8986 9.26968 28.2527 9.19926C28.6067 9.12883 28.9737 9.16498 29.3072 9.30312C29.6407 9.44126 29.9258 9.67519 30.1263 9.97534C30.3269 10.2755 30.4339 10.6284 30.4339 10.9893C30.4339 11.4734 30.2416 11.9376 29.8993 12.2799C29.5571 12.6222 29.0928 12.8145 28.6088 12.8145ZM24.3501 20.1151C24.3501 21.0777 24.0646 22.0187 23.5298 22.8191C22.995 23.6195 22.2349 24.2433 21.3456 24.6117C20.4562 24.98 19.4776 25.0764 18.5335 24.8886C17.5894 24.7008 16.7221 24.2373 16.0415 23.5566C15.3608 22.876 14.8973 22.0087 14.7095 21.0646C14.5217 20.1205 14.618 19.1419 14.9864 18.2525C15.3548 17.3632 15.9786 16.6031 16.779 16.0683C17.5794 15.5335 18.5204 15.248 19.483 15.248C20.7738 15.248 22.0118 15.7608 22.9245 16.6736C23.8373 17.5863 24.3501 18.8243 24.3501 20.1151Z"
-                    fill="#98A1B3" />
-                </svg>
-              </a>
-              <a href="http://example.com">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="39"
-                  height="40"
-                  viewBox="0 0 39 40"
-                  fill="none">
-                  <path
-                    d="M32.9182 4.29712H6.14935C5.50394 4.29712 4.88496 4.55351 4.42859 5.00988C3.97221 5.46626 3.71582 6.08524 3.71582 6.73065V33.4995C3.71582 34.1449 3.97221 34.7639 4.42859 35.2203C4.88496 35.6767 5.50394 35.9331 6.14935 35.9331H32.9182C33.5636 35.9331 34.1826 35.6767 34.639 35.2203C35.0954 34.7639 35.3518 34.1449 35.3518 33.4995V6.73065C35.3518 6.08524 35.0954 5.46626 34.639 5.00988C34.1826 4.55351 33.5636 4.29712 32.9182 4.29712ZM14.6667 27.4157C14.6667 27.7384 14.5385 28.0479 14.3103 28.2761C14.0822 28.5043 13.7727 28.6325 13.45 28.6325C13.1272 28.6325 12.8178 28.5043 12.5896 28.2761C12.3614 28.0479 12.2332 27.7384 12.2332 27.4157V17.6816C12.2332 17.3588 12.3614 17.0494 12.5896 16.8212C12.8178 16.593 13.1272 16.4648 13.45 16.4648C13.7727 16.4648 14.0822 16.593 14.3103 16.8212C14.5385 17.0494 14.6667 17.3588 14.6667 17.6816V27.4157ZM13.45 15.248C13.089 15.248 12.7361 15.141 12.436 14.9404C12.1358 14.7399 11.9019 14.4548 11.7637 14.1213C11.6256 13.7878 11.5895 13.4208 11.6599 13.0668C11.7303 12.7128 11.9041 12.3875 12.1594 12.1323C12.4146 11.877 12.7398 11.7032 13.0939 11.6328C13.4479 11.5624 13.8149 11.5985 14.1484 11.7367C14.4819 11.8748 14.767 12.1087 14.9675 12.4089C15.1681 12.709 15.2751 13.0619 15.2751 13.4229C15.2751 13.9069 15.0828 14.3712 14.7405 14.7134C14.3982 15.0557 13.934 15.248 13.45 15.248ZM28.0512 27.4157C28.0512 27.7384 27.923 28.0479 27.6948 28.2761C27.4666 28.5043 27.1571 28.6325 26.8344 28.6325C26.5117 28.6325 26.2022 28.5043 25.974 28.2761C25.7458 28.0479 25.6176 27.7384 25.6176 27.4157V21.9402C25.6176 21.1335 25.2971 20.3597 24.7267 19.7893C24.1562 19.2188 23.3825 18.8983 22.5757 18.8983C21.7689 18.8983 20.9952 19.2188 20.4247 19.7893C19.8543 20.3597 19.5338 21.1335 19.5338 21.9402V27.4157C19.5338 27.7384 19.4056 28.0479 19.1774 28.2761C18.9492 28.5043 18.6397 28.6325 18.317 28.6325C17.9943 28.6325 17.6848 28.5043 17.4566 28.2761C17.2285 28.0479 17.1003 27.7384 17.1003 27.4157V17.6816C17.1018 17.3835 17.2126 17.0964 17.4118 16.8747C17.6109 16.6529 17.8845 16.512 18.1807 16.4786C18.4769 16.4452 18.775 16.5217 19.0185 16.6935C19.262 16.8654 19.434 17.1206 19.5018 17.4108C20.325 16.8524 21.2846 16.5288 22.2778 16.4747C23.271 16.4206 24.2601 16.638 25.1391 17.1037C26.018 17.5693 26.7535 18.2656 27.2665 19.1177C27.7796 19.9698 28.0508 20.9456 28.0512 21.9402V27.4157Z"
-                    fill="#98A1B3" />
-                </svg>
-              </a>
-              <a href="http://example.com">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none">
-                  <path
-                    d="M35.4054 20.115C35.4004 23.981 33.982 27.7117 31.4173 30.6045C28.8526 33.4972 25.3186 35.3524 21.481 35.8204C21.3956 35.8301 21.309 35.8215 21.2271 35.7953C21.1452 35.7691 21.0698 35.7258 21.0059 35.6683C20.9419 35.6108 20.8909 35.5404 20.8561 35.4618C20.8213 35.3831 20.8036 35.298 20.8042 35.212V23.7653H24.4545C24.6213 23.7656 24.7864 23.7317 24.9395 23.6656C25.0927 23.5995 25.2306 23.5025 25.3447 23.3809C25.4588 23.2592 25.5467 23.1154 25.6028 22.9583C25.659 22.8013 25.6823 22.6343 25.6713 22.4679C25.6444 22.155 25.5 21.8639 25.2672 21.6531C25.0345 21.4423 24.7305 21.3275 24.4165 21.3317H20.8042V17.6814C20.8042 17.036 21.0606 16.417 21.517 15.9607C21.9733 15.5043 22.5923 15.2479 23.2377 15.2479H25.6713C25.8381 15.2483 26.0032 15.2143 26.1563 15.1482C26.3094 15.0821 26.4473 14.9852 26.5615 14.8635C26.6756 14.7418 26.7634 14.598 26.8196 14.441C26.8758 14.2839 26.8991 14.117 26.888 13.9505C26.8611 13.6371 26.7163 13.3456 26.4829 13.1347C26.2495 12.9238 25.9447 12.8094 25.6302 12.8144H23.2377C21.9469 12.8144 20.7089 13.3272 19.7962 14.2399C18.8834 15.1527 18.3707 16.3906 18.3707 17.6814V21.3317H14.7204C14.5536 21.3314 14.3885 21.3653 14.2353 21.4314C14.0822 21.4976 13.9443 21.5945 13.8302 21.7161C13.7161 21.8378 13.6282 21.9816 13.572 22.1387C13.5158 22.2957 13.4925 22.4627 13.5036 22.6291C13.5305 22.9425 13.6753 23.2341 13.9087 23.4449C14.1422 23.6558 14.4469 23.7703 14.7614 23.7653H18.3707V35.215C18.3712 35.3009 18.3535 35.3859 18.3189 35.4644C18.2842 35.543 18.2333 35.6133 18.1695 35.6707C18.1057 35.7282 18.0305 35.7715 17.9488 35.7978C17.8671 35.8242 17.7807 35.8329 17.6954 35.8234C13.7551 35.3436 10.1386 33.4019 7.56163 30.3828C4.98468 27.3636 3.63514 23.487 3.78011 19.5203C4.0843 11.3071 10.737 4.6301 18.9562 4.3107C21.0842 4.22827 23.2069 4.57588 25.1974 5.33273C27.188 6.08958 29.0054 7.24012 30.541 8.71554C32.0766 10.191 33.2989 11.9609 34.1347 13.9196C34.9705 15.8783 35.4027 17.9854 35.4054 20.115Z"
-                    fill="#98A1B3" />
-                </svg>
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -1416,18 +1418,19 @@
 
       <!-- FAQ -->
       <section
-        class="text-center container mx-auto my-22 px-5 lg:px-0 max-w-[124rem]">
+        class="text-center container mx-auto mb-[5rem] lg:mb-[15.4rem] px-5 lg:px-0 max-w-[124rem]">
         <h3 class="mb-14">Frequently Asked Questions!</h3>
-        <div class="flex flex-col gap-y-6">
+        <div
+          x-data="{ opened_tab: 0 }"
+          class="flex flex-col gap-y-6">
           <!-- Accordian NO.1 -->
           <div
-            x-data="{open1: false}"
             class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8">
             <!-- Header -->
             <div
-              @click="open1 = !open1"
+              @click="opened_tab = opened_tab === 0 ? null : 0"
               class="flex justify-between items-center cursor-pointer">
-              <span class="text-md font-semibold text-neutral-text1 text-start"
+              <span class="text-xl font-semibold text-neutral-text1 text-start"
                 >What is MasterTube Title Generator AI?
               </span>
               <span
@@ -1438,7 +1441,7 @@
                   viewBox="0 0 24 25"
                   fill="none"
                   class="transition-transform duration-300"
-                  :class="open1 ? 'rotate-180': '' ">
+                  :class="opened_tab === 0 ? 'rotate-180': '' ">
                   <path
                     d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
                     fill="#8F55EA"
@@ -1450,7 +1453,7 @@
 
             <!-- Content -->
             <p
-              x-show="open1"
+              x-show="opened_tab === 0"
               x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2">
@@ -1466,13 +1469,12 @@
 
           <!-- Accordian NO.2 -->
           <div
-            x-data="{open2: true}"
             class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8">
             <!-- Header -->
             <div
-              @click="open2 = !open2"
+              @click="opened_tab = opened_tab === 1 ? null : 1"
               class="flex justify-between items-center cursor-pointer">
-              <span class="text-md font-semibold text-neutral-text1 text-start"
+              <span class="text-xl font-semibold text-neutral-text1 text-start"
                 >How does MasterTube's Title Generator AI work?
               </span>
               <span
@@ -1483,7 +1485,7 @@
                   viewBox="0 0 24 25"
                   fill="none"
                   class="transition-transform duration-300"
-                  :class="open2 ? 'rotate-180': '' ">
+                  :class="opened_tab === 1 ? 'rotate-180': '' ">
                   <path
                     d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
                     fill="#8F55EA"
@@ -1495,7 +1497,7 @@
 
             <!-- Content -->
             <p
-              x-show="open2"
+              x-show="opened_tab === 1"
               x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2">
@@ -1511,13 +1513,12 @@
 
           <!-- Accordian NO.3 -->
           <div
-            x-data="{open3: false}"
             class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8">
             <!-- Header -->
             <div
-              @click="open3 = !open3"
+              @click="opened_tab = opened_tab === 2 ? null : 2"
               class="flex justify-between items-center cursor-pointer">
-              <span class="text-md font-semibold text-neutral-text1 text-start"
+              <span class="text-xl font-semibold text-neutral-text1 text-start"
                 >How can TubeBuddy's Title Generator AI benefit my YouTube
                 channel?
               </span>
@@ -1529,7 +1530,7 @@
                   viewBox="0 0 24 25"
                   fill="none"
                   class="transition-transform duration-300"
-                  :class="open3 ? 'rotate-180': '' ">
+                  :class="opened_tab === 2 ? 'rotate-180': '' ">
                   <path
                     d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
                     fill="#8F55EA"
@@ -1541,7 +1542,7 @@
 
             <!-- Content -->
             <p
-              x-show="open3"
+              x-show="opened_tab === 2"
               x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2">
@@ -1557,13 +1558,12 @@
 
           <!-- Accordian NO.4 -->
           <div
-            x-data="{open4: false}"
             class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8">
             <!-- Header -->
             <div
-              @click="open4 = !open4"
+              @click="opened_tab = opened_tab === 3 ? null : 3"
               class="flex justify-between items-center cursor-pointer">
-              <span class="text-md font-semibold text-neutral-text1 text-start"
+              <span class="text-xl font-semibold text-neutral-text1 text-start"
                 >Can I customize the title suggestions provided by TubeBuddy's
                 Title Generator AI?
               </span>
@@ -1575,7 +1575,7 @@
                   viewBox="0 0 24 25"
                   fill="none"
                   class="transition-transform duration-300"
-                  :class="open4 ? 'rotate-180': '' ">
+                  :class="opened_tab === 3 ? 'rotate-180': '' ">
                   <path
                     d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z"
                     fill="#8F55EA"
@@ -1587,7 +1587,7 @@
 
             <!-- Content -->
             <p
-              x-show="open4"
+              x-show="opened_tab === 3"
               x-cloak
               x-transition
               class="text-md text-neutral-text3 text-start font-normal py-2">
