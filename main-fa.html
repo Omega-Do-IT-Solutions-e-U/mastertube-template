@@ -62,114 +62,113 @@
 
       <!-- Header -->
       <header
-              x-data="{pricingOpen: false}"
-              x-effect="document.documentElement.classList.toggle('overflow-hidden', pricingOpen)"
-              class="h-navHeight w-full z-50 lg:h-auto lg:py-[1.8rem] bg-white mx-auto"
-              :class="pricingOpen ? 'fixed top-0 lg:static' : ''">
+        x-data="{pricingOpen: false}"
+        x-effect="document.documentElement.classList.toggle('overflow-hidden', pricingOpen)"
+        class="h-navHeight w-full z-50 lg:h-auto lg:py-[1.8rem] bg-white mx-auto"
+        :class="pricingOpen ? 'fixed top-0 lg:static' : ''">
         <div
-                class="lg:max-w-[124rem] mx-auto flex items-center h-full justify-between xl:px-0 px-4">
+          class="lg:max-w-[124rem] mx-auto flex items-center h-full justify-between xl:px-0 px-4">
           <img
-                  src="/images/logo.png"
-                  alt="Mastertube Logo" />
+            src="/images/logo.png"
+            alt="Mastertube Logo" />
           <button
-                  @click="pricingOpen = !pricingOpen"
-                  class="lg:hidden">
+            @click="pricingOpen = !pricingOpen"
+            class="lg:hidden">
             <span class="sr-only">hamburger menu</span>
             <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    x-show="pricingOpen === false">
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              x-show="pricingOpen === false">
               <path
-                      d="M3 7H21"
-                      stroke="#0C0C0C"
-                      stroke-width="1.5"
-                      stroke-linecap="round" />
+                d="M3 7H21"
+                stroke="#0C0C0C"
+                stroke-width="1.5"
+                stroke-linecap="round" />
               <path
-                      d="M3 12H21"
-                      stroke="#0C0C0C"
-                      stroke-width="1.5"
-                      stroke-linecap="round" />
+                d="M3 12H21"
+                stroke="#0C0C0C"
+                stroke-width="1.5"
+                stroke-linecap="round" />
               <path
-                      d="M3 17H21"
-                      stroke="#0C0C0C"
-                      stroke-width="1.5"
-                      stroke-linecap="round" />
+                d="M3 17H21"
+                stroke="#0C0C0C"
+                stroke-width="1.5"
+                stroke-linecap="round" />
             </svg>
             <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    x-show="pricingOpen === true"
-                    x-cloak>
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              x-show="pricingOpen === true"
+              x-cloak>
               <path
-                      d="M18 6L6 18M6 6L18 18"
-                      stroke="#0C0C0C"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
+                d="M18 6L6 18M6 6L18 18"
+                stroke="#0C0C0C"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </button>
           <nav
-                  :class="pricingOpen ? '!block overflow-x-hidden fixed bottom-0 left-0 right-0 top-navHeight h-[calc(100dvh_-_var(--nav-height))] lg:h-auto bg-white z-50 lg:static overflow-y-auto lg:overflow-hidden' : 'hidden'"
-                  class="hidden lg:block">
+            :class="pricingOpen ? '!block overflow-x-hidden fixed bottom-0 left-0 right-0 top-navHeight h-[calc(100dvh_-_var(--nav-height))] lg:h-auto bg-white z-50 lg:static overflow-y-auto lg:overflow-hidden' : 'hidden'"
+            class="hidden lg:block">
             <ul
-                    :class="pricingOpen ? 'flex flex-col [&_li]:w-full [&_li]:text-start lg:flex-row lg:w-auto [&_a]:!text-neutral-text1 [&_a]:font-semibold  [&_a]:justify-between px-4 gap-y-2 py-8 lg:px-0 lg:py-0 border-y border-y-neutral-text3/20 lg:border-none [&_a]:lg:!text-neutral-text3 [&_a]:lg:font-normal' : ''"
-                    class="flex [&_li]:py-[1.4rem] gap-x-[3rem] [&_div]:text-neutral-text1 [&_a]:text-neutral-text3 text-md [&_li]:text-center [&_li]:whitespace-nowrap">
+              :class="pricingOpen ? 'flex flex-col [&_li]:w-full [&_li]:text-start lg:flex-row lg:w-auto [&_a]:!text-neutral-text1 [&_a]:font-semibold  [&_a]:justify-between px-4 gap-y-2 py-8 lg:px-0 lg:py-0 border-y border-y-neutral-text3/20 lg:border-none [&_a]:lg:!text-neutral-text3 [&_a]:lg:font-normal' : ''"
+              class="flex [&_li]:py-[1.4rem] gap-x-[3rem] [&_div]:text-neutral-text1 [&_a]:text-neutral-text3 text-md [&_li]:text-center [&_li]:whitespace-nowrap">
               <li>
                 <a
-                        class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3"
-                        href="/"
-                >Home</a
+                  class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3"
+                  href="/"
+                  >Home</a
                 >
               </li>
               <li
-                      class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3">
+                class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3">
                 <a href="/">MT Pay</a>
               </li>
               <li
-                      x-data="{pricingOpen: false}"
-                      class="group relative">
+                x-data="{pricingOpen: false}"
+                class="group relative">
                 <div
-                        @click="pricingOpen = !pricingOpen"
-                        class="flex justify-between lg:justify-start items-center gap-x-2">
+                  @click="pricingOpen = !pricingOpen"
+                  class="flex justify-between lg:justify-start items-center gap-x-2">
                   <span
-                          class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3"
-                  >Services</span
+                    class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3"
+                    >Services</span
                   >
                   <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 25 24"
-                          fill="none"
-                          :class="pricingOpen && 'rotate-180 transition-transform duration-300 lg:rotate-0'">
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    :class="pricingOpen && 'rotate-180 transition-transform duration-300 lg:rotate-0'">
                     <path
-                            d="M20.0244 8.94995L13.5044 15.47C12.7344 16.24 11.4744 16.24 10.7044 15.47L4.18445 8.94995"
-                            stroke="#98A1B3"
-                            stroke-width="1.5"
-                            stroke-miterlimit="10"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
+                      d="M20.0244 8.94995L13.5044 15.47C12.7344 16.24 11.4744 16.24 10.7044 15.47L4.18445 8.94995"
+                      stroke="#98A1B3"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </div>
                 <!-- Dropdown Mobile -->
                 <div
-                        x-show="pricingOpen === true"
-                        x-cloak
-                        x-transition
-                        :class="pricingOpen ? '' : ''"
-                        class="lg:hidden flex flex-col items-start p-3 gap-5 w-1/2 pt-5">
+                  x-show="pricingOpen === true"
+                  x-cloak
+                  x-transition
+                  :class="pricingOpen ? '' : ''"
+                  class="lg:hidden flex flex-col items-start p-3 gap-5 w-1/2 pt-5">
                   <!-- Item 1 -->
                   <div class="flex justify-start items-start gap-x-4 lg:hidden">
                     <div class="">
-                      <span
-                              class="text-md font-semibold  block mb-[0.2rem]"
-                      >MasterRocket</span
+                      <span class="text-md font-semibold block mb-[0.2rem]"
+                        >MasterRocket</span
                       >
                     </div>
                   </div>
@@ -178,9 +177,8 @@
                   <!-- Item 2 -->
                   <div class="flex justify-start items-start gap-x-4 lg:hidden">
                     <div class="">
-                      <span
-                              class="text-md font-semibold  block mb-[0.2rem]"
-                      >MasterShield</span
+                      <span class="text-md font-semibold block mb-[0.2rem]"
+                        >MasterShield</span
                       >
                     </div>
                   </div>
@@ -189,9 +187,8 @@
                   <!-- Item 3 -->
                   <div class="flex justify-start items-start gap-x-4 lg:hidden">
                     <div class="">
-                      <span
-                              class="text-md font-semibold  block mb-[0.2rem]"
-                      >MasterTube Dashboard</span
+                      <span class="text-md font-semibold block mb-[0.2rem]"
+                        >MasterTube Dashboard</span
                       >
                     </div>
                   </div>
@@ -200,9 +197,8 @@
                   <!-- Item 4 -->
                   <div class="flex justify-start items-start gap-x-4 lg:hidden">
                     <div class="">
-                      <span
-                              class="text-md font-semibold  block mb-[0.2rem]"
-                      >MasterTube Extention</span
+                      <span class="text-md font-semibold block mb-[0.2rem]"
+                        >MasterTube Extention</span
                       >
                     </div>
                   </div>
@@ -212,16 +208,15 @@
 
                 <!-- Dropdown Desktop -->
                 <div
-                        class="opacity-0 invisible group-hover:opacity-100 group-hover:lg:visible transition-opacity duration-300 group z-50 bg-white absolute top-12 rounded-lg border border-neutral-bg1 shadow-fourth overflow-hidden">
+                  class="opacity-0 invisible group-hover:opacity-100 group-hover:lg:visible transition-opacity duration-300 group z-50 bg-white absolute top-12 rounded-lg border border-neutral-bg1 shadow-fourth overflow-hidden">
                   <div class="p-5">
                     <div class="flex flex-col p-3 gap-5">
                       <!-- Item 1 -->
                       <div
-                              class="flex gap-x-4 justify-start text-start items-start">
+                        class="flex gap-x-4 justify-start text-start items-start">
                         <div>
-                          <span
-                                  class="text-md font-semibold  block mb-[0.2rem]"
-                          >MasterRocket</span
+                          <span class="text-md font-semibold block mb-[0.2rem]"
+                            >MasterRocket</span
                           >
                         </div>
                       </div>
@@ -229,11 +224,10 @@
 
                       <!-- Item 2 -->
                       <div
-                              class="flex gap-x-4 justify-start text-start items-start">
+                        class="flex gap-x-4 justify-start text-start items-start">
                         <div>
-                          <span
-                                  class="text-md font-semibold  block mb-[0.2rem]"
-                          >MasterShield</span
+                          <span class="text-md font-semibold block mb-[0.2rem]"
+                            >MasterShield</span
                           >
                         </div>
                       </div>
@@ -241,11 +235,10 @@
 
                       <!-- Item 3 -->
                       <div
-                              class="flex gap-x-4 justify-start text-start items-start">
+                        class="flex gap-x-4 justify-start text-start items-start">
                         <div>
-                          <span
-                                  class="text-md font-semibold  block mb-[0.2rem]"
-                          >MasterTube Dashboard</span
+                          <span class="text-md font-semibold block mb-[0.2rem]"
+                            >MasterTube Dashboard</span
                           >
                         </div>
                       </div>
@@ -253,11 +246,10 @@
 
                       <!-- Item 4 -->
                       <div
-                              class="flex gap-x-4 justify-start text-start items-start">
+                        class="flex gap-x-4 justify-start text-start items-start">
                         <div>
-                          <span
-                                  class="text-md font-semibold  block mb-[0.2rem]"
-                          >MasterTube Extention</span
+                          <span class="text-md font-semibold block mb-[0.2rem]"
+                            >MasterTube Extention</span
                           >
                         </div>
                       </div>
@@ -268,17 +260,17 @@
                 <!-- Dropdown Desktop -->
               </li>
               <li
-                      class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3">
+                class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3">
                 <a href="/">Blog</a>
               </li>
               <li
-                      class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3">
+                class="font-semibold text-neutral-text1 lg:font-normal lg:text-neutral-text3">
                 <a href="/">About Us</a>
               </li>
             </ul>
             <ul
-                    x-cloak
-                    :class="pricingOpen ? 'grid grid-cols-2 [&_li]:text-neutral-text2 text-md font-semibold  lg:hidden px-6 py-8' : 'hidden'">
+              x-cloak
+              :class="pricingOpen ? 'grid grid-cols-2 [&_li]:text-neutral-text2 text-md font-semibold  lg:hidden px-6 py-8' : 'hidden'">
               <div class="flex flex-col gap-y-3 lg:hidden">
                 <li>Features</li>
                 <li>Pricing</li>
@@ -293,32 +285,32 @@
               </div>
             </ul>
             <div
-                    x-cloak
-                    class="flex flex-col px-6 gap-y-[0.6rem] lg:hidden">
+              x-cloak
+              class="flex flex-col px-6 gap-y-[0.6rem] lg:hidden">
               <a
-                      href="https://chromewebstore.google.com/detail/mastertube/ebenecbhjmfnidklknaigagobpjppdna"
-                      target="_blank">
+                href="https://chromewebstore.google.com/detail/mastertube/ebenecbhjmfnidklknaigagobpjppdna"
+                target="_blank">
                 <button
-                        class="hover:bg-white border-2 transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 w-full h-12 lg:h-16 lg:text-base py-3 px-7 lg:px-10 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit">
+                  class="hover:bg-white border-2 transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 w-full h-12 lg:h-16 lg:text-base py-3 px-7 lg:px-10 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit">
                   Install Free Now
                 </button></a
               >
               <button
-                      class="px-[1.8rem] bg-neutral-bg2 text-primary-1 w-full whitespace-nowrap py-[1rem] text-md font-semibold ">
+                class="px-[1.8rem] bg-neutral-bg2 text-primary-1 w-full whitespace-nowrap py-[1rem] text-md font-semibold">
                 Sign In
               </button>
             </div>
           </nav>
           <div class="hidden lg:flex">
             <button
-                    class="px-[1.8rem] whitespace-nowrap py-[1rem] text-md font-semibold ">
+              class="px-[1.8rem] whitespace-nowrap py-[1rem] text-md font-semibold">
               Sign In
             </button>
             <a
-                    href="https://chromewebstore.google.com/detail/mastertube/ebenecbhjmfnidklknaigagobpjppdna"
-                    target="_blank">
+              href="https://chromewebstore.google.com/detail/mastertube/ebenecbhjmfnidklknaigagobpjppdna"
+              target="_blank">
               <button
-                      class="hover:bg-white border-2 font-bold transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 w-full h-12 lg:h-12 lg:text-base py-3 px-7 lg:px-2 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit">
+                class="hover:bg-white border-2 font-bold transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 w-full h-12 lg:h-12 lg:text-base py-3 px-7 lg:px-2 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit">
                 Try For Free
               </button></a
             >
@@ -330,82 +322,99 @@
       <!-- Hero -->
       <section class="flex justify-center relative mb-15 lg:mb-[11.6rem]">
         <div
-                class="flex flex-col relative lg:flex-row max-w-[111.8rem] mx-5 justify-center items-center lg:gap-[75px] container py-[10px] px-[30px] lg:px-0 lg:py-0">
+          class="flex flex-col relative lg:flex-row max-w-[111.8rem] mx-5 justify-center items-center lg:gap-[75px] container py-[10px] px-[30px] lg:px-0 lg:py-0">
           <!-- Mobile Gradients -->
           <div class="lg:hidden top-[-3rem] -z-20 left-0 absolute">
             <svg
-                    class="blur-[6rem]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="149"
-                    height="128"
-                    viewBox="0 0 149 128"
-                    fill="none">
+              class="blur-[6rem]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="149"
+              height="128"
+              viewBox="0 0 149 128"
+              fill="none">
               <circle
-                      cx="74.2"
-                      cy="53.3333"
-                      r="74.2"
-                      fill="#6BC9F9" />
+                cx="74.2"
+                cy="53.3333"
+                r="74.2"
+                fill="#6BC9F9" />
             </svg>
           </div>
           <div class="lg:hidden top-[-3rem] -z-20 right-0 absolute">
             <svg
-                    class="blur-[6rem]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="150"
-                    height="139"
-                    viewBox="0 0 150 139"
-                    fill="none">
+              class="blur-[6rem]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="139"
+              viewBox="0 0 150 139"
+              fill="none">
               <circle
-                      cx="74.9998"
-                      cy="64.5335"
-                      r="74.2"
-                      fill="#8F55EA" />
+                cx="74.9998"
+                cy="64.5335"
+                r="74.2"
+                fill="#8F55EA" />
             </svg>
           </div>
           <!-- Mobile Gradients -->
 
           <div
-                  class="w-[37.5rem] h-[37.5rem] rounded-[37.5rem] bg-[#8F55EA] absolute left-0 bottom-0 blur-[12rem] -z-10"></div>
+            class="w-[37.5rem] h-[37.5rem] rounded-[37.5rem] bg-[#8F55EA] absolute left-0 bottom-0 blur-[12rem] -z-10"></div>
           <div class="absolute right-0 blur-[22rem] -z-10">
             <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="228"
-                    height="228"
-                    viewBox="0 0 228 228"
-                    fill="none">
+              xmlns="http://www.w3.org/2000/svg"
+              width="228"
+              height="228"
+              viewBox="0 0 228 228"
+              fill="none">
               <circle
-                      cx="113.576"
-                      cy="114.165"
-                      r="113.576"
-                      fill="#C355EA" />
+                cx="113.576"
+                cy="114.165"
+                r="113.576"
+                fill="#C355EA" />
             </svg>
           </div>
           <div
-                  class="w-[22.4rem] h-[22.4rem] lg:w-[37.5rem] lg:h-[37.5rem] rounded-[37.5rem] bg-[#6BC9F9] absolute left-0 bottom-0 lg:bottom-auto lg:left-auto right-[30rem] blur-[12rem] -z-10 text-center lg:text-start"></div>
+            class="w-[22.4rem] h-[22.4rem] lg:w-[37.5rem] lg:h-[37.5rem] rounded-[37.5rem] bg-[#6BC9F9] absolute left-0 bottom-0 lg:bottom-auto lg:left-auto right-[30rem] blur-[12rem] -z-10 text-center lg:text-start"></div>
           <div class="flex flex-col">
-            <h1
-                    class="text-start pt-13 max-w-[52.5rem] mb-5 lg:mb-5">
+            <h1 class="text-start pt-13 max-w-[52.5rem] mb-5 lg:mb-5">
               <span class="font-bold text-neutral-text1 leading-[140%]"
-              >مسیر حرفه‌ای شما در یوتیوب با</span
+                >مسیر حرفه‌ای شما در یوتیوب با</span
               >
-              <span
-                      class="bg-starts text-transparent bg-clip-text"
-              >مسترتیوب</span
+              <span class="bg-starts text-transparent bg-clip-text"
+                >مسترتیوب</span
               >
             </h1>
 
             <p
-                    class="text-start text-neutral-text2 text-[2rem] leading-[180%] lg:max-w-[64.5rem] text-center lg:text-start">
-              در مسترتیوب تلاش می‌کنیم تا با ارائه سرویس‌های کاربردی به تولیدکنندگان محتوای یوتیوب، باعث افزایش بازدید ویدیوها، رشد کانال و افزایش درآمد از یوتیوب شویم و با نقد کردن درآمد یوتیوب توسط MCN به یوتیوبرها خدمات حرفه‌ای را ارائه دهیم.
+              class="text-start text-neutral-text2 text-[2rem] leading-[180%] lg:max-w-[64.5rem] text-center lg:text-start">
+              در مسترتیوب تلاش می‌کنیم تا با ارائه سرویس‌های کاربردی به
+              تولیدکنندگان محتوای یوتیوب، باعث افزایش بازدید ویدیوها، رشد کانال
+              و افزایش درآمد از یوتیوب شویم و با نقد کردن درآمد یوتیوب توسط MCN
+              به یوتیوبرها خدمات حرفه‌ای را ارائه دهیم.
             </p>
             <div
-                    class="flex flex-col gap-y-3 mb-10 lg:flex-row gap-x-7 mt-[12.8px]">
+              class="flex flex-col gap-y-3 mb-10 lg:flex-row gap-x-7 mt-[12.8px]">
               <button
-                      class="btn w-full lg:w-auto bg-[#8F55EA] shadow-primary py-4 px-6 rounded-lg text-md font-semibold leading-[180%] text-white flex items-center gap-x-2 group">
+                class="btn w-full lg:w-auto bg-[#8F55EA] shadow-primary py-4 px-6 rounded-lg text-md font-semibold leading-[180%] text-white flex items-center gap-x-2 group">
                 <span>اکستنشن مسترتیوب</span>
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:stroke-primary-1 stroke-white rotate-180">
-                  <path d="M14.43 6.42999L20.5 12.5L14.43 18.57" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M3.5 12.5H20.33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="group-hover:stroke-primary-1 stroke-white rotate-180">
+                  <path
+                    d="M14.43 6.42999L20.5 12.5L14.43 18.57"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M3.5 12.5H20.33"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </button>
             </div>
@@ -413,15 +422,15 @@
 
           <div class="relative flex justify-center items-center">
             <div
-                    class="w-[22.4rem] h-[22.4rem] lg:hidden rounded-[37.5rem] bg-[#8F55EA] absolute right-0 bottom-0 blur-[12rem] -z-10"></div>
+              class="w-[22.4rem] h-[22.4rem] lg:hidden rounded-[37.5rem] bg-[#8F55EA] absolute right-0 bottom-0 blur-[12rem] -z-10"></div>
             <div
-                    class="w-[22.4rem] h-[22.4rem] lg:hidden rounded-[37.5rem] bg-[#6BC9F9] absolute left-0 bottom-0 right-[30rem] blur-[12rem] -z-10"></div>
+              class="w-[22.4rem] h-[22.4rem] lg:hidden rounded-[37.5rem] bg-[#6BC9F9] absolute left-0 bottom-0 right-[30rem] blur-[12rem] -z-10"></div>
             <div class="flex justify-center items-center mt-10">
               <img
-                      src="/images/main/gallery.png"
-                      width="400px"
-                      alt="services"
-                      class="object-cover" />
+                src="/images/main/gallery.png"
+                width="400px"
+                alt="services"
+                class="object-cover" />
             </div>
           </div>
         </div>
@@ -449,7 +458,7 @@
               </p>
 
               <div
-                  class="absolute max-w-[20rem] mx-auto flex flex-col justify-center items-center -bottom-1 left-0 right-0">
+                class="absolute max-w-[20rem] mx-auto flex flex-col justify-center items-center -bottom-1 left-0 right-0">
                 <img
                   src="/images/main/channel.png"
                   alt="Channel Icon"
@@ -473,7 +482,7 @@
               </p>
 
               <div
-                   class="absolute max-w-[18rem] mx-auto flex flex-col justify-center items-center -bottom-1 left-0 right-0">
+                class="absolute max-w-[18rem] mx-auto flex flex-col justify-center items-center -bottom-1 left-0 right-0">
                 <img
                   src="/images/main/calender.png"
                   alt="Calender Icon"
@@ -497,7 +506,7 @@
               </p>
 
               <div
-                  class="absolute max-w-[23rem] mx-auto flex flex-col justify-center items-center -bottom-1 left-0 right-0">
+                class="absolute max-w-[23rem] mx-auto flex flex-col justify-center items-center -bottom-1 left-0 right-0">
                 <img
                   src="/images/main/dashboard.png"
                   alt="Channel Icon"
@@ -531,8 +540,7 @@
 
       <!-- Our Purpose -->
       <section class="container mx-auto mb-[8rem] lg:mb-[10rem] max-w-[132rem]">
-        <h2
-          class="text-center text-neutral-text1-cash mb-14 lg:mb-9">
+        <h2 class="text-center text-neutral-text1-cash mb-14 lg:mb-9">
           رشد سریع‌تر در یوتیوب با
           <span class="bg-starts text-transparent bg-clip-text">مسترتیوب</span>
         </h2>
@@ -568,8 +576,7 @@
                 </defs>
               </svg>
             </span>
-            <h5
-              class="text-neutral-text1 mb-1 font-semibold">
+            <h5 class="text-neutral-text1 mb-1 font-semibold">
               دستیار مسترتیوب، ابزاری برای آنالیز ویدیوها و کانال
             </h5>
             <p class="text-neutral-text3">
@@ -612,8 +619,7 @@
                 </defs>
               </svg>
             </span>
-            <h5
-              class="text-neutral-text1 mb-1 font-semibold ">
+            <h5 class="text-neutral-text1 mb-1 font-semibold">
               هوش مصنوعی، همراه تولید محتوای شما
             </h5>
             <p class="text-neutral-text3">
@@ -657,8 +663,7 @@
                 </defs>
               </svg>
             </span>
-            <h5
-              class="text-neutral-text1 mb-1 font-semibold leading-[140%]">
+            <h5 class="text-neutral-text1 mb-1 font-semibold leading-[140%]">
               مسترراکت؛ منتورینگ و کوچینگ یوتیوب
             </h5>
             <p class="text-neutral-text3">
@@ -702,15 +707,31 @@
             </p>
             <div class="flex justify-start items-center">
               <button
-                      class="btn w-full lg:w-auto bg-[#8F55EA] shadow-primary py-4 px-6 rounded-lg text-md font-semibold leading-[180%] text-white flex items-center gap-x-2 group">
+                class="btn w-full lg:w-auto bg-[#8F55EA] shadow-primary py-4 px-6 rounded-lg text-md font-semibold leading-[180%] text-white flex items-center gap-x-2 group">
                 <span>نصب رایگان اکستنشن</span>
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:stroke-primary-1 stroke-white rotate-180">
-                  <path d="M14.43 6.42999L20.5 12.5L14.43 18.57" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M3.5 12.5H20.33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="group-hover:stroke-primary-1 stroke-white rotate-180">
+                  <path
+                    d="M14.43 6.42999L20.5 12.5L14.43 18.57"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M3.5 12.5H20.33"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </button>
               <button
-                      class="w-full h-12 lg:h-16 lg:py-3 px-7 md:ml-[27px] lg:px-10 rounded-lg text-[#666E80] font-semibold text-[16px] md:w-fit">
+                class="w-full h-12 lg:h-16 lg:py-3 px-7 md:ml-[27px] lg:px-10 rounded-lg text-[#666E80] font-semibold text-[16px] md:w-fit">
                 اطلاعات بیشتر
               </button>
             </div>
@@ -727,8 +748,8 @@
               درباره مسترتیوب چه می‌گویند؟
             </h2>
             <h4
-              class="ml-2 lg:text-2xl font-medium leading-[180%] text-neutral-text2 mb-7 block"
-              >یوتیوبرها درباره مسترتیوب چه می‌گویند؟
+              class="ml-2 lg:text-2xl font-medium leading-[180%] text-neutral-text2 mb-7 block">
+              یوتیوبرها درباره مسترتیوب چه می‌گویند؟
             </h4>
           </div>
 
@@ -752,13 +773,13 @@
                       رضا آرش نیا
                     </h3>
                     <h6
-                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
+                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1">
+                      <a
                         href="https://www.instagram.com/rezaarashnia/?hl=en"
                         target="_blank"
                         >مشاهده کانال</a
-                      ></h6
-                    >
+                      >
+                    </h6>
                   </div>
                 </div>
                 <div>
@@ -794,13 +815,13 @@
                       رنه سینانی
                     </h3>
                     <h6
-                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
+                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1">
+                      <a
                         href="https://www.instagram.com/renesinani2/?hl=en"
                         target="_blank"
                         >مشاهده کانال</a
-                      ></h6
-                    >
+                      >
+                    </h6>
                   </div>
                 </div>
                 <div>
@@ -837,13 +858,13 @@
                       سینا عزتی
                     </h3>
                     <h6
-                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
+                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1">
+                      <a
                         href="https://www.instagram.com/sinaezzati.ir/?hl=en"
                         target="_blank"
                         >مشاهده کانال</a
-                      ></h6
-                    >
+                      >
+                    </h6>
                   </div>
                 </div>
                 <div>
@@ -877,13 +898,13 @@
                       عادل خان
                     </h3>
                     <h6
-                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
+                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1">
+                      <a
                         href="https://www.instagram.com/adelkhaan/"
                         target="_blank"
                         >مشاهده کانال</a
-                      ></h6
-                    >
+                      >
+                    </h6>
                   </div>
                 </div>
                 <div>
@@ -917,13 +938,13 @@
                       محمد پسندیده
                     </h3>
                     <h6
-                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
+                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1">
+                      <a
                         href="https://www.instagram.com/youtubersho_/?hl=fa"
                         target="_blank"
                         >مشاهده کانال</a
-                      ></h6
-                    >
+                      >
+                    </h6>
                   </div>
                 </div>
                 <div>
@@ -955,13 +976,13 @@
                       فرهاد هراتی
                     </h3>
                     <h6
-                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
+                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1">
+                      <a
                         href="https://www.instagram.com/farhadharati.official/"
                         target="_blank"
                         >مشاهده کانال</a
-                      ></h6
-                    >
+                      >
+                    </h6>
                   </div>
                 </div>
                 <div>
@@ -996,13 +1017,13 @@
                       بیت کوری
                     </h3>
                     <h6
-                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
+                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1">
+                      <a
                         href="https://www.youtube.com/@Beatkori"
                         target="_blank"
                         >مشاهده کانال</a
-                      ></h6
-                    >
+                      >
+                    </h6>
                   </div>
                 </div>
                 <div>
@@ -1034,13 +1055,13 @@
                       علی نیکوبیان
                     </h3>
                     <h6
-                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1"
-                      ><a
+                      class="font-[400] text-[#8F4CE9] bg-[#9056F21A] rounded-[31px] px-4 py-1">
+                      <a
                         href=""
                         target="_blank"
                         >مشاهده کانال</a
-                      ></h6
-                    >
+                      >
+                    </h6>
                   </div>
                 </div>
                 <div>
@@ -1112,9 +1133,9 @@
               </div>
               <div class="whitespace-nowrap">
                 <h5
-                  class="text-neutral-text1 font-bold leading-[2.2rem] mb-10 block"
-                  >خدمات</h5
-                >
+                  class="text-neutral-text1 font-bold leading-[2.2rem] mb-10 block">
+                  خدمات
+                </h5>
                 <div class="menu-footer-1-container">
                   <ul
                     id="menu-footer-1"
@@ -1154,9 +1175,9 @@
               <!-- Column 3 -->
               <div class="whitespace-nowrap">
                 <h5
-                  class="text-neutral-text1 font-bold leading-[2.2rem] mb-10 block"
-                  >مسترتیوب</h5
-                >
+                  class="text-neutral-text1 font-bold leading-[2.2rem] mb-10 block">
+                  مسترتیوب
+                </h5>
                 <div class="menu-footer-2-container">
                   <ul
                     id="menu-footer-2"
@@ -1197,9 +1218,9 @@
               <!-- Column 4 -->
               <div class="whitespace-nowrap">
                 <h5
-                  class="text-neutral-text1 text-xl font-bold leading-[2.2rem] mb-10 block"
-                  >ارتباط با ما</h5
-                >
+                  class="text-neutral-text1 text-xl font-bold leading-[2.2rem] mb-10 block">
+                  ارتباط با ما
+                </h5>
                 <div class="menu-footer-4-container">
                   <p class="text-neutral-text3 text-[1.8rem] mb-12 lg:mb-0">
                     تماس با تیم مسترتیوب:<br />
@@ -1337,41 +1358,6 @@
                 </div>
               </div>
               <!-- Column 4 -->
-
-              <!-- Column 4 -->
-              <div class="lg:hidden">
-                <span
-                  class="text-neutral-text1 text-xl font-bold leading-[2.2rem] mb-10 block"
-                  >Social</span
-                >
-                <ul class="flex flex-col gap-y-[1.8rem]">
-                  <li
-                    class="text-[1.8rem] font-normal leading-[2rem] text-neutral-text3">
-                    Twitter
-                  </li>
-                  <li
-                    class="text-[1.8rem] font-normal leading-[2rem] text-neutral-text3">
-                    LinkedIn
-                  </li>
-                  <li
-                    class="text-[1.8rem] font-normal leading-[2rem] text-neutral-text3">
-                    Facebook
-                  </li>
-                  <li
-                    class="text-[1.8rem] font-normal leading-[2rem] text-neutral-text3">
-                    GitHub
-                  </li>
-                  <li
-                    class="text-[1.8rem] font-normal leading-[2rem] text-neutral-text3">
-                    AngelList
-                  </li>
-                  <li
-                    class="text-[1.8rem] font-normal leading-[2rem] text-neutral-text3">
-                    Dribbble
-                  </li>
-                </ul>
-              </div>
-              <!-- Column 4 -->
             </nav>
           </div>
           <!-- Line -->
@@ -1382,7 +1368,7 @@
           <div
             class="pb-22 flex justify-between lg:items-center flex-col lg:flex-row items-center">
             <div
-              class="flex gap-x-[2.2rem] items-center mb-6 lg:hidden text-neutral-text1">
+              class="flex gap-x-[2.2rem] items-center justify-center mb-6 lg:hidden text-neutral-text1">
               <!-- Telegram -->
               <a>
                 <svg
