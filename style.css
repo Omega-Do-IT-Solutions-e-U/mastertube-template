@@ -306,5 +306,7 @@ html {
   text-white
   font-semibold
   text-[16px]
+  border-transparent
+    justify-center
   md:w-fit;
 }
