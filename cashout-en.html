@@ -867,7 +867,7 @@
         </div>
         <div class="gap-y-[27px] gap-x-10 mx-5 w-full">
           <div
-            class="flex py-[15px] lg:py-[50px] px-[13px] overflow-hidden lg:px-[92.65px] relative col-span-3 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect max-w-[40rem] lg:max-w-full">
+            class="flex py-[15px] lg:py-[50px] px-[13px] overflow-hidden lg:px-[92.65px] relative col-span-3 rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect max-w-[40rem] sm:max-w-[60rem] md:max-w-[80rem] lg:max-w-full">
             <div class="lg:max-w-[80%] z-10">
               <h2
                 class="text-white text-[21px] lg:text-[35.836px] font-[600] mb-[11.29px]">
@@ -878,7 +878,7 @@
                 MCN
               </h2>
               <p
-                class="text-[12px] lg:text-[21px] text-[#FFFFFFE5] max-w-[80rem]">
+                class="text-[12px] md:text-md lg:text-[21px] text-[#FFFFFFE5] max-w-[80rem]">
                 MasterTube, as the official and exclusive representative of
                 Mediacube, connects YouTube channels with the necessary
                 conditions to MCN. By connecting to Mediacube, you can cash out
@@ -991,6 +991,7 @@
 
       <!-- Calculator -->
       <section
+        x-data="{views:20000, crmRate:0.2}"
         class="container mx-auto relative mb-[5rem] lg:mb-[15.4rem] max-w-[124rem]">
         <div class="absolute -z-30 bottom-4 -left-23">
           <img
@@ -1030,13 +1031,18 @@
                   >
                 </div>
                 <div
-                  class="text-neutral-text2 text-2xl font-semibold leading-[140%]">
+                  class="text-neutral-text2 text-2xl font-semibold leading-[140%]"
+                  x-text="(+views).toLocaleString()">
                   77,302
                 </div>
               </div>
               <input
                 type="range"
-                class="range-input w-full h-[6px] rounded-lg bg-[#B378FF]" />
+                class="range-input w-full h-[6px] rounded-lg bg-[#B378FF]"
+                x-model="views"
+                min="0"
+                step="1000"
+                max="100000" />
             </div>
             <!-- Range Input 1 -->
 
@@ -1071,13 +1077,18 @@
                   >
                 </div>
                 <div
-                  class="text-neutral-text2 text-2xl font-semibold leading-[140%]">
+                  class="text-neutral-text2 text-2xl font-semibold leading-[140%]"
+                  x-text="crmRate">
                   0.03
                 </div>
               </div>
               <input
                 type="range"
-                class="range-input w-full h-[6px] rounded-lg bg-[#B378FF]" />
+                class="range-input w-full h-[6px] rounded-lg bg-[#B378FF]"
+                x-model="crmRate"
+                min="0"
+                step="0.1"
+                max="4" />
             </div>
             <!-- Range Input 2 -->
           </div>
@@ -1088,7 +1099,9 @@
                 class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
                 >Estimated Daily Earning</span
               >
-              <span class="text-[4rem] font-semibold leading-[140%] text-white"
+              <span
+                x-text="`$${((views * crmRate) * 1).toLocaleString()}`"
+                class="text-[4rem] font-semibold leading-[140%] text-white"
                 >$503.23</span
               >
             </div>
@@ -1097,7 +1110,9 @@
                 class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
                 >Estimated monthly Earning</span
               >
-              <span class="text-[4rem] font-semibold leading-[140%] text-white"
+              <span
+                x-text="`$${((views * crmRate) * 30).toLocaleString()}`"
+                class="text-[4rem] font-semibold leading-[140%] text-white"
                 >$6,503.23
               </span>
             </div>
@@ -1106,7 +1121,9 @@
                 class="text-neutral-bg2 mb-[0.6rem] text-[1.8rem] font-medium leading-[135%] text-center"
                 >Estimated Yearly Earning</span
               >
-              <span class="text-[4rem] font-semibold leading-[140%] text-white"
+              <span
+                x-text="`$${((views * crmRate) * 365).toLocaleString()}`"
+                class="text-[4rem] font-semibold leading-[140%] text-white"
                 >$ 12,503.23
               </span>
             </div>
