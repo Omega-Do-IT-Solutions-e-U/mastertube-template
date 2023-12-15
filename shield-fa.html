@@ -549,7 +549,7 @@
           </div>
           <div
                   x-data="{content: 'consult'}"
-                  class="flex flex-col items-start w-full p-[10px] px-5 lg:p-0">
+                  class="flex flex-col items-start w-full p-[10px] px-5 lg:p-0 h-[30rem]">
             <h2
                     class="hidden lg:block text-neutral-text1-cash text-3xl font-bold leading-[140%] mb-6">
               <span class="bg-starts text-transparent bg-clip-text">مسترشیلد </span> در چه پلتفرم‌هایی فعال است؟
@@ -626,21 +626,25 @@
       <!-- Steps -->
 
 
-      <!-- Form -->
-      <section class="max-w-[113.9rem] mx-auto shadow-secondary mb-22">
-        <div
-                class="max-w-[59.3rem] mx-auto flex flex-col items-center lg:items-start justify-center px-5 pb-5">
-          <h3 class="text-neutral-text1 text-[3.2rem] font-bold">
-            اطلاعات بیشتری میخواهید؟
-          </h3>
-          <p class="text-[#98A1B3] text-[18.912px] text-start lg:text-start mb-2">
-            فرم زیر را پر کنید تا در اولین فرصت با شما تماس بگیریم.
-          </p>
-          <div
-                  class="flex flex-col w-full gap-[12.61px] px-0 lg:px-[10.51px] p-[10.51px]">
-            <!-- Input 1 -->
+        <!-- Form -->
+        <section
+                class="max-w-[113.9rem] mx-auto shadow-secondary mb-22 overflow-hidden">
             <div
-                    class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
+                    class="max-w-[59.3rem] mx-auto flex flex-col items-center lg:items-start justify-center px-5 py-7 relative">
+                <div
+                        class="w-[49.2rem] h-[49.2rem] absolute rounded-[49.2rem] opacity-[0.08] bg-[#D2BBF7] right-[-15rem] top-[-18rem] -z-10"></div>
+
+                <h3 class="text-neutral-text1 text-[3.2rem] font-bold">
+                    اطلاعات بیشتری میخواهید؟
+                </h3>
+                <p class="text-[#98A1B3] text-[18.912px] text-start lg:text-start">
+                    فرم زیر را پر کنید تا در اولین فرصت با شما تماس بگیریم.
+                </p>
+                <div
+                        class="flex flex-col w-full gap-[12.61px] px-0 lg:px-[10.51px] p-[10.51px]">
+                    <!-- Input 1 -->
+                    <div
+                            class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
               <span>
                 <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -653,17 +657,17 @@
                           fill="#B7A6BC" />
                 </svg>
               </span>
-              <input
-                      type="InEmail"
-                      id="name"
-                      placeholder="نام و نام خانوادگی"
-                      class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
-            </div>
-            <!-- Input 1 -->
+                        <input
+                                type="InEmail"
+                                id="name"
+                                placeholder="نام و نام خانوادگی"
+                                class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
+                    </div>
+                    <!-- Input 1 -->
 
-            <!-- Input 2 -->
-            <div
-                    class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
+                    <!-- Input 2 -->
+                    <div
+                            class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
               <span>
                 <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -676,17 +680,17 @@
                           fill="#B7A6BC" />
                 </svg>
               </span>
-              <input
-                      type="InEmail"
-                      id="name"
-                      placeholder="شماره تلفن همراه"
-                      class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
-            </div>
-            <!-- Input 2 -->
+                        <input
+                                type="InEmail"
+                                id="name"
+                                placeholder="شماره تلفن همراه"
+                                class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
+                    </div>
+                    <!-- Input 2 -->
 
-            <!-- Input 3 -->
-            <div
-                    class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
+                    <!-- Input 3 -->
+                    <div
+                            class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
               <span>
                 <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -699,17 +703,17 @@
                           fill="#B7A6BC" />
                 </svg>
               </span>
-              <input
-                      type="InEmail"
-                      id="name"
-                      placeholder="آدرس ایمیل"
-                      class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
-            </div>
-            <!-- Input 3 -->
+                        <input
+                                type="InEmail"
+                                id="name"
+                                placeholder="آدرس ایمیل"
+                                class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
+                    </div>
+                    <!-- Input 3 -->
 
-            <!-- Input 4 -->
-            <div
-                    class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
+                    <!-- Input 4 -->
+                    <div
+                            class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
               <span>
                 <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -722,21 +726,21 @@
                           fill="#B7A6BC" />
                 </svg>
               </span>
-              <input
-                      type="InEmail"
-                      id="name"
-                      placeholder="آدرس کانال یوتیوب شما"
-                      class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
+                        <input
+                                type="InEmail"
+                                id="name"
+                                placeholder="آدرس کانال یوتیوب شما"
+                                class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none" />
+                    </div>
+                    <!-- Input 4 -->
+                    <button
+                            class="h-[54.636px] rounded-[80.903px] bg-primary-1  text-white text-[14.209px] font-bold">
+                        ارسال
+                    </button>
+                </div>
             </div>
-            <!-- Input 4 -->
-            <button
-                    class="bg-primary-1 h-[54.636px] rounded-[80.903px] bg-[#D23790] text-white text-[14.209px]">
-              ارسال
-            </button>
-          </div>
-        </div>
-      </section>
-      <!-- Form -->
+        </section>
+        <!-- Form -->
 
       <!-- FAQ -->
       <section
