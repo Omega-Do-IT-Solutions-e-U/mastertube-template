@@ -580,14 +580,14 @@
 
 
       <!-- Access -->
-      <section class="max-w-[111.8rem] mx-auto mb-22 px-5 mt-20">
+      <section class="max-w-[111.8rem] mx-auto my-22 px-5">
         <h3 class="text-center mb-14">How to
           <span class="bg-starts text-transparent bg-clip-text"> Acces masterTube Extension </span>
         </h3>
         <div
                 class="flex flex-col gap-y-8 lg:gap-y-0 lg:flex-row gap-x-14 mb-10 max-w-3xl mx-auto lg:max-w-none">
           <div
-                  class="flex flex-col lg:flex-row gap-x-14 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain">
+                  class="flex flex-col lg:flex-row gap-x-14 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain max-w-[600px]">
             <div class="flex flex-col gap-y-2 text-center lg:text-start">
               <h5
                       class="flex items-center gap-x-2 justify-center lg:justify-start">
@@ -611,7 +611,7 @@
             </div>
           </div>
           <div
-                  class="flex flex-col lg:flex-row gap-x-14 w-full flex-1 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain justify-between">
+                  class="flex flex-col lg:flex-row gap-x-14 w-full flex-1 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain  max-w-[600px]">
             <div class="flex flex-col gap-y-2 text-center lg:text-start">
               <h5
                       class="flex items-center gap-x-2 justify-center lg:justify-start">
@@ -635,17 +635,17 @@
           </div>
         </div>
         <div
-                class="flex flex-col gap-y-8 lg:gap-y-0 lg:flex-row gap-x-14 mb-10">
+                class="flex flex-col gap-y-8 lg:gap-y-0 lg:flex-row gap-x-14 mb-10 max-w-3xl mx-auto lg:max-w-none">
           <div
-                  class="flex flex-col lg:flex-row gap-x-14 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain">
+                  class="flex flex-col lg:flex-row gap-x-14 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain max-w-[600px]">
             <div class="flex flex-col gap-y-2 text-center lg:text-start">
               <h5
                       class="flex items-center gap-x-2 justify-center lg:justify-start">
-                <span>
+                <div>
                   <img
                           src="/icons/video.svg"
-                          alt="" />
-                </span>
+                          alt=""/>
+                </div>
                 <span> Step 3 </span>
               </h5>
               <p class="text-xl text-neutral-text3 lg:max-w-sm pb-8 lg:pb-0">
@@ -655,12 +655,13 @@
             <div class="mb-8 lg:mb-0 flex justify-center items-center">
               <img
                       src="/images/dashboard/dashboard-08.png"
-                      width="130px"
+                      height="130px"
+                      class="max-h-[85px]"
                       alt="Step 1" />
             </div>
           </div>
           <div
-                  class="flex gap-x-14 flex-col lg:flex-row rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain">
+                  class="flex flex-col lg:flex-row gap-x-14 w-full flex-1 rounded-4xl bg-neutral-bg3 shadow-secondary min-h-[20.5rem] px-8 py-4 [&_img]:object-contain  max-w-[600px]">
             <div class="flex flex-col gap-y-2 text-center lg:text-start">
               <h5
                       class="flex items-center gap-x-2 justify-center lg:justify-start">
@@ -688,37 +689,63 @@
 
       <!-- Shield -->
       <section
-              class="container mx-auto mb-[5rem] lg:mb-[15.4rem] relative max-w-[124rem]">
-        <div class="flex flex-col lg:flex-row px-5 lg:px-0 gap-[68.12px] justify-center items-center">
+              class="container mx-auto mb-[12rem] lg:mb-[15rem] relative max-w-[124rem]">
+        <div class="flex flex-col lg:flex-row px-5 lg:px-0 gap-[68.12px]">
           <div
-                  class="flex flex-col items-center lg:items-start gap-[18.9px] lg:gap-[27px]">
+                  class="flex flex-col items-center justify-center lg:items-start gap-[18.9px] lg:gap-[27px] ">
             <h2
                     class="text-[31px] lg:text-[43.7px] text-[#3D3E4A] text-center lg:text-start">
               <span class="bg-purple text-transparent bg-clip-text"
               > It's time now!</span
               >
             </h2>
-            <p class="text-[#666E80] text-[17.257px] lg:text-[24.665px]">
+            <p
+                    class="text-[#666E80] text-[17.257px] lg:text-[24.665px] text-center lg:text-start">
               Download MasterTube Extension today and take your journey to the next level!
             </p>
             <div class="flex flex-col lg:flex-row gap-x-[27px] w-full">
-                            <button
-                              class="w-full lg:w-fit rounded-[9.396px] bg-[#8F55EA] text-white py-[11.75px] px-[21.14px] text-[16px] font-[600]">
-                              Install Extension now
-                            </button>
-              <!--              <button-->
-              <!--                class="w-full lg:w-fit rounded-[9.396px] text-[#666E80] py-[11.75px] px-[21.14px] text-[16px] font-[600]">-->
-              <!--                CALL TO ACTION-->
-              <!--              </button>-->
+              <a
+                      href="https://chromewebstore.google.com/detail/mastertube/ebenecbhjmfnidklknaigagobpjppdna"
+                      target="_blank">
+                <button
+                        class="btn w-full lg:w-auto bg-[#8F55EA] shadow-primary py-4 px-6 rounded-lg text-md font-semibold leading-[180%] text-white flex items-center gap-x-2 group">
+                  <span>Install Free Now</span>
+                  <span class="">
+                    <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="group-hover:stroke-primary-1 stroke-white">
+                      <path
+                              d="M12.0459 5.35059L16.8097 10.1144L12.0459 14.8782"
+                              stroke-width="1.17722"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round" />
+                      <path
+                              d="M3.46875 10.1143H16.6771"
+                              stroke-width="1.17722"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+              </a>
+              <button
+                      class="w-full h-12 lg:h-16 lg:py-3 px-7 md:ml-[27px] lg:px-10 rounded-lg text-[#666E80] font-semibold text-[16px] md:w-fit">
+                Find More
+              </button>
             </div>
           </div>
           <div
-                  class="relative flex items-center justify-center max-h-[215px] lg:pl-[38px]">
+                  class="flex items-center justify-center lg:pl-[38px]">
             <img
                     src="/images/extention/extention-04.png"
-                    width="210px"
                     alt="services"
-                    class="relative z-10 w-[212.915px] h-[208.671px] lg:w-fit lg:h-fit" />
+                    class="relative z-10 w-[500.915px]" />
             <img
                     src="/images/cashout/services-bg.svg"
                     alt="background"
@@ -734,282 +761,21 @@
 
       <!-- Other Features -->
 
-      <section class="max-w-[111.8rem] mx-auto mb-22 px-5">
+      <section class="max-w-[120.8rem] mx-auto mb-22 px-5">
         <h3 class="text-neutral-text1 mb-2 text-center">Othere Services</h3>
         <p class="text-xl font-normal mb-14 text-center">
           explore more with these related MasterTube’s Services
         </p>
         <div
-                class="grid grid-cols-1 lg:grid-cols-3 gap-x-9 px-4 lg:px-0 gap-y-8 max-w-3xl lg:max-w-none mx-auto">
+                class="flex overflow-x-scroll w-full scrollbar-hide gap-x-9 px-4 lg:px-0 gap-y-8">
           <!-- Card 1 -->
           <div
-                  class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary">
-            <div class="flex items-center gap-x-4 mb-2">
-              <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none">
-                <path
-                        d="M21.5918 15.9654L21.5918 15.9654L21.5955 15.9698C22.1618 16.6512 22.5 17.5384 22.5 18.5002C22.5 19.2448 22.2872 19.956 21.9218 20.5621L21.9213 20.563C21.7076 20.9191 21.4419 21.2372 21.1346 21.5006L21.1346 21.5006L21.1284 21.506C20.4267 22.1278 19.5137 22.5002 18.5 22.5002C17.55 22.5002 16.6723 22.1632 15.9896 21.5957L15.8507 21.4802H15.8416C15.5448 21.22 15.2885 20.9126 15.0787 20.563L15.0782 20.5621C14.7128 19.956 14.5 19.2448 14.5 18.5002C14.5 17.2361 15.0777 16.1098 15.9996 15.3829L15.9996 15.3829L16.0036 15.3797C16.6878 14.8287 17.558 14.5002 18.5 14.5002C19.7546 14.5002 20.8637 15.0686 21.5918 15.9654ZM15.8564 19.3838L16.21 19.0302L15.8564 19.3838L16.9664 20.4938C17.2152 20.7425 17.5345 20.8602 17.85 20.8602C18.1516 20.8602 18.4642 20.7456 18.6998 20.527C18.6999 20.5269 18.7001 20.5268 18.7002 20.5266L21.0976 18.3091C21.6146 17.8397 21.6435 17.0504 21.1655 16.5391C20.7003 16.0406 19.9048 16.0035 19.3998 16.4739C19.3995 16.4741 19.3991 16.4744 19.3988 16.4747L17.8835 17.8766L17.6236 17.6167C17.1383 17.1314 16.3417 17.1314 15.8564 17.6167C15.3712 18.102 15.3712 18.8985 15.8564 19.3838Z"
-                        fill="#8F55EA"
-                        stroke="#8F55EA" />
-                <path
-                        d="M14.23 2.50024V5.86024H9.77002V2.50024H14.23Z"
-                        fill="#8F55EA"
-                        stroke="#8F55EA" />
-                <path
-                        d="M4.35248 3.49614C5.09744 2.94103 6.07316 2.59661 7.26926 2.51999C7.2695 2.52041 7.2697 2.52081 7.26987 2.52119C7.26991 2.52129 7.26995 2.52138 7.26998 2.52146V5.86021H2.76998C2.76984 5.86021 2.76972 5.86021 2.7696 5.86021C2.76952 5.86011 2.76943 5.85999 2.76935 5.85987C2.76826 5.85838 2.76754 5.85664 2.76726 5.85504C2.76713 5.8543 2.76704 5.85338 2.76712 5.85213C2.76719 5.85093 2.76744 5.84868 2.76849 5.84521L2.7685 5.84522L2.76949 5.84188C3.06646 4.83674 3.60753 4.05124 4.35248 3.49614Z"
-                        fill="#8F55EA"
-                        stroke="#8F55EA" />
-                <path
-                        d="M16.7301 2.51118C16.7303 2.5108 16.7305 2.5104 16.7307 2.50998C17.9268 2.5866 18.9025 2.93102 19.6475 3.48613C20.3924 4.04123 20.9335 4.82673 21.2305 5.83187L21.2305 5.83188L21.2315 5.8352C21.2325 5.83867 21.2328 5.84092 21.2328 5.84212C21.2329 5.84337 21.2328 5.8443 21.2327 5.84503C21.2324 5.84663 21.2317 5.84837 21.2306 5.84986C21.2305 5.84998 21.2304 5.8501 21.2304 5.8502C21.2302 5.8502 21.2301 5.8502 21.23 5.8502H16.73V2.51145C16.73 2.51137 16.7301 2.51128 16.7301 2.51118Z"
-                        fill="#8F55EA"
-                        stroke="#8F55EA" />
-                <path
-                        d="M21.5 8.36023V12.731C20.5913 12.2575 19.5561 12.0002 18.5 12.0002C16.7562 12.0002 15.0571 12.7139 13.8425 13.9606C12.6494 15.1758 12 16.792 12 18.5002C12 19.4145 12.3528 20.5308 12.7653 21.4283C12.7723 21.4435 12.7728 21.4667 12.76 21.4884C12.756 21.4953 12.7524 21.4988 12.7506 21.5002C12.7504 21.5002 12.7502 21.5002 12.75 21.5002H7.81C4.87614 21.5002 2.5 19.1241 2.5 16.1902V8.36023H21.5Z"
-                        fill="#8F55EA"
-                        stroke="#8F55EA" />
-              </svg>
-              <h5>MasterShield</h5>
-            </div>
-            <p class="text-neutral-text3 text-start mb-8">
-              Legal measures to prevent copying of content
-            </p>
-            <span
-                    class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
-            >Includes:</span
-            >
-            <div class="flex flex-col gap-y-4 mb-10">
-              <div class="items-center flex gap-x-4">
-                <span
-                ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none">
-                    <path
-                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                            stroke="#8F55EA"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    <path
-                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                            stroke="#8F55EA"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-                  </svg>
-                </span>
-                <span
-                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                >Protecting your brand and reputation</span
-                >
-              </div>
-              <div class="items-center flex gap-x-4">
-                <span
-                ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none">
-                    <path
-                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                            stroke="#8F55EA"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    <path
-                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                            stroke="#8F55EA"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-                  </svg>
-                </span>
-                <span
-                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                >Copyright certificate</span
-                >
-              </div>
-              <div class="items-center flex gap-x-4">
-                <span
-                ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none">
-                    <path
-                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                            stroke="#8F55EA"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    <path
-                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                            stroke="#8F55EA"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-                  </svg>
-                </span>
-                <span
-                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                >Trademark</span
-                >
-              </div>
-            </div>
-            <button
-                    class="w-full mt-auto py-3 px-6 justify-center items-center flex rounded-lg border-2 border-neutral-text2 bg-primary-1 hover:bg-white hover:text-primary-1 hover:border-2 hover:border-primary-1 text-md font-semibold leading-[180%] text-neutral-bg2 transition-colors duration-300">
-              Explore service
-            </button>
-          </div>
-          <!-- Card 1 -->
-
-          <!-- Card 2 -->
-          <div
-                  class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary">
-            <div class="flex items-center gap-x-4 mb-2">
-              <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none">
-                <path
-                        d="M21.67 6.95027C21.03 4.78027 19.22 2.97027 17.05 2.33027C15.4 1.85027 14.26 1.89027 13.47 2.48027C12.52 3.19027 12.41 4.47027 12.41 5.38027V7.87027C12.41 10.3303 13.53 11.5803 15.73 11.5803H18.6C19.5 11.5803 20.79 11.4703 21.5 10.5203C22.11 9.74027 22.16 8.60027 21.67 6.95027Z"
-                        fill="#8F55EA" />
-                <path
-                        d="M18.91 13.3603C18.65 13.0603 18.27 12.8903 17.88 12.8903H14.3C12.54 12.8903 11.11 11.4603 11.11 9.70027V6.12027C11.11 5.73027 10.94 5.35027 10.64 5.09027C10.35 4.83027 9.95002 4.71027 9.57002 4.76027C7.22002 5.06027 5.06002 6.35027 3.65002 8.29027C2.23002 10.2403 1.71002 12.6203 2.16002 15.0003C2.81002 18.4403 5.56002 21.1903 9.01002 21.8403C9.56002 21.9503 10.11 22.0003 10.66 22.0003C12.47 22.0003 14.22 21.4403 15.71 20.3503C17.65 18.9403 18.94 16.7803 19.24 14.4303C19.29 14.0403 19.17 13.6503 18.91 13.3603Z"
-                        fill="#8F55EA" />
-              </svg>
-              <h5>MasterTube Dashboard</h5>
-            </div>
-            <p class="text-neutral-text3 text-start mb-8">
-              The answers to most unknown questions are hidden in the data.
-            </p>
-            <span
-                    class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
-            >Includes:</span
-            >
-            <div class="flex flex-col gap-y-4 mb-10">
-              <div class="items-center flex gap-x-4">
-                <span
-                ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none">
-                    <path
-                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                            stroke="#8F55EA"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    <path
-                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                            stroke="#8F55EA"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-                  </svg>
-                </span>
-                <span
-                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                >Getting Data from Google API</span
-                >
-              </div>
-              <div class="items-center flex gap-x-4">
-                <span
-                ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none">
-                    <path
-                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                            stroke="#8F55EA"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    <path
-                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                            stroke="#8F55EA"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-                  </svg>
-                </span>
-                <span
-                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                > analyzing videos and channels </span
-                >
-              </div>
-              <div class="items-center flex gap-x-4">
-                <span
-                ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none">
-                    <path
-                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
-                            stroke="#8F55EA"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    <path
-                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
-                            stroke="#8F55EA"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round" />
-                  </svg>
-                </span>
-                <span
-                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                >generate aI Powered Keywords</span
-                >
-              </div>
-            </div>
-            <button
-                    class="w-full mt-auto py-3 px-6 justify-center items-center flex rounded-lg border-2 border-neutral-text2 bg-primary-1 hover:bg-white hover:text-primary-1 hover:border-2 hover:border-primary-1 text-md font-semibold leading-[180%] text-neutral-bg2 transition-colors duration-300">
-              Explore service
-            </button>
-          </div>
-          <!-- Card 2 -->
-
-          <!-- Card 3 -->
-          <div
-                  class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary">
-            <div class="flex items-center gap-x-4 mb-2">
-              <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none">
-                <path
-                        d="M20.97 1.00024H18.03C16.76 1.00024 16 1.76024 16 3.03024V5.97024C16 7.24024 16.76 8.00024 18.03 8.00024H20.97C22.24 8.00024 23 7.24024 23 5.97024V3.03024C23 1.76024 22.24 1.00024 20.97 1.00024ZM19.01 6.57024C18.98 6.60024 18.91 6.64024 18.86 6.64024L17.82 6.79024C17.79 6.80024 17.75 6.80024 17.72 6.80024C17.57 6.80024 17.44 6.75024 17.35 6.65024C17.23 6.53024 17.18 6.36024 17.21 6.18024L17.36 5.14024C17.37 5.09024 17.4 5.02024 17.43 4.99024L19.13 3.29024C19.16 3.36024 19.19 3.44024 19.22 3.52024C19.26 3.60024 19.3 3.67024 19.34 3.74024C19.37 3.80024 19.41 3.86024 19.45 3.90024C19.49 3.96024 19.53 4.02024 19.56 4.05024C19.58 4.08024 19.59 4.09024 19.6 4.10024C19.69 4.21024 19.79 4.31024 19.88 4.38024C19.9 4.40024 19.92 4.42024 19.93 4.42024C19.98 4.46024 20.04 4.51024 20.08 4.54024C20.14 4.58024 20.19 4.62024 20.25 4.65024C20.32 4.69024 20.4 4.73024 20.48 4.77024C20.56 4.81024 20.64 4.84024 20.71 4.86024L19.01 6.57024ZM21.4 4.18024L21.08 4.50024C21.06 4.53024 21.03 4.54024 21 4.54024C20.99 4.54024 20.98 4.54024 20.97 4.54024C20.25 4.33024 19.68 3.76024 19.47 3.04024C19.46 3.00024 19.47 2.96024 19.5 2.93024L19.83 2.60024C20.37 2.06024 20.88 2.07024 21.41 2.60024C21.68 2.87024 21.81 3.13024 21.81 3.39024C21.8 3.65024 21.67 3.91024 21.4 4.18024Z"
-                        fill="#8F55EA" />
-                <path
-                        d="M9 10.3802C10.3144 10.3802 11.38 9.31468 11.38 8.00024C11.38 6.6858 10.3144 5.62024 9 5.62024C7.68556 5.62024 6.62 6.6858 6.62 8.00024C6.62 9.31468 7.68556 10.3802 9 10.3802Z"
-                        fill="#8F55EA" />
-                <path
-                        d="M20.97 8.00024H20.5V12.6102L20.37 12.5002C19.59 11.8302 18.33 11.8302 17.55 12.5002L13.39 16.0702C12.61 16.7402 11.35 16.7402 10.57 16.0702L10.23 15.7902C9.52 15.1702 8.39 15.1102 7.59 15.6502L3.85 18.1602C3.63 17.6002 3.5 16.9502 3.5 16.1902V7.81024C3.5 4.99024 4.99 3.50024 7.81 3.50024H16V3.03024C16 2.63024 16.07 2.29024 16.23 2.00024H7.81C4.17 2.00024 2 4.17024 2 7.81024V16.1902C2 17.2802 2.19 18.2302 2.56 19.0302C3.42 20.9302 5.26 22.0002 7.81 22.0002H16.19C19.83 22.0002 22 19.8302 22 16.1902V7.77024C21.71 7.93024 21.37 8.00024 20.97 8.00024Z"
-                        fill="#8F55EA" />
-              </svg>
+                  class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary min-w-[350px] lg:flex-1">
+            <div class="flex flex-col items-center gap-x-4 mb-1 h-[238px]">
+              <div class="flex flex-row justify-center items-center"><img src="public/images/main/calender.png" alt="" width="200px"></div>
               <h5>MasterRocket</h5>
             </div>
-            <p class="text-neutral-text3 text-start mb-8">
+            <p class="text-neutral-text3 text-center mb-8">
               VIP management of your YouTube channel by MasterTube experts
             </p>
             <span
@@ -1039,9 +805,9 @@
                             stroke-linejoin="round" />
                   </svg>
                 </span>
-                <span
-                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                >YouTube channel management</span
+                <p
+                        class="text-neutral-text3 max-w-[280px] font-normal leading-[180%]"
+                >YouTube channel management</p
                 >
               </div>
               <div class="items-center flex gap-x-4">
@@ -1066,9 +832,9 @@
                             stroke-linejoin="round" />
                   </svg>
                 </span>
-                <span
-                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                >Professional analysis and SEO</span
+                <p
+                        class="text-neutral-text3 max-w-[280px] font-normal leading-[180%]"
+                >Professional analysis and SEO</p
                 >
               </div>
               <div class="items-center flex gap-x-4">
@@ -1093,9 +859,9 @@
                             stroke-linejoin="round" />
                   </svg>
                 </span>
-                <span
-                        class="text-neutral-text3 max-w-[280px] text-xl font-normal leading-[180%]"
-                >Counseling and mentoring</span
+                <p
+                        class="text-neutral-text3 max-w-[280px]font-normal leading-[180%]"
+                >Counseling and mentoring</p
                 >
               </div>
             </div>
@@ -1103,7 +869,213 @@
                     class="w-full mt-auto py-3 px-6 justify-center items-center flex rounded-lg border-2 border-neutral-text2 bg-primary-1 hover:bg-white hover:text-primary-1 hover:border-2 hover:border-primary-1 text-md font-semibold leading-[180%] text-neutral-bg2 transition-colors duration-300">
               Explore service
             </button>
-          </div> 
+          </div>
+          <!-- Card 1 -->
+
+          <!-- Card 2 -->
+          <div class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary  min-w-[350px] lg:flex-1">
+            <div class="flex flex-col items-center gap-x-4 mb-1 h-[238px]">
+              <div class="flex flex-row justify-center items-center"><img src="public/images/main/extention1.png" alt="" width="200px"></div>
+              <h5>MasterTube Dashboard</h5>
+            </div>
+            <p class="text-neutral-text3 text-center mb-8">
+              The answers to most unknown questions are hidden in the data.
+            </p>
+            <span
+                    class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
+            >Includes:</span
+            >
+            <div class="flex flex-col gap-y-4 mb-10">
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p
+                        class="text-neutral-text3 max-w-[280px] font-normal leading-[180%]"
+                >Getting Data from Google API</p
+                >
+              </div>
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p
+                        class="text-neutral-text3 max-w-[280px] font-normal leading-[180%]"
+                >Analyzing videos and channels </p
+                >
+              </div>
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p
+                        class="text-neutral-text3 max-w-[280px]font-normal leading-[180%]"
+                >Generate aI Powered Keywords</p
+                >
+              </div>
+            </div>
+            <button
+                    class="w-full mt-auto py-3 px-6 justify-center items-center flex rounded-lg border-2 border-neutral-text2 bg-primary-1 hover:bg-white hover:text-primary-1 hover:border-2 hover:border-primary-1 text-md font-semibold leading-[180%] text-neutral-bg2 transition-colors duration-300">
+              Explore service
+            </button>
+          </div>
+          <!-- Card 2 -->
+
+          <!-- Card 3 -->
+          <div class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary  min-w-[350px] lg:flex-1">
+            <div class="flex flex-col items-center gap-x-4 mb-1 h-[238px]">
+              <div class="flex flex-row justify-center items-center"><img src="public/images/main/extention1.png" alt="" width="200px"></div>
+              <h5>MasterTube Extension</h5>
+            </div>
+            <p class="text-neutral-text3 text-center mb-8">
+              A Powerfull Tool for YouTube Creators
+            </p>
+            <span
+                    class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
+            >Includes:</span
+            >
+            <div class="flex flex-col gap-y-4 mb-10">
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p
+                        class="text-neutral-text3 max-w-[280px] font-normal leading-[180%]"
+                >Inspect Perfect Keywords</p
+                >
+              </div>
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p
+                        class="text-neutral-text3 max-w-[280px] font-normal leading-[180%]"
+                >Unlock Your Potential With  AI</p
+                >
+              </div>
+              <div class="items-center flex gap-x-4">
+                <span
+                ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                    <path
+                            d="M9 22.0002H15C20 22.0002 22 20.0002 22 15.0002V9.00024C22 4.00024 20 2.00024 15 2.00024H9C4 2.00024 2 4.00024 2 9.00024V15.0002C2 20.0002 4 22.0002 9 22.0002Z"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    <path
+                            d="M7.75 12.0003L10.58 14.8303L16.25 9.17029"
+                            stroke="#8F55EA"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p
+                        class="text-neutral-text3 max-w-[280px]font-normal leading-[180%]"
+                >Revolutionize Your YouTube Strategy</p
+                >
+              </div>
+            </div>
+            <button
+                    class="w-full mt-auto py-3 px-6 justify-center items-center flex rounded-lg border-2 border-neutral-text2 bg-primary-1 hover:bg-white hover:text-primary-1 hover:border-2 hover:border-primary-1 text-md font-semibold leading-[180%] text-neutral-bg2 transition-colors duration-300">
+              Explore service
+            </button>
+          </div>
           <!-- Card 3 -->
         </div>
       </section>
