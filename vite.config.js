@@ -29,7 +29,9 @@ export default defineConfig({
         'terms-of-service-en': resolve(__dirname, 'terms-of-service-en.html'),
         'terms-of-service-fa': resolve(__dirname, 'terms-of-service-fa.html'),
         'logo-en': resolve(__dirname, 'logo-en.html'),
-        'logo-fa': resolve(__dirname, 'logo-fa.html')
+        'logo-fa': resolve(__dirname, 'logo-fa.html'),
+        'not-found-en': resolve(__dirname, 'not-found-en.html'),
+        'not-found-fa': resolve(__dirname, 'not-found-fa.html')
       }
     }
   },
