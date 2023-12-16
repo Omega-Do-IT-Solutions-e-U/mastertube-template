@@ -399,14 +399,14 @@
         x-data="{content: '1'}"
         class="container mx-auto mb-[5rem] lg:mb-[15.4rem] max-w-[124rem]">
         <div
-          class="flex lg:items-center w-full relative px-5 lg:px-0 overflow-x-scroll lg:overflow-hidden scrollbar-hide">
+          class="flex lg:items-center w-full relative px-5 lg:px-0 overflow-x-scroll lg:justify-center lg:overflow-hidden scrollbar-hide">
           <div
             @click="content = '1'"
-            class="flex flex-col relative z-10 shrink-0 mx-5 ml-[25rem]">
+            class="flex flex-col relative z-10 shrink-0 mx-5 ml-[10rem] md:ml-[16rem]">
             <div x-show="content !== '1'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
+                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem] cursor-pointer"
                 viewBox="0 0 58 58"
                 fill="none">
                 <rect
@@ -421,12 +421,13 @@
             </div>
             <!-- Dashed Line -->
             <div
-              x-show="content !== '2' || content !== '3' || content !== '4'"
-              class="absolute top-[3rem] -z-10 overflow-hidden max-w-[124rem]">
+              x-show="content !== '2' && content !== '3' && content !== '4'"
+              class="absolute top-[2rem] md:top-[3rem] -z-10 overflow-hidden max-w-[124rem]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="324"
                 height="4"
+                class="w-[22rem] md:w-fit"
                 viewBox="0 0 324 4"
                 fill="none">
                 <path
@@ -442,12 +443,13 @@
             <!-- Full Line -->
             <div
               x-show="content === '2' || content === '3' || content === '4'"
-              class="absolute top-[1.5rem] -z-10 overflow-hidden max-w-[124rem]">
+              class="absolute top-[.5rem] md:top-[1.5rem] -z-10 overflow-hidden max-w-[124rem]">
               >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="384"
                 height="4"
+                class="w-[22rem] md:w-[28rem] lg:w-[31rem]"
                 viewBox="0 0 384 4"
                 fill="none">
                 <path
@@ -461,7 +463,7 @@
             <div x-show="content === '1'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
+                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem] cursor-pointer"
                 viewBox="0 0 58 58"
                 fill="none">
                 <rect
@@ -488,21 +490,23 @@
               </svg>
             </div>
             <span
+              :class="content === '1' ? 'text-primary-1' : ''"
               class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#A7A8AD]"
               >مرحله اول</span
             >
             <div
-              class="text-[15.591px] lg:text-[22.649px] text-neutral-text1 font-semibold">
+              :class="content === '1' ? 'text-primary-1' : ''"
+              class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-semibold">
               ثبت درخواست
             </div>
           </div>
           <div
             @click="content = '2'"
-            class="flex flex-col relative z-10 shrink-0 mx-5 ml-[29rem] lg:ml-[25rem]">
+            class="flex flex-col relative z-10 shrink-0 mx-5 ml-[16rem] lg:ml-[25rem]">
             <div x-show="content !== '2'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
+                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem] cursor-pointer"
                 viewBox="0 0 58 58"
                 fill="none">
                 <rect
@@ -520,11 +524,12 @@
             <!-- Dashed Line -->
             <div
               x-show="content !== '3' || content !== '4'"
-              class="absolute top-[3rem] -z-10 overflow-hidden max-w-[124rem]">
+              class="absolute top-[2rem] md:top-[3rem] -z-10 overflow-hidden max-w-[124rem]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="324"
                 height="4"
+                class="w-[24rem] md:w-fit"
                 viewBox="0 0 324 4"
                 fill="none">
                 <path
@@ -540,12 +545,13 @@
             <!-- Full Line -->
             <div
               x-show="content === '3' || content === '4'"
-              class="absolute top-[1.5rem] -z-10 overflow-hidden max-w-[124rem]">
+              class="absolute top-[.5rem] md:top-[1.5rem] -z-10 overflow-hidden max-w-[124rem]">
               >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="384"
                 height="4"
+                class="w-[26rem] md:w-[28rem] lg:w-fit"
                 viewBox="0 0 384 4"
                 fill="none">
                 <path
@@ -560,7 +566,7 @@
             <div x-show="content === '2'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
+                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem] cursor-pointer"
                 viewBox="0 0 58 58"
                 fill="none">
                 <rect
@@ -587,21 +593,23 @@
               </svg>
             </div>
             <span
+              :class="content === '2' ? 'text-primary-1' : ''"
               class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#AC96EF]"
               >مرحله دوم</span
             >
             <div
+              :class="content === '2' ? 'text-primary-1' : ''"
               class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">
               بررسی
             </div>
           </div>
           <div
             @click="content = '3'"
-            class="flex flex-col relative z-10 shrink-0 mx-5 ml-[26rem] lg:ml-[21rem]">
+            class="flex flex-col relative z-10 shrink-0 mx-5 ml-[16rem] lg:ml-[21rem]">
             <div x-show="content !== '3'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
+                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem] cursor-pointer"
                 viewBox="0 0 58 58"
                 fill="none">
                 <rect
@@ -618,11 +626,12 @@
             <!-- Dashed Line -->
             <div
               x-show="content !== '4'"
-              class="absolute top-[3rem] -z-10 overflow-hidden max-w-[124rem]">
+              class="absolute top-[2rem] md:top-[3rem] -z-10 overflow-hidden max-w-[124rem]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="324"
                 height="4"
+                class="w-[26rem] lg:w-[34rem]"
                 viewBox="0 0 324 4"
                 fill="none">
                 <path
@@ -638,12 +647,13 @@
             <!-- Full Line -->
             <div
               x-show="content === '4'"
-              class="absolute top-[1.5rem] -z-10 overflow-hidden max-w-[124rem]">
+              class="absolute top-[.5rem] md:top-[1.5rem] -z-10 overflow-hidden max-w-[124rem]">
               >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="384"
                 height="4"
+                class="w-[26rem] lg:w-[34rem]"
                 viewBox="0 0 384 4"
                 fill="none">
                 <path
@@ -657,7 +667,7 @@
             <div x-show="content === '3'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
+                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem] cursor-pointer"
                 viewBox="0 0 58 58"
                 fill="none">
                 <rect
@@ -684,10 +694,12 @@
               </svg>
             </div>
             <span
+              :class="content === '3' ? 'text-primary-1' : ''"
               class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#AC96EF]"
               >مرحله سوم</span
             >
             <div
+              :class="content === '3' ? 'text-primary-1' : ''"
               class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">
               اطلاع رسانی
             </div>
@@ -698,7 +710,7 @@
             <div x-show="content !== '4'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
+                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem] cursor-pointer"
                 viewBox="0 0 58 58"
                 fill="none">
                 <rect
@@ -715,7 +727,7 @@
             <div x-show="content === '4'">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem]"
+                class="w-[4rem] h-[4rem] md:h-[5.8rem] md:w-[5.8rem] cursor-pointer"
                 viewBox="0 0 58 58"
                 fill="none">
                 <rect
@@ -742,10 +754,12 @@
               </svg>
             </div>
             <span
+              :class="content === '4' ? 'text-primary-1' : ''"
               class="text-[10.085px] lg:text-[14.651px] font-[500] text-[#AC96EF]"
               >مرحله چهارم</span
             >
             <div
+              :class="content === '4' ? 'text-primary-1' : ''"
               class="text-[15.591px] lg:text-[22.649px] text-[#8C8993] font-[600]">
               قرارداد
             </div>
