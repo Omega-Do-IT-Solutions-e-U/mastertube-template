@@ -286,8 +286,7 @@ html {
   button class with in "hover:bg-white border-2 transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 w-full h-12 lg:h-16 lg:text-base py-3 px-7 lg:px-10 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit"
  */
 .btn {
-  @apply
-  hover:bg-white
+  @apply hover:bg-white
   border-2
   transition-colors
   ease-out
@@ -309,4 +308,49 @@ html {
   border-transparent
     justify-center
   md:w-fit;
+}
+
+.scroller {
+  max-width: 1600px;
+}
+
+.scroller__inner {
+  flex-wrap: wrap;
+}
+
+.scroller[data-animated='true'] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 10%,
+    white 90%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+
+@media (max-width: 1024px) {
+  .scroller[data-animated='true'] {
+    -webkit-mask: none;
+    mask: none;
+  }
+}
+
+.scroller[data-animated='true'] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--animation-duration, 40s)
+    var(--animation-direction, reverse) linear infinite;
+}
+
+.scroller[data-direction='rtl'] {
+  --animation-direction: reverse;
+  --animation-lang: 50%;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(var(--animation-lang, -50%) - 0.5rem));
+  }
 }
