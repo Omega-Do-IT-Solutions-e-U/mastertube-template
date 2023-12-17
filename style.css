@@ -314,10 +314,6 @@ html {
   max-width: 1600px;
 }
 
-.scroller__inner {
-  flex-wrap: wrap;
-}
-
 .scroller[data-animated='true'] {
   overflow: hidden;
   -webkit-mask: linear-gradient(
