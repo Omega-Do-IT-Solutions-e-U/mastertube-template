@@ -470,7 +470,7 @@
 
       <!-- Products -->
       <section
-        class="container mx-auto mt-[45px] md:mt-[112px]" x-data="{ format: false, filter: 'all' }">
+        class="container mx-auto mt-[45px] md:mt-[112px]" x-data="{ filter: 'all' }">
         <div class="flex md:justify-between mb-4 overflow-auto scrollbar-hide px-4 md:px-0">
           <div class="flex gap-[14px]">
             <div @click="filter = 'all'" class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] rounded-[100px] cursor-pointer border-[1.5px] border-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]" :class="filter === 'all' && 'bg-[#8F55EA]' || 'border-[1.5px] border-[#8F55EA]'">
@@ -495,7 +495,7 @@
             </div>
           </div>
 
-          <div @click="format = !format" class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] ml-4 md:ml-0 rounded-[100px] cursor-pointer border-[1.5px] border-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]">
+          <div class="flex items-center min-w-max gap-[6.21px] py-2 px-[21px] ml-4 md:ml-0 rounded-[100px] cursor-pointer border-[1.5px] border-[#8F55EA] shadow-[0px_4px_4px_0px_rgba(143,85,234,0.07)]">
             <span class="text-[13.737px] text-[#8F55EA] font-[500]">Format</span>
             <img src="/images/download/filter.svg">
           </div>
@@ -503,119 +503,119 @@
           <!-- <div x-cloak x-show="format === true" class="">ksdfkjskdjfk</div> -->
         </div>
 
-        <div class="grid md:grid-cols-2 gap-4 pb-[112px] px-4 md:px-0">
-          <div class="flex flex-col md:flex-row items-center gap-4 p-[20.74px] md:p-[18px] rounded-[16px] bg-white">
+        <div class="grid md:grid-cols-2 gap-4 pb-[112px] px-4 md:px-0" x-data="{ modal: false }">
+          <div x-on:click="modal = true" class="flex flex-col cursor-pointer md:flex-row items-center gap-4 p-[20.74px] md:p-[18px] rounded-[16px] bg-white">
             <img src="/images/download/product.png" alt="product" class="w-full md:w-fit">
             <div class="flex flex-col gap-[4px]">
               <h2 class="text-[#303030] text-[18px]">Name of content</h2>
               <p class="text-[#6D6D6D] text-[13px]">a paragraphed about the book online video og content ..paragraphed about the book or online..</p>
             </div>
           </div>
-          <div class="flex flex-col md:flex-row items-center gap-4 p-[20.74px] md:p-[18px] rounded-[16px] bg-white">
+          <div x-on:click="modal = true" class="flex flex-col cursor-pointer md:flex-row items-center gap-4 p-[20.74px] md:p-[18px] rounded-[16px] bg-white">
             <img src="/images/download/product.png" alt="product" class="w-full md:w-fit">
             <div class="flex flex-col gap-[4px]">
               <h2 class="text-[#303030] text-[18px]">Name of content</h2>
               <p class="text-[#6D6D6D] text-[13px]">a paragraphed about the book online video og content ..paragraphed about the book or online..</p>
             </div>
           </div>
-          <div class="flex flex-col md:flex-row items-center gap-4 p-[20.74px] md:p-[18px] rounded-[16px] bg-white">
+          <div x-on:click="modal = true" class="flex flex-col cursor-pointer md:flex-row items-center gap-4 p-[20.74px] md:p-[18px] rounded-[16px] bg-white">
             <img src="/images/download/product.png" alt="product" class="w-full md:w-fit">
             <div class="flex flex-col gap-[4px]">
               <h2 class="text-[#303030] text-[18px]">Name of content</h2>
               <p class="text-[#6D6D6D] text-[13px]">a paragraphed about the book online video og content ..paragraphed about the book or online..</p>
             </div>
           </div>
-          <div class="flex flex-col md:flex-row items-center gap-4 p-[20.74px] md:p-[18px] rounded-[16px] bg-white">
+          <div x-on:click="modal = true" class="flex flex-col cursor-pointer md:flex-row items-center gap-4 p-[20.74px] md:p-[18px] rounded-[16px] bg-white">
             <img src="/images/download/product.png" alt="product" class="w-full md:w-fit">
             <div class="flex flex-col gap-[4px]">
               <h2 class="text-[#303030] text-[18px]">Name of content</h2>
               <p class="text-[#6D6D6D] text-[13px]">a paragraphed about the book online video og content ..paragraphed about the book or online..</p>
             </div>
           </div>
-          <div class="flex flex-col md:flex-row items-center gap-4 p-[20.74px] md:p-[18px] rounded-[16px] bg-white">
+          <div x-on:click="modal = true" class="flex flex-col cursor-pointer md:flex-row items-center gap-4 p-[20.74px] md:p-[18px] rounded-[16px] bg-white">
             <img src="/images/download/product.png" alt="product" class="w-full md:w-fit">
             <div class="flex flex-col gap-[4px]">
               <h2 class="text-[#303030] text-[18px]">Name of content</h2>
               <p class="text-[#6D6D6D] text-[13px]">a paragraphed about the book online video og content ..paragraphed about the book or online..</p>
             </div>
           </div>
-          <div class="flex flex-col md:flex-row items-center gap-4 p-[20.74px] md:p-[18px] rounded-[16px] bg-white">
+          <div x-on:click="modal = true" class="flex flex-col cursor-pointer md:flex-row items-center gap-4 p-[20.74px] md:p-[18px] rounded-[16px] bg-white">
             <img src="/images/download/product.png" alt="product" class="w-full md:w-fit">
             <div class="flex flex-col gap-[4px]">
               <h2 class="text-[#303030] text-[18px]">Name of content</h2>
               <p class="text-[#6D6D6D] text-[13px]">a paragraphed about the book online video og content ..paragraphed about the book or online..</p>
             </div>
           </div>
-        </div>
 
 
-        <!-- Modal -->
-        <div x-show="format" x-transition class="flex items-center justify-center fixed top-0 bottom-0 right-0 left-0 z-50">
-          <div x-on:click="format = false" class="bg-[#5C4E7278] z-50 w-full h-full"></div>
-          <div class="container grid md:grid-cols-2 gap-[60px] md:gap-[83px] bg-white py-[41px] px-[43px] md:rounded-[22px] shadow-[0px_4px_12.3px_0px_rgba(0,0,0,0.12)] absolute z-50 max-h-[90vh] md:max-h-[80vh] overflow-auto my-[100px] mx-auto">
-            <div class="flex flex-col">
-              <img src="/images/download/modal.png">
-              <div class="flex flex-col gap-[5px] mt-[10.77px]">
-                <h3 class="text-[#303030] text-[18.492px] font-500">Name of content </h3>
-                <p class="text-[#6D6D6D] text-[13.355px]">a paragraphed about the book online video og content ..paragraphed about the book or online a paragraphed about the book online video og content ..paragraphed about the book or online ...</p>
-              </div>
-            </div>
-
-
-            <div class="flex flex-col justify-between gap-[38px]">
-              <div class="flex flex-col gap-[19px]">
-                <div class="relative w-full">
-                  <label
-                    for="name"
-                    class="text-[13.858px] font-[400] text-[#514654] px-[25px] mb-[4px]"
-                  >Family name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    class="w-full block text-[#633D6F] text-[16px] py-[10.66px] px-[25.58px] bg-[#F5F5F5] rounded-[43.706px] outline-none"
-                    placeholder="mastertube@info.com"
-                  />
-                </div>
-                <div class="relative w-full">
-                  <label
-                    for="email"
-                    class="text-[13.858px] font-[400] text-[#514654] px-[25px] mb-[4px]"
-                  >Email  address</label>
-                  <input
-                    type="text"
-                    id="email"
-                    class="w-full block text-[#633D6F] text-[16px] py-[10.66px] px-[25.58px] bg-[#F5F5F5] rounded-[43.706px] outline-none"
-                    placeholder="mastertube@info.com"
-                  />
-                </div>
-                <div class="relative w-full">
-                  <label
-                    for="phone"
-                    class="text-[13.858px] font-[400] text-[#514654] px-[25px] mb-[4px]"
-                  >Phone number</label>
-                  <input
-                    type="text"
-                    id="phone"
-                    class="w-full block text-[#633D6F] text-[16px] py-[10.66px] px-[25.58px] bg-[#F5F5F5] rounded-[43.706px] outline-none"
-                    placeholder="mastertube@info.com"
-                  />
-                </div>
-              </div>
+          <!-- Modal -->
+          <div x-show="modal" x-transition class="flex items-center justify-center fixed top-0 bottom-0 right-0 left-0 z-50">
+            <div x-on:click="modal = false" class="bg-[#5C4E7278] z-50 w-full h-full"></div>
+            <div class="container grid md:grid-cols-2 gap-[60px] md:gap-[83px] bg-white py-[41px] px-[43px] md:rounded-[22px] shadow-[0px_4px_12.3px_0px_rgba(0,0,0,0.12)] absolute z-50 max-h-[90vh] md:max-h-[80vh] overflow-auto my-[100px] mx-auto">
               <div class="flex flex-col">
-                <button class="w-full p-[10.7px] rounded-[4.264px] bg-[#44B678] text-[18.122px] text-white font-[500] mb-5">Download</button>
-                <div class="flex items-center gap-[6px]">
-                  <img src="/images/download/shield-check.svg">
-                  <div class="text-[#645F93] text-[12.792px] ">Free license</div>
+                <img src="/images/download/modal.png">
+                <div class="flex flex-col gap-[5px] mt-[10.77px]">
+                  <h3 class="text-[#303030] text-[18.492px] font-500">Name of content </h3>
+                  <p class="text-[#6D6D6D] text-[13.355px]">a paragraphed about the book online video og content ..paragraphed about the book or online a paragraphed about the book online video og content ..paragraphed about the book or online ...</p>
                 </div>
-                <div class="flex items-center gap-[6px] mt-[5.7px]">
-                  <img src="/images/download/file.svg">
-                  <div class="text-[#645F93] text-[12.792px] ">File type: <span class="text-[#A39CD8]">EPS, JPG</span></div>
+              </div>
+
+
+              <div class="flex flex-col justify-between gap-[38px]">
+                <div class="flex flex-col gap-[19px]">
+                  <div class="relative w-full">
+                    <label
+                      for="name"
+                      class="text-[13.858px] font-[400] text-[#514654] px-[25px] mb-[4px]"
+                    >Family name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      class="w-full block text-[#633D6F] text-[16px] py-[10.66px] px-[25.58px] bg-[#F5F5F5] rounded-[43.706px] outline-none"
+                      placeholder="mastertube@info.com"
+                    />
+                  </div>
+                  <div class="relative w-full">
+                    <label
+                      for="email"
+                      class="text-[13.858px] font-[400] text-[#514654] px-[25px] mb-[4px]"
+                    >Email  address</label>
+                    <input
+                      type="text"
+                      id="email"
+                      class="w-full block text-[#633D6F] text-[16px] py-[10.66px] px-[25.58px] bg-[#F5F5F5] rounded-[43.706px] outline-none"
+                      placeholder="mastertube@info.com"
+                    />
+                  </div>
+                  <div class="relative w-full">
+                    <label
+                      for="phone"
+                      class="text-[13.858px] font-[400] text-[#514654] px-[25px] mb-[4px]"
+                    >Phone number</label>
+                    <input
+                      type="text"
+                      id="phone"
+                      class="w-full block text-[#633D6F] text-[16px] py-[10.66px] px-[25.58px] bg-[#F5F5F5] rounded-[43.706px] outline-none"
+                      placeholder="mastertube@info.com"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <button class="w-full p-[10.7px] rounded-[4.264px] bg-[#44B678] text-[18.122px] text-white font-[500] mb-5">Download</button>
+                  <div class="flex items-center gap-[6px]">
+                    <img src="/images/download/shield-check.svg">
+                    <div class="text-[#645F93] text-[12.792px] ">Free license</div>
+                  </div>
+                  <div class="flex items-center gap-[6px] mt-[5.7px]">
+                    <img src="/images/download/file.svg">
+                    <div class="text-[#645F93] text-[12.792px] ">File type: <span class="text-[#A39CD8]">EPS, JPG</span></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Modal -->
         </div>
-        <!-- Modal -->
       </section>
       <!-- Products -->
 
