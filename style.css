@@ -322,3 +322,8 @@ html {
     justify-center
   md:w-fit;
 }
+@media (max-width: 480px) {
+  html,body{
+    font-size: 11px;
+  }
+}
