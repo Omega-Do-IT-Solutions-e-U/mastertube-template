@@ -324,6 +324,6 @@ html {
 }
 @media (max-width: 480px) {
   html,body{
-    font-size: 11px;
+    font-size: 10px;
   }
 }

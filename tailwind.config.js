@@ -133,7 +133,8 @@ export default {
       seventh:
         '0px 0px 0px 0px rgba(0, 0, 0, 0.01), 0px 7.35481px 15.76031px 0px rgba(0, 0, 0, 0.01), 0px 29.41924px 29.41924px 0px rgba(0, 0, 0, 0.01), 0px 66.19331px 39.92612px 0px rgba(0, 0, 0, 0.01), 0px 118.72768px 47.28093px 0px rgba(0, 0, 0, 0.00), 0px 184.92097px 51.48368px 0px rgba(0, 0, 0, 0.00)',
       eighth: '0px 3.956px 3.956px 0px rgba(211, 211, 211, 0.25)',
-      boxStep: '0px 0px 20px 0px rgba(0, 0, 0, 0.06)'
+      boxStep: '0px 0px 20px 0px rgba(0, 0, 0, 0.06)',
+      sample:'0 0 45px rgb(153 153 153 / 14%)'
     },
     extend: {}
   },
