@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="https://wp.master.tube/app/themes/mastertube/public/images/favicon.343efc.ico">
+    <link rel="icon" type="image/x-icon" href="https://wp.master.tube/app/themes/mastertube/public/images/favicon.ico">
     <link rel="alternate" hreflang="en" href="https://wp.master.tube/en/services/shield/" />
 <link rel="alternate" hreflang="fa" href="https://wp.master.tube/fa/services/shield/" />
 <link rel="alternate" hreflang="x-default" href="https://wp.master.tube/en/services/shield/" />
@@ -49,19 +49,19 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel='stylesheet' id='wpml-blocks-css' href='https://wp.master.tube/app/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css?ver=4.6.6' media='all' />
+<link rel='stylesheet' id='wpml-blocks-css' href='https://wp.master.tube/app/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css?ver=4.6.8' media='all' />
 <link rel='stylesheet' id='app/0-css' href='./style.css' media='all' />
 <script id="wpml-cookie-js-extra">
 var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"\/"}};
 var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"\/"}};
 </script>
-<script src="https://wp.master.tube/app/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=4.6.6" id="wpml-cookie-js"></script>
+<script src="https://wp.master.tube/app/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=4.6.8" id="wpml-cookie-js" defer data-wp-strategy="defer"></script>
 <link rel="https://api.w.org/" href="https://wp.master.tube/en/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wp.master.tube/wp/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 6.4.2" />
 <link rel='shortlink' href='https://wp.master.tube/en/?p=45928' />
 <link rel="alternate" type="application/json+oembed" href="https://wp.master.tube/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwp.master.tube%2Fen%2Fservices%2Fshield%2F" />
 <link rel="alternate" type="text/xml+oembed" href="https://wp.master.tube/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwp.master.tube%2Fen%2Fservices%2Fshield%2F&#038;format=xml" />
-<meta name="generator" content="WPML ver:4.6.6 stt:1,17;" />
+<meta name="generator" content="WPML ver:4.6.8 stt:1,17;" />
   </head>
 
   <body class="service-template service-template-pages service-template-services service-template-shield-en service-template-pagesservicesshield-en single single-service postid-45928 wp-embed-responsive shield">
@@ -71,35 +71,49 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
   Skip to content
 </a>
 <!-- Language Bar -->
-  <section class="w-full h-auto flex items-center bg-[#F8F8F8] mx-auto" id="LanguageBar" x-data="{show: '1'}" >
+  <section class="w-full h-auto flex items-center bg-[#F8F8F8] mx-auto" id="LanguageBar" x-data="{show: '1'}">
     <div x-show="show == '1'"
       class="flex lg:flex-row flex-col py-[1rem] w-full justify-between items-center lg:max-w-[111.8rem] xl:px-0 px-4 mx-auto gap-3">
+      <div class="flex gap-x-[1rem] items-center mx-auto lg:mx-0" x-data="languageToFa">
+                <a
+          href="/fa/services/shield/"
+          x-on:click.prevent="setFaCookieAndRedirect($event)"
+          class="hover:bg-white border-2 flex justify-center items-center font-bold transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 w-full h-12 lg:h-12 lg:py-3 px-6 lg:px-6 py-4 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit">
+          تغییر زبان به فارسی
+        </a>
+      </div>
+
       <div class="flex gap-x-[1rem]" >
-            <span @click="show = '2'">
+        <p class="px-2 text-right" dir="rtl">برای مشاهده مسترتیوب به زبان فارسی، کلیک کنید.</p>
+        <span @click="show = '2'" class="cursor-pointer">
               <svg @click="show = '2'"
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none">
+                   xmlns="http://www.w3.org/2000/svg"
+                   width="25"
+                   height="25"
+                   viewBox="0 0 25 25"
+                   fill="none">
                 <path
                   d="M19.3723 18.7487C19.4423 18.8187 19.4978 18.9018 19.5357 18.9933C19.5736 19.0847 19.5931 19.1828 19.5931 19.2818C19.5931 19.3808 19.5736 19.4788 19.5357 19.5703C19.4978 19.6618 19.4423 19.7449 19.3723 19.8149C19.3023 19.8849 19.2192 19.9405 19.1277 19.9784C19.0362 20.0162 18.9382 20.0358 18.8392 20.0358C18.7402 20.0358 18.6421 20.0162 18.5506 19.9784C18.4592 19.9405 18.376 19.8849 18.306 19.8149L12.0573 13.5652L5.80857 19.8149C5.66718 19.9563 5.47541 20.0358 5.27544 20.0358C5.07548 20.0358 4.88371 19.9563 4.74231 19.8149C4.60092 19.6735 4.52148 19.4818 4.52148 19.2818C4.52148 19.0818 4.60092 18.8901 4.74231 18.7487L10.992 12.4999L4.74231 6.2512C4.60092 6.10981 4.52148 5.91803 4.52148 5.71807C4.52148 5.51811 4.60092 5.32634 4.74231 5.18494C4.88371 5.04355 5.07548 4.96411 5.27544 4.96411C5.47541 4.96411 5.66718 5.04355 5.80857 5.18494L12.0573 11.4346L18.306 5.18494C18.4474 5.04355 18.6392 4.96411 18.8392 4.96411C19.0391 4.96411 19.2309 5.04355 19.3723 5.18494C19.5137 5.32634 19.5931 5.51811 19.5931 5.71807C19.5931 5.91803 19.5137 6.10981 19.3723 6.2512L13.1226 12.4999L19.3723 18.7487Z"
                   fill="#828282" />
               </svg>
             </span>
-
-        <p class="px-2">We noticed that you are from Iran, you can view the Persian version.</p>
-      </div>
-
-      <div class="flex gap-x-[1rem] items-center mx-auto lg:mx-0">
-          <a
-            href="https://wp.master.tube/fa"
-            class="text-md min-w-[5.2rem] whitespace-nowrap px-3 py-2 font-semibold bg-primary-1 rounded-lg text-white">
-            Change Language
-        </a>
       </div>
     </div>
   </section>
+  <script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.data('languageToFa', () => ({
+        setFaCookieAndRedirect(event) {
+          const expires = new Date(Date.now() + 60 * 24 * 60 * 60 * 1000).toUTCString();
+          // Setting the cookie
+          document.cookie = `mt_current_language=fa; path=/; expires=${expires};`;
+
+          // Redirecting to the URL in the href attribute of the <a> tag
+          window.location.href = event.target.getAttribute('href');
+        }
+      }));
+    });
+  </script>
 <!-- Language Bar -->
 <!-- Header -->
 <header
@@ -110,7 +124,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
   <div
     class="lg:max-w-[124rem] mx-auto flex items-center h-full justify-between xl:px-0 px-4">
     <a href="https://wp.master.tube/en/">
-      <img src="https://wp.master.tube/app/themes/mastertube/public/images/logo.4c3e7e.png" alt="MasterTube"/>
+      <img src="https://wp.master.tube/app/themes/mastertube/public/images/logo.png" alt="MasterTube"/>
     </a>
     <button
       @click="pricingOpen = !pricingOpen"
@@ -314,11 +328,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
           </div>
           <!-- Dropdown Desktop -->
         </li>
-        <li
-          class="font-semibold text-neutral-text1 lg:font-normal lg:">
-          <a href="https://wp.master.tube/en/blog">Blog</a>
-        </li>
-        <li
+                <li
           class="font-semibold text-neutral-text1 lg:font-normal lg:">
           <a href="https://wp.master.tube/en/about-us/">About Us</a>
         </li>
@@ -331,7 +341,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
           href="https://chromewebstore.google.com/detail/mastertube/ebenecbhjmfnidklknaigagobpjppdna"
           target="_blank">
           <button
-            class="hover:bg-white border-2 flex justify-center items-center font-bold transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 w-full h-12 lg:h-12 lg:py-3 px-6 lg:px-6 py-4 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit">
+            class="hover:bg-white border-2 flex justify-center items-center font-bold transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 w-full h-12 lg:h-12 lg:py-3 px-6 lg:px-2 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit">
             Install Free Now
           </button>
         </a
@@ -341,26 +351,26 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
           href="https://app.master.tube"
           target="_blank">
           <button
-            class="px-[1.8rem] whitespace-nowrap py-[1rem] text-md font-semibold ">
-            Sign In
+            class="hover:bg-white border-2 flex justify-center items-center font-bold transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 letter-space w-full h-12 lg:h-12 lg:py-3 px-6 lg:px-6 py-4 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit">
+            Dashboard
           </button>
         </a>
       </div>
     </nav>
-    <div class="hidden lg:flex">
+    <div class="hidden lg:flex justify-center items-center">
       <a
         href="https://app.master.tube"
         target="_blank">
         <button
           class="px-[1.8rem] whitespace-nowrap py-[1rem] text-md font-semibold ">
-          Sign In
+          Dashboard
         </button>
       </a>
       <a
         href="https://chromewebstore.google.com/detail/mastertube/ebenecbhjmfnidklknaigagobpjppdna"
         target="_blank">
         <button
-          class="hover:bg-white border-2 flex justify-center items-center font-bold transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 w-full h-12 lg:h-12 lg:py-3 px-6 lg:px-6 py-4 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit">
+          class="hover:bg-white border-2 flex justify-center items-center font-bold transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 letter-space w-full h-12 lg:h-12 lg:py-3 px-6 lg:px-6 py-4 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit">
           <span>Install Free Now</span>
         </button>
       </a
@@ -404,7 +414,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
                         </p>
       <div class="flex flex-col gap-y-3 mb-10 lg:flex-row gap-x-7 mt-[12.8px]">
         <button class="btn w-full lg:w-auto bg-[#8F55EA] shadow-primary py-4 px-6 rounded-lg letter-space leading-[180%]  text-white flex items-center gap-x-2 group mt-6">
-          <a href=""><span class="text-[1.6rem] md:text-[1.8rem]">request masterShield</span></a>
+          <a href="#requestForm" target="_blank"><span class="text-[1.6rem] md:text-[1.8rem]">Request MasterShield</span></a>
           <span class="">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:stroke-primary-1 stroke-white">
                   <path d="M12.0459 5.35059L16.8097 10.1144L12.0459 14.8782" stroke-width="1.17722" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -413,7 +423,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
           </span>
         </button>
                   <button class="w-full h-12 lg:h-16 lg:py-3 px-7  lg:px-10 rounded-lg text-[#666E80] letter-space leading-[180%] text-[1.8rem] md:w-fit lg:mt-6 font-semibold">
-            <a class="text-[1.6rem] md:text-[1.8rem]" href="">Find More</a>
+            <a class="text-[1.6rem] md:text-[1.8rem]" href="#moreFeatures">Find More</a>
           </button>
               </div>
     </div>
@@ -424,7 +434,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
 
       <!-- Glassy Effect -->
       <div class="flex justify-center items-center mt-10">
-        <img src="https://wp.master.tube/app/themes/mastertube/public/images/shield/services.286e69.png" alt="services" class="w-[20rem] lg:w-[30rem]">
+        <img src="https://wp.master.tube/app/themes/mastertube/public/images/shield/services.png" alt="services" class="w-[20rem] lg:w-[30rem]">
       </div>
     </div>
   </div>
@@ -436,7 +446,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
   class="flex flex-col-reverse text-center lg:text-start mb-[10rem] lg:flex-row justify-between items-center max-w-[111.8rem] mx-auto gap-x-10">
   <div class="flex">
     <img
-      src="https://wp.master.tube/app/themes/mastertube/public/images/shield/reliable-1.191a82.png"
+      src="https://wp.master.tube/app/themes/mastertube/public/images/shield/reliable-1.png"
       alt=""
       class="w-[20rem] lg:w-[27rem]" />
   </div>
@@ -453,14 +463,14 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
   <!-- Introduction Section -->
 
   <!-- More Features -->
-  <div class="flex flex-col max-w-[124rem] container lg:flex-row gap-[14px] lg:gap-0 relative lg:items-center justify-center mx-auto mb-[5rem] lg:mb-[4rem]">
+  <div id="moreFeatures" class="flex flex-col max-w-[124rem] container lg:flex-row gap-[14px] lg:gap-0 relative lg:items-center justify-center mx-auto mb-[5rem] lg:mb-[4rem]">
     <h2 class="text-[4rem] font-bold text-neutral-text1 text-center letter-space">
       <span class="bg-starts text-transparent bg-clip-text">MasterShield </span>Features
     </h2>
   </div>
   <section class="flex flex-col lg:flex-row gap-[14px] lg:gap-0 relative lg:items-center justify-center mx-auto mb-[5rem] lg:mb-[4rem] lg:max-w-[1092px]">
   <div class="absolute -z-30 bottom-0 -right-10">
-    <img src="https://wp.master.tube/app/themes/mastertube/public/images/cashout/bg-gradient-content.303005.png" alt="Effect">
+    <img src="https://wp.master.tube/app/themes/mastertube/public/images/cashout/bg-gradient-content.png" alt="Effect">
   </div>
   <div class="gap-y-[27px] gap-x-10 w-full">
     <div class="flex justify-center py-12 lg:py-[50px] px-6 relative col-span-3 lg:rounded-[22px] shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] bg-connect w-full lg:w-full">
@@ -483,37 +493,37 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
   <!-- How can we help? -->
   <section class="flex flex-col gap-[23px] mx-auto lg:w-auto mb-[12rem] lg:mb-[15rem]">
     <div class="w-full px-4 lg:px-0 lg:overflow-visible scrollbar-hide overflow-x-scroll">
-      <div class="grid grid-cols-3 w-[1092px] justify-center items-center mx-auto overflow-visible gap-x-9">
+      <div class="grid grid-cols-3 w-[1092px] justify-center items-center mx-auto overflow-visible gap-x-9 h-[450px] md:h-[550px]">
         <div class="flex flex-col justify-between w-full h-full overflow-hidden relative rounded-2xl px-[30.56px] py-[35.64px] bg-white shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] hover:bg-pricing duration-300 ease-in-out group">
   <div class="flex flex-col justify-between items-center lg:items-start lg:justify-end">
-    <h4 class="text-neutral-text1-cash font-bold mb-[8.32px] group-hover:text-white text-center lg:text-start letter-space">Brand Protection</h4>
-    <p class="text-[#595959] group-hover:text-white letter-space">Preventing misuse of your brand and reputation in social media</p>
+    <h4 class="text-neutral-text1-cash font-black mb-[8.32px] group-hover:text-white text-center lg:text-start letter-space">Brand Protection</h4>
+    <p class="text-[#595959] group-hover:text-white letter-space">Preventing misuse of your brand and reputation in social media, which would benefit bussinesses and personal brands.</p>
   </div>
 
-  <div class="max-w-[17rem] mx-auto flex justify-center items-center">
-    <img src="https://wp.master.tube/app/themes/mastertube/public/images/shield/contract-2.979283.png" alt="Channel Icon" class="w-100">
+  <div class="mx-auto flex justify-center items-center w-[13rem] md:w-[17rem]">
+    <img src="https://wp.master.tube/app/themes/mastertube/public/images/shield/contract-2.png" alt="Channel Icon" class="w-100">
   </div>
 </div>
 
         <div class="flex flex-col justify-between w-full h-full overflow-hidden relative rounded-2xl px-[30.56px] py-[35.64px] bg-white shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] hover:bg-pricing duration-300 ease-in-out group">
   <div class="flex flex-col justify-between items-center lg:items-start lg:justify-end">
-    <h4 class="text-neutral-text1-cash font-bold mb-[8.32px] group-hover:text-white text-center lg:text-start letter-space">Trademark</h4>
+    <h4 class="text-neutral-text1-cash font-black mb-[8.32px] group-hover:text-white text-center lg:text-start letter-space">Trademark</h4>
     <p class="text-[#595959] group-hover:text-white letter-space">Registering and receiving your trademark from the European Union or Canada for verification on different platforms</p>
   </div>
 
-  <div class="max-w-[17rem] mx-auto flex justify-center items-center">
-    <img src="https://wp.master.tube/app/themes/mastertube/public/images/shield/access-analytics-1.a80de8.png" alt="Channel Icon" class="w-100">
+  <div class="mx-auto flex justify-center items-center w-[13rem] md:w-[17rem]">
+    <img src="https://wp.master.tube/app/themes/mastertube/public/images/shield/access-analytics-1.png" alt="Channel Icon" class="w-100">
   </div>
 </div>
 
         <div class="flex flex-col justify-between w-full h-full overflow-hidden relative rounded-2xl px-[30.56px] py-[35.64px] bg-white shadow-[0px_4px_35.9px_0px_rgba(0,0,0,0.05)] hover:bg-pricing duration-300 ease-in-out group">
   <div class="flex flex-col justify-between items-center lg:items-start lg:justify-end">
-    <h4 class="text-neutral-text1-cash font-bold mb-[8.32px] group-hover:text-white text-center lg:text-start letter-space">Reputation Protection Service</h4>
+    <h4 class="text-neutral-text1-cash font-black mb-[8.32px] group-hover:text-white text-center lg:text-start letter-space">Reputation Protection Service</h4>
     <p class="text-[#595959] group-hover:text-white letter-space">leveraging legal solutions and active legal communications with social networks, MasterShield can lawfully face any unauthorized commercial appropriation</p>
   </div>
 
-  <div class="max-w-[17rem] mx-auto flex justify-center items-center">
-    <img src="https://wp.master.tube/app/themes/mastertube/public/images/shield/Official-connection-2.cb44b6.png" alt="Channel Icon" class="w-100">
+  <div class="mx-auto flex justify-center items-center w-[13rem] md:w-[17rem]">
+    <img src="https://wp.master.tube/app/themes/mastertube/public/images/shield/Official-connection-2.png" alt="Channel Icon" class="w-100">
   </div>
 </div>
       </div>
@@ -522,13 +532,13 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
   <!-- How can we help? -->
 
   <!-- Why Trusting Us? -->
-  <section
+  <section id=""
   class="container mx-auto mb-[5rem] lg:mb-[15.4rem] max-w-[124rem] text-center lg:text-start">
   <div
     class="flex flex-col-reverse lg:flex-row px-5 lg:px-0 gap-x-[91px] gap-y-[15px] items-center justify-center lg:items-start">
     <div class="min-w-fit overflow-x-auto ">
       <img
-        src="https://wp.master.tube/app/themes/mastertube/public/images/rocket/apply.f05b24.png"
+        src="https://wp.master.tube/app/themes/mastertube/public/images/rocket/apply.png"
         alt="Cashout Trust"
         class="w-[220px] lg:w-[300px]"
       />
@@ -543,7 +553,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
               </h2>
       <div class="grid grid-cols-2 sm:flex w-full gap-x-11 gap-y-4 border-b-2 border-[#B795E5] border-opacity-[0.2] text-center lg:text-start letter-space">
                   <span @click="content = '0'"
-                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
+                class="text-neutral-text1-cash/60 mb-[-2px] cursor-pointer text-md font-medium pb-3"
                 :class="content === '0' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'">
                 <span
                   :class="content === '0' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
@@ -551,7 +561,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
                 >
           </span>
                   <span @click="content = '1'"
-                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
+                class="text-neutral-text1-cash/60 mb-[-2px] cursor-pointer text-md font-medium pb-3"
                 :class="content === '1' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'">
                 <span
                   :class="content === '1' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
@@ -559,7 +569,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
                 >
           </span>
                   <span @click="content = '2'"
-                class="text-neutral-text1-cash/60 cursor-pointer text-md font-medium pb-3"
+                class="text-neutral-text1-cash/60 mb-[-2px] cursor-pointer text-md font-medium pb-3"
                 :class="content === '2' && 'md:border-b-2 md:border-[#B378FF] md:text-neutral-text1/100'">
                 <span
                   :class="content === '2' && 'border-b-2 md:border-none pb-3 border-[#B378FF] text-neutral-text1/100'"
@@ -583,8 +593,8 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
 
 
   <!-- Form -->
-  <section
-  class="max-w-[113.9rem] mx-auto shadow-secondary mb-22 overflow-hidden relative">
+  <section id="requestForm"
+         class="max-w-[113.9rem] mx-auto shadow-sample mb-22 overflow-hidden relative">
   <div
     class="max-w-[70rem] mx-auto flex flex-col items-center lg:items-start justify-center px-5 py-7 relative">
     <div
@@ -597,51 +607,50 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
           class="font-bold text-neutral-text1 leading-[110%] ">information?</span>
           </h3>
     <p class="text-[#98A1B3] text-[18.912px] text-center lg:text-start mb-4">Please fill out the form below so we can contact you at the earliest opportunity.</p>
-    <form id="myForm" class="flex flex-col w-full gap-[12.61px] px-0"
+    <form id="myForm" class="flex flex-col w-full gap-[12.61px]"
           method="post"
           x-data="ContactForm()"
-          @submit.prevent="submitForm">
+          onsubmit="event.preventDefault();"
+    >
       <div
-        class="text-[18.912px] text-center"
+        class="text-[18.912px] text-start"
         :class="hasError ? 'text-notification-alert' : 'text-notification-success'"
         x-text="formMessage"></div>
+      <div class="flex flex-col w-full gap-[12.61px]">
         <!-- Input 1 -->
         <div
-          class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 30 30"
-                  fill="none">
-                  <path
-                    d="M18.02 6.01001C17.18 5.37001 16.14 5 15 5C12.24 5 10 7.24 10 10C10 12.76 12.24 15 15 15C17.76 15 20 12.76 20 10"
-                    stroke="#C4C4C4"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"/>
-                  <path
-                    d="M23.5901 25C23.5901 21.13 19.7402 18 15.0002 18C10.2602 18 6.41016 21.13 6.41016 25"
-                    stroke="#C4C4C4"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"/>
-                </svg>
-              </span>
-        <input
-          type="text"
-          id="name"
-          name="input_4"
-          placeholder="Your Name"
-          class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none"
-          required/>
-      </div>
-      <!-- Input 1 -->
+          class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full text-black"
+          :class="name_error ? 'border-2 border-[#e74c3c] text-[#e74c3c]' : 'text-black'">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none">
+            <path
+              d="M18.02 6.01001C17.18 5.37001 16.14 5 15 5C12.24 5 10 7.24 10 10C10 12.76 12.24 15 15 15C17.76 15 20 12.76 20 10"
+              stroke="#C4C4C4"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+            <path
+              d="M23.5901 25C23.5901 21.13 19.7402 18 15.0002 18C10.2602 18 6.41016 21.13 6.41016 25"
+              stroke="#C4C4C4"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+          </svg>
+          <input @keyup="validation" x-model="name" type="text" name="input_4" id="name"
+                 placeholder="Your Name" class="w-full text-[1.4rem]  bg-[#f5f5f5] focus:ring-0 ring-0 outline-none"
+                 data-np-intersection-state="observed">
+        </div>
+        <span x-show="name_error" x-text="name_error" class="px-5 text-md error"></span>
+        <!-- Input 1 -->
 
-      <!-- Input 2 -->
-      <div
-        class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
+        <!-- Input 2 -->
+        <div
+          class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full text-black"
+          :class="name_error ? 'border-2 border-[#e74c3c] text-[#e74c3c]' : 'text-black'">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -656,19 +665,17 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
                     stroke-miterlimit="10"/>
                 </svg>
               </span>
-        <input
-          type="text"
-          id="phone"
-          name="input_9"
-          placeholder="your phone number"
-          class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none"
-          required/>
-      </div>
-      <!-- Input 2 -->
+          <input x-model="phone" @keyup="validation" type="text" name="input_9" id="phone"
+                 placeholder="your phone number" class="w-full text-[1.4rem]  bg-[#f5f5f5] focus:ring-0 ring-0 outline-none"
+                 data-np-intersection-state="observed">
+        </div>
+        <span x-show="phone_error" x-text="phone_error" class="px-5 text-md error"></span>
+        <!-- Input 2 -->
 
-      <!-- Input 3 -->
-      <div
-        class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
+        <!-- Input 3 -->
+        <div
+          class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full text-black"
+          :class="name_error ? 'border-2 border-[#e74c3c] text-[#e74c3c]' : 'text-black'">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -704,19 +711,18 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
                     stroke-linejoin="round"/>
                 </svg>
               </span>
-        <input
-          type="email"
-          id="email"
-          name="input_7"
-          placeholder="email  address"
-          class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none"
-          required/>
-      </div>
-      <!-- Input 3 -->
+          <input x-model="email" @keyup="validation" type="email" name="input_7" id="email"
+                 placeholder="email  address" class="w-full text-[1.4rem]  bg-[#f5f5f5] focus:ring-0 ring-0 outline-none"
+                 data-np-intersection-state="observed">
+        </div>
+        <span x-show="email_error" x-text="email_error" class="px-5 text-md error"></span>
 
-      <!-- Input 4 -->
-      <div
-        class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full">
+        <!-- Input 3 -->
+
+        <!-- Input 4 -->
+        <div
+          class="flex items-center bg-[#f5f5f5] rounded-[4.3rem] gap-x-2 py-2 px-5 h-[4.2rem] lg:h-[5rem] w-full text-black"
+          :class="name_error ? 'border-2 border-[#e74c3c] text-[#e74c3c]' : 'text-black'">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -740,20 +746,23 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
                     stroke-linejoin="round"/>
                 </svg>
               </span>
-        <input
-          type="text"
-          id="channel"
-          name="input_8"
-          placeholder="my YouTube channel URL"
-          class="w-full text-[1.4rem] text-[#B7A6BC] bg-[#f5f5f5] focus:ring-0 ring-0 outline-none"/>
+          <input x-model="channel" @keyup="validation" type="text" name="input_8" id="channel"
+                 placeholder="Your YouTube channel URL"
+                 class="w-full text-[1.4rem]  bg-[#f5f5f5] focus:ring-0 ring-0 outline-none"
+                 data-np-intersection-state="observed">
+        </div>
+        <span x-show="channel_error" x-text="channel_error" class="px-5 text-md error"></span>
+        <!-- Input 4 -->
+        <!-- Input 5 -->
+        <input type="hidden" name="input_10" value="en">
+        <!-- Input 5 -->
+        <button
+          type="submit" x-text="buttonText"
+          @click="submitForm"
+          class="flex group hover:bg-[#f5f5f5] transition-colors ease-out hover:text-primary-1 h-[41px] w-full items-center justify-center gap-[10px] text-xl  px-5 rounded-[77px] text-white bg-primary-1">
+          submit
+        </button>
       </div>
-      <!-- Input 4 -->
-      <button
-        type="submit"
-        class="bg-primary-1 h-[54.636px] rounded-[80.903px] text-white text-[14.209px]"
-        :disabled="formLoading" x-text="buttonText">
-        <span class="">submit</span>
-      </button>
     </form>
   </div>
 </section>
@@ -766,43 +775,95 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
       formLoading: false,
       hasError: false,
       buttonText: "submit",
-      submitForm(event) {
-        event.preventDefault();
-        const form = document.getElementById('myForm');
-        const formData = new FormData(form);
-        const formDataObject = {};
-
-        for (const [key, value] of formData.entries()) {
-          formDataObject[key] = value;
+      name: "",
+      name_error: "",
+      phone: "",
+      phone_error: "",
+      email: "",
+      email_error: "",
+      channel: "",
+      channel_error: "",
+      validation() {
+        //validate name
+        if (this.name == "") {
+          this.name_error = "Your Name is required";
+        } else {
+          this.name_error = "";
         }
-        this.formMessage = "";
-        this.formLoading = false;
-        this.buttonText = "Submitting...";
-        fetch(FORM_URL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify(formDataObject)
-        })
-          .then(response => {
-            if(response.is_valid){
-              this.hasError = false;
-              this.formMessage = "Form successfully submitted";
-            }else{
+
+        //validate phone
+        if (this.phone == "") {
+          this.phone_error = "your phone number is required";
+        } else {
+          this.phone_error = "";
+        }
+
+        //validate email
+        if (this.email == "" || !this.email.includes('@')) {
+          this.email_error = "email  address is required";
+        } else {
+          this.email_error = "";
+        }
+
+        //validate channel include https://youtube.com
+        if (this.channel != "" && !this.channel.includes('youtube')) {
+          this.channel_error = "Your YouTube channel URL is required";
+        } else {
+          this.channel_error = "";
+        }
+
+        if (this.name_error == "" && this.phone_error == "" && this.email_error == "" && this.channel_error == "") {
+          this.formLoading = true;
+          this.formMessage = "";
+          this.hasError = false;
+        } else {
+          this.formLoading = false;
+          this.hasError = true;
+          this.formMessage = "The information entered is incorrect, please check";
+        }
+      },
+      submitForm(event) {
+        if (this.name_error == "" && this.phone_error == "" && this.email_error == "" && this.channel_error == "" && this.formLoading) {
+          const form = document.getElementById('myForm');
+          const formData = new FormData(form);
+          const formDataObject = {};
+
+          for (const [key, value] of formData.entries()) {
+            formDataObject[key] = value;
+          }
+          this.formMessage = "";
+          this.formLoading = false;
+          this.buttonText = 'submitting...';
+          fetch(FORM_URL, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify(formDataObject)
+          })
+            .then(response => {
+              if (response.ok) {
+                this.hasError = false;
+                this.formMessage = "Your request has been submitted successfully";
+              } else {
+                this.hasError = true;
+                this.formMessage = "Something went wrong, please try again later";
+              }
+            })
+            .catch(() => {
               this.hasError = true;
-              this.formMessage = "Fill the form correctly";
-            }
-          })
-          .catch(() => {
-            this.hasError = true;
-            this.formMessage = "Something went wrong";
-          })
-          .finally(() => {
-            this.formLoading = false;
-            this.buttonText = "submit";
-          });
+              this.formMessage = "Something went wrong, please try again later";
+            })
+            .finally(() => {
+              this.formLoading = false;
+              this.buttonText = "submit";
+            });
+        } else {
+          this.hasError = true;
+          this.formMessage = "The information entered is incorrect, please check";
+        }
+
       },
     };
   }
@@ -816,56 +877,60 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
           <span class="font-black text-neutral-text1 leading-[110%] bg-starts text-transparent bg-clip-text">Asked Questions!</span>
       </h3>
   <div x-data="{ opened_tab: 0 }" class="flex flex-col gap-y-6">
-          <div class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8">
+          <div class="bg-neutral-bg3 w-full rounded-lg shadow-sample py-4 px-8">
         <!-- Header -->
-        <div @click="opened_tab = opened_tab === 0 ? null : 0" class="flex justify-between items-center cursor-pointer pt-4">
+        <div @click="opened_tab = opened_tab === 0 ? null : 0" class="flex justify-between items-center cursor-pointer">
             <span class="text-xl font-semibold text-neutral-text1 text-start letter-space">What are the benefits of MasterShield service compared to legal actions?</span>
-          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" class="transition-transform duration-300 rotate-180" :class="opened_tab === 0 ? 'rotate-180': '' ">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" class="transition-transform duration-300" :class="opened_tab === 0 ? 'rotate-180': '' ">
                 <path d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z" fill="#8F55EA" stroke="#8F55EA"></path>
-              </svg>
-            </span>
+            </svg>
+          </span>
         </div>
         <!-- Header -->
         <!-- Content -->
         <p x-show="opened_tab === 0" x-transition="" class="text-md  text-start font-normal py-2 letter-space">We answer this question with a real example. Suppose someone has created a page similar to your personal or organizational brand on Instagram and has copied your content for the purpose of misuse.</p>
         <!-- Content -->
       </div>
-          <div class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8">
+          <div class="bg-neutral-bg3 w-full rounded-lg shadow-sample py-4 px-8">
         <!-- Header -->
-        <div @click="opened_tab = opened_tab === 1 ? null : 1" class="flex justify-between items-center cursor-pointer pt-4">
+        <div @click="opened_tab = opened_tab === 1 ? null : 1" class="flex justify-between items-center cursor-pointer">
             <span class="text-xl font-semibold text-neutral-text1 text-start letter-space">What are the benefits of MasterShield service compared to legal actions?</span>
-          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" class="transition-transform duration-300 rotate-180" :class="opened_tab === 1 ? 'rotate-180': '' ">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" class="transition-transform duration-300" :class="opened_tab === 1 ? 'rotate-180': '' ">
                 <path d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z" fill="#8F55EA" stroke="#8F55EA"></path>
-              </svg>
-            </span>
+            </svg>
+          </span>
         </div>
         <!-- Header -->
         <!-- Content -->
         <p x-show="opened_tab === 1" x-transition="" class="text-md  text-start font-normal py-2 letter-space">We answer this question with a real example. Suppose someone has created a page similar to your personal or organizational brand on Instagram and has copied your content for the purpose of misuse.</p>
         <!-- Content -->
       </div>
-          <div class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8">
+          <div class="bg-neutral-bg3 w-full rounded-lg shadow-sample py-4 px-8">
         <!-- Header -->
-        <div @click="opened_tab = opened_tab === 2 ? null : 2" class="flex justify-between items-center cursor-pointer pt-4">
+        <div @click="opened_tab = opened_tab === 2 ? null : 2" class="flex justify-between items-center cursor-pointer">
             <span class="text-xl font-semibold text-neutral-text1 text-start letter-space">What are the benefits of MasterShield service compared to legal actions?</span>
-          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" class="transition-transform duration-300 rotate-180" :class="opened_tab === 2 ? 'rotate-180': '' ">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" class="transition-transform duration-300" :class="opened_tab === 2 ? 'rotate-180': '' ">
                 <path d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z" fill="#8F55EA" stroke="#8F55EA"></path>
-              </svg>
-            </span>
+            </svg>
+          </span>
         </div>
         <!-- Header -->
         <!-- Content -->
         <p x-show="opened_tab === 2" x-transition="" class="text-md  text-start font-normal py-2 letter-space">Yes, since MasterTube will do all the management of your channel, it needs specific access for this work, which will be done by you. However, MasterTube guarantees that it won’t perform any act on your channel without coordination and outside of the framework of the rules of the MasterRocket service.</p>
         <!-- Content -->
       </div>
-          <div class="bg-neutral-bg3 w-full rounded-lg shadow-tertiary py-4 px-8">
+          <div class="bg-neutral-bg3 w-full rounded-lg shadow-sample py-4 px-8">
         <!-- Header -->
-        <div @click="opened_tab = opened_tab === 3 ? null : 3" class="flex justify-between items-center cursor-pointer pt-4">
+        <div @click="opened_tab = opened_tab === 3 ? null : 3" class="flex justify-between items-center cursor-pointer">
             <span class="text-xl font-semibold text-neutral-text1 text-start letter-space">In case of legal actions, the process of identifying the wrongdoer may take months. This action is only for one case and will cost you months of chronological and financial time.</span>
-          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" class="transition-transform duration-300 rotate-180" :class="opened_tab === 3 ? 'rotate-180': '' ">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" class="transition-transform duration-300" :class="opened_tab === 3 ? 'rotate-180': '' ">
                 <path d="M16.4136 12.1238L16.4136 12.1238L16.4195 12.1178C16.8936 11.6273 16.9021 10.8452 16.4136 10.3567C15.9283 9.87143 15.1317 9.87143 14.6464 10.3567L12 13.0031L9.35355 10.3567C8.86829 9.87143 8.07171 9.87143 7.58645 10.3567C7.10118 10.842 7.10118 11.6385 7.58645 12.1238L11.1164 15.6538C11.3652 15.9025 11.6845 16.0202 12 16.0202C12.3155 16.0202 12.6348 15.9025 12.8836 15.6538L16.4136 12.1238ZM2.5 12.5002C2.5 7.26639 6.76614 3.00024 12 3.00024C17.2339 3.00024 21.5 7.26639 21.5 12.5002C21.5 17.7341 17.2339 22.0002 12 22.0002C6.76614 22.0002 2.5 17.7341 2.5 12.5002Z" fill="#8F55EA" stroke="#8F55EA"></path>
-              </svg>
-            </span>
+            </svg>
+          </span>
         </div>
         <!-- Header -->
         <!-- Content -->
@@ -890,9 +955,9 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
           <div
         class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary min-w-[350px] lg:flex-1">
         <div class="flex flex-col items-center gap-x-4 mb-1 h-[238px]">
-          <div class="flex flex-row justify-center items-center"><img src="https://wp.master.tube/app/themes/mastertube/public/images/main/extention1.4d7e1c.png" alt="" width="200px"></div>
+          <div class="flex flex-row justify-center items-center"><img src="https://wp.master.tube/app/themes/mastertube/public/images/main/extention1.png" alt="" width="200px"></div>
         </div>
-        <h5 class="text-start letter-space">MasterTube Extension</h5>
+        <h5 class=text-start letter-space">MasterTube Extension</h5>
         <p class="text-start mb-8"> A Powerfull Tool for YouTube Creators</p>
         <span
           class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
@@ -983,17 +1048,17 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
           
         </div>
         <div class="w-full flex justify-center items-center">
-          <button href="#sadda" class="btn w-full mx-auto">
-            Explore service
+          <button href="https://wp.master.tube/en/services/extention/" class="btn w-full mx-auto">
+            <a href="https://wp.master.tube/en/services/extention/">Explore service</a>
           </button>
         </div>
       </div>
           <div
         class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary min-w-[350px] lg:flex-1">
         <div class="flex flex-col items-center gap-x-4 mb-1 h-[238px]">
-          <div class="flex flex-row justify-center items-center"><img src="https://wp.master.tube/app/themes/mastertube/public/images/main/dashboard.e586de.png" alt="" width="200px"></div>
+          <div class="flex flex-row justify-center items-center"><img src="https://wp.master.tube/app/themes/mastertube/public/images/main/dashboard.png" alt="" width="200px"></div>
         </div>
-        <h5 class="text-start letter-space">MasterTube Dashboard</h5>
+        <h5 class=text-start letter-space">MasterTube Dashboard</h5>
         <p class="text-start mb-8">The answers to most unknown questions are hidden in the data.</p>
         <span
           class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
@@ -1084,17 +1149,17 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
           
         </div>
         <div class="w-full flex justify-center items-center">
-          <button href="#sadda" class="btn w-full mx-auto">
-            Explore service
+          <button href="https://wp.master.tube/en/services/dashboard/" class="btn w-full mx-auto">
+            <a href="https://wp.master.tube/en/services/dashboard/">Explore service</a>
           </button>
         </div>
       </div>
           <div
         class="flex flex-col p-8 rounded-2xl border border-neutral-bg1 bg-neutral-bg3 shadow-tertiary min-w-[350px] lg:flex-1">
         <div class="flex flex-col items-center gap-x-4 mb-1 h-[238px]">
-          <div class="flex flex-row justify-center items-center"><img src="https://wp.master.tube/app/themes/mastertube/public/images/main/calender.0f0f0a.png" alt="" width="200px"></div>
+          <div class="flex flex-row justify-center items-center"><img src="https://wp.master.tube/app/themes/mastertube/public/images/main/calender.png" alt="" width="200px"></div>
         </div>
-        <h5 class="text-start letter-space">MasterRocket</h5>
+        <h5 class=text-start letter-space">MasterRocket</h5>
         <p class="text-start mb-8">VIP management of your YouTube channel by MasterTube experts</p>
         <span
           class="text-md font-normal leading-[180%] text-neutral-text1 text-start mb-4"
@@ -1185,8 +1250,8 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
           
         </div>
         <div class="w-full flex justify-center items-center">
-          <button href="#sadda" class="btn w-full mx-auto">
-            Explore service
+          <button href="https://wp.master.tube/en/services/rocket/" class="btn w-full mx-auto">
+            <a href="https://wp.master.tube/en/services/rocket/">Explore service</a>
           </button>
         </div>
       </div>
@@ -1196,10 +1261,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
   <!-- Other Features -->
   </main>
 
-  <script
-  src="//unpkg.com/alpinejs"
-  defer
-></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
 <!-- Footer -->
 <footer class="w-full bg-neutral-bg2 text-center lg:text-start">
   <div class="lg:max-w-[111.8rem] mx-auto pt-22 px-10">
@@ -1208,7 +1270,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
         <div
           class="justify-center flex items-center lg:items-start lg:justify-start">
           <img
-            src="https://wp.master.tube/app/themes/mastertube/public/images/logo-purple.414aad.png"
+            src="https://wp.master.tube/app/themes/mastertube/public/images/logo-purple.png"
             alt="mastertube logo"/>
         </div>
         <p class="text-[1.8rem] mb-4 lg:mb-0">
@@ -1235,10 +1297,21 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
                 id="menu-item-72"
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72">
                 <a
-                  href="https://chrome.google.com/webstore/detail/mastertube/ebenecbhjmfnidklknaigagobpjppdna"
+                  href="https://wp.master.tube/en/services/rocket/"
                   class="text-[1.8rem] font-normal "
                 >
-                  Extension
+                  MasterRocket
+                </a
+                >
+              </li>
+              <li
+                id="menu-item-72"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72">
+                <a
+                  href="https://wp.master.tube/en/services/shield/"
+                  class="text-[1.8rem] font-normal "
+                >
+                  MasterShield
                 </a
                 >
               </li>
@@ -1246,7 +1319,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
                 id="menu-item-73"
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73">
                 <a
-                  href="https://app.master.tube"
+                  href="https://wp.master.tube/en/services/dashboard/"
                   class="text-[1.8rem] font-normal "
                 >
                   Dashboard
@@ -1254,13 +1327,13 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
                 >
               </li>
               <li
-                id="menu-item-74"
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74">
+                id="menu-item-72"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72">
                 <a
-                  href="https://support.master.tube/"
+                  href="https://wp.master.tube/en/services/extention/"
                   class="text-[1.8rem] font-normal "
                 >
-                  Support
+                  Extension
                 </a
                 >
               </li>
@@ -1304,6 +1377,17 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
                 >
               </li>
               <li
+                id="menu-item-114"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114">
+                <a
+                  href="https://support.master.tube"
+                  class="text-[1.8rem] font-normal "
+                >
+                  Support
+                </a
+                >
+              </li>
+              <li
                 id="menu-item-115"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115">
                 <a
@@ -1333,11 +1417,11 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
           </div>
           <div class="text-[1.8rem]">
             <span>Tel:  </span>
-            <span dir="ltr"> <a href="tel:+989100905511" aria-label="Tel" title="Tel">+98 910 090 5511</a></span>
+            <span dir="ltr"> <a href="tel:+989100905511" aria-label="Tel" title="Tel">+989100905511</a></span>
           </div>
           <div class="text-[1.8rem]">
             <span>Tel:  </span>
-            <span dir="ltr"> <a href="tel:+982128426460" aria-label="Tel" title="Tel">+98 21 284 26 460</a></span>
+            <span dir="ltr"> <a href="tel:+982128426460" aria-label="Tel" title="Tel">+982128426460</a></span>
           </div>
           <div class="menu-footer-4-container">
 
@@ -1371,10 +1455,9 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
 
               <!-- Twiiter -->
               <a href="https://twitter.com/mastertubevip" title="twitter" aria-label="twitter">
-                <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M12.8767 1.0965V1.09326H13.7207L14.0291 1.15485C14.2346 1.19484 14.4213 1.24724 14.589 1.31208C14.7567 1.37691 14.9191 1.45255 15.0759 1.53899C15.2328 1.62543 15.3751 1.71351 15.5028 1.80319C15.6294 1.8918 15.743 1.98581 15.8437 2.08522C15.9432 2.18571 16.0985 2.21164 16.3095 2.16302C16.5205 2.11439 16.7477 2.04685 16.9912 1.96041C17.2346 1.87397 17.4754 1.77672 17.7135 1.66866C17.9515 1.5606 18.0965 1.49199 18.1485 1.46281C18.1993 1.43257 18.2264 1.41636 18.2296 1.41419L18.2328 1.40933L18.2491 1.40122L18.2653 1.39312L18.2815 1.38501L18.2978 1.37691L18.301 1.37205L18.3059 1.3688L18.3108 1.36556L18.314 1.3607L18.3302 1.35584L18.3465 1.3526L18.3432 1.37691L18.3383 1.40122L18.3302 1.42553L18.3221 1.44985L18.314 1.46606L18.3059 1.48226L18.2978 1.50658C18.2924 1.52278 18.287 1.54439 18.2815 1.57141C18.2761 1.59843 18.2247 1.70647 18.1273 1.89558C18.03 2.08468 17.9082 2.27648 17.7621 2.47098C17.6161 2.66548 17.4851 2.81242 17.3694 2.91185C17.2525 3.01234 17.1751 3.08257 17.1373 3.12255C17.0994 3.16361 17.0534 3.20142 16.9993 3.23601L16.9181 3.2895L16.9019 3.29761L16.8857 3.30571L16.8824 3.31057L16.8776 3.31381L16.8727 3.31706L16.8694 3.32192L16.8532 3.33002L16.837 3.33813L16.8338 3.34299L16.8289 3.34623L16.824 3.34947L16.8208 3.35433L16.8175 3.3592L16.8126 3.36244L16.8078 3.36568L16.8045 3.37054H16.8857L17.3401 3.27329C17.6431 3.20846 17.9326 3.13012 18.2085 3.03827L18.6467 2.8924L18.6954 2.87619L18.7198 2.86808L18.736 2.85998L18.7522 2.85187L18.7685 2.84377L18.7847 2.83567L18.8171 2.8308L18.8496 2.82756V2.85998L18.8415 2.86322L18.8334 2.86808L18.8301 2.87295L18.8253 2.87619L18.8204 2.87943L18.8171 2.88429L18.8139 2.88915L18.809 2.8924L18.8042 2.89564L18.8009 2.9005L18.7977 2.90536L18.7928 2.9086L18.7847 2.92481L18.7766 2.94102L18.7717 2.94426C18.7695 2.9475 18.7008 3.03934 18.5656 3.2198C18.4303 3.40134 18.3573 3.49318 18.3465 3.49535C18.3356 3.49859 18.3205 3.5148 18.301 3.54397C18.2826 3.57422 18.1679 3.69471 17.9569 3.90542C17.7459 4.11613 17.5393 4.3036 17.3369 4.46785C17.1335 4.63318 17.0307 4.83632 17.0285 5.07729C17.0253 5.31717 17.0128 5.5884 16.9912 5.89095C16.9695 6.19351 16.929 6.52037 16.8694 6.87156C16.8099 7.22275 16.718 7.61985 16.5935 8.06288C16.4691 8.5059 16.3176 8.93813 16.1391 9.35955C15.9605 9.78097 15.7739 10.1592 15.5791 10.4941C15.3843 10.8291 15.2058 11.1128 15.0435 11.3451C14.8812 11.5774 14.7162 11.7962 14.5484 12.0015C14.3807 12.2068 14.1687 12.4381 13.9122 12.6952C13.6547 12.9513 13.514 13.0918 13.4902 13.1167C13.4653 13.1404 13.3593 13.229 13.1721 13.3825C12.986 13.537 12.7858 13.6915 12.5715 13.846C12.3584 13.9995 12.1625 14.1275 11.984 14.2302C11.8054 14.3328 11.5901 14.4501 11.338 14.5819C11.087 14.7148 10.8153 14.838 10.5232 14.9515C10.231 15.0649 9.92265 15.1703 9.59803 15.2675C9.27341 15.3648 8.95962 15.4404 8.65664 15.4944C8.35368 15.5485 8.01012 15.5944 7.62598 15.6322L7.04979 15.6889V15.697H5.99479V15.6889L5.85682 15.6808C5.76486 15.6754 5.68911 15.67 5.62959 15.6646C5.57009 15.6592 5.34555 15.6295 4.95601 15.5755C4.56647 15.5215 4.2608 15.4674 4.03897 15.4134C3.81716 15.3594 3.48712 15.2567 3.04889 15.1054C2.61066 14.9542 2.23572 14.8012 1.92409 14.6467C1.61355 14.4933 1.41878 14.396 1.33978 14.355C1.26187 14.315 1.17423 14.2653 1.07684 14.2059L0.930764 14.1167L0.927534 14.1119L0.922648 14.1086L0.917779 14.1054L0.914533 14.1005L0.898302 14.0924L0.882071 14.0843L0.878841 14.0794L0.873956 14.0762L0.869086 14.073L0.86584 14.0681L0.86261 14.0632L0.857725 14.06H0.849609V14.0276L0.86584 14.0308L0.882071 14.0357L0.95511 14.0438C1.0038 14.0492 1.13636 14.0573 1.35277 14.0681C1.56919 14.0789 1.79911 14.0789 2.04258 14.0681C2.28604 14.0573 2.53492 14.033 2.78919 13.9952C3.04348 13.9573 3.34375 13.8925 3.69001 13.8007C4.03627 13.7088 4.3544 13.5997 4.6444 13.4732C4.9333 13.3457 5.13888 13.2507 5.26117 13.188C5.38235 13.1264 5.56738 13.0118 5.81625 12.8444L6.18956 12.5931L6.1928 12.5883L6.19767 12.585L6.20256 12.5818L6.20579 12.5769L6.20903 12.5721L6.2139 12.5688L6.21879 12.5656L6.22202 12.5607L6.23825 12.5558L6.25448 12.5526L6.25772 12.5364L6.26259 12.5202L6.26748 12.5169L6.27071 12.5121L6.14086 12.504C6.0543 12.4986 5.97044 12.4932 5.88928 12.4878C5.80813 12.4824 5.68099 12.4581 5.50786 12.4148C5.33474 12.3716 5.14809 12.3068 4.9479 12.2203C4.74772 12.1339 4.55295 12.0312 4.36359 11.9124C4.17424 11.7935 4.03735 11.6946 3.95295 11.6158C3.86963 11.5379 3.76142 11.4277 3.62833 11.2851C3.49632 11.1414 3.38162 10.9939 3.28424 10.8426C3.18685 10.6913 3.0938 10.5168 3.00508 10.3191L2.87035 10.0241L2.86223 9.99978L2.85412 9.97547L2.84925 9.95926L2.846 9.94305L2.87035 9.94629L2.8947 9.95116L3.07323 9.97547C3.19227 9.99168 3.37893 9.99708 3.6332 9.99168C3.88749 9.98628 4.06332 9.97547 4.1607 9.95926C4.25809 9.94305 4.3176 9.93224 4.33924 9.92684L4.3717 9.91874L4.41228 9.91064L4.45286 9.90253L4.4561 9.89767L4.46097 9.89443L4.46586 9.89119L4.46909 9.88632L4.43662 9.87822L4.40416 9.87011L4.3717 9.86201L4.33924 9.85391L4.30678 9.8458C4.28514 9.8404 4.24728 9.82959 4.19316 9.81339C4.13906 9.79718 3.99299 9.73774 3.75493 9.63509C3.51689 9.53245 3.32752 9.43249 3.18685 9.33524C3.04583 9.23771 2.91137 9.13104 2.78433 9.01593C2.65772 8.89923 2.51869 8.74903 2.36719 8.56534C2.21571 8.38165 2.08046 8.16823 1.96142 7.92511C1.8424 7.68198 1.75313 7.44966 1.69361 7.22814C1.63433 7.00793 1.59522 6.78278 1.57677 6.5555L1.54754 6.21512L1.56377 6.21836L1.58 6.22322L1.59623 6.23133L1.61246 6.23943L1.62869 6.24754L1.64492 6.25564L1.8965 6.3691C2.06423 6.44474 2.27252 6.50958 2.52139 6.5636C2.77027 6.61762 2.91904 6.64735 2.96773 6.65275L3.04077 6.66085H3.18685L3.18362 6.65599L3.17873 6.65275L3.17387 6.6495L3.17062 6.64464L3.16739 6.63978L3.1625 6.63654L3.15763 6.6333L3.15439 6.62843L3.13816 6.62033L3.12193 6.61222L3.1187 6.60736L3.11381 6.60412L3.10894 6.60088L3.1057 6.59602L3.08947 6.58791L3.07323 6.57981L3.07 6.57495C3.06676 6.57277 3.02022 6.5382 2.9304 6.47121C2.84167 6.40314 2.74862 6.31508 2.65123 6.20701C2.55385 6.09895 2.45646 5.98549 2.35908 5.86664C2.26151 5.74751 2.17461 5.62005 2.09938 5.48574C2.02365 5.35068 1.94357 5.17885 1.85917 4.97031C1.77585 4.76285 1.71255 4.55376 1.66927 4.34305C1.626 4.13234 1.60165 3.92434 1.59623 3.71902C1.59082 3.51371 1.59623 3.33813 1.61246 3.19225C1.62869 3.04637 1.66115 2.88158 1.70984 2.69789C1.75854 2.5142 1.82888 2.3197 1.92084 2.11439L2.05881 1.80643L2.06692 1.78212L2.07504 1.75781L2.07992 1.75456L2.08315 1.7497L2.0864 1.74484L2.09127 1.7416L2.09615 1.74484L2.09938 1.7497L2.10263 1.75456L2.1075 1.75781L2.11238 1.76105L2.11561 1.76591L2.11886 1.77077L2.12373 1.77401L2.13185 1.79022L2.13996 1.80643L2.14485 1.80967L2.14808 1.81454L2.36719 2.05766C2.51327 2.21975 2.6864 2.40075 2.88658 2.60064C3.08677 2.80054 3.19768 2.90428 3.21931 2.91185C3.24096 2.92048 3.268 2.94533 3.30047 2.9864C3.33293 3.02639 3.44114 3.12202 3.62508 3.27329C3.80904 3.42457 4.0498 3.60017 4.34736 3.80007C4.64493 3.99996 4.97495 4.19717 5.33744 4.39167C5.69994 4.58617 6.08948 4.76176 6.50606 4.91845C6.92265 5.07513 7.21481 5.17778 7.38252 5.22641C7.55025 5.27503 7.83699 5.33716 8.24276 5.4128C8.64853 5.48845 8.95422 5.53707 9.1598 5.55868C9.36539 5.58028 9.50607 5.59272 9.5818 5.59596L9.69542 5.5992L9.69219 5.57489L9.6873 5.55057L9.65484 5.34797C9.6332 5.2129 9.62238 5.0238 9.62238 4.78067C9.62238 4.53755 9.64132 4.31334 9.67919 4.10803C9.71707 3.90271 9.77388 3.69471 9.84961 3.484C9.92536 3.27329 9.99949 3.10417 10.072 2.97668C10.1456 2.85025 10.2419 2.706 10.3609 2.54391C10.4799 2.38183 10.6341 2.21435 10.8235 2.04145C11.0128 1.86856 11.2292 1.71458 11.4727 1.57951C11.7162 1.44445 11.9407 1.34179 12.1463 1.27155C12.3519 1.20132 12.525 1.15539 12.6657 1.13378C12.8063 1.11218 12.8767 1.09975 12.8767 1.0965V1.0965Z"
-                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 1226.37 1226.37" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g>
+                    <path d="M727.348 519.284 1174.075 0h-105.86L680.322 450.887 370.513 0H13.185l468.492 681.821L13.185 1226.37h105.866l409.625-476.152 327.181 476.152h357.328L727.322 519.284zM582.35 687.828l-47.468-67.894-377.686-540.24H319.8l304.797 435.991 47.468 67.894 396.2 566.721H905.661L582.35 687.854z" fill="#000000" opacity="1" data-original="#000000" class=""
+                          stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></g>
                 </svg>
               </a>
               <!-- Twiiter -->
@@ -1596,13 +1679,14 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
         Copyright © 2023 Master Tube | All Rights Reserved
       </p>
       <div
-        class="hidden lg:flex text-neutral-text1 text-[1.8rem] font-normal leading-[30px] [&_span]:cursor-pointer gap-x-4"
+        x-data="changeLanguage"
+        class="flex text-neutral-text1 text-[1.8rem] font-normal leading-[30px] [&_span]:cursor-pointer gap-x-4 sm:mx-auto sm:mt-8 lg:mx-0 lg:mt-8"
       >
-                          <a href="https://wp.master.tube/en/services/shield/" class="flex gap-x-2 hover:text-[#8f55ea]">
+                          <a href="https://wp.master.tube/en/services/shield/" data-language="en" x-on:click.prevent="setCookieAndRedirect($event)" class="flex gap-x-2 hover:text-[#8f55ea]">
             
             English
           </a>
-                  <a href="https://wp.master.tube/fa/services/shield/" class="flex gap-x-2 hover:text-[#8f55ea]">
+                  <a href="https://wp.master.tube/fa/services/shield/" data-language="fa" x-on:click.prevent="setCookieAndRedirect($event)" class="flex gap-x-2 hover:text-[#8f55ea]">
             
             فارسی
           </a>
@@ -1610,11 +1694,32 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
     </div>
   </div>
 </footer>
+
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('changeLanguage', () => ({
+      setCookieAndRedirect(event) {
+        // Getting the data attribute
+        const cookieValue = event.target.getAttribute('data-language');
+        const expires = new Date(Date.now() + 60 * 24 * 60 * 60 * 1000).toUTCString();
+        // Setting the cookie
+        document.cookie = `mt_current_language=${cookieValue}; path=/; expires=${expires};`;
+
+        // Redirecting to the URL in the href attribute of the <a> tag
+        window.location.href = event.target.getAttribute('href');
+      }
+    }));
+  });
+</script>
     </div>
 
         <script id="app/0-js-before">
-(()=>{"use strict";var e,r={},o={};function t(e){var n=o[e];if(void 0!==n)return n.exports;var a=o[e]={exports:{}};return r[e](a,a.exports,t),a.exports}t.m=r,e=[],t.O=(r,o,n,a)=>{if(!o){var i=1/0;for(u=0;u<e.length;u++){o=e[u][0],n=e[u][1],a=e[u][2];for(var l=!0,s=0;s<o.length;s++)(!1&a||i>=a)&&Object.keys(t.O).every((e=>t.O[e](o[s])))?o.splice(s--,1):(l=!1,a<i&&(i=a));if(l){e.splice(u--,1);var f=n();void 0!==f&&(r=f)}}return r}a=a||0;for(var u=e.length;u>0&&e[u-1][2]>a;u--)e[u]=e[u-1];e[u]=[o,n,a]},t.d=(e,r)=>{for(var o in r)t.o(r,o)&&!t.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:r[o]})},t.o=(e,r)=>Object.prototype.hasOwnProperty.call(e,r),t.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},(()=>{var e={666:0};t.O.j=r=>0===e[r];var r=(r,o)=>{var n,a,i=o[0],l=o[1],s=o[2],f=0;if(i.some((r=>0!==e[r]))){for(n in l)t.o(l,n)&&(t.m[n]=l[n]);if(s)var u=s(t)}for(r&&r(o);f<i.length;f++)a=i[f],t.o(e,a)&&e[a]&&e[a][0](),e[a]=0;return t.O(u)},o=self.webpackChunk_roots_bud_sage_sage=self.webpackChunk_roots_bud_sage_sage||[];o.forEach(r.bind(null,0)),o.push=r.bind(null,o.push.bind(o))})()})();
+(()=>{"use strict";var e,r={},o={};function t(e){var n=o[e];if(void 0!==n)return n.exports;var a=o[e]={exports:{}};return r[e](a,a.exports,t),a.exports}t.m=r,e=[],t.O=(r,o,n,a)=>{if(!o){var i=1/0;for(f=0;f<e.length;f++){o=e[f][0],n=e[f][1],a=e[f][2];for(var l=!0,s=0;s<o.length;s++)(!1&a||i>=a)&&Object.keys(t.O).every((e=>t.O[e](o[s])))?o.splice(s--,1):(l=!1,a<i&&(i=a));if(l){e.splice(f--,1);var u=n();void 0!==u&&(r=u)}}return r}a=a||0;for(var f=e.length;f>0&&e[f-1][2]>a;f--)e[f]=e[f-1];e[f]=[o,n,a]},t.d=(e,r)=>{for(var o in r)t.o(r,o)&&!t.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:r[o]})},t.o=(e,r)=>Object.prototype.hasOwnProperty.call(e,r),t.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},(()=>{var e={666:0};t.O.j=r=>0===e[r];var r=(r,o)=>{var n,a,i=o[0],l=o[1],s=o[2],u=0;if(i.some((r=>0!==e[r]))){for(n in l)t.o(l,n)&&(t.m[n]=l[n]);if(s)var f=s(t)}for(r&&r(o);u<i.length;u++)a=i[u],t.o(e,a)&&e[a]&&e[a][0](),e[a]=0;return t.O(f)},o=self.webpackChunk_roots_bud_sage_mastertube=self.webpackChunk_roots_bud_sage_mastertube||[];o.forEach(r.bind(null,0)),o.push=r.bind(null,o.push.bind(o))})()})();
 </script>
-<script src="https://wp.master.tube/app/themes/mastertube/public/js/app.c6fc6f.js" id="app/0-js"></script>
+<script src="https://wp.master.tube/app/themes/mastertube/public/js/app.js" id="app/0-js"></script>
+<script id="frontend-ajax-js-extra">
+var mtOptions = {"ajax_url":"https:\/\/wp.master.tube\/wp\/wp-admin\/admin-ajax.php","nonce":"acd41f1015","post_id":"45928"};
+</script>
+<script src="https://wp.master.tube/app/themes/mastertube/public/js/frontend-ajax.js?ver=1.0.0" id="frontend-ajax-js"></script>
   </body>
 </html>
