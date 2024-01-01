@@ -456,9 +456,9 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":
   <!--  👉 Steps     -->
   <section class="container overflow-auto px-2 no-scrollbar mx-auto mb-[5rem] lg:mb-[15.4rem] max-w-[108rem]" x-data="stepsData()">
 
-    <div class="flex">
+    <div class="flex mx-2 md:mx-0">
       <template x-for="i in 4">
-        <div class=" flex  relative min-w-[100px]	 " @click="activeStep = i"
+        <div class=" flex  relative min-w-[100px]	last:min-w-0 " @click="activeStep = i"
 
              :class="{'grow flex-1' :i!==4}"
         >
