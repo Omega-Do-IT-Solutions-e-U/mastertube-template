@@ -2,17 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer utilities {
+
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
   /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
 }
+
 @layer base {
   :root {
     --nav-height: 7.2rem;
@@ -25,115 +31,170 @@
   }
 
   h1 {
-    font-weight: 700;
-    line-height: 110%;
+    font-weight: 900;
+    line-height: 130%;
     font-size: 3.5rem;
+    text-align: center;
   }
+
   h2 {
-    font-weight: 700;
+    font-weight: 850;
     line-height: 140%;
     font-size: 3rem;
+    text-align: center;
   }
+
   h3 {
-    font-weight: 700;
+    font-weight: 800;
     line-height: 140%;
     font-size: 2.5rem;
+    text-align: center;
   }
+
   h4 {
     font-weight: 700;
     line-height: 140%;
     font-size: 2.2rem;
+    text-align: center;
   }
+
   h5 {
-    font-weight: 700;
-    line-height: 2.8rem;
-    font-size: 2rem;
+    font-weight: 600;
+    line-height: 140%;
+    font-size: 1.9rem;
+    text-align: center;
   }
+
   h6 {
-    font-weight: 700;
+    font-weight: 600;
     line-height: 140%;
     font-size: 1.6rem;
+    text-align: center;
   }
-  p {
+
+  p , a  {
     line-height: 140%;
     font-weight: 400;
     font-size: 1.6rem;
+    text-align: center;
   }
 
   /* sm h1 */
   @screen md {
     h1 {
-      font-weight: 700;
-      line-height: 110%;
+      font-weight: 900;
+      line-height: 130%;
       font-size: 4rem;
+      text-align: start;
     }
+
     h2 {
-      font-weight: 700;
+      font-weight: 850;
       line-height: 140%;
       font-size: 4rem;
+      text-align: start;
     }
+
     h3 {
-      font-weight: 700;
+      font-weight: 800;
       line-height: 140%;
       font-size: 3.2rem;
+      text-align: start;
     }
+
     h4 {
       font-weight: 700;
       line-height: 140%;
       font-size: 2.4rem;
+      text-align: start;
     }
+
     h5 {
-      font-weight: 700;
+      font-weight: 600;
       line-height: 2.8rem;
       font-size: 2rem;
+      text-align: start;
     }
+
     h6 {
-      font-weight: 700;
+      font-weight: 600;
       line-height: 140%;
       font-size: 1.6rem;
+      text-align: start;
     }
+
     p {
       line-height: 110%;
       font-weight: 400;
       font-size: 1.6rem;
+      text-align: start;
     }
   }
 
   @screen lg {
     h1 {
-      font-weight: 700;
-      line-height: 110%;
-      font-size: 6.4rem;
+      font-weight: 900;
+      line-height: 130%;
+      font-size: 5.2rem;
+      text-align: start;
     }
+
+    html[lang="fa-IR"] h1 {
+      font-size: 4.6rem;
+    }
+
     h2 {
-      font-weight: 600;
+      font-weight: 850;
       line-height: 140%;
       font-size: 4rem;
+      text-align: start;
     }
+
+    html[lang="fa-IR"] h2 {
+      font-size: 3.6rem;
+    }
+
     h3 {
-      font-weight: 600;
+      font-weight: 800;
       line-height: 140%;
-      font-size: 3.2rem;
+      font-size: 2.6rem;
+      text-align: start;
     }
+
+    html[lang="fa-IR"] h3 {
+      font-size: 2.6rem;
+    }
+
     h4 {
       font-weight: 700;
       line-height: 140%;
-      font-size: 2.4rem;
+      font-size: 2.2rem;
+      text-align: start;
     }
+
+    html[lang="fa-IR"] h4 {
+      font-size: 2.2rem;
+    }
+
     h5 {
-      font-weight: 700;
-      line-height: 2.8rem;
-      font-size: 2rem;
+      font-weight: 600;
+      line-height: 2rem;
+      font-size: 1.9rem;
+      text-align: start;
     }
+
     h6 {
-      font-weight: 700;
+      font-weight: 600;
       line-height: 140%;
       font-size: 1.6rem;
+      text-align: start;
     }
+
     p {
-      line-height: 150%;
+      line-height: 170%;
       font-weight: 400;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
+      text-align: start;
     }
   }
 }
@@ -144,7 +205,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('./assets/fonts/ClashDisplay-Variable.woff2') format('woff2');
+  src: url('../fonts/ClashDisplay-Variable.woff2') format('woff2');
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
@@ -152,7 +213,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('./assets/fonts/ClashDisplay-Extralight.woff2') format('woff2');
+  src: url('../fonts/ClashDisplay-Extralight.woff2') format('woff2');
   font-weight: 200;
   font-display: swap;
   font-style: normal;
@@ -160,7 +221,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('./assets/fonts/ClashDisplay-Light.woff2') format('woff2');
+  src: url('../fonts/ClashDisplay-Light.woff2') format('woff2');
   font-weight: 300;
   font-display: swap;
   font-style: normal;
@@ -168,7 +229,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('./assets/fonts/ClashDisplay-Regular.woff2') format('woff2');
+  src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -176,8 +237,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('./assets/fonts/ClashDisplay-Medium.woff2'),
-    url('/./assets/fonts/fa/IRANSansXFaNum-Medium.woff2') format('woff2');
+  src: url('../fonts/ClashDisplay-Medium.woff2');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -185,7 +245,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('./assets/fonts/ClashDisplay-Semibold.woff2') format('woff2');
+  src: url('../fonts/ClashDisplay-Semibold.woff2') format('woff2');
   font-weight: 600;
   font-display: swap;
   font-style: normal;
@@ -193,7 +253,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('./assets/fonts/ClashDisplay-Bold.woff2') format('woff2');
+  src: url('../fonts/ClashDisplay-Bold.woff2') format('woff2');
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -201,57 +261,17 @@ html {
 
 @font-face {
   font-family: 'Iransans';
-  src: url('./assets/fonts/fa/IRANSansXFaNum-UltraLight.woff2') format('woff2');
-  font-weight: 200;
+  src: url('../fonts/fa/IRANSansXV.woff2') format('woff2');
   font-display: swap;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Iransans';
-  src: url('./assets/fonts/fa/IRANSansXFaNum-Thin.woff2') format('woff2');
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
+.fa {
+  font-family: 'Iransans', 'ClashDisplay', serif !important;
 }
 
-@font-face {
-  font-family: 'Iransans';
-  src: url('./assets/fonts/fa/IRANSansXFaNum-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Iransans';
-  src: url('./assets/fonts/fa/IRANSansXFaNum-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Iransans';
-  src: url('./assets/fonts/fa/IRANSansXFaNum-DemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Iransans';
-  src: url('./assets/fonts/fa/IRANSansXFaNum-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Iransans';
-  src: url('./assets/fonts/fa/IRANSansXFaNum-ExtraBold.woff2') format('woff2');
-  font-weight: 800;
-  font-display: swap;
-  font-style: normal;
+.en{
+  font-family: 'ClashDisplay', serif !important;
 }
 
 .range-input {
@@ -290,42 +310,272 @@ html {
 
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
 /*
-  button class with in "hover:bg-white border-2 transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 w-full h-12 lg:h-16 lg:text-base py-3 px-7 lg:px-10 rounded-lg bg-primary-1 text-white font-semibold text-[16px] md:w-fit"
+  button class with in "hover:bg-white border-2 transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 w-full h-12 lg:h-16 lg:py-3 px-7 lg:px-10 rounded-lg bg-primary-1 text-white text-[16px] md:w-fit"
  */
 .btn {
-  @apply hover:bg-white
-  border-2
-  transition-colors
-  ease-out
-  hover:text-primary-1
-  hover:border-2
-  hover:border-primary-1
-  w-full
-  h-16
-  lg:h-16
-  lg:text-base
-  py-3
-  px-7
-  lg:px-10
-  rounded-lg
-  bg-primary-1
-  text-white
-  font-semibold
-  text-[16px]
-  border-transparent
-    justify-center
-  md:w-fit;
+  @apply hover:bg-white border-2 transition-colors ease-out hover:text-primary-1 hover:border-2 hover:border-primary-1 w-full h-16 lg:h-16 lg:text-[18px] font-[600] py-3 px-3 lg:px-6 rounded-lg bg-primary-1 text-white text-[18px] border-transparent justify-center md:w-full;
 }
-@media (max-width: 480px) {
-  html,
-  body {
-    font-size: 10px;
+
+.btn-secondary{
+  @apply text-[18px] font-[600] text-[#666E80]
+
+}
+
+.letter-space {
+  letter-spacing: 1px;
+}
+
+/*Single post content styles*/
+
+.single-content table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.single-content h1,
+.single-content h2,
+.single-content h3,
+.single-content h4,
+.single-content h5,
+.single-content h6 {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  color: #0C0C0C;
+}
+
+.single-content ul {
+  padding-right: 20px;
+}
+
+.single-content li {
+  list-style: disc;
+}
+
+.single-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  margin-top: 12px;
+}
+
+.single-content p,
+.single-content ul,
+.single-content li,
+.rank-math-answer
+{
+  font-size: 16px !important;
+  color: #666E80;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px !important;
+}
+
+
+.single-content p,
+.single-content ul {
+  margin-bottom: 20px;
+}
+
+.single-content h1 {
+  font-size: 30px !important;
+  margin-bottom: 20px;
+}
+
+.single-content h2 {
+  font-size: 26px !important;
+  margin-bottom: 13px;
+}
+
+.single-content h3 {
+  font-size: 24px !important;
+  margin-bottom: 10px;
+}
+
+.single-content h4 {
+  font-size: 22px !important;
+  margin-bottom: 8px;
+}
+
+.single-content h5 {
+  font-size: 20px !important;
+  margin-bottom: 8px;
+}
+
+
+.error {
+  color: #e74c3c !important;
+  font-size: 16px !important;
+}
+
+.scroller {
+  max-width: 1600px;
+}
+
+.scroller[data-animated='true'] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg,
+  transparent,
+  white 10%,
+  white 90%,
+  transparent);
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+
+
+
+.scroller[data-animated='true'] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--animation-duration, 200s) var(--animation-direction, reverse) linear infinite;
+}
+
+.scroller[data-direction='rtl'] {
+  --animation-direction: reverse;
+  --animation-lang: 50%;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(var(--animation-lang, -50%) - 0.5rem));
   }
 }
+
+
+a[title="Tel"] {
+  font-family: Iransans !important;
+}
+
+.wp-block-quote {
+  padding: 25px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  border: 1px solid var(--wp--preset--color--vivid-purple) !important;
+}
+
+input:active~label,
+input:focus~label,
+textarea:active~label,
+textarea:focus~label {
+  color: var(--wp--preset--color--vivid-purple) !important;
+}
+
+input~label {
+  font-size: 14px !important;
+}
+
+input[type="checkbox"]~label,
+input[type="checkbox"]:active~label,
+input[type="checkbox"]:focus~label {
+  color: #595959 !important;
+}
+
+.single-content p.has-text-align-center {
+  text-align: right !important;
+  font-size: 20px !important;
+  color: var(--wp--preset--color--primary-2) !important;
+}
+
+.license-slider {
+  display: flex;
+  gap: 20px;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.license-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+.license-img {
+  height: 300px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.license-subtitle {
+  text-align: right;
+}
+.license-arrow {
+  justify-content: end;
+}
+
+/* Swiper */
+.blog-slider .swiper-slide-prev {
+  margin-left: 85px !important;
+  margin-right: -37px !important;
+}
+
+.blog-slider .swiper-slide-next {
+  margin-left: 85px !important
+}
+
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .scroller[data-animated='true'] {
+    -webkit-mask: none;
+    mask: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .license-arrow {
+    justify-content: center;
+  }
+  .license-subtitle {
+    text-align: center;
+  }
+  .license-content {
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    height: 100%;
+  }
+  .license-slider {
+    flex-direction: column-reverse;
+
+  }
+  .single-content p.has-text-align-center {
+    text-align: center !important;
+  }
+
+  .blog-slider .swiper-slide-prev {
+    margin-left: 85px !important;
+    margin-right: 0 !important;
+  }
+
+  .blog-slider .swiper-slide-next {
+    margin-left: auto !important
+  }
+
+  .blog-slider .cursor-pointer {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .blog-slider {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 
 .testimonial {
   -webkit-mask: linear-gradient(
@@ -336,4 +586,67 @@ html {
     transparent
   );
   mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+
+.single-content{
+  text-align: right !important;
+}
+
+.single-content div{
+  text-align: right !important;
+}
+.single-content div p,
+.single-content div h1,
+.single-content div h2,
+.single-content div h3,
+.single-content div h4,
+.single-content div h5,
+.single-content div h6,
+.single-content div ul,
+.single-content div li,
+.single-content div span,
+.single-content div a,
+.single-content div img,
+.single-content div table,
+.single-content div td,
+.single-content div tr,
+.single-content div th,
+.single-content div tbody,
+.single-content div thead
+{
+  text-align: right !important;
+}
+
+.wp-block-table{
+  font-family: Iransans !important;
+  font-size: 16px !important;
+  color: #666E80;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px !important;
+}
+
+
+.single-content p a {
+  color: var(--wp--preset--color--primary-2) !important;
+  font-weight: 600 !important;
+}
+
+#ez-toc-container{
+  width: 100% !important;
+}
+
+.main-menu-item{
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 32px !important;
+  color: #666E80 !important;
+}
+
+.main-menu-item:hover{
+  color: var(--wp--preset--color--primary-2) !important;
+}
+
+#ez-toc-container a:visited{
+  color: var(--wp--preset--color--vivid-purple) !important;
 }
