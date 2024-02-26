@@ -205,7 +205,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('../fonts/ClashDisplay-Variable.woff2') format('woff2');
+  src: url('./fonts/ClashDisplay-Variable.woff2') format('woff2');
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
@@ -213,7 +213,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('../fonts/ClashDisplay-Extralight.woff2') format('woff2');
+  src: url('./fonts/ClashDisplay-Extralight.woff2') format('woff2');
   font-weight: 200;
   font-display: swap;
   font-style: normal;
@@ -221,7 +221,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('../fonts/ClashDisplay-Light.woff2') format('woff2');
+  src: url('./fonts/ClashDisplay-Light.woff2') format('woff2');
   font-weight: 300;
   font-display: swap;
   font-style: normal;
@@ -229,7 +229,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2');
+  src: url('./fonts/ClashDisplay-Regular.woff2') format('woff2');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -237,7 +237,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('../fonts/ClashDisplay-Medium.woff2');
+  src: url('./fonts/ClashDisplay-Medium.woff2');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -245,7 +245,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('../fonts/ClashDisplay-Semibold.woff2') format('woff2');
+  src: url('./fonts/ClashDisplay-Semibold.woff2') format('woff2');
   font-weight: 600;
   font-display: swap;
   font-style: normal;
@@ -253,7 +253,7 @@ html {
 
 @font-face {
   font-family: 'ClashDisplay';
-  src: url('../fonts/ClashDisplay-Bold.woff2') format('woff2');
+  src: url('./fonts/ClashDisplay-Bold.woff2') format('woff2');
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -261,7 +261,7 @@ html {
 
 @font-face {
   font-family: 'Iransans';
-  src: url('../fonts/fa/IRANSansXV.woff2') format('woff2');
+  src: url('./fonts/fa/IRANSansXV.woff2') format('woff2');
   font-display: swap;
   font-style: normal;
 }
